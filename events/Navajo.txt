@@ -43,7 +43,7 @@ country_event = { #council
 		name = nvn.2.a
         set_country_flag = nvn_hayes_flag
 		create_country_leader = {
-	    name = "Ira Hayes "
+	    name = "Ira Hayes"
 	    desc = "POLITICS_HAYES_DESC"
 	    picture = "gfx/leaders/NVN/Portrait_NVN_Ira_Hayes.png"
 	    expire = "1965.1.1"
@@ -119,6 +119,12 @@ country_event = { #hayes elections
 				NVN_Antonio_Buck_Sr_sec_sde
 			}
 			hidden_effect = {
+				if = {	
+				limit = { has_country_leader = { name = "Ira Hayes" ruling_only = yes } }
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/NVN/Portrait_NVN_Ira_Hayes_civ.png"
+				}
+			}
 				country_event = {
 					id = nvn.57
 					days = 5
@@ -144,6 +150,12 @@ country_event = { #hayes elections
 				NVN_Dan_Katchongva_sec_sli
 			}
 			hidden_effect = {
+				if = {	
+				limit = { has_country_leader = { name = "Ira Hayes" ruling_only = yes } }
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/NVN/Portrait_NVN_Ira_Hayes_civ.png"
+				}
+			}
 				country_event = {
 					id = nvn.58
 					days = 5
@@ -169,6 +181,12 @@ country_event = { #hayes elections
 				NVN_Henry_Taliman_sec_mli
 			}
 			hidden_effect = {
+				if = {	
+				limit = { has_country_leader = { name = "Ira Hayes" ruling_only = yes } }
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/NVN/Portrait_NVN_Ira_Hayes_civ.png"
+				}
+			}
 				country_event = {
 					id = nvn.59
 					days = 5
@@ -195,6 +213,12 @@ country_event = { #hayes elections
 				
 			}
 			hidden_effect = {
+				if = {	
+				limit = { has_country_leader = { name = "Ira Hayes" ruling_only = yes } }
+				set_country_leader_portrait = {
+					portrait = "gfx/leaders/NVN/Portrait_NVN_Ira_Hayes_civ.png"
+				}
+			}
 				country_event = {
 					id = nvn.60
 					days = 5
@@ -1686,6 +1710,22 @@ country_event = { #hayes election result flavor (soccon)
 	option = { #oh shit
 		name = nvn.60.a
 		 increase_ruling_party_popularity_by_3 = yes
+		
+	}
+
+}
+country_event = { #yaki
+	id = nvn.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nvn.61" }
+	title = nvn.61.t
+	desc = nvn.61.d
+	picture = GFX_nvn_shoshone
+
+
+	is_triggered_only = yes
+
+	option = { #oh shit
+		name = nvn.61.a
 		
 	}
 

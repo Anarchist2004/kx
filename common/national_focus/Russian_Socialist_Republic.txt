@@ -4214,6 +4214,19 @@ focus = {
 	}
 	completion_reward = {
                  hidden_effect = { remove_ideas = RUS_workers_constitution_1 }
+                 create_field_marshal = {
+	                 name = "Andrei Zhdanov "
+	                 portrait_path = "gfx/leaders/RUS/Portrait_RUS_Zhdanov_military.png"
+	                 traits = {
+                              politically_connected
+                              expert_delegator
+	                 }
+	                 skill = 2
+	                 attack_skill = 2
+	                 defense_skill = 3
+	                 planning_skill = 1
+	                 logistics_skill = 2
+                }
 	}
 }
 focus = {
@@ -6121,6 +6134,10 @@ focus = {
 				id = russoc.110
 				days = 135
 			}
+				country_event = {
+				id = russia.3678
+				days = 75
+			}
 		}
 	}
 }
@@ -6885,6 +6902,12 @@ focus = {
 	}
 	completion_reward = {
 		country_event = bolsheviks.51
+		hidden_effect = {
+			country_event = {
+				id = russia.3678
+				days = 75
+			}
+		}
 	}
 }
 focus = {
@@ -7403,6 +7426,12 @@ focus = {
 	}
 	completion_reward = {
 		country_event = bolsheviks.63
+		hidden_effect = {
+			country_event = {
+				id = russia.3678
+				days = 75
+			}
+		}
 	}
 }
 focus = {
@@ -8354,6 +8383,12 @@ focus = {
 			id = sokolnikov.9
 			days = 1
 		}
+		hidden_effect = {
+			country_event = {
+				id = russia.3678
+				days = 75
+			}
+		}
 	}
 }
 
@@ -8860,6 +8895,12 @@ focus = {
 	}
 	completion_reward = {
 		country_event = nkvd.24
+		hidden_effect = {
+			country_event = {
+				id = russia.3678
+				days = 75
+			}
+		}
 	}
 }
 focus = {
@@ -9849,6 +9890,12 @@ focus = {
 	}
 	completion_reward = {
 		add_ideas = SOV_yezhovschina_1
+		hidden_effect = {
+			country_event = {
+				id = russia.3678
+				days = 75
+			}
+		}
 	}
 } 
 
