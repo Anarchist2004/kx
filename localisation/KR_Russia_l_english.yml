@@ -1080,7 +1080,7 @@ RUS_Witch_hunt_desc:0 "Even if NSP and NRPR have been dealt with, there are stil
 RUS_black_monday:0 "Black Monday Hits Russia"
 RUS_black_monday_desc:0 "Black Monday has hit our country, but we still don't know how to combat it. It will be nice if government create a special committee to deal with economic crisis."
 RUS_taxes:0 "Increase Taxes"
-RUS_taxes_desc:0 "With our budget deficit becoming uncontrolable, the only way our government sees is to increase taxation. Even if it will cause some political problems, the ammount of money in circulations will decrease and fight inflation."
+RUS_taxes_desc:0 "With our budget deficit becoming uncontrolable, the only way our government sees is to increase taxation. Even if it will cause some political problems, the amount of money in circulations will decrease and fight inflation."
 RUS_currency:0 "Devaluate the Rouble"
 RUS_currency_desc:0 "When the Black Monday hit Russia, the Rouble drastically dropped in it's value. Replacing our currency in these dire times would be mad. The only way to save our economy is the immediate devaluation of the Rouble."
 RUS_black_monday_recovery:0 "Black Monday Recovery"
@@ -2227,6 +2227,8 @@ RUS_Integrate_Alash_Autonomy_MPO:0 "Integrate [FROM.GetNameDef]"
 RUS_Integrate_Alash_Autonomy:0 "Integrate [FROM.GetNameDef]"
 RUS_Integrate_Alash_Autonomy_desc:0 "Kazakhstan is vast and wealthy and more than that they are loyal. Once brought into the fold again we can look even further south, to Turkestan and even Persia!"
 
+RUS_Take_Control_Over_Latvia:0 "Take Control Over Latvia"
+
 RUS_Attack_Region:0 "Attack [FROM.GetNameDef]"
 
 RUS_Attack_Central_Asia_desc:0 "[RUS_Attack_Central_Asia_desc_text]"
@@ -2716,6 +2718,10 @@ rusfor.60.t:0 "[From.GetNameDefCap] Refuses"
 rusfor.60.d:0 "[From.GetNameDefCap] has shown its true colours as an enemy of [Root.GetName] and has refused to return our rightful land. There is no doubt now that diplomacy is impossible with the Russian bear and only war will be able to solve our issues."
 rusfor.60.a:0 "As expected."
 
+rusfor.61.t: "The Russian Academy of Sciences"
+rusfor.61.d: "While the Moscow Accord and our membership within it is, theoretically, of a purely military nature, the reality is far more complex than that. One of the legacies of the Great War was the advent of mass mobilisation - the consolidation of large swathes of potentially useful sectors of society into an apparatus designed to aid the war effort. The field of technology was included in this - in the efforts to break the trench warfare of the Western Front, military technology created bold new inventions such as landships in the hopes of finally turning the tide. As result of mobilisation such as this, the line between civilian and military resources became somewhat blurred - and the recent growth of ever-present international tensions have ushered the start of a global arms race, something that nobody can afford to be left behind in.\n\nTo this end, the old and prestigious Russian Academy of Sciences has been given a new mandate by [RUS.GetNameDef] - the coordination of research efforts across Russia and her allies, and the swift dissemination of breakthroughs between them, particularly breakthroughs with potential military applications. As we are currently on very good terms with Russia, we have been extended an invitation to contribute talent to this program and share research between us and other participating nations. The potential boons that this could have for our technological development are, of course, obvious and plentiful."
+rusfor.61.a: "Excellent."
+
 rusfor.62.t:0 "The Trans-Siberian Crisis"
 rusfor.62.d:0 "Horrible news! A train full of Russian citizens has been massacred by bandits on the Mongolian section of the Trans-Siberian railroad! Our people are shocked by this act of barbarism and demand an immediate response from the government. This could be an opportunity for us to reassert control over the Far Eastern sections of the railroad but we must tread carefully. Baron von Ungern-Sternberg, Supreme Khan of All Mongols, is unhinged and may not take kindly to interference."
 rusfor.62.a:0 "We must increase the security on our trains."
@@ -2758,6 +2764,15 @@ rusfor.68.b:0 "Evacuate all Russian citizens from Mongolia and seal the border."
 rusfor.69.t:0 "The Russians Attack!"
 rusfor.69.d:0 "The Russians have declared war and are sending trainloads of troops on the Trans-Siberian railroad! This daring Russian act requires an immediate military response!"
 rusfor.69.a:0 "Let the Russians come, we shall chase them out of Asia!"
+
+rusfor.70.t: "Agreement of Russo-Finnish Friendship"
+rusfor.70.d: "[From.GetNameDefCap] has sent us a surprising proposal. To ensure the safety of both St. Petersburg and [FIN.GetDefName] against ever-present German aggression, our two nations must put aside their disagreements and work together for safer Baltic region. The Russians are giving up any claims on our territory, if in exchange we ally them and agree to defend the region together, and not cede in to German pressure.\nThere is a thinly-veiled edge to their words, in almost a manner of presumed acceptance, but their offer seems genuine."
+rusfor.70.a: "Quite a surprise, but a welcome one."
+rusfor.70.b: "This is another of their plots. No!"
+
+rusfor.71.t: "$rusfor.56.t$"
+rusfor.71.d: "[FIN.GetNameDefCap] has refused our generous offer to take them under our protection. Perhaps we underestimated their stubborness."
+rusfor.71.a: "We will deal with them shortly..."
 
 rusfor.100.t:0 "Offer Autonomy for [DKB.GetName]"
 rusfor.100.d:0 "After the political crisis in Don Republic, the new Ataman, Afrikan Bogaewsky has pursued a friendly pro-russian policy. We shall respect his loyalty towards us and offer an autonomy."
@@ -3333,47 +3348,47 @@ rusfor.1073.t:0 "[FROM.GetNameDef] Refuses Our Demands"
 rusfor.1073.d:0 "We have finally received a response from the Ottoman/Turkish consulate today, handing over a letter addressed directly to [Root.GetLeader] himself. They have refused to transfer the control of the Greater Armenian lands to us. Even more damningly, the letter they sent us was full of heated insults towards our regime for daring to make such a claim, stating that the lands are rightfully Turkish, accusing us of wanton expansionism and historical revisionism."
 rusfor.1073.a:0 "They will regret this!"
 
-rusfor.1074.t:0 "The [TRM.Capital.GetName] Referendum"
+rusfor.1074.t:0 "The [ROOT.Capital.GetName] Referendum"
 rusfor.1074.d:0 "The government of [RUS.GetNameDef] suppose that we should hold a referendum about uniting with Big Brother. While this decision can seem ridiculous, we can accept the offer to avoid war."
 rusfor.1074.a:0 "Hold the referendum."
 rusfor.1074.b:0 "It is ridiculous."
 
-rusfor.1075.t:0 "Transamur Agreed to Hold Referendum"
-rusfor.1075.d:0 "The Transamur government seems to make a right choice and hold the referendum. While the results can be dissapointing for us, this will show Western Powers that we are fair. However, we can cheat a little and send troops to Vladivostok to be sure the referendum is successful."
+rusfor.1075.t:0 "[FROM.GetName] Agreed to Hold Referendum"
+rusfor.1075.d:0 "The [FROM.GetAdjective] government seems to make a right choice and hold the referendum. While the results can be dissapointing for us, this will show Western Powers that we are fair. However, we can cheat a little and send troops to Vladivostok to be sure the referendum is successful."
 rusfor.1075.a:0 "Wait for the results."
 rusfor.1075.b:0 "Send our troops to be sure."
 
-rusfor.1076.t:0 "[TRM.GetNameDef] Votes Yes!"
+rusfor.1076.t:0 "[FROM.GetNameDef] Votes Yes!"
 rusfor.1076.d:0 "The majority of the Far-Eastern population voted for..."
 rusfor.1076.a:0 "Join Russia."
 
-rusfor.1081.t:0 "[TRM.GetNameDef] Votes No!"
+rusfor.1081.t:0 "[FROM.GetNameDef] Votes No!"
 rusfor.1076.b:0 "Stay Independent."
 
-rusfor.1077.t:0 "The Russian Troops Arive in [TRM.Capital.GetName]"
+rusfor.1077.t:0 "The Russian Troops Arive in [FROM.Capital.GetName]"
 rusfor.1077.d:0 "The day before the Referendum we see that Russian troops crossed the borders and occupied the largest cities to secure the Referendum. While this is a mailicious violation of the International Law, we may admit that their troops are a part of international observers."
 rusfor.1077.a:0 "The referendum is over. This is an act of aggression."
 rusfor.1077.b:0 "What can go wrong?"
 
-rusfor.1078.t:0 "[TRM.GetNameDef] Votes Yes!"
-rusfor.1078.d:0 "The [TRM.GetAdjective] population voted for joining our country. We should give them citizenship as soon as possible and station our troops at the border of the Japanese Sphere of Influence."
+rusfor.1078.t:0 "[FROM.GetNameDef] Votes Yes!"
+rusfor.1078.d:0 "The [FROM.GetAdjective] population voted for joining our country. We should give them citizenship as soon as possible and station our troops at the border of the Japanese Sphere of Influence."
 rusfor.1078.a:0 "Great News!"
 
-rusfor.1079.t:0 "[TRM.GetNameDef] Votes  No!"
-rusfor.1079.d:0 "The [TRM.GetAdjective] population voted against joining our country. However, we could not agree that an artificial state claiming to be the legitimate Russian government exists. We can offer them an alliance, an autonomy or declare war."
+rusfor.1079.t:0 "[FROM.GetNameDef] Votes  No!"
+rusfor.1079.d:0 "The [FROM.GetAdjective] population voted against joining our country. However, we could not agree that an artificial state claiming to be the legitimate Russian government exists. We can offer them an alliance, an autonomy or declare war."
 rusfor.1079.a:0 "Offer them an alliance against Japan."
 rusfor.1079.b:0 "Offer them autonomy"
 rusfor.1079.c:0 "Declare war."
 
-rusfor.1080.t:0 "[TRM.GetNameDef] Denied to Hold Referendum"
+rusfor.1080.t:0 "[FROM.GetNameDef] Denied to Hold Referendum"
 rusfor.1080.d:0 "The Transamur government seems to make a wrong choice and do not hold the referendum. While it is still a Japanese protectorate, we might not risk going to direct military confrontation, but send our troops to [TRM.Capital.GetName] and try to coup their government."
 rusfor.1080.a:0 "Declare War!"
 rusfor.1080.b:0 "Try to coup them."
 
-rusfor.1082.t:0 "The Transamur Takeover"
+rusfor.1082.t:0 "The Far East Takeover"
 rusfor.1082.d:0 "With the resurgent Russian state gaining full control over the once disputed Trans-Siberian railroad from Mongolia, commercial contacts have increased massively with the Transamur Republic, and Japan economic presence in Transamur has started to fade in comparison with the inflow of massive Russian investments. The Economy of Transamur, a rebellious state created via Japanese incursion during Russian civil war started to experience serious economic difficulties thanks to relatively unrestricted influx of cheaper goods, coming through recently liberated Trans-Siberian railroad. The weakened state can now be easily taken with a detachment of a few soldiers."
-rusfor.1082.a:0 "Claim Transamur! All Russians must be under Russian rule!"
-rusfor.1082.b:0 "Send a detachment of troops to [TRM.Capital.GetName] to dissolve Transamur!"
+rusfor.1082.a:0 "Claim the Far-East! All Russians must be under Russian rule!"
+rusfor.1082.b:0 "Send a detachment of troops to dissolve Transamur!"
 
 rusfor.10820.t:0 "Intervention in the Transamur Civil War?"
 rusfor.10820.d:0 "With the outbreak of Civil War in Transamur, there are numerous breakaway states fighting for their independence, all claiming to be the true claimants of their home areas. As we are already at war with the state of Transamur, many are calling to bring these peoples back to the Motherland as well as they are likely already weakened from war and it would also be a popular decision back home as they are still sitting on rightful Russian land."
@@ -3395,7 +3410,7 @@ rusfor.10877.d:0 "Not fearing the threat of Japanese involvement the Russians ha
 rusfor.10877.a:0 "We're no match for the Russians."
 rusfor.10877.b:0 "We'll never surrender!"
 
-rusfor.1087.t:0 "Transamur is Russian!"
+rusfor.1087.t:0 "Far East is Russian!"
 rusfor.1087.d:0 "Facing the threat of Russian military force and deprived of the support of the local capitalists and the Japanese, Transamur's government is ready to collapse in the face of the popular will. We can now do what we like with Transamur but it has been independent for a long time and will be difficult to integrate into our country. Perhaps some sort of compromise is needed?"
 rusfor.1087.a:0 "Put their leaders on trial and incorporate Transamur!"
 rusfor.1087.b:0 "Make them a buffer state between us and Japan - at least for now."
@@ -3733,7 +3748,6 @@ rusfor.1239.d:0 "Shocking news from Moscow have arrived recently, as the Russian
 rusfor.1239.a:0 "God have mercy."
 rusfor.1239.b:0 "If it's a fight they want..."
 
-### rusfor 1240-1248 reserved for new White Ruthenia forpol ###
 rusfor.1240.t:0 "Question of [WHR.GetName]"
 rusfor.1240.d:0 "The state of [WHR.GetName] lies just between us and the Germans. The Slavic population of the country should be brought under our protection before it is too late and we face German forces at the border. There are certain pro-Russian, or at least anti-German movements in the country and we should contact them and try to organize a coup, bringing [WHR.GetName] back to us."
 rusfor.1240.a:0 "Invest in a pro-Russian coup in [WHR.GetName]"
@@ -3974,12 +3988,12 @@ rusfor.1298.d:0 "The Ottomans have decided to leave us alone. This means that Ru
 rusfor.1298.a:0 "Agree to join Russia."
 rusfor.1298.b:0 "There's nothing as important as freedom!"
 
-rusfor.1299.t:0 "The Mountain Republic sumbits."
-rusfor.1299.d:0 "The Mountain Republic has agreed to be incorporated back into motherland."
+rusfor.1299.t:0 "The Mountain Republic submits."
+rusfor.1299.d:0 "The Mountain Republic has agreed to be incorporated back into the motherland."
 rusfor.1299.a:0 "Welcome back!"
 
 rusfor.1300.t:0 "The Mountain Republic Agreed"
-rusfor.1300.d:0 "The Mountrain republic accepted our offer."
+rusfor.1300.d:0 "The Mountain Republic accepted our offer."
 rusfor.1300.a:0 "Excellent!"
 
 rusfor.1301.t:0 "The Mountain Republic Rejects Our Demands"
@@ -4025,7 +4039,7 @@ rusfor.1308.b:0 "We are too weak - back down."
 rusfor.1309.t:0 "Austria Demand Concessions in Sudetenland"
 rusfor.1309.d:0 "The Austrian Government has offered us to leave Sudetenland under their control - as the majority of living there people are Germans. What shall we do?"
 rusfor.1309.a:0 "If this will help reach a consensus..."
-rusfor.1309.b:0 "No. We demand all crown-lands of Bohemia to be indepedent."
+rusfor.1309.b:0 "No. We demand all crown-lands of Bohemia to be independent."
 
 rusfor.1310.t:0 "Russia Agreed."
 rusfor.1310.d:0 "Russia decided that we should have Sudetenland. While this decision is fair, we will recognize Czechs and Slovaks in response."
@@ -4198,7 +4212,7 @@ rusfor.1424.c:0 "Alaska for gold and joining our alliance"
 rusfor.1424.e:0 "Their claims are groundless."
 
 rusfor.1425.t:0 "[FROM.GetName] Agreed to Sell Alaska"
-rusfor.1425.d:0 "While [FROM.GetNameDefCap] has agreed to sell us Alaska, they issued tons of equipment through lend-lease and a large ammount of gold worth 6 billion US dollars."
+rusfor.1425.d:0 "While [FROM.GetNameDefCap] has agreed to sell us Alaska, they issued tons of equipment through lend-lease and a large amount of gold worth 6 billion US dollars."
 rusfor.1425.a:0 "Deal!"
 rusfor.1425.b:0 "The price is too high, back down"
 rusfor.1425.c:0 "We'd better take it for free - send the ultimatum."
@@ -4206,7 +4220,7 @@ rusfor.1425.c:0 "We'd better take it for free - send the ultimatum."
 rusfor.1426.d:0 "While [FROM.GetNameDefCap] has agreed to sell us Alaska, they issued that we should declare war on the Internationale, providing a foothold for their army in Europe."
 rusfor.1426.a:0 "Alaska does not worth the lives of our soldiers."
 
-rusfor.1427.d:0 "While [FROM.GetNameDefCap] has agreed to sell us Alaska, they issued a large ammount of gold worth 6 billion US dollars and joining their alliance."
+rusfor.1427.d:0 "While [FROM.GetNameDefCap] has agreed to sell us Alaska, they issued a large amount of gold worth 6 billion US dollars and joining their alliance."
 
 
 rusfor.1428.t:0 "[FROM.GetName] Refused to Sell Alaska"
@@ -4219,12 +4233,12 @@ rusfor.1429.a:0 "We can't risk another war"
 rusfor.1429.e:0 "They won't fight over the Pacific."
 
 rusfor.1430.t:0 "[FROM.GetName] Agreed to Transfer Alaska"
-rusfor.1430.d:0 "While [FROM.GetNameDefCap] has agreed to transfer Alaska, they issued tons of equipment through lend-lease and a large ammount of gold worth 6 billion US dollars."
+rusfor.1430.d:0 "While [FROM.GetNameDefCap] has agreed to transfer Alaska, they issued tons of equipment through lend-lease and a large amount of gold worth 6 billion US dollars."
 rusfor.1430.b:0 "We will take it for free - declare war."
 
 rusfor.1431.d:0 "While [FROM.GetNameDefCap] has agreed to transfer Alaska, they issued that we should declare war on the Internationale, providing a foothold for their army in Europe."
 
-rusfor.1432.d:0 "While [FROM.GetNameDefCap] has agreed to transfer Alaska, they issued a large ammount of gold worth 6 billion US dollars and joining their alliance."
+rusfor.1432.d:0 "While [FROM.GetNameDefCap] has agreed to transfer Alaska, they issued a large amount of gold worth 6 billion US dollars and joining their alliance."
 
 rusfor.1433.d:0 "[FROM.GetNameDefCap] has agreed to transfer Alaska."
 rusfor.1433.a:0 "Russian America is back!"
@@ -4417,6 +4431,19 @@ rusfor.1475.d:0 "Our mighty neighbour is desiring our land. However, they offere
 rusfor.1475.a:0 "There's no future without [FROM.GetAdjective] protection."
 rusfor.1475.b:0 "They'll never get us in this frozen land!"
 
+rusfor.1476.t:0 "An Offer From Savinkov"
+rusfor.1476.d:0 "Boris Savinkov, our old ally and confederate has offered our state to become a Russian protectorate. Despite close relations between Goppers and Savinkov, a formal alliance seems like a better idea, but was it really an offer or an order?"
+rusfor.1476.a:0 "No way! [ROOT.GetName] is independent!"
+rusfor.1476.b:0 "What can we do without our old buddy?"
+
+rusfor.1477.t:0 "[FROM.GetName] Agrees!"
+rusfor.1477.d:0 "Our old friend and ally Goppers could not help himself and agreed to the Vozhd's friendly offer."
+rusfor.1477.a:0 "Splendid!"
+
+rusfor.1478.t:0 "[FROM.GetName] Wants to Stay Independent"
+rusfor.1478.d:0 "Despite our great offer, Goppers refused to join us as a region of Russia."
+rusfor.1478.a:0 "Truly ridiculous! We have to invade Latvia."
+rusfor.1478.b:0 "We should respect the choice of Latvian people."
 
 RUS_UTR_peace:0 "Russia Withdrew From Central Asia"
 
