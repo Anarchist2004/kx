@@ -768,7 +768,7 @@ RUS_soc_has_abolished_senate:0 "Senate was dissolved"
 
 ### Events possibly leading to RCW ###
 rcw.1.t:0 "Goodbye, Old Lavr"
-rcw.1.d:0 "Today, by presidential decree, the supreme commander of the Russian army, an outstanding figure of the white movement, Lavr Kornilov, was dismissed.\n\nInstead of him, a fairly young but promising brigade commander Rodion Malinovsky was appointed to the post of Supreme commander-in-chief. His appointment caused a flurry of criticism of the government, but having a like-minded person at the head of the Army only strengthened him. Soon Malinovsky appealed to the President with a demand to begin the speedy reform of the Army.\n\nAt the same time, Kornilov reacted quite sharply to his resignation and reacted even more sharply to the appointment of Malinovsky, saying that the boy hardly held a real weapon in his hands. Fearing Kornilov's uprising, we can quietly remove him... or leave it alone. Perhaps a compromise option would be to settle him in a state dacha and give certain guarantees, but it is unlikely that Kornilov will silently agree to this..."
+rcw.1.d:0 "Today, by presidential decree, the supreme commander of the Russian army, an outstanding figure of the white movement, Lavr Kornilov, was dismissed.\n\nKornilov reacted quite sharply to his resignation. Fearing Kornilov's uprising, we can quietly remove him... or leave it alone. Perhaps a compromise option would be to settle him in a state dacha and give certain guarantees, but it is unlikely that Kornilov will silently agree to this..."
 rcw.1.a:0 "Let the Cheka remove him silently..."
 rcw.1.b:0 "Try to remove him silently..."
 rcw.1.e:0 "Ignore him."
@@ -998,6 +998,17 @@ rcw.51.t:0 "[FROM.GetName] Invades Our Territory!"
 rcw.51.d:0 "We got infromation that the [FROM.GetAdjective] forces have invaded our territory! What shall we do?"
 rcw.51.a:0 "We shall fight them back!"
 rcw.51.b:0 "We cannot fight back right now..."
+
+
+rcw.55.t:0 "Seize Belgorod?"
+rcw.55.d:0 "With Russia in chaos and various forces fighting for controlling the capitals, we can push for our claims in Belgorod, our rightful claims!"
+rcw.55.a:0 "Seize Bilhorod!"
+rcw.55.b:0 "We cannot intervene now."
+
+rcw.56.t:0 "[FROM.GetName] Seized Belgorod!"
+rcw.56.d:0 "The [FROM.GetAdjective] government has used our weakness and seized what they call 'Bilhorod People's Republic'!"
+rcw.56.a:0 "We'll get to them later!"
+
 
 rcw.100.t:0 "The Second Russian Civil War"
 rcw.100.d:0 "The moment came when the quartered troops saw their enemy for the first time on that front line. Once again, the Brother stood against the brother.\n\nIt has been 15 years since the horrors, death, disease and famine of the Civil War have sunk into oblivion. But now, black clouds are setting over our homeland again. A couple of hours more-and the troops will clash in a senseless and merciless event that will surely go down in the annals of history as the Second Russian Civil War."
@@ -4106,6 +4117,9 @@ RUS_cw_ongoing_tt:0 "§VThese are difficult times§!"
  RCW_propose_unification:0 "Propose Unification with [FROM.GetName]"
  RUS_propose_ceasefire_trm:0 "Propose Ceasefire with [TRM.GetName]"
  RCW_end_cw:0 "Proclaim Victory in the Civil War"
+ RCW_kornilov_ready_for_uprising:0 "§RKornilov will rise against our government!§!"
+ RCW_denikin_ready_for_uprising:0 "§RDenikin will rise against our government!§!"
+ RCW_wrangel_ready_for_uprising:0 "§RKornilov will rise against our government!§!"
  
  RCW_republican_front:0 "Push Against [RUS.GetName]"
  RCW_rrf_front:0 "Push Against [RRF.GetName]"
