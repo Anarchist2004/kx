@@ -413,7 +413,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.03
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 				type = industrial_complex 
 				level = 2
 				}
@@ -600,19 +601,22 @@ focus_tree = {
             add_war_support = 0.04
 			add_manpower = 2000
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 				type = arms_factory    
 				level = 1
 				}
 			}
 			460 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 				type = arms_factory      
 				level = 1
 				}
 			}
 			458 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 				type = arms_factory      
 				level = 1
 				}
@@ -1090,18 +1094,21 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 				type = arms_factory 
 				level = 2
 				}
 			}			
 			460 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = arms_factory 
 				level = 2
 				}   
 			}
 			805 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = arms_factory 
 				level = 1
@@ -1471,7 +1478,8 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
@@ -1609,18 +1617,21 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
 			}			
 			460 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}   
 			}
 			805 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = industrial_complex 
 				level = 1
@@ -1907,12 +1918,14 @@ focus_tree = {
 				add_idea = NFA_french_corporatism
 			}
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
 			}			
 			460 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex 
 				level = 1
@@ -2237,18 +2250,21 @@ focus_tree = {
 			}
 			add_political_power = 30
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
 			}			
 			460 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}   
 			}
 			805 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = industrial_complex 
 				level = 1
@@ -2359,24 +2375,25 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 35
 			459 = {
-			    add_building_construction = {
+			    add_extra_state_shared_building_slots = 3
+				add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
-			}			
-			459 = {
 				add_building_construction = {
 				type = arms_factory 
 				level = 1
-				}   
-			}
+				} 
+			}			
 			460 = {
-			    add_building_construction = {
+               add_extra_state_shared_building_slots = 2			   
+			   add_building_construction = {
 				type = industrial_complex 
 				level = 1
 				}
 			}			
 			460 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = arms_factory 
 				level = 1
@@ -2653,6 +2670,9 @@ focus_tree = {
 			add_popularity = { ideology = social_liberal popularity = -0.02 }
 			add_popularity = { ideology = market_liberal popularity = -0.02 }
 			add_popularity = { ideology = national_populist popularity = 0.02 }
+			remove_ideas = {
+				NFA_protests_2
+			}
 		}
 	}
 	focus = {
@@ -3628,6 +3648,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			army_experience = 20
+			remove_ideas = {
+				NFA_protests_2
+			}
 			random_owned_state = {
 				limit = {
 					is_controlled_by = NFA
@@ -4648,8 +4671,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = NFA_cdg_plan_1
 			add_doctrine_cost_reduction = {
-				cost_reduction = 1
-				uses = 2
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
 				category = cat_mobile_warfare
 			}
 		}
@@ -4968,6 +4992,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = NFA_darlan_plan_1
 			add_doctrine_cost_reduction = {
+				name = GER_doctrine_great_war_2
 				cost_reduction = 1
 				uses = 2
 				category = cat_grand_battle_plan
@@ -6531,6 +6556,12 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = NFA_army_of_liberation
+                        hidden_effect = {
+			country_event = {
+				id = napfra.15
+				days = 15
+			}	
+			}
 		}		
 	}
 
@@ -6939,12 +6970,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-			country_event = {
-				id = napfra.15
-				days = 15
-			}	
-			}
 			if = {
 				limit = { has_completed_focus = NFA_perennial_enemy }
 				add_political_power = 70
@@ -6987,12 +7012,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-			country_event = {
-				id = napfra.15
-				days = 15
-			}	
-			}
 			swap_ideas = {
 				remove_idea = NFA_franco_german_trade
 				add_idea = NFA_peace_in_our_time
@@ -7025,12 +7044,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-			country_event = {
-				id = napfra.15
-				days = 15
-			}	
-			}
 			declare_war_on = { target = GER type = annex_everything }
 			add_manpower = 15000
 			add_command_power = 20
@@ -14811,7 +14824,17 @@ focus_tree = {
 			}
 			QUE = {
 				set_cosmetic_tag = GUA_newfrance
-				set_country_leader_ideology = maurrassism_subtype
+				create_country_leader = {
+	                                  name = "Lionel Groulx"
+	                                  picture = "gfx/leaders/QUE/Portrait_Quebec_Lionel_Groulx.png"
+	                                  expire = "1965.1.1"
+	                                  ideology = maurrassism_subtype
+                                }              
+		                set_party_name = {
+                                          ideology = national_populist
+                                          long_name = "Action Québécoise"
+                                          name = "AQ"
+                                }
 			}
 		}
 			
@@ -15323,8 +15346,6 @@ focus_tree = {
 				add_state_claim = 268
 				
 				
-			
-				set_global_flag = NFE_war_begins
 				country_event = {
 					id = nfe.26
 					days = 1
