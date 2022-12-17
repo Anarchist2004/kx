@@ -202,6 +202,18 @@ LUX_BENELUX = {
 	color = rgb { 22 101 167 }
 	color_ui = rgb { 22 101 167 }
 }
+LUX_GER = {
+	color = rgb { 112 112 112 }
+	color_ui = rgb { 90 90 90 }
+}
+LUX_GER_LARP = {
+	color = rgb { 112 112 112 }
+	color_ui = rgb { 90 90 90 }
+}
+LUX_GER_FAKE = {
+	color = rgb { 112 112 112 }
+	color_ui = rgb { 90 90 90 }
+}
 KIV_simba = {
 	color = rgb { 0 118 165 }
 	color_ui = rgb { 0 118 165 }
@@ -254,6 +266,18 @@ COG_REX_LOTHARINGIA = {
 	color = rgb { 144 0 32 }
 	color_ui = rgb { 144 0 32 }
 }
+COG_REX_CAROLINGIAN = {
+	color = rgb { 144 0 32 }
+	color_ui = rgb { 144 0 32 }
+}
+COG_REX_CAPET = {
+	color = rgb { 144 0 32 }
+	color_ui = rgb { 144 0 32 }
+}
+COG_WLL = {
+	color = rgb { 144 0 32 }
+	color_ui = rgb { 144 0 32 }
+}
 LPD_KIMBANGU_TAG = {
 	color = rgb { 3 109 61 }
 	color_ui = rgb { 3 109 61 }
@@ -290,6 +314,10 @@ COG_CONGO_MITTEL = {
 	color = rgb { 177 219 140 }
 	color_ui = rgb { 177 219 140 }
 }
+COG_UMN = {
+	color = rgb { 255 108 0 }
+	color_ui = rgb { 218 92 0 }
+}
 GAB_EQUATOR = {
 	color = rgb { 0 78 188 }
 	color_ui = rgb { 0 78 188 }
@@ -303,8 +331,8 @@ LEC_china_triad = {
 	color_ui = rgb { 229 23 15 }
 }
 SHI = {
-    color = rgb { 192 38 0 }
-    color_ui = rgb { 192 38 0 }
+	color = rgb { 192 38 0 }
+	color_ui = rgb { 192 38 0 }
 }
 TTM = {
 	color = rgb { 0 176 135 }
@@ -560,6 +588,14 @@ KAR_FIN = {
 	color = rgb { 0 87 42 }
 	color_ui = rgb { 0 87 42 }
 }
+KAR_united = {
+	color = rgb { 0 71 93 }
+	color_ui = rgb { 0 71 93 }
+}
+KAR_FIN_united = {
+	color = rgb { 0 87 42 }
+	color_ui = rgb { 0 87 42 }
+}
 KAR_FIN_mon = {
 	color = rgb { 205 212 228 }
 	color_ui = rgb { 255 255 255 }
@@ -567,6 +603,10 @@ KAR_FIN_mon = {
 KAR_SOV = {
 	color = rgb { 233 34 34 }
 	color_ui = rgb { 233 34 34 }
+}
+FIUGR = {
+	color = rgb { 77 89 161 }
+	color_ui = rgb { 77 89 161 }
 }
 KLY_SOV = {
 	color = rgb { 233 34 34 }
@@ -1197,7 +1237,63 @@ CSA_US_socialist_republic = {
 	color_ui = rgb { 87 160 255 }
 }
 
+CSA_loeb_america = {
+	color = rgb { 246 28 66 }
+	color_ui = rgb { 246 28 66 }
+}
+
+CSA_loeb_namerica = {
+	color = rgb { 246 28 66 }
+	color_ui = rgb { 246 28 66 }
+}
+
+CSA_loeb_world = {
+	color = rgb { 246 28 66 }
+	color_ui = rgb { 246 28 66 }
+}
+
+CSA_technopuppet_africa = {
+	color = rgb { 150 6 31 }
+	color_ui = rgb { 150 6 31 }
+}
+
+CSA_technopuppet_asia = {
+	color = rgb { 150 6 31 }
+	color_ui = rgb { 150 6 31 }
+}
+
+CSA_technopuppet_eurasian = {
+	color = rgb { 150 6 31 }
+	color_ui = rgb { 150 6 31 }
+}
+
+CSA_technopuppet_samerica = {
+	color = rgb { 150 6 31 }
+	color_ui = rgb { 150 6 31 }
+}
+
+CSA_technopuppet_oceania = {
+	color = rgb { 150 6 31 }
+	color_ui = rgb { 150 6 31 }
+}
+
+
 NEE_america = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+
+NEE_prohib_america = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+
+NEE_prohib_america_fun = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+
+NEE_prohib_america_fun2 = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
@@ -1602,12 +1698,12 @@ TRM_MLAD = {
 	color_ui = rgb { 233 34 34 }
 }
 TEX_catholic = {
-        color = rgb { 60 59 110 }
-        color_ui = rgb { 60 59 110 }
+		color = rgb { 60 59 110 }
+		color_ui = rgb { 60 59 110 }
 }
 TEX_MEX  = {
-        color = rgb { 60 59 110 }
-        color_ui = rgb { 60 59 110 }
+		color = rgb { 60 59 110 }
+		color_ui = rgb { 60 59 110 }
 }
 CAL_Norton_PSA = {
 	color = rgb { 20 133 237 }
@@ -2370,6 +2466,10 @@ MAL_NOR = {
 	color = rgb { 255 255 185 }
 	color_ui = rgb { 255 255 185 }
 }
+OCC_NOR = {
+	color = rgb { 170 152 169 }
+	color_ui = rgb { 170 152 169 }
+}
 SKM_HIMALAYA = {
 	color = rgb { 93 104 199 }
 	color_ui = rgb { 93 104 199 }
@@ -2422,6 +2522,14 @@ RRY = {
 RVA_TSAR = {
 	color = rgb { 255 235 120 }
 	color_ui = rgb { 255 230 50 }
+}
+BRG_MICK_UK = {
+	color = rgb { 88 166 31 }
+	color_ui = rgb { 108 204 39 }
+}
+BRG_FROG_UK = {
+	color = rgb { 75 0 130 }
+	color_ui = rgb { 75 0 130 }
 }
 BRG = {
 	color = rgb { 160 6 31 }
@@ -2623,7 +2731,7 @@ XSM_QIE = {
 	color = rgb { 176 224 230 }
 	color_ui = rgb { 176 224 230 }
 }
-GREAT_MA = {
+XSM_GREAT_MA = {
 	color = rgb { 0 107 60 }
 	color_ui = rgb { 0 107 60 }
 }
@@ -2743,6 +2851,14 @@ WLL_BURGUNDY = {
 	color = rgb { 144 0 32 }
 	color_ui = rgb { 144 0 32 }
 }
+WLL_BURGUNDY_BLACK = {
+	color = rgb { 144 0 32 }
+	color_ui = rgb { 144 0 32 }
+}
+WLL_BURGUNDY_BLACK_ALT = {
+	color = rgb { 144 0 32 }
+	color_ui = rgb { 144 0 32 }
+}
 WLL_LOTHARINGIA = {
 	color = rgb { 144 0 32 }
 	color_ui = rgb { 144 0 32 }
@@ -2758,4 +2874,24 @@ AOG_CHINA = {
 AOG_CHINA_REICH = {
 	color = rgb { 92 92 92 }
 	color_ui = rgb { 92 92 92 }
+}
+GBP_FREESTATE = {
+	color = rgb { 193 44 44 }
+	color_ui = rgb { 193 44 44 }
+}
+GBP_REPUBLIC = {
+	color = rgb { 160 6 31 }
+	color_ui = rgb { 208 12 39 }
+}
+NEE_trve_ire = {
+	color = rgb { 88 166 31 }
+	color_ui = rgb { 108 204 39 }
+}
+SCA_FAKE = {
+	color = rgb { 36 100 247 }
+	color_ui = rgb { 47 172 255 }
+}
+SCA_KALMAR = {
+	color = rgb { 36 100 247 }
+	color_ui = rgb { 47 172 255 }
 }

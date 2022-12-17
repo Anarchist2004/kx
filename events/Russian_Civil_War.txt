@@ -953,9 +953,6 @@ country_event = { #RCW
 		name = rcw.13.a
 		ai_chance = {
 			base = 40
-		}
-		random_list = {
-			70 = {
 				modifier = {
 					factor = 10000
 					AND = {
@@ -965,46 +962,12 @@ country_event = { #RCW
 						}
 					}
 				}
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						rule = RUS_RCW
-						option = RULE_OPTION_RUSSIAN_CIVIL_WAR_GUARANTEED
-					}
 				}
 				country_event = {
 					id = rcw.15
 					days = 2
 				}
 			}
-			30 = {
-				modifier = {
-					factor = 10000
-					has_game_rule = {
-						rule = RUS_RCW
-						option = RULE_OPTION_RUSSIAN_CIVIL_WAR_GUARANTEED
-					}
-				}
-				modifier = {
-					factor = 0
-					has_game_rule = {
-						rule = RUS_RCW
-						option = RULE_OPTION_RUSSIAN_CIVIL_WAR_DISABLED
-					}
-				}
-				set_country_flag = RCW_denikin_ready_for_uprising
-				custom_effect_tooltip = RCW_denikin_ready_for_uprising
-				country_event = {
-					id = rcw.15
-					days = 2
-				}
-				#country_event = {
-				#	id = rcw.14
-				#	days = 2
-				#}
-			}
-		}	
-	}
 	option = {
 		name = rcw.13.b
 		ai_chance = {
@@ -2038,18 +2001,6 @@ country_event = { #RCW
 		ai_chance = {
 			factor = 70
 		}
-		583 = {
-			add_claim_by = ALO
-		}
-		588 = {
-			add_claim_by = ALO
-		}
-		582 = {
-			add_claim_by = WHR
-		}
-		590 = {
-			add_claim_by = WHR
-		}
 		588 = {
 			owner = {
 				country_event = {
@@ -2070,44 +2021,6 @@ country_event = { #RCW
 				}
 			}
 		}
-		if = {
-			limit = {
-				country_exists = SOV
-				588 = { NOT = { is_owned_by = SOV } }
-			}
-			SOV = {
-				country_event = {
-					id = rcw.33
-					days = 2
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = SIB
-				SIB = { is_subject = no }
-				588 = { NOT = { is_owned_by = SIB } }
-			}
-			SIB = {
-				country_event = {
-					id = rcw.33
-					days = 2
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = TRM
-				TRM = { is_subject = no }
-				588 = { NOT = { is_owned_by = TRM } }
-			}
-			TRM = {
-				country_event = {
-					id = rcw.33
-					days = 2
-				}
-			}
-		}
 		every_state = {
 			limit = {
 				OR = {
@@ -2117,7 +2030,8 @@ country_event = { #RCW
 					state = 590
 				}
 			}
-			ALO = { transfer_state = PREV }
+			transfer_state_to = ALO
+			add_claim_by = ALO
 		}
 	}
 	option = {
@@ -2293,99 +2207,124 @@ country_event = { #RCW
 				factor = 0.5
 				has_authoritarian_government = no
 			}
+			modifier = {
+				factor = 1000
+				OR = {
+					has_game_rule = {
+						rule = KAR_REBELLION
+						option = RULE_OPTION_KAR_GUARANTEED_RI
+					}
+					has_game_rule = {
+						rule = KAR_REBELLION
+						option = RULE_OPTION_KAR_GUARANTEED_RA
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = KAR_REBELLION
+					option = RULE_OPTION_KAR_DISABLED
+				}
+			}
 		}
-		hidden_effect = {
-			215 = {
-				add_core_of = KAR
-				transfer_state_to = KAR
-			}
-			216 = {	add_core_of = KAR }
-			146 = { add_claim_by = KAR }			
-			KAR = {
-				division_template = {
-					name = "Karjalan rykmentti" # 
-					division_names_group = FIN_INF_01
+		215 = {
+			add_core_of = KAR
+			transfer_state_to = KAR
+		}
+		216 = {	add_core_of = KAR }
+		146 = { add_claim_by = KAR }			
+		1274 = { add_claim_by = KAR }			
+		KAR = {
+			transfer_technology_without_doctrines = yes
+			division_template = {
+				name = "Karjalan rykmentti" # 
+				division_names_group = FIN_INF_01
 
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-					support = {
-						recon = { x = 0 y = 0 }
-					}
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
 				}
-				division_template = {
-					name = "Metsäsissit" # Miliztruppe
-					division_names_group = FIN_MIL_01
-
-					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-						militia = { x = 1 y = 0 }
-						militia = { x = 1 y = 1 }
-						militia = { x = 1 y = 2 }
-						militia = { x = 2 y = 0 }
-						militia = { x = 2 y = 1 }
-						militia = { x = 2 y = 2 }
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Karjalan 1. rykmentti\" division_template = \"Karjalan rykmentti\" start_experience_factor = 0.6"
-						owner = KAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.4"
-						owner = KAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.3"
-						owner = KAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.2"
-						owner = KAR
-					}
+				support = {
+					recon = { x = 0 y = 0 }
 				}
 			}
-			every_other_country = {
-				limit = {
-					tag = RUS
-					has_authoritarian_government = no
+			division_template = {
+				name = "Metsäsissit" # Miliztruppe
+				division_names_group = FIN_MIL_01
+
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
 				}
-				country_event = {
-					id = rcw.38
-					days = 2
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Karjalan 1. rykmentti\" division_template = \"Karjalan rykmentti\" start_experience_factor = 0.6"
+					owner = KAR
 				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.4"
+					owner = KAR
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.3"
+					owner = KAR
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Metsäsissit\" division_template = \"Metsäsissit\" start_experience_factor = 0.2"
+					owner = KAR
+				}
+			}
+			country_event = {
+				id = kar.100
+				days = 1
+			}
+		}
+		every_other_country = {
+			limit = {
+				tag = RUS
+				has_authoritarian_government = no
+			}
+			country_event = {
+				id = rcw.38
+				days = 5
 			}
 		}
 	}
 	option = {
 		name = rusd.31.c
 		trigger = { is_ai = no }
-		hidden_effect = {
 			215 = {
 				add_core_of = KAR
 				transfer_state_to = KAR
 			}
 			216 = {	add_core_of = KAR }
 			146 = { add_claim_by = KAR }			
+		1274 = { add_claim_by = KAR }			
 			KAR = {
+			transfer_technology_without_doctrines = yes
 				division_template = {
 					name = "Karjalan rykmentti" # 
 					division_names_group = FIN_INF_01
@@ -2446,6 +2385,10 @@ country_event = { #RCW
 						owner = KAR
 					}
 				}
+			country_event = {
+				id = kar.100
+				days = 1
+			}
 			}
 			every_other_country = {
 				limit = {
@@ -2454,8 +2397,7 @@ country_event = { #RCW
 				}
 				country_event = {
 					id = rcw.38
-					days = 2
-				}
+				days = 5
 			}
 		}
 		KAR = { change_tag_from = ROOT }
@@ -2472,6 +2414,26 @@ country_event = { #RCW
 				factor = 0.5
 				has_authoritarian_government = yes
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = KAR_REBELLION
+						option = RULE_OPTION_KAR_GUARANTEED_RI
+					}
+					has_game_rule = {
+						rule = KAR_REBELLION
+						option = RULE_OPTION_KAR_GUARANTEED_RA
+					}
+				}
+			}
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = KAR_REBELLION
+					option = RULE_OPTION_KAR_DISABLED
+				}
+			}
 		}
 		add_stability = -0.025
 	}
@@ -2487,12 +2449,19 @@ country_event = { #RCW
 	option = {
 		name = rcw.38.a
 		ai_chance = {
-			base = 70
+			base = 85
 			modifier = {
 				factor = 0
 				OR = {
 					FIN = { is_in_faction = yes }
 					FIN = { has_guarantor = yes }
+				}
+			}
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = KAR_REBELLION
+					option = RULE_OPTION_KAR_GUARANTEED_RI
 				}
 			}
 		}
@@ -2512,7 +2481,14 @@ country_event = { #RCW
 	option = {
 		name = rcw.38.b
 		ai_chance = {
-			base = 30
+			base = 15
+			modifier = {
+				factor = 1000
+				has_game_rule = {
+					rule = KAR_REBELLION
+					option = RULE_OPTION_KAR_GUARANTEED_RA
+				}
+			}
 		}
 		add_political_power = -15
 		add_stability = -0.05
@@ -2737,7 +2713,6 @@ country_event = { #RCW
 				set_nationality = ROOT
 			}
 		}
-		add_ideas = RCW_minor
 		if = {
 			limit = {
 				country_exists = RUS
@@ -2828,7 +2803,6 @@ country_event = { #RCW
 		ai_chance = {
 			factor = 80
 		}
-		add_ideas = RCW_minor
 		give_military_access = RRF
 		RRF = { give_military_access = ROOT }
 		diplomatic_relation = {
@@ -3528,7 +3502,7 @@ country_event = { #RCW
 				desc = "POLITICS_NIKOLAI_BUKHARIN_DESC"
 				picture = "gfx/leaders/RUS/Portrait_RUS_Nikolay_Bukharin.png"
 				expire = "1965.1.1"
-				ideology = market_socialist_subtype
+				ideology = bukharinist_subtype
 				traits = {}
 			}
 			set_cosmetic_tag = SOV
@@ -3540,6 +3514,7 @@ country_event = { #RCW
 			remove_ideas = rus_divided_marine
 			remove_ideas = rus_brest_litovsk
 			remove_ideas = rus_memories_of_rev
+			RUS_remove_riga_accords = yes		
 			every_country = {
 				limit = {
 					OR = {
@@ -3668,16 +3643,14 @@ country_event = { #RCW
 				}
 			}
 		}
-		effect_tooltip = {
 			random_unit_leader = {
-				limit = { has_id = 449 }
+			limit = { has_id = 447 }
+			set_leader_portrait = GFX_Portrait_SOV_Aleksandr_Yegorov
 				promote_leader = yes
 			}
-		}
 		hidden_effect = {
 			random_unit_leader = {
 				limit = { has_id = 449 }	
-				promote_leader = yes
 				set_leader_portrait = GFX_Portrait_RUS_Gregory_Zhukov_General
 				remove_unit_leader_trait = hidden_sympathies
 				add_unit_leader_trait = inspirational_leader
@@ -3699,6 +3672,7 @@ country_event = { #RCW
 			remove_ideas = rus_divided_marine
 			remove_ideas = rus_brest_litovsk
 			remove_ideas = rus_memories_of_rev
+			RUS_remove_riga_accords = yes		
 			every_country = {
 				limit = {
 					OR = {
@@ -3727,8 +3701,8 @@ country_event = { #RCW
 		}
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = RUS_zhukov_party_long
-			name = RUS_zhukov_party
+			long_name = RUS_yegorov_party_long
+			name = RUS_yegorov_party
 		}
 		add_political_power = 100
 		add_ideas = {
@@ -3738,14 +3712,14 @@ country_event = { #RCW
 		}
 		set_country_flag = SOV_must_deal_with_opposition
 		add_ideas = {
-			RUS_Georgiy_K_Zhukov_hog_tot
+			RUS_Aleksandr_I_Yegorov_hog_rso
 			RUS_Georgiy_M_Malenkov_for_rso 
 			RUS_Sergey_M_Kirov_eco_tot
 			RUS_Georgiy_M_Malenkov_sec_rso
 		}
 		create_country_leader = {
-			name = "Georgy Zhukov"
-			picture = "gfx/leaders/RUS/Portrait_RUS_Gregory_Zhukov.png"
+			name = "Aleksandr Yegorov"
+			picture = "gfx/leaders/RUS/Portrait_SOV_Aleksandr_Yegorov.png"
 			expire = "1965.1.1"
 			ideology = radsoc_red_junta_subtype
 			traits = {}
@@ -3819,6 +3793,7 @@ country_event = { #RCW
 			limit = {
 				OR = {
 					region = 137
+					region = 244
 					region = 135
 				}
 			}
@@ -3875,7 +3850,7 @@ country_event = { #RCW
 			modifier = {
 				factor = 5
 				has_country_leader = {
-					name = "Georgy Zhukov"
+					name = "Aleksandr Yegorov"
 					ruling_only = yes
 				}
 			}
@@ -3962,6 +3937,7 @@ country_event = { #RCW
 			limit = {
 				OR = {
 					region = 137
+					region = 244
 					region = 135
 				}
 			}
@@ -4047,7 +4023,7 @@ country_event = { #RCW
 			limit = {
 				NOT = {
 					has_country_leader = {
-						name = "Georgy Zhukov"
+						name = "Aleksandr Yegorov"
 						ruling_only = yes
 					}
 				}
@@ -4068,6 +4044,7 @@ country_event = { #RCW
 country_event = { #RCW
 	id = rcw.2030
 	immediate = { log = "[GetDateText]: [Root.GetName]: event rcw.2030" }
+	immediate = { set_global_flag = RCW_preparations }
 	title = rcw.2030.t
 	desc = rcw.2030.d
 	fire_only_once = yes
@@ -4076,7 +4053,7 @@ country_event = { #RCW
 	option = {
 		name = rcw.2030.a
 		ai_chance = {
-			base = 10
+			base = 0
 		}
 		add_stability = -0.2
 		every_owned_state = {
@@ -4100,7 +4077,7 @@ country_event = { #RCW
 		}
 		add_popularity = {
 			ideology = national_populist
-			popularity = 0.25
+			popularity = 0.1
 		}
 		if = {
 			limit = {
@@ -4128,7 +4105,7 @@ country_event = { #RCW
 	option = {
 		name = rcw.2030.b
 		ai_chance = {
-			base = 90
+			base = 100
 		}
 		country_event = {
 			id = rcw.36
@@ -4289,7 +4266,8 @@ country_event = { #RCW
 				limit = {
 					has_trait = hidden_sympathies
 				}
-				retire = yes
+				set_unit_leader_flag = SOV_leader
+				set_nationality = XXA
 			}
 		}
 		hidden_effect = {
@@ -4357,6 +4335,12 @@ country_event = { #RCW
 						ruling_party = syndicalist
 					}
 					hidden_effect = {
+						NSW = {
+							every_unit_leader = {
+								limit = { has_unit_leader_flag = SOV_leader }
+								set_nationality = RUS
+							}
+						}
 						country_event = {
 							id = russia.1923
 							days = 15
@@ -4371,7 +4355,7 @@ country_event = { #RCW
 							desc = "POLITICS_NIKOLAI_BUKHARIN_DESC"
 							picture = "gfx/leaders/RUS/Portrait_RUS_Nikolay_Bukharin.png"
 							expire = "1965.1.1"
-							ideology = market_socialist_subtype
+							ideology = bukharinist_subtype
 							traits = {}
 						}
 						set_cosmetic_tag = SOV
@@ -4383,6 +4367,7 @@ country_event = { #RCW
 						remove_ideas = rus_divided_marine
 						remove_ideas = rus_brest_litovsk
 						remove_ideas = rus_memories_of_rev
+						RUS_remove_riga_accords = yes		
 						every_country = {
 							limit = {
 								OR = {
@@ -4503,10 +4488,21 @@ country_event = { #RCW
 			factor = 35
 		}
 		setup_rcw_workers_initial = yes
+		random_unit_leader = {
+			limit = { has_id = 447 }
+			set_leader_portrait = GFX_Portrait_SOV_Aleksandr_Yegorov
+			promote_leader = yes
+		}
 		hidden_effect = {
 			random_unit_leader = {
 				limit = { has_id = 449 }
-				retire = yes
+				set_leader_portrait = GFX_Portrait_RUS_Gregory_Zhukov_General
+				remove_unit_leader_trait = hidden_sympathies
+				add_unit_leader_trait = inspirational_leader
+				add_unit_leader_trait = offensive_doctrine
+				add_unit_leader_trait = war_hero
+				add_unit_leader_trait = politically_connected
+				add_skill_level = 2
 			}
 			country_event = {
 				id = russia.1923
@@ -4521,6 +4517,7 @@ country_event = { #RCW
 			remove_ideas = rus_divided_marine
 			remove_ideas = rus_brest_litovsk
 			remove_ideas = rus_memories_of_rev
+			RUS_remove_riga_accords = yes		
 			every_country = {
 				limit = {
 					OR = {
@@ -4546,22 +4543,11 @@ country_event = { #RCW
 					target = SOV
 				}
 			}
-			create_field_marshal = {
-				name = "Georgy Zhukov"
-				id = 457
-				portrait_path = "gfx/leaders/RUS/Portrait_RUS_Gregory_Zhukov.png"
-				traits = { inspirational_leader offensive_doctrine war_hero politically_connected }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 4
-				logistics_skill = 3
-			}
 		}
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = RUS_zhukov_party_long
-			name = RUS_zhukov_party
+			long_name = RUS_yegorov_party_long
+			name = RUS_yegorov_party
 		}
 		add_political_power = 100
 		add_ideas = {
@@ -4571,14 +4557,14 @@ country_event = { #RCW
 		}
 		set_country_flag = SOV_must_deal_with_opposition
 		add_ideas = {
-			RUS_Georgiy_K_Zhukov_hog_tot
+			RUS_Aleksandr_I_Yegorov_hog_rso
 			RUS_Georgiy_M_Malenkov_for_rso 
 			RUS_Sergey_M_Kirov_eco_tot
 			RUS_Georgiy_M_Malenkov_sec_rso
 		}
 		create_country_leader = {
-			name = "Georgy Zhukov"
-			picture = "gfx/leaders/RUS/Portrait_RUS_Gregory_Zhukov.png"
+			name = "Aleksandr Yegorov"
+			picture = "gfx/leaders/RUS/Portrait_SOV_Aleksandr_Yegorov.png"
 			expire = "1965.1.1"
 			ideology = radsoc_red_junta_subtype
 			traits = {}
@@ -4636,6 +4622,7 @@ country_event = { #RCW
 country_event = { #RCW
 	id = rcw.210
 	immediate = { log = "[GetDateText]: [Root.GetName]: event rcw.210" }
+	immediate = { set_global_flag = RCW_preparations }
 	title = rcw.210.t
 	desc = rcw.210.d
 	fire_only_once = yes
@@ -4660,6 +4647,7 @@ country_event = { #RCW
 			limit = {
 				OR = {
 					region = 137
+					region = 244
 					region = 135
 				}
 			}
@@ -5042,7 +5030,7 @@ country_event = { #RCW
 					limit = {
 						NOT = {
 							has_country_leader = {
-								name = "Georgy Zhukov"
+								name = "Aleksandr Yegorov"
 								ruling_only = yes
 							}
 						}
@@ -5054,7 +5042,7 @@ country_event = { #RCW
 				}
 				else = {
 					country_event = {
-						id = rcw.204
+						id = rcw.36
 						hours = 3
 					}
 				}
@@ -5080,6 +5068,25 @@ country_event = { #RCW
 		set_global_flag = RRF_RVA_ceasefire
 		set_global_flag = RRF_will_not_spawn
 		hidden_effect = {
+			if = {
+				limit = { country_exists = RRF }
+				RRF = {
+					every_owned_state = {
+						transfer_state_to = RVA
+						add_core_of = RVA
+					}
+					every_unit_leader = {
+						set_nationality = RVA
+					}
+				}
+				RVA = {
+					annex_country = {
+						target = RRF
+						transfer_troops = yes
+					}
+				}
+			}
+			else = {
 			event_target:soviet_russia = {
 				every_state = {
 					limit = {
@@ -5090,6 +5097,7 @@ country_event = { #RCW
 					PREV = { add_state_claim = THIS }
 					add_core_of = RVA
 				}
+				}		
 			}
 			country_event = {
 				id = rcw.219

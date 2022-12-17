@@ -1187,6 +1187,7 @@ focus_tree = {
 		prerequisite = {
 			focus = WHR_bolshevik
 			focus = WHR_monarchobol
+			focus = WHR_BPSR
 		}
 		available = {
 			NOT = {
@@ -3119,16 +3120,16 @@ focus = {
 				remove_idea = WHR_partisan_warfare_idea1
 				add_idea = WHR_partisan_warfare_idea2
 			}
-                        create_corps_commander = {
-	                     name = "Michał Vituška"
-	                     portrait_path = "gfx/leaders/WHR/Portrait_WHR_Michal_Vituska.png"
-	                     traits = { guerilla_fighter }
-	                     skill = 2
-	                     attack_skill = 3
-	                     defense_skill = 1
-	                     planning_skill = 2
-	                     logistics_skill = 2
-                        }
+						create_corps_commander = {
+						name = "Michał Vituška"
+						portrait_path = "gfx/leaders/WHR/Portrait_WHR_Michal_Vituska.png"
+						traits = { guerilla_fighter }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+						}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -3303,7 +3304,7 @@ focus = {
 	
 	focus = {
 		id = WHR_bombers
-		icon = MON_bomber_focus
+		icon = GFX_MON_bomber_focus
 		relative_position_id = WHR_air_force
 		x = 1
 		y = 2
@@ -3387,7 +3388,7 @@ focus = {
 	
 	focus = {
 		id = WHR_air_training
-		icon = MON_air_doctrines_I
+		icon = GFX_MON_air_doctrines_I
 		relative_position_id = WHR_air_force
 		x = 3
 		y = 1
@@ -3487,7 +3488,7 @@ focus = {
 
 	focus = {
 		id = WHR_repair_facility
-		icon = MON_improve_airbases_in_mongolia
+		icon = GFX_MON_improve_airbases_in_mongolia
 		relative_position_id = WHR_radar
 		x = -2
 		y = 0
@@ -5480,6 +5481,7 @@ focus = {
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_New_Populist_Government"
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
@@ -5865,6 +5867,7 @@ focus = {
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WHR_The_Countercoup"
+			custom_effect_tooltip = unlock_focuses
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}

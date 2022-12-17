@@ -220,17 +220,17 @@ country_event = { # What does Eufemio do?
 		}
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:syndicalist }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = syn_will_join_coalition_tt
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:radical_socialist }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = radsoc_will_join_coalition_tt
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:social_democrat }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = socdem_will_join_coalition_tt
 		hidden_effect = {
@@ -567,17 +567,17 @@ country_event = { # Villa Attempts Counter Coup
 		clr_country_flag = MEX_calles_has_power
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:syndicalist }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = syn_will_join_coalition_tt
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:radical_socialist }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = radsoc_will_join_coalition_tt
 		hidden_effect = { 
 			set_temp_variable = { coalition_partner_var = token:social_democrat }
-        		add_to_coalition = yes 
+				add_to_coalition = yes 
 		}
 		custom_effect_tooltip = socdem_will_join_coalition_tt
 	}
@@ -872,7 +872,7 @@ country_event = { # Elections of 1937
 		ai_chance = {
 			factor = 25
 			modifier = {
-		    factor = 0
+			factor = 0
 				OR = {
 					has_game_rule = {
 						rule = MEX_post_assassination
@@ -923,7 +923,7 @@ country_event = { # Elections of 1937
 		ai_chance = {
 			factor = 25
 			modifier = {
-		    factor = 0
+			factor = 0
 				OR = {
 					has_game_rule = {
 						rule = MEX_post_assassination
@@ -2173,7 +2173,7 @@ country_event = { # Cristero War - victory for the Criesteros
 			desc = "POLITICS_VASCONCELOS_DESC"
 			picture = "gfx/leaders/MEX/Portrait_Mexico_Jose_Vasconcelos.png"
 			expire = "1965.1.1"
-			ideology = integralism_subtype
+			ideology = vasconcelosismo_subtype
 			traits = {}
 		}
 		set_country_flag = MEX_integralists_in_charge
@@ -3859,7 +3859,7 @@ country_event = { # Sinarquista Coup
 			desc = "POLITICS_VASCONCELOS_DESC"
 			picture = "gfx/leaders/MEX/Portrait_Mexico_Jose_Vasconcelos.png"
 			expire = "1965.1.1"
-			ideology = integralism_subtype
+			ideology = vasconcelosismo_subtype
 			traits = {}
 		}
 		set_cosmetic_tag = MEX_integralist
@@ -4246,7 +4246,7 @@ country_event = {
 				has_government = paternal_autocrat
 			}
 			create_country_leader = {
-				name = "María Josephia Sophia I"
+				name = "María I"
 				desc = "POLITICS_DONA_ITURBIDE_DESC"
 				picture = "gfx/leaders/MEX/Portrait_Mexico_Maria.png"
 				expire = "1965.1.1"
@@ -4264,7 +4264,7 @@ country_event = {
 				has_government = national_populist
 			}
 			create_country_leader = {
-				name = "María Josephia Sophia I"
+				name = "María I"
 				desc = "POLITICS_DONA_ITURBIDE_DESC"
 				picture = "gfx/leaders/MEX/Portrait_Mexico_Maria.png"
 				expire = "1965.1.1"
@@ -8528,7 +8528,7 @@ country_event = { # battle for mexico city, maria wins
 		create_field_marshal = {
 			name = "Porfirio Diaz Jr."
 			#id = 100002
-			portrait_path = "gfx/leaders/MEX/Portrait_Mexico_Porfirio_Diaz_Jr.png"
+			portrait_path = "gfx/leaders/MEX/Portrait_Mexico_Porfirio_Diaz_Ortega.png"
 			traits = { infantry_leader trickster } 
 			skill = 2
 			attack_skill = 2
@@ -9582,7 +9582,7 @@ country_event = { # Elections of 1937
 				desc = "POLITICS_KAHLO_DESC"
 				picture = "gfx/leaders/MEX/Portrait_Mexico_Frida_Kahlo.png"
 				expire = "1965.1.1"
-				ideology = syndie_mexicayotlism_subtype
+				ideology = syn_mexicayotlism_subtype
 				traits = {  }
 			}
 			create_country_leader = {
@@ -10682,7 +10682,7 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "María Josephia Sophia I"
+						name = "María I"
 						ruling_only = yes
 					}
 				}
@@ -13963,14 +13963,14 @@ country_event = { ######america said no
 
 	option = { ####sure
 		name = mexico_req.64.a
-                ai_chance = {
+				ai_chance = {
 			factor = 80
 		}
 		add_political_power = 20
 	}
 	option = { ####sure
 		name = mexico_req.64.b
-                ai_chance = {
+				ai_chance = {
 			factor = 20
 		}
 		set_country_flag = MEX_fighting_for_cession_no_acw
@@ -14058,6 +14058,7 @@ country_event = { ######do we want to crank the anglo revolt NOW?
 	picture = GFX_report_event_MEX_alamo
 
 	fire_only_once = yes
+        is_triggered_only = yes
 
 	option = { ####nah
 		name = mexico_req.66.a
@@ -14087,7 +14088,7 @@ country_event = { ######do we want to crank the anglo revolt NOW?
 		380 = {
 			add_resistance = 70
 		}
-	    377 = {
+		377 = {
 			add_resistance = 70
 		}
 		1166 = {
@@ -14953,16 +14954,16 @@ country_event = { # Ejido speeding up
 		name = mexico.249.a
 		increase_ruling_party_popularity_by_2 = yes
 		random_owned_controlled_state = {
-                	add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 3
 		}
 		random_owned_controlled_state = {
-                	add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 1
 		}
 		random_owned_controlled_state = {
-                	add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 1
 		}
 		random_owned_controlled_state = {
-                	add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 1
 		}
 	}
 }
@@ -15020,7 +15021,7 @@ country_event = { # zapta's bro gets shitfaced, funny enuses
 
 	option = { # a
 		name = mexico.252.a
-		add_political_power -25
+		add_political_power = -25
 		random_unit_leader = {
 			limit = {
 				has_id = 94731
@@ -16522,6 +16523,45 @@ country_event = { # Forgotten Revolutionaries
 		name = mexico.296.a
 		increase_ruling_party_popularity_by_2 = yes
 		add_war_support = 0.02
+	}
+}
+
+country_event = { # Mexican Maurras Mexican Maurras
+	id = mexico.297
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mexico.297"}
+	title = mexico.297.t
+	desc = mexico.297.d
+	picture = GFX_report_event_NFA_event_AFFlavorMaurras
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government = national_populist
+	}
+	
+	option = { # give funds
+		name = mexico.297.a
+		increase_ruling_party_popularity_by_2 = yes
+		add_political_power = 10
+		add_command_power = 5
+	}
+	
+	option = { # ministers
+		name = mexico.297.b
+		increase_ruling_party_popularity_by_2 = yes
+		add_political_power = 25
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = MEX_Acevedo_Jesus_for_npo
+	}
+	
+	option = { # maurassian mexico real son
+		name = mexico.297.c
+		decrease_ruling_party_popularity_by_3 = yes
+		add_stability = -0.03
+		add_political_power = 125
+		set_country_leader_ideology = maurrassism_subtype
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = MEX_Acevedo_Jesus_for_npo
 	}
 }
 

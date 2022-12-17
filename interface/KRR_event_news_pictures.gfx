@@ -3,11 +3,11 @@ spriteTypes = {
 	# TRM
 	spriteType = {
 		name = "GFX_news_event_TRM_kolchak"
-		texturefile = "gfx/event_news_picture/Europe/news_event_TRM_kolchak.png"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_TRM_kolchak.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_TRM_new_russia"
-		texturefile = "gfx/event_news_picture/Europe/news_event_TRM_new_russia.png"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_TRM_new_russia.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_SOV_world_revolution"
@@ -268,6 +268,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_russia_romanov_yusupov"
 		texturefile = "gfx/event_pictures/Europe/Russia/GFX_event_russia_romanov_yusupov.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_RUS_rakhmaninov"
+		texturefile = "gfx/event_pictures/Europe/Russia/GFX_report_event_RUS_rakhmaninov.png"
 	}
 	spriteType = {
 		name = "GFX_event_russia_shulgin"
