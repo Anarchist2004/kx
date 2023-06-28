@@ -200,14 +200,21 @@ BAT = {
 RUS = {
 	small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
 				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
 				GFX_RUS_fighter1_medium
 				GFX_RUS_fighter2_medium
 				GFX_RUS_fighter3_medium
-				GFX_RUS_CAS1_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
 				GFX_RUS_CAS2_medium
 				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
 			}
 			models = {
 				RUS_light_plane_entity
@@ -216,13 +223,21 @@ RUS = {
 	}
 	cv_small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
 				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
 				GFX_RUS_fighter1_medium
 				GFX_RUS_fighter2_medium
 				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
 				GFX_RUS_cv_CAS1_medium
-				GFX_RUS_cv_CAS2_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
 			}
 			models = {
 				RUS_light_plane_entity
@@ -231,21 +246,18 @@ RUS = {
 	}
 	medium_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
-				GFX_RUS_naval_bomber1_medium
-				GFX_RUS_naval_bomber2_medium
-				GFX_RUS_naval_bomber3_medium
 				GFX_RUS_early_bomber_medium
 				GFX_RUS_tactical_bomber1_medium
 				GFX_RUS_tactical_bomber2_medium
 				GFX_RUS_tactical_bomber3_medium
-				GFX_RUS_heavy_fighter1_medium
-				GFX_RUS_heavy_fighter2_medium
-				GFX_RUS_heavy_fighter3_medium
-				GFX_RUS_jet_fighter1_medium
-				GFX_RUS_jet_fighter2_medium
 				GFX_RUS_jet_tactical_bomber1_medium
 				GFX_RUS_jet_tactical_bomber2_medium
+				GFX_RUS_heavy_fighter1_medium
+				"gfx/interface/technologies/Russia/RUS_heavy_fighter_1_ALT.png"
+				GFX_RUS_heavy_fighter2_medium
+				GFX_RUS_heavy_fighter3_medium
 				GFX_RUS_scout_plane1_medium
 				GFX_RUS_scout_plane2_medium
 			}
@@ -256,11 +268,98 @@ RUS = {
 	}
 	large_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
 				GFX_RUS_strategic_bomber1_medium
 				GFX_RUS_strategic_bomber2_medium
 				GFX_RUS_strategic_bomber3_medium
 				GFX_RUS_jet_strategic_bomber1_medium
+				GFX_RUS_transport_plane_equipment_medium
+			}
+			models = {
+				RUS_heavy_plane_entity
+			}
+		}
+	}
+}
+DKB = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_bomber_medium
+				GFX_RUS_tactical_bomber1_medium
+				GFX_RUS_tactical_bomber2_medium
+				GFX_RUS_tactical_bomber3_medium
+				GFX_RUS_jet_tactical_bomber1_medium
+				GFX_RUS_jet_tactical_bomber2_medium
+				GFX_RUS_heavy_fighter1_medium
+				"gfx/interface/technologies/Russia/RUS_heavy_fighter_1_ALT.png"
+				GFX_RUS_heavy_fighter2_medium
+				GFX_RUS_heavy_fighter3_medium
+				GFX_RUS_scout_plane1_medium
+				GFX_RUS_scout_plane2_medium
+			}
+			models = {
+				RUS_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_strategic_bomber1_medium
+				GFX_RUS_strategic_bomber2_medium
+				GFX_RUS_strategic_bomber3_medium
+				GFX_RUS_jet_strategic_bomber1_medium
+				GFX_RUS_transport_plane_equipment_medium
 			}
 			models = {
 				RUS_heavy_plane_entity
@@ -674,12 +773,18 @@ CAN = {
 		pool = {
 			icons = {
 				GFX_CAN_early_fighter_medium
+				"gfx/interface/technologies/Canada/CAN_early_fighter_alt.png"
 				GFX_CAN_fighter1_medium
 				GFX_CAN_fighter2_medium
 				GFX_CAN_fighter3_medium
+				GFX_CAN_jet_fighter1_medium
+				GFX_CAN_jet_fighter2_medium
 				GFX_CAN_CAS1_medium
 				GFX_CAN_CAS2_medium
 				GFX_CAN_CAS3_medium
+				GFX_CAN_naval_bomber1_medium
+				GFX_CAN_naval_bomber2_medium
+				GFX_CAN_naval_bomber3_medium
 			}
 			models = {
 				CAN_light_plane_entity
@@ -690,11 +795,18 @@ CAN = {
 		pool = {
 			icons = {
 				GFX_CAN_early_fighter_medium
+				"gfx/interface/technologies/Canada/CAN_early_fighter_alt.png"
 				GFX_CAN_fighter1_medium
 				GFX_CAN_fighter2_medium
 				GFX_CAN_fighter3_medium
+				GFX_CAN_jet_fighter1_medium
+				GFX_CAN_jet_fighter2_medium
 				GFX_CAN_CAS1_medium
 				GFX_CAN_CAS2_medium
+				GFX_CAN_CAS3_medium
+				GFX_CAN_naval_bomber1_medium
+				GFX_CAN_naval_bomber2_medium
+				GFX_CAN_naval_bomber3_medium
 			}
 			models = {
 				CAN_light_plane_entity
@@ -704,20 +816,15 @@ CAN = {
 	medium_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_CAN_naval_bomber1_medium
-				GFX_CAN_naval_bomber2_medium
-				GFX_CAN_naval_bomber3_medium
 				GFX_CAN_early_bomber_medium
 				GFX_CAN_tactical_bomber1_medium
 				GFX_CAN_tactical_bomber2_medium
 				GFX_CAN_tactical_bomber3_medium
+				GFX_CAN_jet_tactical_bomber1_medium
+				GFX_CAN_jet_tactical_bomber2_medium
 				GFX_CAN_heavy_fighter1_medium
 				GFX_CAN_heavy_fighter2_medium
 				GFX_CAN_heavy_fighter3_medium
-				GFX_CAN_jet_fighter1_medium
-				GFX_CAN_jet_fighter2_medium
-				GFX_CAN_jet_tactical_bomber1_medium
-				GFX_CAN_jet_tactical_bomber2_medium
 			}
 			models = {
 				CAN_medium_plane_entity
@@ -730,6 +837,7 @@ CAN = {
 				GFX_CAN_strategic_bomber1_medium
 				GFX_CAN_strategic_bomber2_medium
 				GFX_CAN_strategic_bomber3_medium
+				GFX_CAN_jet_strategic_bomber1_medium
 			}
 			models = {
 				CAN_heavy_plane_entity
@@ -1351,13 +1459,19 @@ GBR = {
 	small_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_GBR_early_fighter_medium
-				GFX_GBR_fighter1_medium
-				GFX_GBR_fighter2_medium
-				GFX_GBR_fighter3_medium
-				GFX_GBR_CAS1_medium
-				GFX_GBR_CAS2_medium
-				GFX_GBR_CAS3_medium
+				GFX_CAN_early_fighter_medium
+				"gfx/interface/technologies/Canada/CAN_early_fighter_alt.png"
+				GFX_CAN_fighter1_medium
+				GFX_CAN_fighter2_medium
+				GFX_CAN_fighter3_medium
+				GFX_CAN_jet_fighter1_medium
+				GFX_CAN_jet_fighter2_medium
+				GFX_CAN_CAS1_medium
+				GFX_CAN_CAS2_medium
+				GFX_CAN_CAS3_medium
+				GFX_CAN_naval_bomber1_medium
+				GFX_CAN_naval_bomber2_medium
+				GFX_CAN_naval_bomber3_medium
 			}
 			models = {
 				ENG_light_plane_entity
@@ -1367,12 +1481,19 @@ GBR = {
 	cv_small_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_GBR_early_fighter_medium
-				GFX_GBR_fighter1_medium
-				GFX_GBR_fighter2_medium
-				GFX_GBR_fighter3_medium
-				GFX_GBR_CAS1_medium
-				GFX_GBR_CAS2_medium
+				GFX_CAN_early_fighter_medium
+				"gfx/interface/technologies/Canada/CAN_early_fighter_alt.png"
+				GFX_CAN_fighter1_medium
+				GFX_CAN_fighter2_medium
+				GFX_CAN_fighter3_medium
+				GFX_CAN_jet_fighter1_medium
+				GFX_CAN_jet_fighter2_medium
+				GFX_CAN_CAS1_medium
+				GFX_CAN_CAS2_medium
+				GFX_CAN_CAS3_medium
+				GFX_CAN_naval_bomber1_medium
+				GFX_CAN_naval_bomber2_medium
+				GFX_CAN_naval_bomber3_medium
 			}
 			models = {
 				ENG_light_plane_entity
@@ -1382,20 +1503,15 @@ GBR = {
 	medium_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_GBR_naval_bomber1_medium
-				GFX_GBR_naval_bomber2_medium
-				GFX_GBR_naval_bomber3_medium
-				GFX_GBR_early_bomber_medium
-				GFX_GBR_tactical_bomber1_medium
-				GFX_GBR_tactical_bomber2_medium
-				GFX_GBR_tactical_bomber3_medium
-				GFX_GBR_heavy_fighter1_medium
-				GFX_GBR_heavy_fighter2_medium
-				GFX_GBR_heavy_fighter3_medium
-				GFX_GBR_jet_fighter1_medium
-				GFX_GBR_jet_fighter2_medium
-				GFX_GBR_jet_tactical_bomber1_medium
-				GFX_GBR_jet_tactical_bomber2_medium
+				GFX_CAN_early_bomber_medium
+				GFX_CAN_tactical_bomber1_medium
+				GFX_CAN_tactical_bomber2_medium
+				GFX_CAN_tactical_bomber3_medium
+				GFX_CAN_jet_tactical_bomber1_medium
+				GFX_CAN_jet_tactical_bomber2_medium
+				GFX_CAN_heavy_fighter1_medium
+				GFX_CAN_heavy_fighter2_medium
+				GFX_CAN_heavy_fighter3_medium
 			}
 			models = {
 				ENG_medium_plane_entity
@@ -1405,9 +1521,10 @@ GBR = {
 	large_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_GBR_strategic_bomber1_medium
-				GFX_GBR_strategic_bomber2_medium
-				GFX_GBR_strategic_bomber3_medium
+				GFX_CAN_strategic_bomber1_medium
+				GFX_CAN_strategic_bomber2_medium
+				GFX_CAN_strategic_bomber3_medium
+				GFX_CAN_jet_strategic_bomber1_medium
 			}
 			models = {
 				ENG_heavy_plane_entity
@@ -1415,6 +1532,79 @@ GBR = {
 		}
 	}
 }
+GEA = {
+	small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_GEA_early_fighter_medium
+				GFX_GEA_fighter1_medium
+				GFX_GEA_fighter2_medium
+				GFX_GEA_fighter3_medium
+				GFX_GEA_jet_fighter1_medium
+				GFX_GEA_jet_fighter2_medium
+				GFX_GEA_CAS1_medium
+				GFX_GEA_CAS2_medium
+				GFX_GEA_CAS3_medium
+			}
+			models = {
+				GER_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_GEA_early_fighter_medium
+				GFX_GEA_fighter1_medium
+				GFX_GEA_fighter2_medium
+				GFX_GEA_fighter3_medium
+				GFX_GEA_jet_fighter1_medium
+				GFX_GEA_jet_fighter2_medium
+				GFX_GEA_CAS1_medium
+				GFX_GEA_CAS2_medium
+				GFX_GEA_CAS3_medium
+			}
+			models = {
+				GER_light_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_GEA_early_bomber_medium
+				GFX_GEA_tactical_bomber1_medium
+				GFX_GEA_tactical_bomber2_medium
+				GFX_GEA_tactical_bomber3_medium
+				GFX_GEA_jet_tactical_bomber1_medium
+				GFX_GEA_jet_tactical_bomber2_medium
+				GFX_GEA_scout_plane1_medium
+				GFX_GEA_scout_plane2_medium
+				GFX_GEA_naval_bomber1_medium
+				GFX_GEA_naval_bomber2_medium
+				GFX_GEA_naval_bomber3_medium
+			}
+			models = {
+				GER_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_GEA_strategic_bomber1_medium
+				GFX_GEA_strategic_bomber2_medium
+				GFX_GEA_strategic_bomber3_medium
+				GFX_GEA_jet_strategic_bomber1_medium
+			}
+			models = {
+				GER_heavy_plane_entity
+			}
+		}
+	}
+	
+}
+
 GRE = {
 	small_plane_airframe = {
 		pool = {
@@ -2014,9 +2204,14 @@ NEE = {
 				GFX_NEE_fighter1_medium
 				GFX_NEE_fighter2_medium
 				GFX_NEE_fighter3_medium
+				GFX_NEE_jet_fighter1_medium
+				GFX_NEE_jet_fighter2_medium
 				GFX_NEE_CAS1_medium
 				GFX_NEE_CAS2_medium
 				GFX_NEE_CAS3_medium
+				GFX_NEE_naval_bomber1_medium
+				GFX_NEE_naval_bomber2_medium
+				GFX_NEE_naval_bomber3_medium
 			}
 			models = {
 				NEE_light_plane_entity
@@ -2028,9 +2223,16 @@ NEE = {
 			icons = {
 				GFX_NEE_cv_early_fighter_medium
 				GFX_NEE_cv_fighter1_medium
-				GFX_NEE_cv_naval_bomber1_medium
+				GFX_NEE_fighter2_medium
 				GFX_NEE_fighter3_medium
+				GFX_NEE_jet_fighter1_medium
+				GFX_NEE_jet_fighter2_medium
 				GFX_NEE_cv_CAS1_medium
+				GFX_NEE_CAS2_medium
+				GFX_NEE_CAS3_medium
+				GFX_NEE_cv_naval_bomber1_medium
+				GFX_NEE_naval_bomber2_medium
+				GFX_NEE_naval_bomber3_medium
 			}
 			models = {
 				NEE_light_plane_entity
@@ -2040,20 +2242,15 @@ NEE = {
 	medium_plane_airframe = {
 		pool = {
 			icons = {
-				GFX_NEE_naval_bomber1_medium
-				GFX_NEE_naval_bomber2_medium
-				GFX_NEE_naval_bomber3_medium
 				GFX_NEE_early_bomber_medium
 				GFX_NEE_tactical_bomber1_medium
 				GFX_NEE_tactical_bomber2_medium
 				GFX_NEE_tactical_bomber3_medium
+				GFX_NEE_jet_tactical_bomber1_medium
+				GFX_NEE_jet_tactical_bomber2_medium
 				GFX_NEE_heavy_fighter1_medium
 				GFX_NEE_heavy_fighter2_medium
 				GFX_NEE_heavy_fighter3_medium
-				GFX_NEE_jet_fighter1_medium
-				GFX_NEE_jet_fighter2_medium
-				GFX_NEE_jet_tactical_bomber1_medium
-				GFX_NEE_jet_tactical_bomber2_medium
 			}
 			models = {
 				NEE_medium_plane_entity
@@ -2066,6 +2263,7 @@ NEE = {
 				GFX_NEE_strategic_bomber1_medium
 				GFX_NEE_strategic_bomber2_medium
 				GFX_NEE_strategic_bomber3_medium
+				GFX_NEE_jet_strategic_bomber1_medium
 			}
 			models = {
 				NEE_heavy_plane_entity
@@ -3304,20 +3502,82 @@ TRS = {
 UKR = {
 	small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
 				GFX_UKR_early_fighter_medium
+				GFX_UKR_fighter1_medium
+				GFX_UKR_fighter2_medium
+				GFX_UKR_fighter3_medium
+				GFX_UKR_jet_fighter1_medium
+				GFX_UKR_jet_fighter2_medium
 				GFX_UKR_CAS1_medium
-			}
-			models = {
-				UKR_light_plane_entity
+				GFX_UKR_CAS2_medium
+				GFX_UKR_CAS3_medium
+				GFX_UKR_naval_bomber1_medium
+				GFX_UKR_naval_bomber2_medium
+				GFX_UKR_naval_bomber3_medium
 			}
 		}
 	}
 	cv_small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
 				GFX_UKR_early_fighter_medium
+				GFX_UKR_fighter1_medium
+				GFX_UKR_fighter2_medium
+				GFX_UKR_fighter3_medium
+				GFX_UKR_jet_fighter1_medium
+				GFX_UKR_jet_fighter2_medium
 				GFX_UKR_CAS1_medium
+				GFX_UKR_CAS2_medium
+				GFX_UKR_CAS3_medium
+				GFX_UKR_naval_bomber1_medium
+				GFX_UKR_naval_bomber2_medium
+				GFX_UKR_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_UKR_early_bomber_medium
+				GFX_UKR_tactical_bomber1_medium
+				GFX_UKR_tactical_bomber2_medium
+				GFX_UKR_tactical_bomber3_medium
+				GFX_UKR_jet_tactical_bomber1_medium
+				GFX_UKR_heavy_fighter1_medium
+				GFX_UKR_heavy_fighter2_medium
+				GFX_UKR_heavy_fighter3_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_UKR_strategic_bomber1_medium
+				GFX_UKR_strategic_bomber2_medium
+				GFX_UKR_strategic_bomber3_medium
+				GFX_UKR_jet_strategic_bomber1_medium
+				GFX_AUS_transport_plane_equipment_medium
+			}
+		}
+	}
+}
+WSU = {
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_UKR_early_fighter_medium
+				GFX_UKR_fighter1_medium
+				GFX_UKR_fighter2_medium
+				GFX_UKR_fighter3_medium
+				GFX_UKR_CAS1_medium
+				GFX_UKR_CAS2_medium
+				GFX_UKR_CAS3_medium
 			}
 			models = {
 				UKR_light_plane_entity
@@ -3326,7 +3586,17 @@ UKR = {
 	}
 	medium_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
+				"gfx/interface/technologies/EE/EE_early_bomber.png"
+				"gfx/interface/technologies/EE/EE_tactical_bomber1.png"
+				"gfx/interface/technologies/EE/EE_tactical_bomber2.png"
+				"gfx/interface/technologies/EE/EE_tactical_bomber3.png"
+				"gfx/interface/technologies/EE/EE_jet_tactical_bomber1.png"
+				"gfx/interface/technologies/EE/EE_jet_tactical_bomber2.png"
+				"gfx/interface/technologies/EE/EE_heavy_fighter1.png"
+				"gfx/interface/technologies/EE/EE_heavy_fighter2.png"
+				"gfx/interface/technologies/EE/EE_heavy_fighter3.png"
 				GFX_UKR_heavy_fighter1_medium
 				GFX_UKR_naval_bomber1_medium
 				GFX_UKR_early_bomber_medium
@@ -3335,35 +3605,274 @@ UKR = {
 				UKR_medium_plane_entity
 			}
 		}
-	}	
+	}		
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_UKR_strategic_bomber1_medium
+				GFX_UKR_strategic_bomber2_medium
+				GFX_UKR_strategic_bomber3_medium
+			}
+		}
+	}
 }
-WSU = {
+KUB = {
 	small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
-				GFX_WSU_early_fighter_medium
-				GFX_WSU_CAS1_medium
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
 			}
 		}
 	}
 	cv_small_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
-				GFX_WSU_early_fighter_medium
-				GFX_WSU_CAS1_medium
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
 			}
 		}
 	}
 	medium_plane_airframe = {
 		pool = {
+			weight = 2
 			icons = {
-				GFX_WSU_heavy_fighter1_medium
-				GFX_WSU_naval_bomber1_medium
-				GFX_WSU_early_bomber_medium
+				GFX_RUS_early_bomber_medium
+				GFX_RUS_tactical_bomber1_medium
+				GFX_RUS_tactical_bomber2_medium
+				GFX_RUS_tactical_bomber3_medium
+				GFX_RUS_jet_tactical_bomber1_medium
+				GFX_RUS_jet_tactical_bomber2_medium
+				GFX_RUS_heavy_fighter1_medium
+				"gfx/interface/technologies/Russia/RUS_heavy_fighter_1_ALT.png"
+				GFX_RUS_heavy_fighter2_medium
+				GFX_RUS_heavy_fighter3_medium
+				GFX_RUS_scout_plane1_medium
+				GFX_RUS_scout_plane2_medium
+			}
+			models = {
+				RUS_medium_plane_entity
 			}
 		}
-	}	
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_strategic_bomber1_medium
+				GFX_RUS_strategic_bomber2_medium
+				GFX_RUS_strategic_bomber3_medium
+				GFX_RUS_jet_strategic_bomber1_medium
+				GFX_RUS_transport_plane_equipment_medium
+			}
+			models = {
+				RUS_heavy_plane_entity
+			}
+		}
+	}
 }
+KLY = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_bomber_medium
+				GFX_RUS_tactical_bomber1_medium
+				GFX_RUS_tactical_bomber2_medium
+				GFX_RUS_tactical_bomber3_medium
+				GFX_RUS_jet_tactical_bomber1_medium
+				GFX_RUS_jet_tactical_bomber2_medium
+				GFX_RUS_heavy_fighter1_medium
+				"gfx/interface/technologies/Russia/RUS_heavy_fighter_1_ALT.png"
+				GFX_RUS_heavy_fighter2_medium
+				GFX_RUS_heavy_fighter3_medium
+				GFX_RUS_scout_plane1_medium
+				GFX_RUS_scout_plane2_medium
+			}
+			models = {
+				RUS_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_strategic_bomber1_medium
+				GFX_RUS_strategic_bomber2_medium
+				GFX_RUS_strategic_bomber3_medium
+				GFX_RUS_jet_strategic_bomber1_medium
+				GFX_RUS_transport_plane_equipment_medium
+			}
+			models = {
+				RUS_heavy_plane_entity
+			}
+		}
+	}
+}
+MTR = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_fighter_medium
+				"gfx/interface/technologies/Russia/RUS_early_fighter_alt.png"
+				GFX_RUS_fighter1_medium
+				GFX_RUS_fighter2_medium
+				GFX_RUS_fighter3_medium
+				GFX_RUS_jet_fighter1_medium
+				GFX_RUS_jet_fighter2_medium
+				GFX_RUS_cv_CAS1_medium
+				GFX_RUS_CAS2_medium
+				GFX_RUS_CAS3_medium
+				GFX_RUS_naval_bomber1_medium
+				GFX_RUS_naval_bomber2_medium
+				GFX_RUS_naval_bomber3_medium
+			}
+			models = {
+				RUS_light_plane_entity
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_early_bomber_medium
+				GFX_RUS_tactical_bomber1_medium
+				GFX_RUS_tactical_bomber2_medium
+				GFX_RUS_tactical_bomber3_medium
+				GFX_RUS_jet_tactical_bomber1_medium
+				GFX_RUS_jet_tactical_bomber2_medium
+				GFX_RUS_heavy_fighter1_medium
+				"gfx/interface/technologies/Russia/RUS_heavy_fighter_1_ALT.png"
+				GFX_RUS_heavy_fighter2_medium
+				GFX_RUS_heavy_fighter3_medium
+				GFX_RUS_scout_plane1_medium
+				GFX_RUS_scout_plane2_medium
+			}
+			models = {
+				RUS_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_RUS_strategic_bomber1_medium
+				GFX_RUS_strategic_bomber2_medium
+				GFX_RUS_strategic_bomber3_medium
+				GFX_RUS_jet_strategic_bomber1_medium
+				GFX_RUS_transport_plane_equipment_medium
+			}
+			models = {
+				RUS_heavy_plane_entity
+			}
+		}
+	}
+}
+
 USA = {
 	small_plane_airframe = {
 		pool = {
@@ -3785,6 +4294,426 @@ ZIM = {
 				GFX_ZIM_strategic_bomber1_medium
 				GFX_ZIM_strategic_bomber2_medium
 				GFX_ZIM_strategic_bomber3_medium
+			}
+		}
+	}
+}
+
+LIT = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LIT_early_fighter_medium
+				GFX_LIT_fighter1_medium
+				GFX_LIT_fighter2_medium
+				GFX_LIT_fighter3_medium
+				GFX_LIT_jet_fighter1_medium
+				GFX_LIT_jet_fighter2_medium
+				GFX_LIT_CAS1_medium
+				GFX_LIT_CAS2_medium
+				GFX_LIT_CAS3_medium
+				GFX_LIT_naval_bomber1_medium
+				GFX_LIT_naval_bomber2_medium
+				GFX_LIT_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LIT_early_fighter_medium
+				GFX_LIT_fighter1_medium
+				GFX_LIT_fighter2_medium
+				GFX_LIT_fighter3_medium
+				GFX_LIT_jet_fighter1_medium
+				GFX_LIT_jet_fighter2_medium
+				GFX_LIT_CAS1_medium
+				GFX_LIT_CAS2_medium
+				GFX_LIT_CAS3_medium
+				GFX_LIT_naval_bomber1_medium
+				GFX_LIT_naval_bomber2_medium
+				GFX_LIT_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LIT_early_bomber_medium
+				GFX_LIT_tactical_bomber1_medium
+				GFX_LIT_tactical_bomber2_medium
+				GFX_LIT_tactical_bomber3_medium
+				GFX_LIT_jet_tactical_bomber1_medium
+				GFX_LIT_jet_tactical_bomber2_medium
+				GFX_LIT_heavy_fighter1_medium
+				GFX_LIT_heavy_fighter2_medium
+				GFX_LIT_heavy_fighter3_medium
+				GFX_LIT_scout_plane1_medium
+				GFX_LIT_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LIT_strategic_bomber1_medium
+				GFX_LIT_strategic_bomber2_medium
+				GFX_LIT_strategic_bomber3_medium
+				GFX_LIT_jet_strategic_bomber1_medium
+			}
+		}
+	}
+}
+
+EST = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_EST_early_fighter_medium
+				GFX_EST_fighter1_medium
+				GFX_EST_fighter2_medium
+				GFX_EST_fighter3_medium
+				GFX_EST_jet_fighter1_medium
+				GFX_EST_jet_fighter2_medium
+				GFX_EST_CAS1_medium
+				GFX_EST_CAS2_medium
+				GFX_EST_CAS3_medium
+				GFX_EST_naval_bomber1_medium
+				GFX_EST_naval_bomber2_medium
+				GFX_EST_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_EST_early_fighter_medium
+				GFX_EST_fighter1_medium
+				GFX_EST_fighter2_medium
+				GFX_EST_fighter3_medium
+				GFX_EST_jet_fighter1_medium
+				GFX_EST_jet_fighter2_medium
+				GFX_EST_CAS1_medium
+				GFX_EST_CAS2_medium
+				GFX_EST_CAS3_medium
+				GFX_EST_naval_bomber1_medium
+				GFX_EST_naval_bomber2_medium
+				GFX_EST_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_EST_early_bomber_medium
+				GFX_EST_tactical_bomber1_medium
+				GFX_EST_tactical_bomber2_medium
+				GFX_EST_tactical_bomber3_medium
+				GFX_EST_jet_tactical_bomber1_medium
+				GFX_EST_jet_tactical_bomber2_medium
+				GFX_EST_heavy_fighter1_medium
+				GFX_EST_heavy_fighter2_medium
+				GFX_EST_heavy_fighter3_medium
+				GFX_EST_scout_plane1_medium
+				GFX_EST_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_EST_strategic_bomber1_medium
+				GFX_EST_strategic_bomber2_medium
+				GFX_EST_strategic_bomber3_medium
+				GFX_EST_jet_strategic_bomber1_medium
+			}
+		}
+	}
+}
+
+LAT = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LAT_early_fighter_medium
+				GFX_LAT_fighter1_medium
+				GFX_LAT_fighter2_medium
+				GFX_LAT_fighter3_medium
+				GFX_LAT_jet_fighter1_medium
+				GFX_LAT_jet_fighter2_medium
+				GFX_LAT_CAS1_medium
+				GFX_LAT_CAS2_medium
+				GFX_LAT_CAS3_medium
+				GFX_LAT_naval_bomber1_medium
+				GFX_LAT_naval_bomber2_medium
+				GFX_LAT_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LAT_early_fighter_medium
+				GFX_LAT_fighter1_medium
+				GFX_LAT_fighter2_medium
+				GFX_LAT_fighter3_medium
+				GFX_LAT_jet_fighter1_medium
+				GFX_LAT_jet_fighter2_medium
+				GFX_LAT_CAS1_medium
+				GFX_LAT_CAS2_medium
+				GFX_LAT_CAS3_medium
+				GFX_LAT_naval_bomber1_medium
+				GFX_LAT_naval_bomber2_medium
+				GFX_LAT_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LAT_early_bomber_medium
+				GFX_LAT_tactical_bomber1_medium
+				GFX_LAT_tactical_bomber2_medium
+				GFX_LAT_tactical_bomber3_medium
+				GFX_LAT_jet_tactical_bomber1_medium
+				GFX_LAT_jet_tactical_bomber2_medium
+				GFX_LAT_heavy_fighter1_medium
+				GFX_LAT_heavy_fighter2_medium
+				GFX_LAT_heavy_fighter3_medium
+				GFX_LAT_scout_plane1_medium
+				GFX_LAT_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_LAT_strategic_bomber1_medium
+				GFX_LAT_strategic_bomber2_medium
+				GFX_LAT_strategic_bomber3_medium
+				GFX_LAT_jet_strategic_bomber1_medium
+			}
+		}
+	}
+}
+
+GEO = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_fighter_medium
+				GFX_GEO_fighter1_medium
+				GFX_GEO_fighter2_medium
+				GFX_GEO_fighter3_medium
+				GFX_GEO_jet_fighter1_medium
+				GFX_GEO_jet_fighter2_medium
+				GFX_GEO_CAS1_medium
+				GFX_GEO_CAS2_medium
+				GFX_GEO_CAS3_medium
+				GFX_GEO_naval_bomber1_medium
+				GFX_GEO_naval_bomber2_medium
+				GFX_GEO_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_fighter_medium
+				GFX_GEO_fighter1_medium
+				GFX_GEO_fighter2_medium
+				GFX_GEO_fighter3_medium
+				GFX_GEO_jet_fighter1_medium
+				GFX_GEO_jet_fighter2_medium
+				GFX_GEO_CAS1_medium
+				GFX_GEO_CAS2_medium
+				GFX_GEO_CAS3_medium
+				GFX_GEO_naval_bomber1_medium
+				GFX_GEO_naval_bomber2_medium
+				GFX_GEO_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_bomber_medium
+				GFX_GEO_tactical_bomber1_medium
+				GFX_GEO_tactical_bomber2_medium
+				GFX_GEO_tactical_bomber3_medium
+				GFX_GEO_jet_tactical_bomber1_medium
+				GFX_GEO_jet_tactical_bomber2_medium
+				GFX_GEO_heavy_fighter1_medium
+				GFX_GEO_heavy_fighter2_medium
+				GFX_GEO_heavy_fighter3_medium
+				GFX_GEO_scout_plane1_medium
+				GFX_GEO_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_strategic_bomber1_medium
+				GFX_GEO_strategic_bomber2_medium
+				GFX_GEO_strategic_bomber3_medium
+				GFX_GEO_jet_strategic_bomber1_medium
+			}
+		}
+	}
+}
+
+ABK = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_fighter_medium
+				GFX_GEO_fighter1_medium
+				GFX_GEO_fighter2_medium
+				GFX_GEO_fighter3_medium
+				GFX_GEO_jet_fighter1_medium
+				GFX_GEO_jet_fighter2_medium
+				GFX_GEO_CAS1_medium
+				GFX_GEO_CAS2_medium
+				GFX_GEO_CAS3_medium
+				GFX_GEO_naval_bomber1_medium
+				GFX_GEO_naval_bomber2_medium
+				GFX_GEO_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_fighter_medium
+				GFX_GEO_fighter1_medium
+				GFX_GEO_fighter2_medium
+				GFX_GEO_fighter3_medium
+				GFX_GEO_jet_fighter1_medium
+				GFX_GEO_jet_fighter2_medium
+				GFX_GEO_CAS1_medium
+				GFX_GEO_CAS2_medium
+				GFX_GEO_CAS3_medium
+				GFX_GEO_naval_bomber1_medium
+				GFX_GEO_naval_bomber2_medium
+				GFX_GEO_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_early_bomber_medium
+				GFX_GEO_tactical_bomber1_medium
+				GFX_GEO_tactical_bomber2_medium
+				GFX_GEO_tactical_bomber3_medium
+				GFX_GEO_jet_tactical_bomber1_medium
+				GFX_GEO_jet_tactical_bomber2_medium
+				GFX_GEO_heavy_fighter1_medium
+				GFX_GEO_heavy_fighter2_medium
+				GFX_GEO_heavy_fighter3_medium
+				GFX_GEO_scout_plane1_medium
+				GFX_GEO_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_GEO_strategic_bomber1_medium
+				GFX_GEO_strategic_bomber2_medium
+				GFX_GEO_strategic_bomber3_medium
+				GFX_GEO_jet_strategic_bomber1_medium
+			}
+		}
+	}
+}
+
+WHR = {
+	small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_WHR_early_fighter_medium
+				GFX_WHR_fighter1_medium
+				GFX_WHR_fighter2_medium
+				GFX_WHR_fighter3_medium
+				GFX_WHR_jet_fighter1_medium
+				GFX_WHR_jet_fighter2_medium
+				GFX_WHR_CAS1_medium
+				GFX_WHR_CAS2_medium
+				GFX_WHR_CAS3_medium
+				GFX_WHR_naval_bomber1_medium
+				GFX_WHR_naval_bomber2_medium
+				GFX_WHR_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_WHR_early_fighter_medium
+				GFX_WHR_fighter1_medium
+				GFX_WHR_fighter2_medium
+				GFX_WHR_fighter3_medium
+				GFX_WHR_jet_fighter1_medium
+				GFX_WHR_jet_fighter2_medium
+				GFX_WHR_CAS1_medium
+				GFX_WHR_CAS2_medium
+				GFX_WHR_CAS3_medium
+				GFX_WHR_naval_bomber1_medium
+				GFX_WHR_naval_bomber2_medium
+				GFX_WHR_naval_bomber3_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_WHR_early_bomber_medium
+				GFX_WHR_tactical_bomber1_medium
+				GFX_WHR_tactical_bomber2_medium
+				GFX_WHR_tactical_bomber3_medium
+				GFX_WHR_jet_tactical_bomber1_medium
+				GFX_WHR_jet_tactical_bomber2_medium
+				GFX_WHR_heavy_fighter1_medium
+				GFX_WHR_heavy_fighter2_medium
+				GFX_WHR_heavy_fighter3_medium
+				GFX_WHR_scout_plane1_medium
+				GFX_WHR_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			weight = 2
+			icons = {
+				GFX_WHR_strategic_bomber1_medium
+				GFX_WHR_strategic_bomber2_medium
+				GFX_WHR_strategic_bomber3_medium
+				GFX_WHR_jet_strategic_bomber1_medium
 			}
 		}
 	}

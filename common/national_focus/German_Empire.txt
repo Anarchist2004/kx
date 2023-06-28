@@ -359,6 +359,13 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_the_kanzler_and_his_loyal_friends }
 		ai_will_do = {
 			factor = 160
+			modifier = {
+				factor = 0
+				has_game_rule = { 
+					rule = MAF_politic 
+					option = MAF_POLITIC_COLLAPSE
+				}
+			}
 		}
 		available = {
 			has_government = paternal_autocrat
@@ -5241,7 +5248,7 @@ focus_tree = {
 					RUS = {
 						exists = yes
 						is_subject = no
-						NOT = { is_ally_with = ROOT }
+						NOT = { is_ally_of_ROOT = yes }
 					}
 				}
 			}
@@ -5252,7 +5259,7 @@ focus_tree = {
 			if = {
 				limit = {
 					13 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				13 = {
@@ -5267,7 +5274,7 @@ focus_tree = {
 			if = {
 				limit = {
 					191 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				191 = {
@@ -5282,7 +5289,7 @@ focus_tree = {
 			if = {
 				limit = {
 					12 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				12 = {
@@ -5303,7 +5310,7 @@ focus_tree = {
 			if = {
 				limit = {
 					190 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				190 = {
@@ -5324,7 +5331,7 @@ focus_tree = {
 			if = {
 				limit = {
 					207 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				207 = {
@@ -5345,7 +5352,7 @@ focus_tree = {
 			if = {
 				limit = {
 					1087 = {
-						controller = { is_ally_with = ROOT }
+						controller = { is_ally_of_ROOT = yes }
 					}
 				}
 				1087 = {

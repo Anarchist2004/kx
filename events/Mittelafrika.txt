@@ -5447,19 +5447,7 @@ country_event = { #####kongo Revolt
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
-		881 = {
-			add_core_of = KOG
-		}
 		928 = {
-			add_core_of = KOG
-		}
-		295 = {
-			add_core_of = KOG
-		}
-		538 = {
-			add_core_of = KOG
-		}
-		976 = {
 			add_core_of = KOG
 		}
 		release = KOG
@@ -5469,6 +5457,7 @@ country_event = { #####kongo Revolt
 		}
 		KOG = {
 			load_oob = KOG
+			set_cosmetic_tag = KOG_KON
 			add_ideas = MAF_Nat_Buff
 		}
 	}
@@ -6535,93 +6524,13 @@ country_event = { #Big Collapse Event
 	option = {
 		name = mittel.186.b
 
-		custom_effect_tooltip = MAF_collapse_tooltip
-
-		effect_tooltip = {
-			CIV = {
-				change_tag_from = MAF
-			}
-		}
-
-		hidden_effect = {
-			set_global_flag = Super_Event_Visible
-			set_global_flag = MAF_Mittelafrika_Collapse
-			sound_effect = "superev_collapse"
-			MAF_collapse = yes
-			if = {
-				limit = {
-					country_exists = NFA
-				}
-				NFA = {
-					country_event = dah.9
-				}
-			}
-			CIV = {
-				change_tag_from = MAF
-			}
-			CIV = {
-				annex_country = {
-					target = MAF
-				}
-			}
-			NFA = {
-				country_event = dah.8
-			}
-		}
-		if = {
-				limit = {
-					country_exists = NMB
-				}
-				NFA = {
-					country_event = swa.2
-				}
-			}
+		country_event = mittel.1861
 	}
 
 	option = {
 		name = mittel.186.c
 
-		custom_effect_tooltip = MAF_collapse_tooltip
-
-		effect_tooltip = {
-			GAB = {
-				change_tag_from = MAF
-			}
-		}
-
-		hidden_effect = {	
-			set_global_flag = Super_Event_Visible
-			set_global_flag = MAF_Mittelafrika_Collapse
-			sound_effect = "superev_collapse"
-			MAF_collapse = yes
-			if = {
-				limit = {
-					country_exists = NFA
-				}
-				NFA = {
-					country_event = dah.9
-				}
-			}
-			COG = {
-				change_tag_from = MAF
-			}
-			COG = {
-				annex_country = {
-					target = MAF
-				}
-			}
-			NFA = {
-				country_event = dah.8
-			}
-		}
-		if = {
-				limit = {
-					country_exists = NMB
-				}
-				NFA = {
-					country_event = swa.2
-				}
-			}
+		country_event = mittel.1860
 	}
 
 	option = {
@@ -6672,6 +6581,446 @@ country_event = { #Big Collapse Event
 	}
 }
 
+country_event = { #Ostafrika Collapse Event
+	id = mittel.1860
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mittel.1860"}
+	title = mittel.1860.t
+	desc = mittel.1860.d
+	picture = GFX_report_event_SPR_civwar3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = mittel.1860.a
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			BRD = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			BRD = {
+				change_tag_from = MAF
+			}
+			BRD = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+
+	option = {
+		name = mittel.1860.b
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			RWA = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {	
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			RWA = {
+				change_tag_from = MAF
+			}
+			RWA = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+
+	option = {
+		name = mittel.1860.c
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			DJI = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			DJI = {
+				change_tag_from = MAF
+			}
+			DJI = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+	
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+}
+
+country_event = { #Zentralafrika Collapse Event
+	id = mittel.1861
+	immediate = {log = "[GetDateText]: [Root.GetName]: event mittel.1861"}
+	title = mittel.1861.t
+	desc = mittel.1861.d
+	picture = GFX_report_event_SPR_civwar3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = mittel.1861.a
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			CMR = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			CMR = {
+				change_tag_from = MAF
+			}
+			CMR = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+
+	option = {
+		name = mittel.1861.b
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			ADA = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {	
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			ADA = {
+				change_tag_from = MAF
+			}
+			ADA = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+		
+	option = {
+		name = mittel.1861.c
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			TKE = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {	
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			TKE = {
+				change_tag_from = MAF
+			}
+			TKE = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+
+	option = {
+		name = mittel.1861.e
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			GAB = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			GAB = {
+				change_tag_from = MAF
+			}
+			GAB = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+	
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+	
+	option = {
+		name = mittel.1861.f
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			KOG = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			KOG = {
+				change_tag_from = MAF
+			}
+			KOG = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+	
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+	
+	option = {
+		name = mittel.1861.g
+
+		custom_effect_tooltip = MAF_collapse_tooltip
+
+		effect_tooltip = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
+			CEA = {
+				change_tag_from = MAF
+			}
+		}
+
+		hidden_effect = {
+			MAF_collapse = yes
+			if = {
+				limit = {
+					country_exists = NFA
+				}
+				NFA = {
+					country_event = dah.9
+				}
+			}
+			CEA = {
+				change_tag_from = MAF
+			}
+			CEA = {
+				annex_country = {
+					target = MAF
+				}
+			}
+			NFA = {
+				country_event = dah.8
+			}
+		}
+	
+		if = {
+				limit = {
+					country_exists = NMB
+				}
+				NFA = {
+					country_event = swa.2
+				}
+			}
+	}
+}
+
 country_event = {
 id = mittel.187
 	immediate = {log = "[GetDateText]: [Root.GetName]: event mittel.187"}
@@ -6680,7 +7029,7 @@ id = mittel.187
 	picture = GFX_report_event_MAF_goering
 
 	fire_only_once = yes
-
+	
 	trigger = {
 		has_government = national_populist
 		tag = MAF
@@ -6712,8 +7061,14 @@ id = mittel.187
 			}
 		}
 	}
+	mean_time_to_happen = {
+		days = 30
+	}
 	option = {
 		name = mittel.187.a
+		ai_chance = {
+			factor = 30
+		}
 		custom_effect_tooltip = MAF_revolt_warning
 		hidden_effect = {
 	every_owned_state = {
@@ -6798,6 +7153,9 @@ id = mittel.187
 	}	
 	option = {
 		name = mittel.187.b
+		ai_chance = {
+			factor = 30
+		}
 		custom_effect_tooltip = MAF_revolt_warning
 		hidden_effect = {
 	every_owned_state = {
@@ -6890,13 +7248,19 @@ id = mittel.187
 	}
 	option = {
 		name = mittel.187.c
-		
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				has_game_rule = { 
+					rule = MAF_politic 
+					option = MAF_POLITIC_COLLAPSE
+				}
+			}
+		}
 		add_political_power = -100
 	}
-mean_time_to_happen = {
-		days = 30
-	}
-	}
+}
 	
 country_event = { #Big Collapse Event Goering fucked up bad edition
 	id = mittel.188
@@ -6915,17 +7279,20 @@ country_event = { #Big Collapse Event Goering fucked up bad edition
 	}
 
 	option = {
-		name = mittel.188.a
+		name = mittel.186.a
 
 		custom_effect_tooltip = MAF_collapse_tooltip
 
 		effect_tooltip = {
-			SAF = {
+			NMB = {
 				change_tag_from = MAF
 			}
 		}
 
 		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
 			MAF_collapse = yes
 			if = {
 				limit = {
@@ -6935,10 +7302,10 @@ country_event = { #Big Collapse Event Goering fucked up bad edition
 					country_event = dah.9
 				}
 			}
-			SAF = {
+			NMB = {
 				change_tag_from = MAF
 			}
-			SAF = {
+			NMB = {
 				annex_country = {
 					target = MAF
 				}
@@ -6958,98 +7325,26 @@ country_event = { #Big Collapse Event Goering fucked up bad edition
 	}
 
 	option = {
-		name = mittel.188.b
+		name = mittel.186.b
 
-		custom_effect_tooltip = MAF_collapse_tooltip
-
-		effect_tooltip = {
-			CIV = {
-				change_tag_from = MAF
-			}
-		}
-
-		hidden_effect = {
-			MAF_collapse = yes
-			if = {
-				limit = {
-					country_exists = NFA
-				}
-				NFA = {
-					country_event = dah.9
-				}
-			}
-			CIV = {
-				change_tag_from = MAF
-			}
-			CIV = {
-				annex_country = {
-					target = MAF
-				}
-			}
-			NFA = {
-				country_event = dah.8
-			}
-		}
-		if = {
-				limit = {
-					country_exists = NMB
-				}
-				NFA = {
-					country_event = swa.2
-				}
-			}
+		country_event = mittel.1861
 	}
 
 	option = {
-		name = mittel.188.c
+		name = mittel.186.c
 
-		custom_effect_tooltip = MAF_collapse_tooltip
-
-		effect_tooltip = {
-			COG = {
-				change_tag_from = MAF
-			}
-		}
-
-		hidden_effect = {
-			MAF_collapse = yes
-			if = {
-				limit = {
-					country_exists = NFA
-				}
-				NFA = {
-					country_event = dah.9
-				}
-			}
-			COG = {
-				change_tag_from = MAF
-			}
-			COG = {
-				annex_country = {
-					target = MAF
-				}
-			}
-			NFA = {
-				country_event = dah.8
-			}
-			
-		}
-		if = {
-				limit = {
-					country_exists = NMB
-				}
-				NFA = {
-					country_event = swa.2
-				}
-			}
+		country_event = mittel.1860
 	}
 
 	option = {
-		name = mittel.188.e
+		name = mittel.186.e
 
 		custom_effect_tooltip = MAF_collapse_tooltip
 
 		effect_tooltip = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = MAF_Mittelafrika_Collapse
+			sound_effect = "superev_collapse"
 			TZN = {
 				change_tag_from = MAF
 			}
@@ -7077,6 +7372,7 @@ country_event = { #Big Collapse Event Goering fucked up bad edition
 				country_event = dah.8
 			}
 		}
+	
 		if = {
 				limit = {
 					country_exists = NMB
@@ -8416,13 +8712,7 @@ country_event = { #britains back and they want their colonies back
 	
 	fire_only_once = yes
 	
-	trigger = {
-		tag = MAF
-		country_exists = GBR
-		GBR = {
-			has_completed_focus = GBR_end_of_bra
-		}
-	}
+	is_triggered_only = yes
 	
 	option = { #it only ever was temporary
 		name = mittelpolitic.20.a
@@ -8438,38 +8728,52 @@ country_event = { #britains back and they want their colonies back
 				}
 			}
 		}
-		KEN = {
-			overlord = {
-				set_autonomy = {
-					target = ROOT
-					autonomy_state = autonomy_free
+		if = {
+			limit = {
+				KEN = {
+					is_subject_of = MAF
 				}
 			}
-			ENT = {
-				add_to_faction = KEN
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GBR_Colonial_Government }
+			KEN = {
+				overlord = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_free
+					}
 				}
-				add_ideas = GBR_Colonial_Government
+				ENT = {
+					add_to_faction = KEN
+				}
+				if = {
+					limit = {
+						NOT = { has_idea = GBR_Colonial_Government }
+					}
+					add_ideas = GBR_Colonial_Government
+				}
 			}
 		}
-		NGR = {
-			overlord = {
-				set_autonomy = {
-					target = ROOT
-					autonomy_state = autonomy_free
+		if = {
+			limit = {
+				KEN = {
+					is_subject_of = MAF
 				}
 			}
-			ENT = {
-				add_to_faction = NGR
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GBR_Colonial_Government }
+			NGR = {
+				overlord = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_free
+					}
 				}
-				add_ideas = GBR_Colonial_Government
+				ENT = {
+					add_to_faction = NGR
+				}
+				if = {
+					limit = {
+						NOT = { has_idea = GBR_Colonial_Government }
+					}
+					add_ideas = GBR_Colonial_Government
+				}
 			}
 		}
 		hidden_effect = {
@@ -8505,6 +8809,7 @@ country_event = { #britains back and they want their colonies back
 	option = { #fuck off
 		name = mittelpolitic.20.b
 		add_political_power = -100
+		set_global_flag = CAN_german_tension
 		GBR = {
 			country_event = {
 				id = mittelpolitic.21
@@ -8564,7 +8869,7 @@ country_event = { #fate of westafrika
 		ai_chance = {
 			factor = 75
 		}
-		
+	
 	}
 	
 	option = { #give the brits their shit back
@@ -8635,6 +8940,12 @@ country_event = { #fate of north rhodesia
 				NOT = {
 					has_government = social_conservative
 				}
+			}
+		}
+		SAF = {
+			country_event = {
+				id = mittelpolitic.26
+				days = 3
 			}
 		}
 	}
@@ -8755,6 +9066,36 @@ country_event = { #fate of kenya uganda
 				ideology = social_liberal
 				popularity = 0.3
 			}
+		}
+	}
+}
+
+country_event = { #Huns refuse to leave Zambia
+	id = mittelpolitic.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event mittelpolitic.26" }
+	title = mittelpolitic.26.t
+	desc = mittelpolitic.26.d
+	picture = GFX_report_event_GEA_coltroops
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Eh
+		name = mittelpolitic.26.a
+		ai_chance = {
+			factor = 75
+		}
+		set_global_flag = CAN_german_tension
+	}
+	
+	option = { #Fuck em up
+		name = mittelpolitic.26.b
+		ai_chance = {
+			factor = 25
+		}
+		declare_war_on = {
+			target = ZAM
+			type = annex_everything
 		}
 	}
 }
@@ -8930,12 +9271,15 @@ country_event = { #African Kaiser
 			days = 1
 		}
 		set_cosmetic_tag = MAF_kaiser
+                if = {	
+                  limit = { has_government = social_conservative }	
 		hidden_effect = {
 		country_event = {
 		id = mittelfla.1005
 		days = 15
 			}
 		}
+                }
 		hidden_effect = {
 			news_event = {
 				id = mafrfg.6

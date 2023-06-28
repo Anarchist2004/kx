@@ -81,6 +81,7 @@ country_event = {
 	days = 2
 	id = par.1
 }
+country_event = { id = par.29 days = 950 }		# In the Hell of the Chaco movie
 
 create_country_leader = {
 	name = "Higenio Morinigo Martinez"
@@ -157,7 +158,7 @@ create_country_leader = {
 	name = "Obdulio Barthe"
 	picture = "gfx/leaders/PAR/Portrait_Paraguay_Obdulio_Barthe.png"
 	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
+	ideology = anarchism_subtype
 	traits = {
 		anarchist_zeal
 	}

@@ -356,12 +356,16 @@ country_event = {
 			add_manpower = 50000
 		}
 		set_province_name = {
-			id = 8006
+			id = 14443
 			name = "Davistown"
 		}
 		set_province_name = {
 			id = 14444
 			name = "Libertalia"
+		}
+		hidden_effect = {
+			966 = {	set_state_flag = renamed_state_firestone }
+			every_controlled_state = { rename_state_effect = yes }
 		}
 		add_stability = -0.10
 	}
@@ -413,7 +417,8 @@ country_event = { #Puppet Elections
 
 country_event = {
 	id = fire.16
-	immediate = {log = "[GetDateText]: [Root.GetName]: event fire.16"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event fire.16"
+	set_country_flag = LIB_hoover_is_here }
 	title = fire.16.t
 	desc = fire.16.d
 	picture = GFX_USA_Inauguration

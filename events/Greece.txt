@@ -609,6 +609,10 @@ country_event = {
 					}
 					has_game_rule = {
 						rule = GRE_foreign_policy
+						option = GRE_FOREIGN_POLICY_RUSSIA
+					}
+					has_game_rule = {
+						rule = GRE_foreign_policy
 						option = GRE_FOREIGN_POLICY_REICHSPAKT
 					}
 					has_game_rule = {
@@ -2121,6 +2125,13 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 30
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GRE_referendum
+					option = GRE_REFERENDUM_ALEXANDER_DEM
+				}
+			}
 		}
 		set_politics = {
 			ruling_party = radical_socialist
@@ -8831,5 +8842,21 @@ country_event = {
 			set_country_flag = GRE_gommies_win
 			}
 		}
+country_event = {
+	id = gre.318
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.1" }
+	title = gre.318.t
+	desc = gre.318.d
+	picture = GFX_report_event_GRE_hagia_sofia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = gre.318.a
+		add_political_power = 75
+	}
+}		
+		
 	
 	

@@ -25,10 +25,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = {
-				id = kly.2
-				days = 2
-			}
+			country_event = kly.2
 		}
 	}
 	
@@ -176,7 +173,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 			modifier = {
-			factor = 10000
+			factor = 1000
 				has_game_rule = {
 					rule = KLY_path
 					option = KLY_PATH_KHAN
@@ -206,7 +203,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 			modifier = {
-			factor = 10000
+			factor = 1000
 				has_game_rule = {
 					rule = KLY_path
 					option = KLY_PATH_BUDDHIST
@@ -290,6 +287,12 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = KUB
 					modifier = KR_approves_of_govt
+				}
+			}
+			custom_effect_tooltip = cossack_corps_tech_effect
+			hidden_effect= {
+				set_technology = {
+					cossack_corps_tech = 1
 				}
 			}
 		}
@@ -906,6 +909,7 @@ focus_tree = {
 			1226 = { add_core_of = KLY }
 			1264 = { add_core_of = KLY }
 			1189 = { add_core_of = KLY }
+			217 = { add_core_of = KLY }
 			every_state = {
 				limit = {
 					OR = {
