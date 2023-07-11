@@ -9107,12 +9107,12 @@ country_event = { # UPSS
 		set_party_name = {
 			ideology = social_conservative
 			name = UKR_authoritarian_democrat_party3
-			name = UKR_authoritarian_democrat_party3_long
+			long_name = UKR_authoritarian_democrat_party3_long
 		}	
 		set_party_name = {
 			ideology = authoritarian_democrat
 			name = UKR_authoritarian_democrat_party3
-			name = UKR_authoritarian_democrat_party3_long
+			long_name = UKR_authoritarian_democrat_party3_long
 		}
 		set_temp_variable = { coalition_partner_var = token:social_conservative }
 		add_to_coalition = yes
@@ -20922,6 +20922,7 @@ country_event = { # Borotbysts
 					}
 				}
 			}
+			set_country_flag = UKR_kovaliv_premier
 			create_country_leader = {
 				name = "Levko Kovaliv"
 				desc = "POLITICS_LEVKO_KOVALIV_DESC"
@@ -24807,6 +24808,7 @@ country_event = { # new society
 	
 	trigger = {
 		tag = UKR
+		UKR_bolsheviks_in_power = yes
 		has_tech = american_corn_tech
 		has_tech = potato_corn_tech
 		has_tech = winter_corn_tech
@@ -24822,6 +24824,7 @@ country_event = { # new society
 		has_tech = ultimatuve_selection
 		has_tech = desert_potato_seeds
 	}
+	fire_only_once = yes
 	mean_time_to_happen = { days = 30 }
 
 	option = {
@@ -27026,11 +27029,20 @@ country_event = { # Socialist misc
 	immediate = { log = "[GetDateText]: [Root.GetName]: event ukrmisc.38" }
 	title = ukrmisc.38.t
 	desc = ukrmisc.38.d
-	is_triggered_only = yes
+	
+	fire_only_once = yes
 	
 	trigger = {
-		has_right_democratic_government = no
-		has_authoritarian_government = no
+		OR = {
+			has_democratic_socialist_government = yes
+			has_left_democratic_government = yes
+		}
+		owns_state = 91
+		owns_state = 1088
+		owns_state = 792
+	}
+	mean_time_to_happen = {
+		days = 30
 	}
 	
 	option = {
@@ -38762,6 +38774,16 @@ country_event = { # Elections
 		name = ukrel.13.a
 		increase_ruling_party_popularity_by_5 = yes
 		add_political_power = 25
+		set_politics = {
+			ruling_party = var:ROOT.current_party_ideology_group
+			elections_allowed = yes
+			election_frequency = 60
+		}
+		if = {
+			limit = { has_idea = UKR_Petro_Bolbochan_hog_ade }
+			set_country_flag = UKR_upss_second_term
+			set_country_leader_ideology = generic_national_democracy_subtype
+		}
 	}
 }
 country_event = { # Elections
@@ -38784,17 +38806,11 @@ country_event = { # Elections
 	option = {
 		name = ukrel.5.a
 		add_war_support = 0.04
-		meta_effect = {
-			text = {
-				set_politics = {
-					ruling_party = var:ROOT.current_party_ideology_group
-					last_election = "[CURRENT_DATE]"
-					election_frequency = 24
-					elections_allowed = yes
-				}
-			}
-			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
-		}		
+		set_politics = {
+			ruling_party = var:ROOT.current_party_ideology_group
+			elections_allowed = yes
+			election_frequency = 24
+		}	
 	}
 }
 	
@@ -38824,42 +38840,42 @@ country_event = { # Elections
 			limit = {
 				NOT = { has_government = social_democrat }
 			}
-			end_coalition = yes
-			meta_effect = {
-				text = {
-					set_politics = {
-						ruling_party = social_democrat
-						last_election = "[CURRENT_DATE]"
-						election_frequency = 60
-						elections_allowed = yes
-					}
-				}
-				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
-			}	
 			add_popularity = {
 				ideology = social_democrat
 				popularity = 0.1
 			}
-			if = {
-				limit = { UKR_isaak_mazepa_in_power = no }
-				create_country_leader = {
-					name = "Isaak Mazepa"
-					desc = "POLITICS_ISAAK_MAZEPA_DESC"
-					picture = "gfx/leaders/UKR/Portrait_UKR_Isaak_Mazepa.png"
-					expire = "1965.1.1"
-					ideology = socdem_democratic_socialism_subtype				
+		}
+		end_coalition = yes
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = social_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
 				}
 			}
-			set_variable = { UKR_USDRP_Status = 2 }
-			remove_all_ministers = yes
-			add_ideas = {
-				UKR_Isaak_Mazepa_hog_sde
-				UKR_Andrey_Livytskyi_for_sde
-				UKR_Dmytro_Antonovych_eco_sde
-				UKR_Panas_Fedenko_sec_sde
-			}	
-			mark_focus_tree_layout_dirty = yes
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}		
+		if = {
+			limit = { UKR_isaak_mazepa_in_power = no }
+			create_country_leader = {
+				name = "Isaak Mazepa"
+				desc = "POLITICS_ISAAK_MAZEPA_DESC"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Isaak_Mazepa.png"
+				expire = "1965.1.1"
+				ideology = socdem_democratic_socialism_subtype				
+			}
 		}
+		set_variable = { UKR_USDRP_Status = 2 }
+		remove_all_ministers = yes
+		add_ideas = {
+			UKR_Isaak_Mazepa_hog_sde
+			UKR_Andrey_Livytskyi_for_sde
+			UKR_Dmytro_Antonovych_eco_sde
+			UKR_Panas_Fedenko_sec_sde
+		}	
+		mark_focus_tree_layout_dirty = yes
 		set_country_flag = UKR_congress_ended
 	}
 	option = {
@@ -38874,22 +38890,22 @@ country_event = { # Elections
 			limit = {
 				NOT = { has_government = authoritarian_democrat }
 			}
-			end_coalition = yes
-			meta_effect = {
-				text = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						last_election = "[CURRENT_DATE]"
-						election_frequency = 60
-						elections_allowed = yes
-					}
-				}
-				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
 			}
 		}
-		add_popularity = {
-			ideology = authoritarian_democrat
-			popularity = 0.1
+		end_coalition = yes
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 		set_temp_variable = { coalition_partner_var = token:social_conservative }
 		add_to_coalition = yes
@@ -38930,22 +38946,22 @@ country_event = { # Elections
 			limit = {
 				NOT = { has_government = authoritarian_democrat }
 			}
-			end_coalition = yes
-			meta_effect = {
-				text = {
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						last_election = "[CURRENT_DATE]"
-						election_frequency = 60
-						elections_allowed = yes
-					}
-				}
-				CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
-			}	
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.1
 			}
+		}
+		end_coalition = yes				
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
 		UKR_setup_upss_president = yes
 		mark_focus_tree_layout_dirty = yes
