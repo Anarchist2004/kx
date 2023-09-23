@@ -514,7 +514,12 @@ country_event = { # America is reunited
 
 	option = { # at long last we are reunited
 		trigger = {
-			NOT = { has_country_flag = NEE_lovecraftians_win }
+			NOT = { 
+				OR = { 
+					has_country_flag = NEE_lovecraftians_win
+					has_country_flag = NEE_lovecraft_lives
+				}
+			}
 		}
 		name = newengland.7.a
 		set_country_flag = NEE_claimed_america
@@ -704,7 +709,10 @@ country_event = { # America is reunited
 	}
 	option = { # at long last we are reunited
 		trigger = {
-			has_country_flag = NEE_lovecraftians_win
+			OR = { 
+				has_country_flag = NEE_lovecraftians_win
+				has_country_flag = NEE_lovecraft_lives
+			}
 		}
 		name = newengland.7.a
 		set_country_flag = NEE_claimed_america
@@ -1028,7 +1036,7 @@ country_event = { # The Provisional Government
 				expire = "1965.1.1"
 				ideology = clientelism_subtype
 				traits = {
-					political_boss
+					purple_shamrock
 				}
 			}
 			remove_all_ministers = yes
@@ -1315,6 +1323,15 @@ country_event = { # 1940 Quaker Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -1386,6 +1403,15 @@ country_event = { # 1940 Prohibition Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -1440,6 +1466,15 @@ country_event = { # 1940 National Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -1491,6 +1526,15 @@ country_event = { # 1940 Republican Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -1647,6 +1691,15 @@ country_event = { # 1940 Liberal Republican Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	option = { # Herbert H. Lehman
@@ -1733,6 +1786,15 @@ country_event = { # 1940 Democrat Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	option = { # Joseph Kennedy Sr.
@@ -1809,6 +1871,12 @@ country_event = { # 1940 Election
 		NOT = {
 			has_country_flag = NEE_Fed_Elections
 		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 		OR = {
 			has_government = radical_socialist
 			has_government = social_democrat
@@ -1851,7 +1919,7 @@ country_event = { # 1940 Election
 					expire = "1965.1.1"
 					ideology = clientelism_subtype
 					traits = {
-						political_boss
+						purple_shamrock
 					}
 				}
 			}
@@ -1866,7 +1934,7 @@ country_event = { # 1940 Election
 					picture = "gfx/leaders/NEE/Alsmith.png"
 					expire = "1965.1.1"
 					ideology = clientelism_subtype
-					traits = { political_boss }
+					traits = { eco_administrative_genius }
 				}
 			}
 
@@ -2702,6 +2770,15 @@ country_event = { # 1944 National Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -2774,6 +2851,15 @@ country_event = { # 1944 Quaker Party Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -2848,6 +2934,15 @@ country_event = { # 1944 Prohibition Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -2921,6 +3016,15 @@ country_event = { # 1944 Liberal Republican Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -2984,6 +3088,15 @@ country_event = { # 1944 Republican Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -3072,6 +3185,15 @@ country_event = { # 1944 Democrat Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -3109,9 +3231,6 @@ country_event = { # 1944 election
 
 	trigger = {
 		tag = NEE
-		NOT = {
-			has_country_flag = NEE_Fed_Elections
-		}
 		OR = {
 			has_government = radical_socialist
 			has_government = social_democrat
@@ -3122,6 +3241,15 @@ country_event = { # 1944 election
 		has_country_flag = NEE_had_1940_election
 		NOT = {
 			has_country_flag = NEE_had_1944_election
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -3824,6 +3952,15 @@ country_event = { # 1948 National Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -3897,6 +4034,15 @@ country_event = { # 1944 Quaker Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -3969,6 +4115,15 @@ country_event = { # 1948 Prohibition Party Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -4052,6 +4207,15 @@ country_event = { # 1948 Liberal Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -4150,6 +4314,15 @@ country_event = { # 1948 Republican Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -4219,6 +4392,15 @@ country_event = { # 1948 Democrat Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -4273,6 +4455,15 @@ country_event = { # 1948 election
 		has_country_flag = NEE_had_1944_election
 		NOT = {
 			has_country_flag = NEE_had_1948_election
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -4913,6 +5104,15 @@ country_event = { # 1952 National Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -4986,6 +5186,15 @@ country_event = { # 1952 Quaker Party Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 
 	is_triggered_only = yes
@@ -5058,6 +5267,15 @@ country_event = { # 1952 Prohibition Party Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -5142,6 +5360,15 @@ country_event = { # 1952 Liberal Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 	
 	is_triggered_only = yes
@@ -5224,6 +5451,15 @@ country_event = { # 1952 Republican Primary
 				has_government = paternal_autocrat 
 				has_government = national_populist 
 			}
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 	
@@ -5308,6 +5544,15 @@ country_event = { # 1952 Democrat Primary
 				has_government = national_populist 
 			}
 		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
+		}
 	}
 	
 	is_triggered_only = yes
@@ -5363,9 +5608,6 @@ country_event = { # 1952 election
 
 	trigger = {
 		tag = NEE
-		NOT = {
-			has_country_flag = NEE_Fed_Elections
-		}
 		OR = {
 			has_government = radical_socialist
 			has_government = social_democrat
@@ -5378,6 +5620,15 @@ country_event = { # 1952 election
 		has_country_flag = NEE_had_1948_election
 		NOT = {
 			has_country_flag = NEE_had_1952_election
+		}
+		NOT = {
+			has_country_flag = NEE_Fed_Elections
+		}
+		NOT = {
+			has_completed_focus = NEE_the_remnant
+		}
+		NOT = {
+			has_completed_focus = NEE_socialist_victory
 		}
 	}
 
@@ -7067,7 +7318,7 @@ country_event = { # Sabotage on the airbases
 	id = newengland.73
 	immediate = {log = "[GetDateText]: [Root.GetName]: event newengland.73"}
 	title = newengland.73.t
-	desc = newengland.72.d
+	desc = newengland.73.d
 
 	is_triggered_only = yes
 
@@ -9697,20 +9948,6 @@ country_event = { # Radical Constitutional Congress
 
 	option = { # Great
 		name = newengland.119.a
-		create_corps_commander = {# Robert McCormick
-			name = "Robert McCormick"
-			portrait_path = "gfx/leaders/NEE/Portrait_NEE_Robert_R_McCormick_general.png"
-			traits = {
-				politically_connected
-				trait_engineer
-				infantry_officer
-			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 3
-		}
 		set_country_flag = NEE_Radicals_Win
 		add_political_power = 20
 		add_popularity = { ideology = market_liberal popularity = 0.04 }
@@ -9817,7 +10054,7 @@ country_event = { # Radical Split
 		add_political_power = 20
 		country_event = {
 			id = newengland.121
-			days = 4
+			days = 7
 		}
 		set_country_flag = NEE_remnant_victory
 		hidden_effect = {
@@ -9915,39 +10152,6 @@ country_event = { # Remnant Leader Election
 		}
 		hidden_effect = {
 			remove_all_ministers = yes
-			add_ideas = NEE_Albert_Jay_Nock_hog_pau
-			add_ideas = NEE_H_L_Mencken_for_npo
-			add_ideas = NEE_Leonard_Read_eco_pau
-			add_ideas = NEE_Lewis_Mumford_sec_pau 
-			create_country_leader = {
-				name = "Irenee du Pont"
-				desc = "POLITICS_Irenee_du_Pont_DESC"
-				picture = "gfx/leaders/NEE/Irenee_du_Pont.png"
-				expire = "1965.1.1"
-				ideology = natpop_corporatocracy_subtype
-				traits = { anti_statist }
-			}
-		}
-		set_country_flag = radicals_in_power
-	}
-	option = { # Robert McCormick
-		name = newengland.121.b
-		add_political_power = 20
-		create_country_leader = {
-			name = "Robert McCormick"
-			desc = "POLITICS_ROBERT_MCCORMICK_DESC"
-			picture = "gfx/leaders/NEE/Robert_R_McCormick.png"
-			expire = "1965.1.1"
-			ideology = pataut_ancap_subtype
-			traits = { quartermaster_general }
-		}
-		set_politics = {
-			ruling_party = paternal_autocrat
-			election_frequency = 48
-			elections_allowed = yes
-		}
-		hidden_effect = {
-		    remove_all_ministers = yes
 			add_ideas = NEE_Albert_Jay_Nock_hog_pau
 			add_ideas = NEE_H_L_Mencken_for_npo
 			add_ideas = NEE_Leonard_Read_eco_pau
@@ -10430,7 +10634,7 @@ country_event = { #Fate of Democracy
 			country_event = { id = newengland.4020 days = 7 }
 		}
 	}
-	option = { #The Democratic Policy
+	option = { #The Moderated Policy
 		name = newengland.140.b
 		add_political_power = 45
 		add_stability = -0.05
@@ -12641,55 +12845,6 @@ country_event = {# The King is Crowned
 				clear_global_event_target = ENT_Prince_Albert_Target
 			}
 			save_global_event_target_as = ENT_Prince_Albert_Target
-				
-			create_country_leader = {# Joseph William Martin Jr.
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = radical_socialist_subtype
-				traits = { }
-			}
-			create_country_leader = {# Joseph William Martin Jr.
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = georgism_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = centrist_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = liberal_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = national_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {#
-				name = "Albert Windsor"
-				desc = "POLITICS_PRINCE_ALBERT_DESC"
-				picture = "gfx/leaders/CAN/Portrait_Canada_Prince_Albert.png"
-				expire = "1965.1.1"
-				ideology = colonial_govt_subtype
-				traits = { }
-			}
 			create_country_leader = {#
 				name = "Albert Windsor"
 				desc = "POLITICS_PRINCE_ALBERT_DESC"
@@ -12726,54 +12881,6 @@ country_event = {# The King is Crowned
 				days = 12
 			}
 			} 
-			create_country_leader = {# Joseph William Martin Jr.
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = radical_socialist_subtype
-				traits = { }
-			}
-			create_country_leader = {# Joseph William Martin Jr.
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = georgism_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = centrist_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = liberal_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {# 
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = national_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {#
-				name = "Henry Windsor"
-				desc = "POLITICS_PRINCE_HENRY_DESC"
-				picture = "gfx/leaders/AST/Portrait_AST_Prince_Henry.png"
-				expire = "1965.1.1"
-				ideology = colonial_govt_subtype
-				traits = { }
-			}
 			create_country_leader = {#
 				name = "Henry Windsor"
 				desc = "POLITICS_PRINCE_HENRY_DESC"
@@ -12787,405 +12894,6 @@ country_event = {# The King is Crowned
 	}
 }
 
-
-country_event = {#Intro event for Curley's IRA
-	id = lovecraftflavor.49
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.49"}
-	title = lovecraftflavor.49.t
-	desc = lovecraftflavor.49.d
-	
-	picture = GFX_NEE_ira_ne
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = { #Rebels!
-		name = lovecraftflavor.49.a #
-		add_stability = -0.10
-		add_war_support = -0.05
-		add_political_power = -50
-		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = -0.07
-			}
-	}
- }
-
-   country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.50
-	title = lovecraftflavor.50.t
-	desc = lovecraftflavor.50.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NEE
-		has_country_flag = NEE_ireland_is_zased
-		IRE = {
-			NOT = {
-				has_socialist_government = yes
-			}
-			is_faction_leader = yes
-		}
-	}
-
-
-	option = { #Yes
-		name = lovecraftflavor.50.a #
-		IRE = {
-			country_event = {
-				id = lovecraftflavor.51
-				days = 5
-			}
-		}
-	}
-	option = {
-		name = lovecraftflavor.50.b #nah
-		increase_ruling_party_popularity_by_3 = yes
-	}
- }
-
-  country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.51
-	title = lovecraftflavor.51.t
-	desc = lovecraftflavor.51.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-
-	option = { #Yes
-		name = lovecraftflavor.51.a #
-		add_to_faction = NEE
-		NEE = {
-			country_event = {
-				id = lovecraftflavor.52
-				days = 5
-			}
-		}
-	}
-	option = {
-		name = lovecraftflavor.51.b #nah
-		NEE = {
-			country_event = {
-				id = lovecraftflavor.53
-				days = 5
-			}
-		}
-	}
- }
-
-  country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.52
-	title = lovecraftflavor.52.t
-	desc = lovecraftflavor.52.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-
-	option = { #Yes
-		name = lovecraftflavor.52.a #
-		add_political_power = 25
-	}
- }
-
-  country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.53
-	title = lovecraftflavor.53.t
-	desc = lovecraftflavor.53.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-
-	option = { #Yes
-		name = lovecraftflavor.53.a #
-		add_political_power = -15
-	}
-	option = { #Yes
-		name = lovecraftflavor.53.a #
-		set_country_flag = NEE_goin_for_IRE
-		every_state = {
-			limit = {
-				is_core_of = IRE
-			}
-			add_claim_by = NEE
-		}
-		create_wargoal = {
-			target = IRE
-			type = annex_everything
-		}
-	}
- }
-
- country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.54
-	title = lovecraftflavor.54.t
-	desc = lovecraftflavor.54.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NEE
-		has_country_flag = NEE_ireland_is_zased
-		IRE = {
-			has_socialist_government = yes
-		}
-	}
-
-	option = { #Yes
-		name = lovecraftflavor.54.a #
-		add_opinion_modifier = {
-			target = IRE
-			modifier = embargo
-		}
-	}
-	option = { #Yes
-		name = lovecraftflavor.54.a #
-		set_country_flag = NEE_goin_for_IRE
-		every_state = {
-			limit = {
-				is_core_of = IRE
-			}
-			add_claim_by = NEE
-		}
-		create_wargoal = {
-			target = IRE
-			type = annex_everything
-		}
-	}
- }
-
-  country_event = {#ireland bros
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
-	id = lovecraftflavor.55
-	title = lovecraftflavor.55.t
-	desc = lovecraftflavor.55.d
-	picture = GFX_NEE_curley_vote
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = NEE
-		has_country_flag = NEE_goin_for_IRE
-		owns_state = 113
-	}
-
-	option = { #Yes
-		name = lovecraftflavor.55.a #
-		hidden_effect = {
-			every_owned_state = {
-			limit = {
-				is_core_of = IRE
-			}
-			IRE = {
-				transfer_state = PREV
-			}
-		}
-		puppet = IRE
-		IRE = {
-			set_country_flag = IRE_SOCCON_WIN
-		set_politics = {
-			ruling_party = social_conservative
-			elections_allowed = yes
-		}
-		add_popularity = {
-			ideology = social_conservative
-			popularity = 0.25
-		}
-		remove_all_ministers = yes
-			add_ideas = {
-				IRE_Sean_T_O'Ceallaigh_hog_sco
-				IRE_Frank_Aiken_for_sco
-				IRE_Sean_Lemass_eco_sco
-				IRE_Gerald_Boland_sec_sco
-			}
-		}
-		}
-	}
-	option = { #Yes
-		name = lovecraftflavor.55.a #
-		set_cosmetic_tag = NEE_trve_ire
-		every_state = {
-			limit = {
-				is_core_of = IRE
-			}
-			NEE = {
-				add_state_core = PREV
-			}
-		}
-	}
- }
- 
- 
-country_event = {# Hotline New England
-	id = lovecraftflavor.56
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.56"}
-	title = lovecraftflavor.56.t
-	desc = lovecraftflavor.56.d
-	picture = GFX_NEE_hotline_new_england
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.56.a
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.02
-	}
-}
- 
-country_event = {# R.H. Barlow
-	id = lovecraftflavor.57
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.57"}
-	title = lovecraftflavor.57.t
-	desc = lovecraftflavor.57.d
-	picture = GFX_NEE_barlow
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.57.a
-		ai_chance = {
-			factor = 100
-		}
-		add_political_power = 10
-	}
-}
- 
-country_event = {# Byrd
-	id = lovecraftflavor.58
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.58"}
-	title = lovecraftflavor.58.t
-	desc = lovecraftflavor.58.d
-	picture = GFX_report_event_NEE_byrd
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.58.a
-		create_navy_leader = {
-			name = "Richard E Byrd"
-			portrait_path = "gfx/leaders/NEE/Portrait_New_England_Richard_Byrd.png"
-			traits = { }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
-			#id = 1604
-		}
-		add_political_power = -10
-		hidden_effect = {
-			country_event = {
-				id = lovecraftflavor.59
-				days = 55
-			}
-		}
-	}	
-	
-	option = {
-		name = lovecraftflavor.58.b
-		create_navy_leader = {
-			name = "Richard E. Byrd"
-			portrait_path = "gfx/leaders/NEE/Portrait_New_England_Richard_Byrd_Admiral.png"
-			traits = { }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
-			#id = 1604
-		}
-		
-	}
-}
- 
-country_event = {# The Thing
-	id = lovecraftflavor.59
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.59"}
-	title = lovecraftflavor.59.t
-	desc = lovecraftflavor.59.d
-	picture = GFX_report_event_NEE_thing
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.59.a
-		
-		
-	}
-}
-
-country_event = {# JFM Jr.
-	id = lovecraftflavor.60
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.60"}
-	title = lovecraftflavor.60.t
-	desc = lovecraftflavor.60.d
-	picture = GFX_report_event_NEE_james_ferdinand_morton
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.60.a
-		increase_ruling_party_popularity_by_2 = yes
-	}
-}
-
-country_event = {# Bahai
-	id = lovecraftflavor.61
-	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.61"}
-	title = lovecraftflavor.61.t
-	desc = lovecraftflavor.61.d
-	picture = GFX_report_event_NEE_bahai
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lovecraftflavor.61.a
-		swap_ideas = {
-			remove_idea = NEE_culutral_cosmic_racism 
-			add_idea = NEE_universal_cosmic_bahai
-        }
-	}
-
-	option = {
-		name = lovecraftflavor.61.b
-		swap_ideas = {
-			remove_idea = NEE_culutral_cosmic_racism 
-			add_idea = NEE_universal_cosmic_clarified
-        }
-	}
-}
- 
 country_event = { #The Governor-General appoints the United Empire Loyalists
 	id = newengland.207
 	immediate = {log = "[GetDateText]: [Root.GetName]: event newengland.207"}
@@ -13407,10 +13115,6 @@ country_event = {# Lovecraft takes over!
 	
 	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
 		name = newengland.224.a #Something... unexpected happens
 		ai_chance = {
@@ -13423,7 +13127,7 @@ country_event = {# Lovecraft takes over!
 		set_capital = { state = 935 }
 		remove_all_ministers = yes
 		add_ideas = {
-			NEE_HP_Lovecraft_hog_npo
+			NEE_Clark_Ashton_Smith_hog_npo
 			NEE_Frank_Belknap_Long_eco_npo
 			NEE_RH_Barlow_for_npo
 			NEE_August_Derleth_sec_npo
@@ -13538,8 +13242,6 @@ country_event = {# Lovecraft Dead
 			ideology = lovecraftianism_subtype
 			traits = { popular_author king_in_yellow_two }
 		}
-		remove_ideas = NEE_HP_Lovecraft_hog_npo
-		add_ideas = NEE_Clark_Ashton_Smith_hog_npo
 	}
 	option = {
 		name = newengland.227.b #Long takes over
@@ -13555,8 +13257,6 @@ country_event = {# Lovecraft Dead
 			ideology = lovecraftianism_subtype
 			traits = { popular_author long_master }
 		}
-		remove_ideas = NEE_HP_Lovecraft_hog_npo
-		add_ideas = NEE_Clark_Ashton_Smith_hog_npo
 	}
 	option = {
 		name = newengland.227.c #Whitehead takes over
@@ -13572,8 +13272,6 @@ country_event = {# Lovecraft Dead
 			ideology = lovecraftianism_subtype
 			traits = { popular_author whitehead_apostle }
 		}
-		remove_ideas = NEE_HP_Lovecraft_hog_npo
-		add_ideas = NEE_Clark_Ashton_Smith_hog_npo
 	}
 }
 
@@ -13646,11 +13344,8 @@ country_event = {# Derleth's New Plan
 	
 	option = {
 		name = lovecraftflavor.1.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_stability = -0.02
-		add_political_power = 25
+		add_political_power = 100
 	}
 }
 
@@ -13667,10 +13362,8 @@ country_event = {# The Journey of the Heir
 	
 	option = {
 		name = lovecraftflavor.2.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
+		add_stability = 0.03
+		add_command_power = 10
 	}
 }
 
@@ -13687,10 +13380,7 @@ country_event = {# The Myth of Cthulhu Made Better
 	
 	option = {
 		name = lovecraftflavor.3.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.10
+		add_stability = -0.03
 		add_political_power = 250
 	}
 }
@@ -13708,11 +13398,7 @@ country_event = {# The Legitimate Place of Lovecraftism
 	
 	option = {
 		name = lovecraftflavor.4.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.02
-		add_political_power = 25
+		add_offsite_building = { type = industrial_complex level = 1 }
 	}
 }
 
@@ -13729,10 +13415,8 @@ country_event = {# The School of Lovecraft
 	
 	option = {
 		name = lovecraftflavor.5.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.05
+		add_political_power = 50
+		add_stability = 0.02
 	}
 }
 
@@ -13749,10 +13433,8 @@ country_event = {# Lovecraft's Futurist Vision
 	
 	option = {
 		name = lovecraftflavor.6.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_political_power = 50
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
 	}
 }
 
@@ -13769,11 +13451,8 @@ country_event = {# The Church That Lovecraft Wanted
 	
 	option = {
 		name = lovecraftflavor.7.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.15
-		add_political_power = 50
+		add_stability = -0.04
+		add_war_support = 0.04
 	}
 }
 
@@ -13790,11 +13469,8 @@ country_event = {# A New Vision of the Word of God
 	
 	option = {
 		name = lovecraftflavor.8.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.10
-		add_political_power = 25
+		add_stability = -0.02
+		add_command_power = 15
 	}
 }
 
@@ -13811,11 +13487,10 @@ country_event = {# The True Lovecraftian Science
 	
 	option = {
 		name = lovecraftflavor.9.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = -0.20
-		add_political_power = 200
+		add_stability = -0.05
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
 	}
 }
 
@@ -13832,10 +13507,8 @@ country_event = {# Derleth
 	
 	option = {
 		name = lovecraftflavor.10.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
+		add_stability = 0.03
+		increase_ruling_party_popularity_by_2 = yes
 		add_political_power = 20
 	}
 }
@@ -13853,11 +13526,8 @@ country_event = {# Long
 	
 	option = {
 		name = lovecraftflavor.11.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
-		add_political_power = 20
+		add_stability = 0.03
+		add_war_support = 0.02
 	}
 }
 
@@ -13874,11 +13544,8 @@ country_event = {# Whitehead
 	
 	option = {
 		name = lovecraftflavor.12.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
-		add_political_power = 20
+		add_war_support = 0.03
+		add_command_power = 20
 	}
 }
 
@@ -13895,10 +13562,7 @@ country_event = {# Lovecraft Manifesto
 	
 	option = {
 		name = lovecraftflavor.13.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.05
+		add_political_power = 100
 	}
 }
 
@@ -13915,9 +13579,6 @@ country_event = {# cat
 	
 	option = {
 		name = lovecraftflavor.14.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_political_power = 5
 	}
 }
@@ -13935,10 +13596,7 @@ country_event = {# Eldritch Muse
 	
 	option = {
 		name = lovecraftflavor.15.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_political_power = 20
+		add_command_power = 2
 	}
 }
 
@@ -13955,10 +13613,7 @@ country_event = {# Prince of Lovecraftism
 	
 	option = {
 		name = lovecraftflavor.16.a #
-		ai_chance = {
-			factor = 100
-		}
-		add_stability = 0.02
+		increase_ruling_party_popularity_by_2 = yes
 	}
 }
 
@@ -13975,9 +13630,6 @@ country_event = {# The Eldritch Apostle
 	
 	option = {
 		name = lovecraftflavor.17.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_political_power = 25
 		add_stability = 0.03
 	}
@@ -14029,9 +13681,6 @@ country_event = {# Ireland reservation
 	
 	option = {
 		name = lovecraftflavor.19.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_political_power = 50
 		set_province_name = { id = 11293 name = "The Nameless City" }
 		hidden_effect = {
@@ -14183,9 +13832,6 @@ country_event = {# Check for Cthulu
 	
 	option = {
 		name = lovecraftflavor.22.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_stability = -0.05
 	}
 }
@@ -14203,9 +13849,6 @@ country_event = {# The Queen in Yellow
 	
 	option = {
 		name = lovecraftflavor.23.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_stability = 0.03
 	}
 }
@@ -14762,10 +14405,8 @@ country_event = {# The Queen in Yellow
 	
 	option = {
 		name = lovecraftflavor.41.a #
-		ai_chance = {
-			factor = 100
-		}
 		add_stability = 0.03
+		add_command_power = 10
 	}
 }
 country_event = {# what do now
@@ -14822,7 +14463,8 @@ country_event = {# lovecraft's own words
 
 	option = {
 		name = lovecraftflavor.43.a #
-		add_political_power = 15
+		add_political_power = 30
+		add_stability = 0.03
 	}
 }
 country_event = {# red sonja
@@ -14941,7 +14583,7 @@ country_event = {# Curley's coup
 			expire = "1965.1.1"
 			ideology = clientelism_subtype
 			traits = {
-				political_boss
+				purple_shamrock
 			}
 		}
 	}
@@ -14968,9 +14610,9 @@ country_event = {#do we stay with birts or nah
 	option = {
 		name = lovecraftflavor.46.b #
 	}
- }
+}
  
- country_event = {#Ireland event to support NEE IRA
+country_event = {#Ireland event to support NEE IRA
 	id = lovecraftflavor.47
 	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.47"}
 	title = lovecraftflavor.47.t
@@ -15004,8 +14646,8 @@ country_event = {#do we stay with birts or nah
 			factor = 50
 		}
 	}
- }
- country_event = {#do we be a dick or nah
+}
+country_event = {#do we be a dick or nah
 	id = lovecraftflavor.48
 	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
 	title = lovecraftflavor.48.t
@@ -15035,7 +14677,414 @@ country_event = {#do we stay with birts or nah
 			days = 10
 		}
 	}
+}
+
+country_event = {#Intro event for Curley's IRA
+	id = lovecraftflavor.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.49"}
+	title = lovecraftflavor.49.t
+	desc = lovecraftflavor.49.d
+	
+	picture = GFX_NEE_ira_ne
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = { #Rebels!
+		name = lovecraftflavor.49.a #
+		add_stability = -0.10
+		add_war_support = -0.05
+		add_political_power = -50
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.07
+			}
+	}
  }
+
+   country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.50
+	title = lovecraftflavor.50.t
+	desc = lovecraftflavor.50.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NEE
+		has_country_flag = NEE_ireland_is_zased
+		IRE = {
+			NOT = {
+				has_socialist_government = yes
+			}
+			is_faction_leader = yes
+		}
+	}
+
+
+	option = { #Yes
+		name = lovecraftflavor.50.a #
+		IRE = {
+			country_event = {
+				id = lovecraftflavor.51
+				days = 5
+			}
+		}
+	}
+	option = {
+		name = lovecraftflavor.50.b #nah
+		increase_ruling_party_popularity_by_3 = yes
+	}
+ }
+
+  country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.51
+	title = lovecraftflavor.51.t
+	desc = lovecraftflavor.51.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+
+	option = { #Yes
+		name = lovecraftflavor.51.a #
+		add_to_faction = NEE
+		NEE = {
+			country_event = {
+				id = lovecraftflavor.52
+				days = 5
+			}
+		}
+	}
+	option = {
+		name = lovecraftflavor.51.b #nah
+		NEE = {
+			country_event = {
+				id = lovecraftflavor.53
+				days = 5
+			}
+		}
+	}
+ }
+
+  country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.52
+	title = lovecraftflavor.52.t
+	desc = lovecraftflavor.52.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+
+	option = { #Yes
+		name = lovecraftflavor.52.a #
+		add_political_power = 25
+	}
+ }
+
+  country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.53
+	title = lovecraftflavor.53.t
+	desc = lovecraftflavor.53.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+
+	option = { #Yes
+		name = lovecraftflavor.53.a #
+		add_political_power = -15
+	}
+	option = { #Yes
+		name = lovecraftflavor.53.a #
+		set_country_flag = NEE_goin_for_IRE
+		every_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			add_claim_by = NEE
+		}
+		create_wargoal = {
+			target = IRE
+			type = annex_everything
+		}
+	}
+ }
+
+ country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.54
+	title = lovecraftflavor.54.t
+	desc = lovecraftflavor.54.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NEE
+		has_country_flag = NEE_ireland_is_zased
+		IRE = {
+			has_socialist_government = yes
+		}
+	}
+
+	option = { #Yes
+		name = lovecraftflavor.54.a #
+		add_opinion_modifier = {
+			target = IRE
+			modifier = embargo
+		}
+	}
+	option = { #Yes
+		name = lovecraftflavor.54.a #
+		set_country_flag = NEE_goin_for_IRE
+		every_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			add_claim_by = NEE
+		}
+		create_wargoal = {
+			target = IRE
+			type = annex_everything
+		}
+	}
+ }
+
+  country_event = {#ireland bros
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.48"}
+	id = lovecraftflavor.55
+	title = lovecraftflavor.55.t
+	desc = lovecraftflavor.55.d
+	picture = GFX_NEE_curley_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NEE
+		has_country_flag = NEE_goin_for_IRE
+		owns_state = 113
+	}
+
+	option = { #Yes
+		name = lovecraftflavor.55.a #
+		hidden_effect = {
+			every_owned_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			IRE = {
+				transfer_state = PREV
+			}
+		}
+		puppet = IRE
+		IRE = {
+			set_country_flag = IRE_SOCCON_WIN
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.25
+		}
+		remove_all_ministers = yes
+			add_ideas = {
+				IRE_Sean_T_O'Ceallaigh_hog_sco
+				IRE_Frank_Aiken_for_sco
+				IRE_Sean_Lemass_eco_sco
+				IRE_Gerald_Boland_sec_sco
+			}
+		}
+		}
+	}
+	option = { #Yes
+		name = lovecraftflavor.55.a #
+		set_cosmetic_tag = NEE_trve_ire
+		every_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			NEE = {
+				add_state_core = PREV
+			}
+		}
+	}
+ }
+ 
+ 
+country_event = {# Hotline New England
+	id = lovecraftflavor.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.56"}
+	title = lovecraftflavor.56.t
+	desc = lovecraftflavor.56.d
+	picture = GFX_NEE_hotline_new_england
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.56.a
+		add_stability = -0.02
+	}
+}
+ 
+country_event = {# R.H. Barlow
+	id = lovecraftflavor.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.57"}
+	title = lovecraftflavor.57.t
+	desc = lovecraftflavor.57.d
+	picture = GFX_NEE_barlow
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.57.a
+		add_political_power = 10
+	}
+}
+ 
+country_event = {# Byrd
+	id = lovecraftflavor.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.58"}
+	title = lovecraftflavor.58.t
+	desc = lovecraftflavor.58.d
+	picture = GFX_report_event_NEE_byrd
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.58.a
+		create_navy_leader = {
+			name = "Richard E Byrd"
+			portrait_path = "gfx/leaders/NEE/Portrait_New_England_Richard_Byrd.png"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			#id = 1604
+		}
+		add_political_power = -10
+		hidden_effect = {
+			country_event = {
+				id = lovecraftflavor.59
+				days = 55
+			}
+		}
+	}	
+	
+	option = {
+		name = lovecraftflavor.58.b
+		create_navy_leader = {
+			name = "Richard E. Byrd"
+			portrait_path = "gfx/leaders/NEE/Portrait_New_England_Richard_Byrd_Admiral.png"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			#id = 1604
+		}
+		
+	}
+}
+ 
+country_event = {# The Thing
+	id = lovecraftflavor.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.59"}
+	title = lovecraftflavor.59.t
+	desc = lovecraftflavor.59.d
+	picture = GFX_report_event_NEE_thing
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.59.a
+	}
+}
+
+country_event = {# JFM Jr.
+	id = lovecraftflavor.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.60"}
+	title = lovecraftflavor.60.t
+	desc = lovecraftflavor.60.d
+	picture = GFX_report_event_NEE_james_ferdinand_morton
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.60.a
+		increase_ruling_party_popularity_by_2 = yes
+	}
+}
+
+country_event = {# Bahai
+	id = lovecraftflavor.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.61"}
+	title = lovecraftflavor.61.t
+	desc = lovecraftflavor.61.d
+	picture = GFX_report_event_NEE_bahai
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.61.a
+		swap_ideas = {
+			remove_idea = NEE_culutral_cosmic_racism 
+			add_idea = NEE_universal_cosmic_bahai
+        }
+	}
+
+	option = {
+		name = lovecraftflavor.61.b
+		swap_ideas = {
+			remove_idea = NEE_culutral_cosmic_racism 
+			add_idea = NEE_universal_cosmic_clarified
+        }
+	}
+}
+
+country_event = {# Jumbees
+	id = lovecraftflavor.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lovecraftflavor.62"}
+	title = lovecraftflavor.62.t
+	desc = lovecraftflavor.62.d
+	picture = GFX_report_event_NEE_jumbees
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lovecraftflavor.62.a
+		increase_ruling_party_popularity_by_2 = yes
+	}
+}
 
 ###British NEE events ###
 
@@ -16408,6 +16457,11 @@ country_event = { #Musket for Home Defense
 		}
 		add_war_support = 0.01
 		add_political_power = 5
+		set_technology = { reservation_musket = 1 popup = yes } 
+		add_equipment_to_stockpile = {
+			type = reservation_equipment_0
+			amount = 2000
+		}
 	}
 }
 
@@ -17480,8 +17534,18 @@ country_event = { #fate of generals
 				}
 			}						
 	}
-	option = { #feds, cal
+	option = { #cal
 		name = newenglandmilflavor.36.e
+		add_political_power = -10
+		add_command_power = 5
+		CAL = {
+				every_unit_leader = {
+					set_nationality = NEE
+				}
+			}			
+	}
+	option = { #feds, cal
+		name = newenglandmilflavor.36.f
 		add_political_power = -25
 		add_command_power = 10
 		WCC = {
@@ -17501,7 +17565,7 @@ country_event = { #fate of generals
 			}			
 	}
 	option = { #feds, tex, cor
-		name = newenglandmilflavor.36.f
+		name = newenglandmilflavor.36.g
 		add_political_power = -30
 		add_command_power = 15
 		WCC = {
@@ -17526,7 +17590,7 @@ country_event = { #fate of generals
 		}		
 	}
 	option = { #csa, tex
-		name = newenglandmilflavor.36.g
+		name = newenglandmilflavor.36.h
 
 		add_political_power = -50
 		add_command_power = 20
@@ -18366,7 +18430,7 @@ country_event = {# pershing elections
 					expire = "1965.1.1"
 					ideology = whiggism_subtype
 					traits = {
-						political_boss
+						purple_shamrock
 					}
 				}
 				clr_country_flag = NEE_whigg_curley
@@ -20940,7 +21004,7 @@ country_event = { # 1940 Election
 					expire = "1965.1.1"
 					ideology = clientelism_subtype
 					traits = {
-						political_boss
+						purple_shamrock
 					}
 				}
 			}
@@ -20955,7 +21019,7 @@ country_event = { # 1940 Election
 					picture = "gfx/leaders/NEE/Alsmith.png"
 					expire = "1965.1.1"
 					ideology = clientelism_subtype
-					traits = { political_boss }
+					traits = { eco_administrative_genius }
 				}
 			}
 
@@ -26573,12 +26637,18 @@ country_event = { # Lermond Wargoals
 
 	option = {
 		name = miscnee.190.a
+		ai_chance = {
+			factor = 100
+		}
 		add_political_power = 50
 		add_stability = 0.075
 		add_war_support = -0.03
 	}
 	option = {
 		name = miscnee.190.b
+		ai_chance = {
+			factor = 0
+		}
 		add_political_power = -50
 		add_war_support = 0.075
 		add_stability = -0.03

@@ -459,6 +459,50 @@ country_event = { #
 	}
 }
 
+add_namespace = fsa
+
+country_event = { #
+	id = fsa.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event utah.32"}
+	title = fsa.1.t
+	desc = fsa.1.d
+	picture = GFX_report_event_USA_congress
+
+	trigger = {
+	tag = FSA
+	FSA = {
+	has_cosmetic_tag = FSA_CONFEDERATION
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = { 
+		name = fsa.1.a
+		set_cosmetic_tag = FSA_CONFEDERATION
+	}
+	option = { 
+		name = fsa.1.b
+		set_cosmetic_tag = FSA_CONFEDERATION2
+	}
+	option = { 
+		name = fsa.1.c
+		set_cosmetic_tag = FSA_CONFEDERATION3
+	}
+	option = { 
+		name = fsa.1.e
+		set_cosmetic_tag = NEE_america
+	}
+	option = { 
+		name = fsa.1.f
+		set_cosmetic_tag = FSA_USA
+	}
+	option = { 
+		name = fsa.1.g
+		set_cosmetic_tag = FSA_USA2
+	}
+}
+
 ####Military Tree######
 
 add_namespace = legion
@@ -923,7 +967,7 @@ country_event = {#
 			create_country_leader = {
 				name = "George Patton"
 				desc = "POLITICS_PATTON_WARLORD_DESC"
-				picture = "gfx/leaders/ATD/Portrait_George_Patton.png"
+				picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
 				expire = "1965.1.1"
 				ideology = junta_subtype
 				traits = { }
@@ -931,7 +975,7 @@ country_event = {#
 			create_country_leader = {
 				name = "George Patton"
 				desc = "POLITICS_PATTON_WARLORD_DESC"
-				picture = "gfx/leaders/ATD/Portrait_George_Patton.png"
+				picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
 				expire = "1965.1.1"
 				ideology = militarism_subtype
 				traits = { }

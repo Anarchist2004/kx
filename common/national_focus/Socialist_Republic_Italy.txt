@@ -28,17 +28,67 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SRI_mafia_peace
+		icon = GFX_goal_CSA_Mobster_Populism_All_Americans
+		cost = 7.00
+		prerequisite = {
+			focus = SRI_4th_congress
+		}
+		relative_position_id = SRI_4th_congress
+		x = -7
+		y = 1
+		available = {
+			has_idea = SRI_crime_problem
+			has_country_flag = SRI_fourth_congress_done
+			NOT = { has_completed_focus = SRI_mafia_war }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SRI_mafia_peace"
+			custom_effect_tooltip = SRI_mafia_tooltip
+			swap_ideas = {
+				remove_idea = SRI_crime_problem
+				add_idea = SRI_crime_problem_peace
+			}
+		}
+	}
+	focus = {
+		id = SRI_mafia_war
+		icon = GFX_goal_CSA_Pursue_Criminality_Above_All_Else
+		cost = 7.00
+		prerequisite = {
+			focus = SRI_4th_congress
+		}
+		relative_position_id = SRI_4th_congress
+		x = 7
+		y = 1
+		available = {
+			has_idea = SRI_crime_problem
+			has_country_flag = SRI_fourth_congress_done
+			NOT = { has_completed_focus = SRI_mafia_peace }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SRI_mafia_war"
+			remove_ideas = SRI_crime_problem
+			add_timed_idea = {
+				idea = SRI_crime_problem_war
+				days = 180
+			}
+		}
+	}
+	focus = {
 		id = SRI_assess_the_economy
 		icon = GFX_goal_FRA_develop_SRI
 		cost = 6.00
 		x = 16
 		y = 0
 		available = {
-			OR = {
-				has_completed_focus = SRI_streghten_the_chairman
-				has_completed_focus = SRI_stregthen_the_republic
-				has_completed_focus = SRI_strengthen_democracy
-			}
+			has_completed_focus = SRI_4th_congress
 		}
 		ai_will_do = {
 			factor = 30
@@ -172,62 +222,6 @@ focus_tree = {
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.25
-			}
-		}
-	}
-	focus = {
-		id = SRI_mafia_peace
-		icon = GFX_goal_NYC_pure_gangster_state
-		cost = 7.00
-		mutually_exclusive = {
-			focus = SRI_mafia_war
-		}
-		x = 43
-		y = 6
-		available = {
-			has_idea = SRI_crime_problem
-			NOT = {
-				has_government = paternal_autocrat
-			}
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SRI_mafia_peace"
-			custom_effect_tooltip = SRI_mafia_tooltip
-			swap_ideas = {
-				remove_idea = SRI_crime_problem
-				add_idea = SRI_crime_problem_peace
-			}
-		}
-	}
-	focus = {
-		id = SRI_mafia_war
-		icon = GFX_goal_NYC_Kill_Mob
-		cost = 7.00
-		mutually_exclusive = {
-			focus = SRI_mafia_peace
-		}
-		x = 45
-		y = 6
-		available = {
-			has_idea = SRI_crime_problem
-			NOT = {
-				has_government = paternal_autocrat
-			}
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SRI_mafia_war"
-			add_timed_idea = {
-				idea = SRI_crime_problem_war
-				days = 180
-			}
-			hidden_effect = {
-				remove_ideas = SRI_crime_problem
 			}
 		}
 	}
@@ -953,7 +947,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SRI_peace_with_mafia"
-			add_ideas = SRI_crime_problem_peace
+			swap_ideas = {
+				remove_idea = SRI_crime_problem
+				add_idea = SRI_crime_problem_peace
+			}
 			random_owned_state = {
 				add_building_construction = {
 					type = industrial_complex
@@ -1065,7 +1062,7 @@ focus_tree = {
 			focus = SRI_north_friends
 		}
 		x = 37
-		y = 14
+		y = 13
 		available = {
 			has_government = authoritarian_democrat
 			all_owned_state = {
@@ -2152,7 +2149,12 @@ focus_tree = {
 				}
 			completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SRI_fifth_congress"
-					remove_ideas = { SRI_crime_problem_peace }
+					if = {
+						limit = {
+							has_idea = SRI_crime_problem_peace
+						}
+						remove_ideas = SRI_crime_problem_peace
+					}
 					country_event = socitaly.41
 				}
 
@@ -3869,6 +3871,12 @@ focus_tree = {
 				}
 			completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SRI_confiscate_wealth"
+					if = {
+						limit = {
+							has_idea = SRI_crime_problem
+						}
+						remove_ideas = SRI_crime_problem
+					}
 					random_owned_state = {
 							add_extra_state_shared_building_slots = 1
 						}
@@ -3932,6 +3940,10 @@ focus_tree = {
 						popularity = -0.02
 					}
 					hidden_effect = {
+							country_event = {
+							id = srievola.1150
+							days = 12
+							}
 							country_event = {
 									id = srievola.1130
 									days = 7
@@ -4470,6 +4482,10 @@ focus_tree = {
 				days = 1
 				}
 			}
+			every_state = {
+				limit = { is_core_of = SRD }
+				add_claim_by = SRI
+			}
 		}
 	}
 	
@@ -4704,24 +4720,17 @@ focus_tree = {
 									target = ITA
 								}
 						}
-					if = {
-							limit = {
-									has_idea = SRI_crime_problem_peace
-								}
-							remove_ideas = SRI_crime_problem_peace
+					every_state = {
+						limit = {
+						OR = {
+						is_core_of = SRD
+						is_claimed_by = SRD
+							}
 						}
-					if = {
-							limit = {
-									has_idea = SRI_crime_problem
-								}
-							remove_ideas = SRI_crime_problem
-						}
-					add_state_core = 160
-					add_state_core = 759
-					add_state_core = 116
-					add_state_core = 1236
-					add_state_core = 2
+						add_claim_by = SRI
+					}
 					hidden_effect = {
+							add_state_core = 116
 							modify_country_flag = {
 									flag = SIC_Occult
 									value = 15
@@ -4768,6 +4777,14 @@ focus_tree = {
 						}
 					create_wargoal = {
 							type = annex_everything
+							target = CAR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = CNT
+						}
+					create_wargoal = {
+							type = annex_everything
 							target = POR
 						}
 					create_wargoal = {
@@ -4788,6 +4805,14 @@ focus_tree = {
 					}
 					every_state = {
 					limit = { is_core_of = SPR }
+					add_claim_by = SRI
+					}
+					every_state = {
+					limit = { is_core_of = CAR }
+					add_claim_by = SRI
+					}
+					every_state = {
+					limit = { is_core_of = CNT }
 					add_claim_by = SRI
 					}
 					every_state = {
@@ -4850,6 +4875,10 @@ focus_tree = {
 						}
 					create_wargoal = {
 							type = annex_everything
+							target = SLO
+						}
+					create_wargoal = {
+							type = annex_everything
 							target = ROM
 						}
 					create_wargoal = {
@@ -4890,6 +4919,10 @@ focus_tree = {
 					}
 					every_state = {
 					limit = { is_core_of = CRO }
+					add_claim_by = SRI
+					}
+					every_state = {
+					limit = { is_core_of = SLO }
 					add_claim_by = SRI
 					}
 					every_state = {
@@ -4984,6 +5017,10 @@ focus_tree = {
 					}
 					every_state = {
 					limit = { is_core_of = ALG }
+					add_claim_by = SRI
+					}
+					every_state = {
+					limit = { is_core_of = TUN }
 					add_claim_by = SRI
 					}
 					every_state = {
@@ -5289,6 +5326,14 @@ focus_tree = {
 					add_core_of = SRI
 					}
 					every_state = {
+					limit = { is_core_of = CAR }
+					add_core_of = SRI
+					}
+					every_state = {
+					limit = { is_core_of = CNT }
+					add_core_of = SRI
+					}
+					every_state = {
 					limit = { is_core_of = POR }
 					add_core_of = SRI
 					}
@@ -5306,6 +5351,10 @@ focus_tree = {
 					}
 					every_state = {
 					limit = { is_core_of = CRO }
+					add_core_of = SRI
+					}
+					every_state = {
+					limit = { is_core_of = SLO }
 					add_core_of = SRI
 					}
 					every_state = {
@@ -5361,7 +5410,7 @@ focus_tree = {
 					add_core_of = SRI
 					}
 					every_state = {
-					limit = { is_core_of = NFA }
+					limit = { is_core_of = TUN }
 					add_core_of = SRI
 					}
 					every_state = {
@@ -5559,10 +5608,16 @@ focus = {
 			completion_reward = {
 					log = "[GetDateText]: [Root.GetName]: Focus SRI_expand_support"
 					custom_effect_tooltip = SRI_fasci_decisions_tooltip
-					swap_ideas = {
-							remove_idea = SRI_low_peasant_idea
-							add_idea = SRI_medium_peasant_idea
+					if = {
+						limit = {
+							has_idea = SRI_crime_problem
 						}
+						remove_ideas = SRI_crime_problem
+					}
+					swap_ideas = {
+						remove_idea = SRI_low_peasant_idea
+						add_idea = SRI_medium_peasant_idea
+					}
 				}
 	}
 	focus = {
@@ -7016,7 +7071,7 @@ focus = {
 			focus = SRI_Aproch_North
 		}
 		
-		cost = 14.4
+		cost = 7.2
 		x = 12
 		y = 14
 		ai_will_do = { factor = 50 }
@@ -7045,7 +7100,7 @@ focus = {
 			focus = SRI_Aproch_North
 		}
 		
-		cost = 14.4
+		cost = 7.2
 		x = 14
 		y = 14
 		ai_will_do = { factor = 50 }
@@ -7229,7 +7284,7 @@ focus = {
 			focus = SRI_march_north
 		}
 		
-		cost = 10.2
+		cost = 5
 		x = 18
 		y = 14
 		ai_will_do = { factor = 50 }

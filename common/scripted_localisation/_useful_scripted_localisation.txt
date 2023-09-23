@@ -355,7 +355,7 @@ defined_text = {
 		}
 		localization_key = tot_paneuropeanism_subtype
 	}
-		text = {
+	text = {
 		trigger = {
 			has_country_leader_ideology = totalist_savinkovism_subtype
 		}
@@ -534,6 +534,24 @@ defined_text = {
 			has_country_leader_ideology = tot_red_cossack_dictatorship_subtype
 		}
 		localization_key = tot_red_cossack_dictatorship_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_islamic_socialism_subtype
+		}
+		localization_key = tot_islamic_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialist_feminism_subtype
+		}
+		localization_key = socialist_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neo_socialism_subtype
+		}
+		localization_key = neo_socialism_subtype
 	}
         
 	text = {
@@ -1017,6 +1035,12 @@ defined_text = {
 		}
 		localization_key = red_cossack_dictatorship_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = red_socialist_feminism_subtype
+		}
+		localization_key = red_socialist_feminism_subtype
+	}
 
 	text = {
 		trigger = {
@@ -1360,6 +1384,25 @@ defined_text = {
 		}
 		localization_key = socdem_progressive_conservatism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_spiritualism_subtype
+		}
+		localization_key = socdem_spiritualism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_market_socialist_subtype
+		}
+		localization_key = socdem_market_socialist_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_kimbanguism_subtype
+		}
+		localization_key = socdem_kimbanguism_subtype
+	}
+
 
 	text = {
 		trigger = {
@@ -1583,6 +1626,18 @@ defined_text = {
 		}
 		localization_key = soclib_cossack_democracy_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_popular_patriotism_subtype
+		}
+		localization_key =  soclib_popular_patriotism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_authoritarian_liberalism_subtype
+		}
+		localization_key = soclib_authoritarian_liberalism_subtype
+	}
  
 	text = {
 		trigger = {
@@ -1787,6 +1842,30 @@ defined_text = {
 			has_country_leader_ideology = objectivism_subtype
 		}
 		localization_key = objectivism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_toryism_subtype
+		}
+		localization_key = marlib_toryism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_authoritarian_liberalism_subtype
+		}
+		localization_key = marlib_authoritarian_liberalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_kemalism_subtype
+		}
+		localization_key = marlib_kemalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_paneuropeanism_subtype
+		}
+		localization_key = marlib_paneuropeanism_subtype
 	}
 
 	text = {
@@ -2004,6 +2083,18 @@ defined_text = {
 			has_country_leader_ideology = soccon_cossack_democracy_subtype
 		}
 		localization_key = soccon_cossack_democracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_spiritualism_subtype
+		}
+		localization_key = soccon_spiritualism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_maurrassism_subtype
+		}
+		localization_key = soccon_maurrassism_subtype
 	}
 
 	text = {
@@ -2295,6 +2386,18 @@ defined_text = {
 		}
 		localization_key = authdem_cossack_democracy_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_spiritualism_subtype
+		}
+		localization_key = authdem_spiritualism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = security_state_subtype
+		}
+		localization_key =  security_state_subtype
+	}
 
 	text = {
 		trigger = {
@@ -2572,14 +2675,12 @@ defined_text = {
 		}
 		localization_key = roerichism_subtype
 	}
-
 	text = {
 		trigger = {
 			has_country_leader_ideology = pataut_kotahitanga_subtype
 		}
 		localization_key = pataut_kotahitanga_subtype
 	}
-
 	text = {
 		trigger = {
 			has_country_leader_ideology = pataut_hispanism_subtype
@@ -2615,6 +2716,12 @@ defined_text = {
 			has_country_leader_ideology = pataut_caponism_subtype
 		}
 		localization_key = pataut_caponism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_right_syndicalism_subtype
+		}
+		localization_key = pataut_right_syndicalism_subtype
 	}
 
 	text = {
@@ -3050,6 +3157,12 @@ defined_text = {
 			has_country_leader_ideology = natpop_pirate_republic_subtype
 		}
 		localization_key = natpop_pirate_republic_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_indigenous_communitarianism_subtype
+		}
+		localization_key = natpop_indigenous_communitarianism_subtype
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###

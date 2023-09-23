@@ -234,6 +234,10 @@ spriteTypes = {
 		name = "GFX_idea_GBR_admiralty"
 		texturefile = "gfx/interface/ideas/ideas/GBR_admiralty.png"
 	}
+	spriteType = {
+		name = "GFX_idea_GBR_support_uk"
+		texturefile = "gfx/interface/ideas/ideas/GBR_support_uk.png"
+	}
 
 	### GER ###
 
@@ -888,6 +892,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SCW_SWF_fervor"
 		texturefile = "gfx/interface/ideas/ideas/SCW_CNT_fervor.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SCW_SPR_fervor"
+		texturefile = "gfx/interface/ideas/ideas/SCW_SPR_fervor.png"
 	}
 
 	### SWE ###

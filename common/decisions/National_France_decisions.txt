@@ -79,7 +79,9 @@ political_actions = {
 						has_country_flag = NFA_nap_socdem
 					}
 				}
-				set_cosmetic_tag = NFE_SOCIAL
+				NFA = {
+					country_event = flavorfra.84
+				}
 				custom_effect_tooltip = "We shall use the Social French Empire flag"
 			}
 			else_if = {
@@ -587,7 +589,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -628,7 +633,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -671,7 +679,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -714,7 +725,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -757,7 +771,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -804,7 +821,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -847,7 +867,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -892,7 +915,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -933,7 +959,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -976,7 +1005,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -1017,7 +1049,10 @@ NFA_reconstruction_decisions = {# Reconstruction Stuff
 					}
 				}
 				add_core_of = ROOT
-				cancel_resistance = yes
+				if = {
+					limit = { has_resistance = yes }
+					cancel_resistance = yes
+				}
 				force_disable_resistance = { clear = yes }
 			}
 			add_war_support = 0.03
@@ -1035,7 +1070,7 @@ NFA_seize_morocco_decisions = {
 		icon = generic_ignite_civil_war
 		available = {
 			FROM = {
-				NOT = { has_completed_focus = CNT_consolidating_spain }
+				NOT = { has_completed_focus = SWF_party_congress }
 			}
 		}
 		

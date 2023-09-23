@@ -1992,6 +1992,7 @@ country_event = { # Cristero War - they win
 		transfer_state = 478
 		clr_country_flag = MEX_rebellion
 		add_ideas = MEX_cristero_war_idea
+		hidden_effect = { set_country_flag = MEX_Cristeros_Victory }
 	}
 }
 
@@ -5325,6 +5326,7 @@ country_event = { # Yucatan manages to survive
 	picture = GFX_report_event_MEX_yucatan_map
 
 	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = YUC_indepedence_war_over } }
 
 	option = {
 		name = mexico.66.a
@@ -11257,13 +11259,12 @@ country_event = {
 					add_state_claim = 797 #San Francisco
 					add_state_claim = 798 #Los Angeles
 					add_state_claim = 829 #Southern California
-					add_state_claim = 1096 #Trans-Pecos
 					add_state_claim = 833 #Southern Texas
 					add_state_claim = 1174 #Tucson
 					add_state_claim = 380 #Tucson
 					add_state_claim = 1096 #Tucson
 					add_state_claim = 1175 #Tucson
-					add_state_claim = 1166
+					add_state_claim = 1166 #Trans-Pecos
 		add_political_power = 40
 	}
 	option = { ###Let's not claim anything and be nice
@@ -11360,10 +11361,6 @@ country_event = { ####American Reaction
 				MEX = {	transfer_state = 379 }
 			}
 			if = { 
-				limit = { 1165 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
-				MEX = {	transfer_state = 1165 }
-			}
-			if = { 
 				limit = { 797 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
 				MEX = {	transfer_state = 797 }
 			}	
@@ -11374,10 +11371,6 @@ country_event = { ####American Reaction
 			if = { 
 				limit = { 829 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
 				MEX = {	transfer_state = 829 }
-			}
-			if = { 
-				limit = { 1096 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
-				MEX = {	transfer_state = 1096 }
 			}
 			if = { 
 				limit = { 833 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
@@ -11582,10 +11575,6 @@ country_event = { #####Hold Up Our End?
 				MEX = {	transfer_state = 379 }
 			}
 			if = { 
-				limit = { 1165 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
-				MEX = {	transfer_state = 1165 }
-			}
-			if = { 
 				limit = { 797 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
 				MEX = {	transfer_state = 797 }
 			}	
@@ -11596,10 +11585,6 @@ country_event = { #####Hold Up Our End?
 			if = { 
 				limit = { 829 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
 				MEX = {	transfer_state = 829 }
-			}
-			if = { 
-				limit = { 1096 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
-				MEX = {	transfer_state = 1096 }
 			}
 			if = { 
 				limit = { 833 = { OR = { is_controlled_by = USA is_controlled_by = WCC } } } 
@@ -11819,10 +11804,6 @@ country_event = { #####mexicans demand texas
 				MEX = {	transfer_state = 379 }
 			}
 			if = { 
-				limit = { 1165 = { is_controlled_by = TEX  } } 
-				MEX = {	transfer_state = 1165 }
-			}
-			if = { 
 				limit = { 797 = { is_controlled_by = TEX  } } 
 				MEX = {	transfer_state = 797 }
 			}	
@@ -11833,10 +11814,6 @@ country_event = { #####mexicans demand texas
 			if = { 
 				limit = { 829 = { is_controlled_by = TEX  } } 
 				MEX = {	transfer_state = 829 }
-			}
-			if = { 
-				limit = { 1096 = { is_controlled_by = TEX  } } 
-				MEX = {	transfer_state = 1096 }
 			}
 			if = { 
 				limit = { 833 = { is_controlled_by = TEX  } } 
@@ -12066,15 +12043,15 @@ country_event = { ##### mexico_req Sent Peace Offer
 						}
 						AND = {
 							state = 377 #Arizona
-							1096 = { is_owned_by = USA is_controlled_by = MEX }
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 						AND = {
 							state = 376 #New Mexico
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
+						}
+						AND = {
 							state = 1161 #New Mexico
-							OR = {
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
-							}
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 						AND = {
 							state = 375 #Northern Texas
@@ -12082,9 +12059,11 @@ country_event = { ##### mexico_req Sent Peace Offer
 						}
 						AND = {
 							state = 379 #Nevada
+							829 = { is_owned_by = USA is_controlled_by = MEX }
+						}
+						AND = {
 							state = 1165
 							829 = { is_owned_by = USA is_controlled_by = MEX }
-							377 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 					}
 				}
@@ -12159,15 +12138,15 @@ country_event = { ##### Americans Accept
 						}
 						AND = {
 							state = 377 #Arizona
-							1096 = { is_owned_by = USA is_controlled_by = MEX }
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 						AND = {
 							state = 376 #New Mexico
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
+						}
+						AND = {
 							state = 1161 #New Mexico
-							OR = {
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
-							}
+							1166 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 						AND = {
 							state = 375 #Northern Texas
@@ -12175,9 +12154,11 @@ country_event = { ##### Americans Accept
 						}
 						AND = {
 							state = 379 #Nevada
+							829 = { is_owned_by = USA is_controlled_by = MEX }
+						}
+						AND = {
 							state = 1165
 							829 = { is_owned_by = USA is_controlled_by = MEX }
-							377 = { is_owned_by = USA is_controlled_by = MEX }
 						}
 					}
 				}
@@ -12345,11 +12326,15 @@ country_event = { ##### mexico_req Sent Peace Offer
 						}
 						AND = {
 							state = 376 #New Mexico
+							OR = {
+								1166 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Trans-Pecos
+								1166 = { is_owned_by = USA is_controlled_by = MEX }
+							}
+						}
+						AND = {
 							state = 1161 #New Mexico
 							OR = {
-								1096 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Rio Grande
 								1166 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Trans-Pecos
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
 								1166 = { is_owned_by = USA is_controlled_by = MEX }
 							}
 						}
@@ -12362,14 +12347,16 @@ country_event = { ##### mexico_req Sent Peace Offer
 						}
 						AND = {
 							state = 379 #Nevada
-							state = 1165 #reno
 							OR = {
 								829 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Southern California
 								829 = { is_owned_by = USA is_controlled_by = MEX }
 							}
+						}
+						AND = {
+							state = 1165
 							OR = {
-								377 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Arizona
-								377 = { is_owned_by = USA is_controlled_by = MEX }
+								829 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Southern California
+								829 = { is_owned_by = USA is_controlled_by = MEX }
 							}
 						}
 					}
@@ -12463,11 +12450,15 @@ country_event = { ##### Americans Accept
 						}
 						AND = {
 							state = 376 #New Mexico
+							OR = {
+								1166 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Trans-Pecos
+								1166 = { is_owned_by = USA is_controlled_by = MEX }
+							}
+						}
+						AND = {
 							state = 1161 #New Mexico
 							OR = {
-								1096 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Rio Grande
 								1166 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Trans-Pecos
-								1096 = { is_owned_by = USA is_controlled_by = MEX }
 								1166 = { is_owned_by = USA is_controlled_by = MEX }
 							}
 						}
@@ -12480,14 +12471,16 @@ country_event = { ##### Americans Accept
 						}
 						AND = {
 							state = 379 #Nevada
-							state = 1165
 							OR = {
 								829 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Southern California
 								829 = { is_owned_by = USA is_controlled_by = MEX }
 							}
+						}
+						AND = {
+							state = 1165
 							OR = {
-								377 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Arizona
-								377 = { is_owned_by = USA is_controlled_by = MEX }
+								829 = { OR = { is_owned_and_controlled_by = USA  is_owned_and_controlled_by = WCC } } #Southern California
+								829 = { is_owned_by = USA is_controlled_by = MEX }
 							}
 						}
 					}
@@ -16847,16 +16840,33 @@ country_event = { # Forgotten Revolutionaries
 	desc = mexico.296.d
 	picture = GFX_report_event_MEX_avila
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = MEX
-		date > 1938.4.1
-		has_socialist_government = yes
+		OR = {
+			has_socialist_government = yes
+			MEX_has_democratic_government = yes
+		}
 	}
 	option = { # sure
 		name = mexico.296.a
 		increase_ruling_party_popularity_by_2 = yes
 		add_war_support = 0.02
+		create_corps_commander = {
+			name = "Amelio Robles Ávila"
+			portrait_path = "gfx/leaders/MEX/Portrait_Mexico_Amelio_Robles_Avila.png"
+			traits = {
+				cavalry_leader
+				war_hero
+				harsh_leader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
 	}
 }
 
@@ -17032,4 +17042,42 @@ country_event = { # Death of the Empiress
 		
 	}
 	
+}
+
+country_event = { #peace out Mexico
+	id = mexico.3002
+	immediate = {log = "[GetDateText]: [Root.GetName]: mexico.3002"}
+	title = mexico.3002.t
+	desc = mexico.3002.d
+	picture = GFX_the_campesino_war
+
+	trigger= {
+		is_ai = no
+		has_war_with = MEX
+		MEX = { 
+			is_ai = yes 
+			is_in_faction = yes 
+			has_capitulated = yes
+		}
+		controls_state = 277
+	}
+	
+	fire_only_once = yes
+
+	option = { #yes
+		name = mexico.3002.a
+		every_enemy_country = {
+			limit = {
+				is_in_faction_with = MEX
+			}
+			white_peace = ROOT
+		}
+		annex_country = {
+			target = MEX
+		}
+	}
+	option = { #well nah
+		name = mexico.3002.b
+		add_war_support = 0.1
+	}
 }

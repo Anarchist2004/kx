@@ -64,9 +64,18 @@ UKR_leo_stefan_in_power = {
 	}
 }
 UKR_danila_skoropadsky_in_power = {
-	has_country_leader = {
-		name = "Danylo II"
-		ruling_only = yes
+	custom_trigger_tooltip = {
+		tooltip = UKR_danila_skoropadsky_in_power
+		OR = {
+			has_country_leader = {
+				name = "Danylo II"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Danylo Skoropadskyi"
+				ruling_only = yes
+			}
+		}
 	}
 }
 UKR_andriy_melnyk_in_power = {
@@ -307,6 +316,9 @@ UKR_upsf_in_power = {
 			}
 		}
 	}
+}
+UKR_upsfm_in_power = {
+	has_idea = UKR_Dmytro_Doroshenko_hog_sli
 }
 UKR_plsru_in_power = {
 	has_country_leader = {
@@ -634,8 +646,8 @@ UKR_has_socialist_or_pro_russian_government = {
 				is_subject_of = RUS
 				is_in_faction_with = RUS
 				AND = {
-					has_completed_focus = UKR_Regency_Council
-					check_variable = { UKR_skoropadskyi_orientation > 0 }
+					UKR_pavlo_skoropadsky_in_power = yes
+					has_completed_focus = UKR_Look_Out_To_Russia
 				}
 			}
 		}
@@ -692,7 +704,6 @@ is_a_potential_kyiv_conference_member = {
 		tag = IVO
 		tag = JAM
 		tag = JBS
-		tag = JOR
 		tag = KAC
 		tag = KBR
 		tag = KIK

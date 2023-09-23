@@ -1615,12 +1615,10 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus RUS_russian_army"
 		add_stability = 0.075
 		army_experience = 50
-		country_event = {
-			id = russia.54
-			days = 0
-		}
-		}
+		country_event = russia.54
 	}
+		
+}
 shared_focus = {
 	id = RUS_Reintroduce_Okhranka
 	icon = GFX_goal_secret_agents
@@ -2514,7 +2512,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Create_The_VDV
-	icon = GFX_focus_generic_paratrooper
+	icon = GFX_goal_generic_paratroopers
 	relative_position_id = RUS_russian_army
 	x = 3
 	y = 5
@@ -2656,7 +2654,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Extensive_Planning
-	icon = GFX_goal_generic_army_grand_battleplan
+	icon = GFX_RUS_Wrangel_Plan
 	prerequisite = {
 		focus = RUS_russian_army
 	}
@@ -2983,7 +2981,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Overwhelming_Firepower
-	icon = GFX_goal_generic_army_superior_firepower
+	icon = GFX_RUS_Shatilov_Plan
 	prerequisite = {
 		focus = RUS_russian_army
 	}
@@ -3173,7 +3171,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Spearhead_Doctrine
-	icon = GFX_goal_generic_army_mobile_warfare
+	icon = GFX_RUS_Markov_Plan
 	prerequisite = {
 		focus = RUS_russian_army
 	}
@@ -3462,7 +3460,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_War_Of_Numbers
-	icon = GFX_goal_generic_army_mass_assault
+	icon = GFX_RUS_Denikin_Plan
 	prerequisite = {
 		focus = RUS_russian_army
 	}
@@ -3897,7 +3895,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Floating_Fortresses
-	icon = GFX_goal_generic_naval_fleet_in_being
+	icon = GFX_RUS_Kolomeitsev_Plan
 	relative_position_id = RUS_Navy_Modernisation
 	x = -5
 	y = 1
@@ -3933,7 +3931,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Death_From_Above
-	icon = GFX_goal_generic_air_fighter2
+	icon = GFX_RUS_Berens_Plan
 	relative_position_id = RUS_Navy_Modernisation
 	x = -3
 	y = 1
@@ -3969,7 +3967,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_War_Under_The_Sea
-	icon = GFX_goal_generic_navy_anti_submarine
+	icon = GFX_RUS_Monastyriov_Plan
 	relative_position_id = RUS_Navy_Modernisation
 	x = -1
 	y = 1
@@ -4045,7 +4043,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_Coastal_Defences
-	icon = GFX_goal_nested_fortifications
+	icon = GFX_goal_generic_coastal_navy2
 	relative_position_id = RUS_Navy_Modernisation
 	allow_branch = { has_dlc = "Man the Guns" }
 	x = -6
@@ -5112,7 +5110,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = RUS_Seek_Allies
-		icon = GFX_goal_generic_join_faction
+		icon = GFX_goal_generic_world_diplomacy
 		relative_position_id = RUS_Realpolitik
 		x = -7
 		y = 1
@@ -6080,7 +6078,7 @@ shared_focus = {
 
 shared_focus = {
 	id = RUS_The_Final_Battle
-	icon = GFX_goal_attack_germany
+	icon = GFX_goal_MLT_fuck_germany
 	relative_position_id = RUS_Enemy_In_The_West
 	x = 0
 	y = 2
@@ -7201,7 +7199,7 @@ focus_tree = {
 	### Democratic Focus Tree ###
 	focus = {
 		id = RUS_communists
-		icon = GFX_goal_goal_commies_elected
+		icon = GFX_goal_commies_elected
 		x = 15
 		y = 7
 		cost = 0
@@ -11249,9 +11247,10 @@ focus_tree = {
 				ideology = social_democrat
 				popularity = 0.03
 			}
-			custom_effect_tooltip = RUS_The_New_Oprichnina_tooltip
-			multiply_variable = { rus_core_integration_cost_compliance = 0.8 }
-			multiply_variable = { rus_core_integration_time_to_remove = 0.8 }		
+			every_owned_state = {
+				limit = { has_resistance = yes }
+				add_compliance = 10
+			}
 		}
 	}
 	focus = {
@@ -17475,7 +17474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_General_Education_Act
-		icon = GFX_goal_KTG_Educate_natives
+		icon = GFX_goal_CZE_rural_education
 		cost = 5
 		available = {
 			rsdrp_in_power = yes
@@ -17528,7 +17527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Expand_The_Public_Sector
-		icon = GFX_goal_CSA_welfare_state
+		icon = GFX_goal_KIV_urban
 		cost = 5
 		available = {
 			rsdrp_in_power = yes
@@ -17628,9 +17627,10 @@ focus_tree = {
 				ideology = social_democrat
 				popularity = 0.07
 			}
-			custom_effect_tooltip = RUS_The_New_Oprichnina_tooltip
-			multiply_variable = { rus_core_integration_cost_compliance = 0.8 }
-			multiply_variable = { rus_core_integration_time_to_remove = 0.8 }
+			every_owned_state = {
+				limit = { has_resistance = yes }
+				add_compliance = 10
+			}
 		}
 	}
 	focus = {
@@ -17752,7 +17752,13 @@ focus_tree = {
 		icon = GFX_RUS_Tax_Workers
 		cost = 5
 		available = {
-			has_idea = RUS_Nikolay_I_Bukharin_hog_syn
+			custom_trigger_tooltip = {
+				tooltip = nsp_in_power
+				OR = {
+					has_idea = RUS_Nikolay_I_Bukharin_hog_syn
+					has_idea = RUS_Sergey_M_Kirov_hog_syn
+				}
+			}
 			has_country_flag = rus_elections_1941_over
 		}
 		prerequisite = {
@@ -20701,6 +20707,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = rus_cossack_forces_tt
+			custom_effect_tooltip = cossack_corps_tech_effect
+			hidden_effect= {
+				set_technology = {
+					cossack_corps_tech = 1
+				}
+			}
 			hidden_effect = { load_oob = RUS_Cossacks }
 		}
 	}
@@ -21320,14 +21332,14 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-				log = "[GetDateText]: [Root.GetName]: Focus RUS_That_Which_Was_Lost"
-				if = { 
-					limit = { check_variable = { BlackHundredsStrenght = 3} }
-					country_event = rusd.19
-				}
-				else = { 
-					country_event = rusdroz.64
-				}
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_That_Which_Was_Lost"
+			if = { 
+				limit = { check_variable = { BlackHundredsStrenght = 3} }
+				country_event = rusd.19
+			}
+			else = { 
+				country_event = rusdroz.64
+			}
 		}
 	}
 
@@ -22995,6 +23007,12 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			custom_effect_tooltip = rus_cossack_forces_tt
+			custom_effect_tooltip = cossack_corps_tech_effect
+			hidden_effect= {
+				set_technology = {
+					cossack_corps_tech = 1
+				}
+			}
 			hidden_effect = { load_oob = RUS_Cossacks }
 		}
 	}
@@ -23456,10 +23474,7 @@ focus_tree = {
 		x = -4
 		y = 5
 		completion_reward = {
-			country_event = {
-				id = rusd.139
-				days = 0
-			}
+			country_event = rusd.139
 		}
 	}
 

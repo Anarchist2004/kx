@@ -515,6 +515,10 @@ focus_tree = {
 				add_idea = POR_parliament_abolished
 				remove_idea = POR_parliament_suspended
 			}
+			if = {
+				limit = { is_subject = no }
+				set_cosmetic_tag = POR_empire
+			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
@@ -1323,6 +1327,9 @@ focus_tree = {
 				add_claim_by = POR
 			}
 			879 = {
+				add_claim_by = POR
+			}
+			1183 = {
 				add_claim_by = POR
 			}
 			545 = { #zimbabwe

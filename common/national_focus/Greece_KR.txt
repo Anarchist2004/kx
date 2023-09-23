@@ -460,7 +460,20 @@ focus_tree = {
 		y = 2
 		relative_position_id = GRE_monarchy_referendum
 		available = {
-			has_elected_government = yes
+			OR = {
+				AND = {
+					has_elected_government = yes
+					NOT = {
+						hidden_trigger = { has_country_flag = GRE_kingdom_restored_by_crete }
+					}
+				}
+				AND = {
+					hidden_trigger = {
+						has_country_leader = { name = "Aléxandros I" ruling_only = yes }
+						has_country_flag = GRE_kingdom_restored_by_crete 
+					}
+				}
+			}
 			has_country_flag = GRE_monarchists_win_referendum
 		}
 		ai_will_do = {
@@ -670,7 +683,20 @@ focus_tree = {
 		y = 2
 		relative_position_id = GRE_monarchy_referendum
 			available = {
-					has_elected_government = yes
+					OR = {
+						AND = {
+							has_elected_government = yes
+							NOT = {
+								hidden_trigger = { has_country_flag = GRE_kingdom_restored_by_crete } 
+							}
+						}
+						AND = {
+							hidden_trigger = {
+								has_country_leader = { name = "Geórgios II" ruling_only = yes }
+								has_country_flag = GRE_kingdom_restored_by_crete
+							}
+						}
+					}
 					has_country_flag = GRE_monarchists_win_referendum
 				}
 			ai_will_do = {
@@ -2371,6 +2397,10 @@ focus_tree = {
 					add_state_claim = 447
 					add_state_claim = 452
 					add_state_claim = 350
+					add_state_claim = 552
+					add_state_claim = 1008
+					add_state_claim = 457
+					add_state_claim = 456
 				}
 
 	}
@@ -2793,11 +2823,11 @@ focus_tree = {
 				OR = {
 				has_government = social_democrat
 				has_government = social_conservative
+				has_government = market_liberal
 				has_government = social_liberal
 				has_government = authoritarian_democrat
 				has_government = paternal_autocrat
 				has_government = national_populist
-				has_government = social_democrat
 					}
 				has_country_flag = GRE_greeks_win
 				}
@@ -2827,6 +2857,7 @@ focus_tree = {
 			OR = {
 			has_government = social_conservative
 			has_government = social_liberal
+			has_government = market_liberal
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
 			has_government = social_democrat
@@ -2859,6 +2890,7 @@ focus_tree = {
 			OR = {
 			has_government = social_conservative
 			has_government = social_liberal
+			has_government = market_liberal
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
 			has_government = social_democrat
@@ -2897,6 +2929,7 @@ focus_tree = {
 			OR = {
 			has_government = social_conservative
 			has_government = social_liberal
+			has_government = market_liberal
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
 			has_government = national_populist
@@ -2964,6 +2997,7 @@ focus_tree = {
 			OR = {
 			has_government = social_conservative
 			has_government = social_liberal
+			has_government = market_liberal
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
 			has_government = national_populist
@@ -2997,6 +3031,7 @@ focus_tree = {
 			OR = {
 			has_government = social_conservative
 			has_government = social_liberal
+			has_government = market_liberal
 			has_government = authoritarian_democrat
 			has_government = paternal_autocrat
 			has_government = national_populist
