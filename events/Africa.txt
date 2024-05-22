@@ -252,27 +252,6 @@ country_event = { #Nature’s Mysteries
 	}
 }
 
-country_event = { #Getting rid of Shared African Tree if you have it
-	id = africa_shared.1400
-	immediate = { 
-		log = "[GetDateText]: [Root.GetName]: event africa_shared.1400"
-		load_focus_tree = generic_focus
-	}
-	title = africa_shared.1400.t
-	desc = africa_shared.1400.d
-	hidden = yes
-	
-	trigger = {
-		has_focus_tree = african_shared_focus
-		is_afrikan_tag = no
-	}
-
-	fire_only_once = yes
-	option = { #
-		name = africa_shared.14.a
-	}
-}
-
 country_event = { #Peacing out Portugal
 	id = africa_shared.15
 	immediate = { log = "[GetDateText]: [Root.GetName]: event shared.15" }
@@ -294,6 +273,7 @@ country_event = { #Peacing out Portugal
 		AND = {
 			has_war_with = POR
 		}
+		is_subject = no
 		controls_state = 914
 		controls_state = 916
 		controls_state = 540
@@ -316,6 +296,12 @@ country_event = { #Peacing out Portugal
 		transfer_state = 544
 		transfer_state = 954
 		transfer_state = 950
+		if = {
+			limit = {
+				controls_state = 296
+			}
+			transfer_state = 296
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -358,6 +344,7 @@ country_event = { #Peacing out Portugal 2
 		AND = {
 			has_war_with = POR
 		}
+		is_subject = no
 		controls_state = 296
 	}
 
@@ -366,6 +353,26 @@ country_event = { #Peacing out Portugal 2
 	option = { #peace out
 		name = africa_shared.15.a
 		transfer_state = 296
+			if = {
+				limit = {
+					controls_state = 914
+					controls_state = 916
+					controls_state = 540
+					controls_state = 917
+					controls_state = 959
+					controls_state = 544
+					controls_state = 954
+					controls_state = 950
+				}
+				transfer_state = 914
+				transfer_state = 916
+				transfer_state = 540
+				transfer_state = 917
+				transfer_state = 959
+				transfer_state = 544
+				transfer_state = 954
+				transfer_state = 950
+			}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -383,6 +390,7 @@ country_event = { #Peacing out Portugal 2
 					white_peace = POR
 				}
 			}
+			
 		}
 	}
 	option = {
@@ -412,6 +420,7 @@ country_event = { #Peacing out Spain
 				has_war_with = CAR
 			}
 		}
+		is_subject = no
 		controls_state = 297
 	}
 
@@ -420,6 +429,16 @@ country_event = { #Peacing out Spain
 	option = { #peace out
 		name = africa_shared.17.a
 		transfer_state = 297
+		if = { 
+			limit = {
+				controls_state = 1318
+				controls_state = 699
+				controls_state = 290
+			}
+			transfer_state = 1318
+			transfer_state = 699
+			transfer_state = 290
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -477,6 +496,7 @@ country_event = { #Peacing out Spain 2
 				has_war_with = CAR
 			}
 		}
+		is_subject = no
 		controls_state = 1318
 		controls_state = 699
 		controls_state = 290
@@ -489,6 +509,12 @@ country_event = { #Peacing out Spain 2
 		transfer_state = 1318
 		transfer_state = 699
 		transfer_state = 290
+		if = {
+			limit = {
+				controls_state = 297
+			}
+			transfer_state = 297
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -539,13 +565,18 @@ country_event = { #Peacing out South Africa
 			tag = NYC
 			tag = HAI
 		}
+		NOT = { tag = SAF }
 		AND = {
-			OR = {
-				has_war_with = CAN
-				has_war_with = GER
-				has_war_with = FRA
+			SAF = {
+				OR = {
+					is_in_faction_with = ENT
+					is_in_faction_with = GER
+					is_in_faction_with = FRA
+				}
 			}
 		}
+		has_war_with = SAF
+		is_subject = no
 		controls_state = 275
 		controls_state = 719
 		controls_state = 947
@@ -604,9 +635,13 @@ country_event = { #Peacing out Westafrika
 		}
 		AND = { has_war_with = CAN }
 		CIV = { is_in_faction_with = CAN }
+		is_subject = no
 		controls_state = 807
 		controls_state = 963
 		controls_state = 274
+		controls_state = 1321
+		controls_state = 1322
+		controls_state = 1323
 		controls_state = 877
 		controls_state = 876
 	}
@@ -655,9 +690,13 @@ country_event = { #Peacing for Togo
 		}
 		AND = { has_war_with = CAN}
 		TOG = { is_in_faction_with = CAN }
+		is_subject = no
 		controls_state = 807
 		controls_state = 963
 		controls_state = 274
+		controls_state = 1321
+		controls_state = 1322
+		controls_state = 1323
 		controls_state = 877
 		controls_state = 876
 	}
@@ -706,6 +745,7 @@ country_event = { #Peacing for Morocco
 		}
 		AND = { has_war_with = GER }
 		MOR = { is_in_faction_with = GER }
+		is_subject = no
 		controls_state = 461
 		controls_state = 462
 	}
@@ -754,6 +794,7 @@ country_event = { #Peacing for Gabon
 		}
 		AND = { has_war_with = CAN }
 		GAB = { is_in_faction_with = CAN }
+		is_subject = no
 		controls_state = 539
 	}
 
@@ -801,6 +842,7 @@ country_event = { #Peacing for Dahomey
 		}
 		AND = { has_war_with = CAN }
 		DAH = { is_in_faction_with = CAN }
+		is_subject = no
 		controls_state = 876
 	}
 

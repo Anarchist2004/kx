@@ -2325,13 +2325,47 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus OTT_aircraft_industry"
-		custom_effect_tooltip = OTT_hurkus_unlocked_tt
 		773 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
 				level = 1
 				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = tooltip_white_line
+		if = {
+			limit = { has_dlc_aat = no }
+			custom_effect_tooltip = OTT_hurkus_unlocked_tt
+		}
+		else = {
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_hurkus_organisation
+					mio:TUR_hurkus_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_hurkus_organisation = { add_mio_funds = 500 }
+			}
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_tomtas_organisation
+					mio:TUR_tomtas_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_tomtas_organisation = { add_mio_funds = 500 }
+			}
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_nuri_demirag_company_organisation
+					mio:TUR_nuri_demirag_company_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_nuri_demirag_company_organisation = { add_mio_funds = 500 }
+			}
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_thk_company_organisation
+					mio:TUR_thk_company_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_thk_company_organisation = { add_mio_funds = 500 }
 			}
 		}
 	}
@@ -2560,7 +2594,23 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus OTT_Shipbuilding_Effort"
-		add_ideas = golcuk_tersanesi
+		if = {
+			limit = { has_dlc_aat = no }
+			add_ideas = golcuk_tersanesi
+		}
+		else = {
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_golcuk_tersanesi_organisation
+					mio:TUR_golcuk_tersanesi_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_golcuk_tersanesi_organisation = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+		}
+		custom_effect_tooltip = tooltip_white_line
 		340 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -5961,15 +6011,17 @@ shared_focus = {
 			target = GER
 			modifier = ott_german_fren2
 		}
-		every_other_country = {
-			limit = { has_socialist_government = yes }
-			embargo_ROOT = yes
-		}
+		custom_effect_tooltip = OTT_embargo_INT_tt
 		hidden_effect = {
-			BHC = { embargo_ROOT = yes }
-			CSA = { embargo_ROOT = yes }
-			SRI = { embargo_ROOT = yes }
-			CNT = { embargo_ROOT = yes }
+			every_possible_country = {
+				limit = {
+					OR = {
+						has_socialist_government = yes
+						is_in_faction_with = INT
+					}
+				}
+				embargo_ROOT = yes
+			}
 		}
 	}
 }
@@ -6867,7 +6919,7 @@ shared_focus = {
 					create_country_leader = {# Saud bin Abdulaziz Al Saud
 						name = "Saud bin Abdulaziz Al Saud"
 						picture = "gfx/leaders/SAU/Portrait_Saudi_Arabia_Saud_bin_Abdulaziz_Al_Saud.png"
-						expire = "1965.1.1"
+						expire = "1.1.1"
 						ideology = paternal_autocrat_subtype
 					}
 					division_template = {
@@ -6952,7 +7004,7 @@ shared_focus = {
 					create_country_leader = {
 						name = "Mohammed Naguib"
 						picture = "gfx/leaders/EGY/Portrait_EGY_Mohammed_Naguib.png"
-						expire = "1965.1.1"
+						expire = "1.1.1"
 						ideology = authoritarian_democrat_subtype
 					}
 					set_politics = {
@@ -6986,7 +7038,7 @@ shared_focus = {
 					create_country_leader = {
 						name = "Reza Pahlavi"
 						picture = "gfx/leaders/PER/Portrait_Persia_Reza_Khan.png"
-						expire = "1965.1.1"
+						expire = "1.1.1"
 						ideology = paternal_autocrat_subtype
 					}
 					set_politics = {
@@ -7268,10 +7320,8 @@ shared_focus = {
 		add_ideas = ott_broken_monopolies
 		set_country_flag = centralist_DF
 		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
-			add_to_coalition = yes
+			add_marlib_to_coalition = yes
+			add_authdem_to_coalition = yes
 		}
 	}
 }
@@ -10837,7 +10887,7 @@ shared_focus = {
 
 shared_focus = {
 	id = OTT_Jizya
-	icon = BAT_charity_propaganda
+	icon = GFX_BAT_charity_propaganda
 
 	available = {
 
@@ -12172,7 +12222,22 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		add_ideas = opel_osmanen
+		if = {
+			limit = { has_dlc_aat = no }
+			add_ideas = opel_osmanen
+		}
+		else = {
+			if = {
+				limit = {
+					has_military_industrial_organization = TUR_opel_osmanen_organisation
+					mio:TUR_opel_osmanen_organisation = { is_mio_available = yes }
+				}
+				mio:TUR_opel_osmanen_organisation = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+		}
 	}
 }
 
@@ -13541,7 +13606,7 @@ shared_focus = {
 					name = "Fritz Bronsart von Schellendorf"
 					desc = "POLITICS_SCHELLENDORF_DESC"
 					picture = "gfx/leaders/OTT/OTT_SCHELLENDORF.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = authdem_junta_subtype
 					traits = {
 						
@@ -13721,7 +13786,7 @@ shared_focus = {
 				name = "Wilhelm II "
 				desc = "POLITICS_WILHELM_II_DESC"
 				picture = "gfx/leaders/OTT/Portrait_Germany_Wilhelm_II.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = paternal_autocrat_subtype
 			}
 		}

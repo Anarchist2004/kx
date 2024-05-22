@@ -5,7 +5,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_GRU_flag"
-		texturefile = "gfx/event_pictures/GRU_flag.png"
+		texturefile = "gfx/event_pictures/Europe/Germany/GRU_flag.png"
 	}
 	##Arizonia 
 	spriteType = {
@@ -195,7 +195,17 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_report_event_ITA_fatima"
-		texturefile = "gfx/event_pictures/Europe/Italy/aaaaaaaaaaaaaaaa.png"
+		texturefile = "gfx/event_pictures/Europe/Italy/ITA_fatima.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ITA_harukichi_shimoi"
+		texturefile = "gfx/event_pictures/Europe/Italy/ITA_harukichi_shimoi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_dumb_fucks_who_cant_read"
+		texturefile = "gfx/event_pictures/dumb_fucks_who_cant_read.png"
 	}
 	spriteType = {
 		name = "GFX_CHR_santa_missing"
@@ -230,8 +240,72 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Other/Christmas/death.png"
 	}
 	spriteType = {
-		name = "GFX_dumb_fucks_who_cant_read"
-		texturefile = "gfx/event_pictures/dumb_fucks_who_cant_read.png"
+		name = "GFX_CHR_toy_soilder"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_toy_soilder.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_heat_miser_color"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_heat_miser_color.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_forbs"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_forbs.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_they_yearn_for_the_mines"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_they_yearn_for_the_mines.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_polar_express"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_polar_express.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_singers"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_singers.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_st_nick"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_st_nick.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_lights"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_lights.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_throne"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_throne.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_list"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_list.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_cookies"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_cookies.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_grinch_heart"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_grinch_heart.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_grinch_heart"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_grinch_heart.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_snowball"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_snowball.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_snow_miser"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_snow_miser.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_return_of_santa"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_return_of_santa.png"
+	}
+	spriteType = {
+		name = "GFX_CHR_heat_miser"
+		texturefile = "gfx/event_pictures/Other/Christmas/CHR_heat_miser.png"
 	}
 	
 	spriteType = {
@@ -257,6 +331,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Karl_Portrait_Event"
 		texturefile = "gfx/event_pictures/Europe/Austria/Karlgang.png"
+	}
+	spriteType = {
+		name = "GFX_Karl_Portrait_Event_2"
+		texturefile = "gfx/event_pictures/Europe/Austria/Karlgang_2.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_AUS_hotzendorf"
@@ -436,12 +514,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_Capone_1.png"
 	}	
 	spriteType = {
-		name = "GFX_report_event_CSA_Capone_1"
-		texturefile = "gfx/event_pictures/North_America/CSA/CSA_Capone_1.png"
-	}
-	spriteType = {
 		name = "GFX_report_event_CSA_Smuggle"
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_Smuggle.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_capone_flag"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_capone_flag.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_CSA_Mob_War"
@@ -470,10 +548,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_CSA_Dillinger_1"
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_Dillinger_1.png"
-	}
-	spriteType = {
-		name = "GFX_tnodam"
-		texturefile = "gfx/event_pictures/Other/GFX_tnodam.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_CSA_Luciano_2"
@@ -623,9 +697,29 @@ spriteTypes = {
 		name = "GFX_report_event_CSA_capone_vault_2"
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_capone_vault_2.png"
 	}
+	spriteType = {
+		name = "GFX_report_event_CSA_alcatraz"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_alcatraz.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_stone_mountain"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_stone_mountain.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_capone_soup_kitchen"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_capone_soup_kitchen.png"
+	}
     spriteType = {
 		name = "GFX_report_event_CSA_cannon_trots"
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_cannon_trots.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_cronaca_sovversiva"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_cronaca_sovversiva.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_homosexual"
+		texturefile = "gfx/event_pictures/North_America/CSA/CSA_homosexual.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_CSA_lovestone_flag"
@@ -646,6 +740,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_CSA_haywood"
 		texturefile = "gfx/event_pictures/North_America/CSA/CSA_haywood.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_CSA_waldorfastroria"
+		texturefile = "gfx/event_pictures/North_America/CSA/report_event_CSA_waldorfastroria.png"
 	}
 	spriteType = {
 		name = "GFX_event_USA_kfc"
@@ -786,6 +884,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_USA_navy"
 		texturefile = "gfx/event_pictures/North_America/United_States/USA_navy.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_USA_doughton_plan"
+		texturefile = "gfx/event_pictures/North_America/United_States/USA_doughton_plan.png"
 	}
 
 	##Greece##
@@ -1142,6 +1244,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Albania/report_event_ALB_Wied_Dead.png"
 	}
 	spriteType  = {
+		name = "GFX_report_event_ALB_Hoxha_New_Years"
+		texturefile = "gfx/event_pictures/Europe/Albania/report_event_ALB_Hoxha_New_Years.png"
+	}
+	spriteType  = {
 		name = "GFX_SIC_victor_emmanuel_funeral"
 		texturefile = "gfx/event_pictures/Europe/Two Sicilies/SIC_victor_emmanuel_funeral.png"
 	}
@@ -1156,6 +1262,26 @@ spriteTypes = {
 	spriteType  = {
 		name = "GFX_GER_bauhaus"
 		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_bauhaus.png"
+	}
+	spriteType  = {
+		name = "GFX_GER_georg_saxony"
+		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_georg_saxony.png"
+	}
+	spriteType  = {
+		name = "GFX_GER_flag_picker"
+		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_flag_picker.png"
+	}
+	spriteType  = {
+		name = "GFX_GER_greater_germ_flag"
+		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_greater_germ_flag.png"
+	}
+	spriteType  = {
+		name = "GFX_GER_imperial_fed_flag"
+		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_imperial_fed_flag.png"
+	}
+	spriteType  = {
+		name = "GFX_GER_paneuro_flag"
+		texturefile = "gfx/event_pictures/Europe/Germany/GFX_GER_paneuro_flag.png"
 	}
 	spriteType = {
 		name = "GFX_GER_germany_austria"
@@ -1172,6 +1298,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GER_european_union"
 		texturefile = "gfx/event_pictures/Europe/Germany/GER_european_union.png"
+	}
+	spriteType = {
+		name = "GFX_GER_papen_picker"
+		texturefile = "gfx/event_pictures/Europe/Germany/GER_papen_picker.png"
+	}
+	spriteType = {
+		name = "GFX_GER_willy_two_picker"
+		texturefile = "gfx/event_pictures/Europe/Germany/GER_willy_two_picker.png"
+	}
+	spriteType = {
+		name = "GFX_GER_willy_three_picker"
+		texturefile = "gfx/event_pictures/Europe/Germany/GER_willy_three_picker.png"
 	}
 	SpriteType = {
 		name = "GFX_news_event_BAN_marching_soldiers"
@@ -1611,67 +1749,71 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_news_event_ENG_Mosley_March"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_Mosley_March.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_Mosley_March.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_maximist_federation"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_maximist_federation.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_maximist_federation.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_maximist_symbol"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_maximist_symbol.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_maximist_symbol.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_Revolution"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_Revolution.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_Revolution.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_Mosley_Victory"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_Mosley_Victory.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_Mosley_Victory.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_Mosley_Speaks"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_Mosley_Speaks.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_Mosley_Speaks.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_ENG_george_formby"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_george_formby.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_lord_blair"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_lord_blair.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_lord_blair.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_maximist"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_maximist.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_maximist.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_biff_boys"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_biff_boys.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_biff_boys.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_joyce"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_joyce.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_joyce.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_arrests"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_arrests.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_arrests.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_protests"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_protests.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_protests.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_cable_battle"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_cable_battle.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_cable_battle.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_fanatics"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_fanatics.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_fanatics.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_maximist_flag"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_maximist_flag.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_maximist_flag.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ENG_lumpen"
-		texturefile = "gfx/event_pictures/Europe/Union of Britain/ENG_lumpen.png"
+		texturefile = "gfx/event_pictures/Europe/Union_of_Britain/ENG_lumpen.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_GEO_rise_of_stalin"
@@ -2005,6 +2147,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_ALA_pfd"
 		texturefile = "gfx/event_pictures/North_America/Alaska/report_event_ALA_pfd.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_ALA_sedov"
+		texturefile = "gfx/event_pictures/North_America/Alaska/report_event_ALA_sedov.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_ALA_independence"
@@ -2699,6 +2845,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/North_America/New_England/NEE_weed.png"
 	}
 	spriteType = {
+		name = "GFX_NEE_petoria"
+		texturefile = "gfx/event_pictures/North_America/New_England/NEE_petoria.png"
+	}
+	spriteType = {
 		name = "GFX_NEE_bcc"
 		texturefile = "gfx/event_pictures/North_America/New_England/NEE_bcc.png"
 	}
@@ -2785,6 +2935,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_NEE_dupont"
 		texturefile = "gfx/event_pictures/North_America/New_England/NEE_dupont.png"
+	}
+	spriteType = {
+		name = "GFX_NEE_old_new_england"
+		texturefile = "gfx/event_pictures/North_America/New_England/NEE_old_new_england.png"
 	}
 	
 	## American Union State ##
@@ -3042,14 +3196,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/France/FRA_modern_army.png"
 	}
 	spriteType = {
-		name = "GFX_news_event_FRA_terror"
-		texturefile = "gfx/event_pictures/Europe/France/FRA_terror.png"
-	}
-	spriteType = {
-		name = "GFX_news_event_FRA_lenin_statue"
-		texturefile = "gfx/event_pictures/Europe/France/FRA_lenin_statue.png"
-	}
-	spriteType = {
 		name = "GFX_news_event_FRA_valois_dead"
 		texturefile = "gfx/event_pictures/Europe/France/FRA_valois_dead.png"
 	}
@@ -3144,6 +3290,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_FRA_rise_of_the_jacobins"
 		texturefile = "gfx/event_pictures/Europe/France/FRA_rise_of_the_jacobins.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_FRA_supreme_being"
+		texturefile = "gfx/event_pictures/Europe/France/FRA_supreme_being.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_FRA_jacobin_merge"
@@ -3258,12 +3408,24 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/France/FRA_deat_picker.png"
 	}
 	spriteType = {
+		name = "GFX_news_event_FRA_thorez_picker"
+		texturefile = "gfx/event_pictures/Europe/France/FRA_thorez_picker.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_FRA_doriot_picker"
+		texturefile = "gfx/event_pictures/Europe/France/FRA_doriot_picker.png"
+	}
+	spriteType = {
 		name = "GFX_news_event_FRA_deat_flags"
 		texturefile = "gfx/event_pictures/Europe/France/FRA_deat_flags.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_FRA_bucard_flag"
 		texturefile = "gfx/event_pictures/Europe/France/FRA_bucard_flag.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_FRA_jacobin_split"
+		texturefile = "gfx/event_pictures/Europe/France/FRA_jacobin_split.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_FRA_lenin"
@@ -3321,11 +3483,11 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_report_event_SOV_tukhachevsky_event"
-		texturefile = "gfx/event_news_pictures/Europe/Russia/SOV_tukhachevsky_event.png"
+		texturefile = "gfx/event_pictures/Europe/Russia/SOV_tukhachevsky_event.png"
 	}
 	SpriteType = {
 		name = "GFX_report_event_SOV_world_revolution"
-		texturefile = "gfx/event_news_pictures/Europe/Russia/SOV_world_revolution.png"
+		texturefile = "gfx/event_pictures/Europe/Russia/SOV_world_revolution.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_spanish_empire"
@@ -3750,6 +3912,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/North_America/Pacific_States/CAL_Tomorrowland.png"
 	}
 	SpriteType = {
+		name = "GFX_CAL_Gabriel_Over_White_House"
+		texturefile = "gfx/event_pictures/North_America/Pacific_States/CAL_Gabriel_Over_White_House.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Automatic_Transmission"
+		texturefile = "gfx/event_pictures/North_America/Pacific_States/CAL_Automatic_Transmission.png"
+	}
+	SpriteType = {
 		name = "GFX_report_event_CAL_hughes_health"
 		texturefile = "gfx/event_pictures/North_America/Pacific_States/report_event_CAL_hughes_health.png"
 	}
@@ -3784,6 +3954,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_CAL_spiritualists"
 		texturefile = "gfx/event_pictures/North_America/Pacific_States/CAL_spiritualists.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_CAL_tacoma_narrows_bridge"
+		texturefile = "gfx/event_pictures/North_America/Pacific_States/report_event_CAL_tacoma_narrows_bridge.png"
 	}
 
 	##Hungary##
@@ -4225,6 +4399,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/South_America/Patagonia/FOP_bandit_flag.png"
 	}
 	SpriteType = {
+		name = "GFX_FOP_posadas"
+		texturefile = "gfx/event_pictures/South_America/Patagonia/FOP_posadas.png"
+	}
+	SpriteType = {
+		name = "GFX_FOP_posadas_flag"
+		texturefile = "gfx/event_pictures/South_America/Patagonia/FOP_posadas_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_FOP_south_america"
+		texturefile = "gfx/event_pictures/South_America/Patagonia/FOP_south_america.png"
+	}
+	SpriteType = {
+		name = "GFX_FOP_dolphins"
+		texturefile = "gfx/event_pictures/South_America/Patagonia/FOP_dolphins.png"
+	}
+	SpriteType = {
 		name = "GFX_rus_droz1_event"
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_droz1.png"
 	}
@@ -4257,6 +4447,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_droz8.png"
 	}
 	SpriteType = {
+		name = "GFX_rus_droz9_event"
+		texturefile = "gfx/event_pictures/Europe/Russia/rus_droz9.png"
+	}
+	SpriteType = {
 		name = "GFX_rus_markov2_event"
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_markov2.png"
 	}
@@ -4267,6 +4461,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_report_event_RUS_Cosmicism"
 		texturefile = "gfx/event_pictures/Europe/Russia/RUS_Cosmicism.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_RUS_konigsberg"
+		texturefile = "gfx/event_pictures/Europe/Russia/GFX_report_event_RUS_konigsberg.png"
 	}
 	SpriteType = {
 		name = "GFX_rus_gorguloff_event"
@@ -4293,20 +4491,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_black_tsar_event.png"
 	}
 	SpriteType = {
-		name = "GFX_rus_eurasia_event"
-		texturefile = "gfx/event_pictures/Europe/Russia/rus_eurasia_event.png"
-	}
-	SpriteType = {
 		name = "GFX_rus_russia_flag_event"
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_russia_flag_event.png"
 	}
 	SpriteType = {
 		name = "GFX_rus_gorguloff_trial"
 		texturefile = "gfx/event_pictures/Europe/Russia/rus_gorguloff_trial.png"
-	}
-	SpriteType = {
-		name = "GFX_rus_gorguloff_vozhd"
-		texturefile = "gfx/event_pictures/Europe/Russia/rus_gorguloff_vozhd.png"
 	}
 	SpriteType = {
 		name = "GFX_Savinkov_Portrait_Event"
@@ -4804,6 +4994,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Malta/GFX_report_event_MLT_italy.png"
 	}
 	spriteType = {
+		name = "GFX_report_event_MLT_art"
+		texturefile = "gfx/event_pictures/Europe/Malta/GFX_report_event_MLT_art.png"
+	}
+	spriteType = {
 		name = "GFX_news_event_MLT_col"
 		texturefile = "gfx/event_pictures/Europe/Malta/GFX_news_event_MLT_col.png"
 	}
@@ -4969,7 +5163,13 @@ spriteTypes = {
 		name = "GFX_NOR_event_republic_flag"
 		texturefile = "gfx/event_pictures/Europe/Norway/report_event_republic_flag.png"
 	}
-	
+
+	### Nepal ###
+	spriteType = {
+		name = "GFX_report_event_NEP_chandra_shumsher_sons"
+		texturefile = "gfx/event_pictures/Asia/Nepal/NEP_chandra_shumsher_sons.png"
+	}
+
 	### Mexico and Yucatan ###
 	spriteType = {
 		name = "GFX_report_event_YUC_temistocles"
@@ -5236,8 +5436,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/North_America/Mexico/gold_shirts_coup.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_MEX_Gold_shirts_news"
-		texturefile = "gfx/event_pictures/North_America/Mexico/Gold_shirts_news.png"
+		name = "GFX_news_event_MEX_Gold_shirts"
+		texturefile = "gfx/event_news_pictures/North_America/news_event_MEX_gold_shirts.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_MEX_hanged"
@@ -5246,6 +5446,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_MEX_maria"
 		texturefile = "gfx/event_pictures/North_America/Mexico/maria.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_MEX_maria_gizela"
+		texturefile = "gfx/event_pictures/North_America/Mexico/maria_gizela.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_MEX_maya"
@@ -5288,8 +5492,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/North_America/Mexico/santa_muerte_2.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_MEX_santa_muerte_news"
-		texturefile = "gfx/event_pictures/North_America/Mexico/santa_muerte_news.png"
+		name = "GFX_news_event_MEX_santa_muerte"
+		texturefile = "gfx/event_news_pictures/North_America/news_event_MEX_santa_muerte.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_MEX_tolenado"
@@ -5397,7 +5601,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_news_event_MEX_mexico_dies"
-		texturefile = "gfx/event_pictures/North_America/Mexico/mexico_dies.png"
+		texturefile = "gfx/event_news_pictures/North_America/news_event_MEX_mexico_dies.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_MEX_mexican_cession"
@@ -5729,6 +5933,10 @@ spriteTypes = {
 		name = "GFX_report_event_MEX_maria_picker" 
 		texturefile = "gfx/event_pictures/North_America/Mexico/maria_picker.png" 
 	} 
+	SpriteType = { 
+		name = "GFX_report_event_MEX_baja_california" 
+		texturefile = "gfx/event_pictures/North_America/Mexico/baja_california.png" 
+	}
 	### Luxemburg ##
 	spriteType = {
 		name = "GFX_report_event_LUX_charlotte"
@@ -5749,6 +5957,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_LUX_city"
 		texturefile = "gfx/event_pictures/Europe/Luxemburg/report_event_LUX_city.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_LUX_schortgen"
+		texturefile = "gfx/event_pictures/Europe/Luxemburg/report_event_LUX_schortgen.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_LUX_government"
+		texturefile = "gfx/event_pictures/Europe/Luxemburg/report_event_LUX_government.png"
 	}
 	
 	## New York ##
@@ -6275,6 +6491,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_NYC_dutch_schultz"
 		texturefile = "gfx/event_pictures/North_America/New_York/report_event_NYC_dutch_schultz.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_NYC_new_orleans_cathedral"
+		texturefile = "gfx/event_pictures/North_America/New_York/report_event_NYC_new_orleans_cathedral.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_NYC_oyster_bay"
+		texturefile = "gfx/event_pictures/North_America/New_York/report_event_NYC_oyster_bay.png"
 	}
 
 	### Navajo Chads ##
@@ -6848,6 +7072,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_IRE_joyce"
 		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_joyce.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_IRE_nelsons_pillar"
+		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_nelsons_pillar.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_IRE_nelsons_pillar_destroyed"
+		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_nelsons_pillar_destroyed.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_IRE_o_flanagan"
+		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_o_flanagan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_IRE_new_labour_party"
+		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_new_labour_party.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_IRE_roddy_connolly"
+		texturefile = "gfx/event_pictures/Europe/Ireland/report_event_IRE_roddy_connolly.png"
 	}
 	
 	### Switzerland ###
@@ -7816,6 +8064,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_report_event_CAN_Lionel_Logue"
+		texturefile = "gfx/event_pictures/North_America/Canada/report_event_CAN_Lionel_Logue.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_CAN_pegahmagabow"
+		texturefile = "gfx/event_pictures/North_America/Canada/report_event_CAN_pegahmagabow.png"
+	}
+	
+	spriteType = {
 		name = "GFX_news_event_CAN_bennett"
 		texturefile = "gfx/event_pictures/North_America/Canada/news_event_CAN_bennett.png"
 	}
@@ -7870,6 +8128,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_NFL_smallwood"
 		texturefile = "gfx/event_pictures/North_America/Newfoundland/report_event_NFL_smallwood.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_NFL_map"
+		texturefile = "gfx/event_pictures/North_America/Newfoundland/report_event_NFL_map.png"
 	}
 	
 	### Abkhazia ###
@@ -8158,5 +8421,191 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_report_event_NZL_bionicle"
 		texturefile = "gfx/event_pictures/Southeast_Asia/New_Zealand/NZL_bionicle.png"
+	}
+	
+	## Latvia ##
+	
+	SpriteType = {
+		name = "GFX_report_event_LAT_lsdsp"
+		texturefile = "gfx/event_pictures/Europe/Latvia/GFX_report_event_LAT_lsdsp.png"
+	}
+	
+	##LKMT
+	spriteType  = {
+		name = "GFX_CHI_LMAO"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_LMAO.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_LMAO_BOY_SCOUTS"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_LMAO_BOY_SCOUTS.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_and_Mao"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_and_Mao.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_and_People"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_and_People.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_KMT_Wife"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_KMT_Wife.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Speech"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Speech_1.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Speech_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Speech_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Speech_3"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Speech_3.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_DAI_CHUNFENG"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_DAI_CHUNFENG.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_LMAO_WRITING"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_LMAO_WRITING.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_GREAT_EDUCATION_LEAP_FORWARD"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_GREAT_EDUCATION_LEAP_FORWARD.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_DAI_CHUNFENG_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_DAI_CHUNFENG_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_DAI_CHUNFENG_3"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_DAI_CHUNFENG_3.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_Dai"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_Dai.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_Dai_Soldiers"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_Dai_Soldiers.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_Dai_Soldiers_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_Dai_Soldiers_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_ZhongTeJu_Officers"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_ZhongTeJu_Officers.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Dai_Smile"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Dai_Smile.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_vs_Dai"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_vs_Dai.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_CHIANG_ALIVE"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_CHIANG_ALIVE.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Wang_Jingwei"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Wang_Jingwei.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Prision"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Prision.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Sun_Soong"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Sun_Soong.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Prisioner_Families"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Prisioner_Families.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_1"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_1.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_3"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_3.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_4"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_4.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_5"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_5.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_6"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_6.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Coup_7"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Coup_7.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Baihua_Qifang_1"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Baihua_Qifang_1.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Baihua_Qifang_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Baihua_Qifang_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Baihua_Qifang_3"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Baihua_Qifang_3.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_Family"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_Family.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chiang_Family_2"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chiang_Family_2.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Chen_Brothers"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Chen_Brothers.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Election_Eventpic"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Election_Eventpic.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Legislative_Yuan"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Legislative_Yuan.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Troublemakers"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Troublemakers.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Re_Education_Camps"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Re_Education_Camps.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_San_Min_Chui"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_San_Min_Chui.png"
+	}
+	spriteType  = {
+		name = "GFX_CHI_Monument"
+		texturefile = "gfx/event_pictures/East_Asia/China/CHI_Monument.png"
+	}
+	
+	spriteType  = {
+		name = "GFX_news_event_ARG_chile_war"
+		texturefile = "gfx/event_news_pictures/South_America/news_event_ARG_chile_war.png"
 	}
 }

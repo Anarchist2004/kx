@@ -46,7 +46,10 @@ country_event = { # Yeet on DWA GARBAGE LEGACY EVENT REWORK LATER
 			}
 
 			GHA = { 
-				transfer_state = 274		
+				transfer_state = 274
+				transfer_state = 1321
+				transfer_state = 1322
+				transfer_state = 1323
 			}
 		
 			if = {
@@ -56,6 +59,9 @@ country_event = { # Yeet on DWA GARBAGE LEGACY EVENT REWORK LATER
 				}
 				GHA = {
 					add_state_core = 274
+					add_state_core = 1321
+					add_state_core = 1322
+					add_state_core = 1323
 					load_oob = GHA
 				}
 			}
@@ -165,7 +171,7 @@ country_event = {
 	name = "Nicholaus von Oldenburg"
 	desc = "POLITICS_FELIX_CIV_BOIGNY_DESC"
 	picture = "gfx/leaders/CIV/CIV_Nikolaus_von_Oldenburg.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = colonial_govt_subtype
 	traits = {}
 }
@@ -191,7 +197,7 @@ country_event = {
 	name = "Arnold Hodson"
 	desc = "POLITICS_FELIX_CIV_BOIGNY_DESC"
 	picture = "gfx/leaders/CIV/CIV_Arnold_Hodson.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = colonial_govt_subtype
 	traits = {}
 }
@@ -209,7 +215,7 @@ add_popularity = {
 	name = "Jules Brévie"
 	desc = "POLITICS_FELIX_CIV_BOIGNY_DESC"
 	picture = "gfx/leaders/CIV/CIV_Jules_Brevie.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = colonial_govt_subtype
 	traits = {}
 }
@@ -626,7 +632,7 @@ country_event = { #Olympio wants to buy the entire fucking colony
 		create_country_leader = {
 			name = "Sylvanus Olympio"
 			picture = "gfx/leaders/TOG/Portrait_TOG_Olympio.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = free_market_capitalist_subtype 
 		}
 		set_party_name = {
@@ -660,6 +666,9 @@ country_event = { #Olympio wants to buy the entire fucking colony
 			add_state_core = 963
 			add_state_core = 274
 			add_state_core = 876
+			add_state_core = 1321
+			add_state_core = 1322
+			add_state_core = 1323
 		}
 		TOG = {
 			transfer_technology = yes

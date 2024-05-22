@@ -457,6 +457,9 @@ country_event = { # Baring Invades
 		ai_chance = {
 			factor = 30
 		}
+		ZIM = {
+			set_country_flag = ZIM_baring_exiled 
+		}
 		ZAM = {
 			country_event = {
 				id = nrho.12
@@ -534,12 +537,15 @@ country_event = { # Huttig Takes Charge
 		ai_chance = {
 			factor = 70
 		}
+		ZIM = {
+			set_country_flag = ZIM_baring_exiled 
+		}
 		set_country_flag = ZAM_COLONIAL_RULE
 		create_country_leader = {
 			name = "Hans Huttig"
 			desc = "POLITICS_HUTTIG_DESC"
-			picture = "gfx/leaders/MAF/MAF_Hans_Huttig.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Hans_Huttig.png"
+			expire = "1.1.1"
 			ideology = autocratic_colonial_govt_subtype
 			traits = {}
 		}
@@ -607,7 +613,7 @@ country_event = { # Junger Takes Charge
 			name = "Ernst Jünger"
 			desc = "POLITICS_JUNGER_DESC"
 			picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Ernst_Junger.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = colonial_govt_subtype
 			traits = {}
 		}
@@ -620,7 +626,7 @@ country_event = { # Junger Takes Charge
 		remove_all_ministers = yes
 		add_ideas = {
 			ZAM_Ernst_Junger_hog_ade
-			ZAM_Carl_Schmitt_for_ade
+			ZAM_Hans_Frank_for_ade
 			ZAM_Ernst_Junger_eco_ade
 			ZAM_Edgar_Jung_sec_ade
 		}
@@ -1037,12 +1043,12 @@ country_event = { #
 			}
 		}
 		if = {
-			release = KEN
 			limit = {
 				KEN = {
 					has_country_flag = REBELLED_AGAINST_MAF
 				}
 			}
+			release = KEN
 			KEN = {	
 				set_party_name = {
 							  ideology = national_populist
@@ -1053,8 +1059,8 @@ country_event = { #
 					   name = "Jack Churchill"
 					   desc = ""
 					   picture = "gfx/leaders/KEN/KEN_Jack_Churchill.png"
-					   expire = "1965.1.1"
-					   ideology = militarism_subtype
+					   expire = "1.1.1"
+					   ideology = natpop_colonial_govt_subtype
 					   traits = {}
 						}		  
 				get_current_government_type = yes
@@ -1082,8 +1088,8 @@ country_event = { #
 					   name = "Bernhard H. Bourdillon"
 					   desc = "POLITICS_BOURDILLON_DESC"
 					   picture = "gfx/leaders/NGR/NGR_Bernard_Henry_Bourdillon.png"
-					   expire = "1965.1.1"
-					   ideology = militarism_subtype
+					   expire = "1.1.1"
+					   ideology = natpop_colonial_govt_subtype
 					   traits = {}
 						}
 				get_current_government_type = yes
@@ -1100,6 +1106,7 @@ country_event = { #
 					has_country_flag = REBELLED_AGAINST_MAF
 				}
 			}
+			release = CIV
 			CIV = {
 				set_party_name = {
 							  ideology = national_populist
@@ -1110,8 +1117,8 @@ country_event = { #
 					   name = "Arnold Hodson"
 							   desc = ""
 							   picture = "gfx/leaders/CIV/CIV_Arnold_Hodson.png"
-					   expire = "1965.1.1"
-					   ideology = militarism_subtype
+					   expire = "1.1.1"
+					   ideology = natpop_colonial_govt_subtype
 					   traits = {}
 						}
 				set_politics = {
@@ -1178,7 +1185,7 @@ country_event = { #
 			name = "Ernst Jünger"
 			desc = "POLITICS_JUNGER_DESC"
 			picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Ernst_Junger.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = colonial_govt_subtype
 			traits = {}
 		}
@@ -1195,7 +1202,7 @@ country_event = { #
 		remove_all_ministers = yes
 		add_ideas = {
 			ZAM_Ernst_Junger_hog_ade
-			ZAM_Carl_Schmitt_for_ade
+			ZAM_Hans_Frank_for_ade
 			ZAM_Ernst_Junger_eco_ade
 			ZAM_Edgar_Jung_sec_ade
 		}
@@ -1654,6 +1661,7 @@ country_event = { #baring wins uprising after MAF goes boom
 	trigger = {
 		tag = MLW
 		has_global_flag = MAF_collapse
+		owns_state = 813
 		ZAM = {
 			exists = no
 		}

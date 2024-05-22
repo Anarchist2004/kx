@@ -155,7 +155,7 @@ focus_tree = {
 				
 			create_corps_commander = {# DeWitt Clinton Ramsey
 				name = "DeWitt Clinton Ramsey"
-				portrait_path = "gfx/leaders/DSR/DeWitt_Clinton_Ramsey.png"
+				portrait_path = "gfx/leaders/DSR/Portrait_DSR_DeWitt_Clinton_Ramsey.png"
 				traits = {
 				}
 				skill = 1
@@ -920,31 +920,31 @@ focus_tree = {
 			create_country_leader = {
 				name = "Purged"
 				picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Purged"
 				picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = market_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Purged"
 				picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Purged"
 				picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authoritarian_democrat_subtype
 			}
 			create_country_leader = {
 				name = "Purged"
 				picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = paternal_autocrat_subtype
 			}
 		}

@@ -7,6 +7,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_royal_family.png"
 	}
 	SpriteType = {
+		name = "GFX_report_event_AFG_abdul_hadi_dawi"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_abdul_hadi_dawi.png"
+	}
+	SpriteType = {
 		name = "GFX_report_event_AFG_amanullah_ataturk"
 		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_amanullah_ataturk.png"
 	}
@@ -205,5 +209,25 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_report_event_AFG_sports"
 		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_sports.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_AFG_inayatullah_khan"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_inayatullah_khan.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_AFG_hotak"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_hotak.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_AFG_sher_khan_nashir"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_sher_khan_nashir.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_AFG_revolutionary_council"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_revolutionary_council.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_AFG_abdulrahman_mahmudi"
+		texturefile = "gfx/event_pictures/Asia/Afghanistan/AFG_abdulrahman_mahmudi.png"
 	}
 }

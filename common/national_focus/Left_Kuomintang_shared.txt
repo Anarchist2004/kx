@@ -1645,6 +1645,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_dare_to_die"
 			add_war_support = 0.05
+			set_technology = { tech_assault_battalion = 1 }
 			add_timed_idea = {
 				idea = CHI_dare_to_die_idea
 				days = 365
@@ -2262,10 +2263,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_liberation_of_women"
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = CHI_He_Xiangning_sec_sde
-			custom_effect_tooltip = tooltip_white_line
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_timed_idea = {
@@ -2347,11 +2344,7 @@ focus_tree = {
 			custom_effect_tooltip = CHI_united_front_tt
 			CHI_LCS_large_effect = yes
 			add_war_support = 0.05
-
 			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = CHI_Dong_Biwu_sec_syn
-
 			unlock_decision_tooltip = CHI_rally_industrial_workers
 			custom_effect_tooltip = tooltip_white_line
 			country_event = { id = CHI.midgame.402 days = 15 } #The National Labour Union
@@ -3169,14 +3162,10 @@ focus_tree = {
 			add_political_power = 50
 			add_war_support = 0.10
 			CHI_left_kuomintang_enable_alliance_decisions = yes #Fallback in case player somehow didn't do it earlier
-			set_temp_variable = { coalition_partner_var = token:totalist }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:syndicalist }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
+			add_tot_to_coalition = yes
+			add_synd_to_coalition = yes
+			add_socdem_to_coalition = yes
+			add_soclib_to_coalition = yes
 			china_enable_all_demand_submission_decisions = yes
 			unlock_decision_tooltip = CHI_march_to_manchuria
 		}
@@ -5928,6 +5917,7 @@ focus_tree = {
 			OR = {
 				has_socialist_government = yes
 				has_country_leader = { ruling_only = yes name = "Deng Yanda" }
+				has_country_leader = { ruling_only = yes name = "Sun Fo" }
 			}
 			num_of_controlled_factories > 50
 		}
@@ -7119,7 +7109,7 @@ focus_tree = {
 			activate_targeted_decision = { target = CAM decision = CHI_liberation_war_decision }
 			activate_targeted_decision = { target = SIA decision = CHI_liberation_war_decision }
 			activate_targeted_decision = { target = BRM decision = CHI_liberation_war_decision }
-			activate_targeted_decision = { target = MAL decision = CHI_liberation_war_decision }
+			activate_targeted_decision = { target = MLY decision = CHI_liberation_war_decision }
 			activate_targeted_decision = { target = SAR decision = CHI_liberation_war_decision }
 			activate_targeted_decision = { target = PHI decision = CHI_liberation_war_decision }
 			activate_targeted_decision = { target = DEI decision = CHI_liberation_war_decision }
@@ -7142,7 +7132,7 @@ focus_tree = {
 					var:336.owner = {
 						NOT = {
 							tag = GEA
-							tag = MAL
+							tag = MLY
 							tag = CHI
 						}
 					}
@@ -7672,7 +7662,15 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		available = { social_liberal > 0.25 }
+		available = { 
+			OR = {
+				social_liberal > 0.25
+				has_country_leader = {
+					name = "Sun Fo"
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = { focus = CHI_initiate_land_to_the_tiller }
 		mutually_exclusive = { focus = CHI_red_napoleon }
 		mutually_exclusive = { focus = CHI_convene_the_peoples_congress }
@@ -7712,8 +7710,7 @@ focus_tree = {
 			}
 			add_stability = CHI_stability_loss_temp_var
 			custom_effect_tooltip = CHI_anti_soc_lib_stab_loss_tt
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
+			add_soclib_to_coalition = yes
 			remove_ideas_with_trait = head_of_government
 			add_ideas = CHI_Sun_Fo_hog_sli
 			add_popularity = { ideology = social_liberal popularity = 0.10 }
@@ -8058,7 +8055,15 @@ focus_tree = {
 		x = -3
 		y = 1
 
-		available = { syndicalist > 0.25 }
+		available = { 
+			syndicalist > 0.25 
+			NOT = {
+				has_country_leader = {
+					name = "Sun Fo"
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = { focus = CHI_initiate_land_to_the_tiller }
 		mutually_exclusive = { focus = CHI_red_napoleon }
 		mutually_exclusive = { focus = CHI_initiate_consultative_conference }
@@ -8098,8 +8103,7 @@ focus_tree = {
 			}
 			add_stability = CHI_stability_loss_temp_var
 			custom_effect_tooltip = CHI_anti_syndicalist_stab_loss_tt
-			set_temp_variable = { coalition_partner_var = token:syndicalist }
-			add_to_coalition = yes
+			add_synd_to_coalition = yes
 			unlock_decision_tooltip = CHI_join_the_internationale_decision
 			hidden_effect = { country_event = { id = CHI.endgame.442 days = 7 } } #The People’s Congress
 		}
@@ -8168,8 +8172,7 @@ focus_tree = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = CHI_Four_Elders_hog_sco
 			custom_effect_tooltip = CHI_revolution_for_all_peoples_tt
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
+			add_soccon_to_coalition = yes
 			add_war_support = ROOT.party_popularity@syndicalist
 			add_popularity = { ideology = social_conservative popularity = 0.025 }
 			hidden_effect = { country_event = { id = CHI.endgame.446 days = 21 } } #The Elders' Revenge
@@ -8520,7 +8523,15 @@ focus_tree = {
 		relative_position_id = CHI_initiate_land_to_the_tiller
 		x = 0
 		y = 1
-
+		
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "Sun Fo"
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = { focus = CHI_initiate_land_to_the_tiller }
 		mutually_exclusive = { focus = CHI_convene_the_peoples_congress }
 		mutually_exclusive = { focus = CHI_initiate_consultative_conference }
@@ -8780,7 +8791,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Deng Yanda"
 				picture = "gfx/leaders/CHI/Portrait_CHI_Deng_Yanda.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = junta_subtype
 			}
 			set_party_name = {
@@ -8788,8 +8799,7 @@ focus_tree = {
 				long_name = CHI_WMARCA_party_long
 				name = CHI_WMARCA_party
 			}
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			add_to_coalition = yes
+			add_pataut_to_coalition = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
@@ -8928,8 +8938,7 @@ focus_tree = {
 			}
 			add_stability = CHI_stability_loss_temp_var
 			custom_effect_tooltip = CHI_anti_soc_dem_stab_loss_tt
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
+			add_socdem_to_coalition = yes
 			remove_ideas_with_trait = head_of_government
 			add_ideas = CHI_Gu_Mengyu_hog_sde
 		}
@@ -9103,8 +9112,7 @@ focus_tree = {
 			add_popularity = { ideology = social_democrat popularity = 0.02 }
 			add_popularity = { ideology = social_liberal popularity = 0.03 }
 			add_popularity = { ideology = market_liberal popularity = 0.05 }
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes
+			add_marlib_to_coalition = yes
 			custom_effect_tooltip = tooltip_white_line
 			country_event = { id = CHI.endgame.261 days = 3 } #The Expanded Party Congress
 			custom_effect_tooltip = tooltip_white_line
@@ -9743,8 +9751,7 @@ focus_tree = {
 			}
 			add_stability = CHI_stability_loss_temp_var
 			custom_effect_tooltip = CHI_anti_totalist_stab_loss_tt
-			set_temp_variable = { coalition_partner_var = token:totalist }
-			add_to_coalition = yes
+			add_tot_to_coalition = yes
 			remove_ideas_with_trait = head_of_government
 			add_ideas = CHI_Chen_Gongbo_hog_rso
 		}
@@ -9814,7 +9821,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_Gu_Zhenggang_sec_rso
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_WAR_SUPPORT }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
 	focus = {
@@ -11098,8 +11105,7 @@ focus_tree = {
 			CHI_unfulfilled_promises_effect = yes
 			CHI_level_up_chen_gongbo_effect = yes
 			add_popularity = { ideology = syndicalist popularity = 0.05 }
-			set_temp_variable = { coalition_partner_var = token:syndicalist }
-			add_to_coalition = yes
+			add_synd_to_coalition = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -11130,8 +11136,7 @@ focus_tree = {
 			country_event = { id = CHI.endgame.849 }
 			custom_effect_tooltip = tooltip_white_line
 			add_popularity = { ideology = social_democrat popularity = 0.1 }
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
+			add_socdem_to_coalition = yes
 			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_Chu_Minyi_sec_rso
@@ -11781,8 +11786,7 @@ focus_tree = {
 				ideology = paternal_autocrat
 				popularity = 0.02
 			}
-			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
-			add_to_coalition = yes
+			add_authdem_to_coalition = yes
 			swap_ideas = {
 				remove_idea = CHI_chinese_autarky_idea
 				add_idea = CHI_chinese_autarky_2b_idea
@@ -11844,10 +11848,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_republics_only_salvation"
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-			add_to_coalition = yes
+			add_pataut_to_coalition = yes
+			add_natpop_to_coalition = yes
 			hidden_effect = { country_event = { id = CHI.endgame.624 days = 10 } } #After Midnight
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -13421,8 +13423,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_renegotiate_united_front"
 			add_popularity = { ideology = radical_socialist	popularity = 0.15 }
-			set_temp_variable = { coalition_partner_var = token:radical_socialist }
-			add_to_coalition = yes
+			add_radsoc_to_coalition = yes
 			CHI_shattered_political_order_effect = yes
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -13442,8 +13443,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_coopting_three_principles"
 			add_popularity = { ideology = social_democrat popularity = 0.10 }
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
+			add_socdem_to_coalition = yes
 			china_generic_land_reform_setup = yes
 			CHI_set_radical_land_reform_effect = yes
 		}
@@ -13465,8 +13465,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_reconcile_world_society"
 			add_political_power = 100
 			add_popularity = { ideology = social_conservative popularity = 0.05 }
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
+			add_soccon_to_coalition = yes
 			CHI_shattered_political_order_effect = yes
 
 		}
@@ -13584,7 +13583,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Chen Shaoyu"
 				picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Shaoyu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			remove_ideas_with_trait = head_of_government
@@ -13598,8 +13597,7 @@ focus_tree = {
 			}
 			add_popularity = { ideology = syndicalist popularity = 0.05 }
 			add_popularity = { ideology = totalist popularity = 0.10 }
-			set_temp_variable = { coalition_partner_var = token:totalist }
-			add_to_coalition = yes
+			add_tot_to_coalition = yes
 			add_war_support = 0.10
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -13624,7 +13622,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Yi Peiji"
 				picture = "gfx/leaders/CHI/Portrait_CHI_Yi_Peiji.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = anarcho_syndicalist_subtype
 			}
 			remove_ideas_with_trait = head_of_government
@@ -13638,8 +13636,7 @@ focus_tree = {
 			}
 			add_popularity = { ideology = syndicalist popularity = 0.05 }
 			add_popularity = { ideology = social_conservative popularity = 0.10 }
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
+			add_soccon_to_coalition = yes
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }

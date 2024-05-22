@@ -34,37 +34,37 @@ country_event = { # Death of Fuad I
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_pharaonism_subtype
 			}
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_liberalism_subtype
 			}
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = marlib_national_liberalism_subtype
 			}
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_islamism_subtype
 			}
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = islamism_subtype
 			}
 			create_country_leader = {
 				name = "Farouk I"
 				picture = "gfx/leaders/EGY/Portrait_Egypt_Farouk.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 			}
 			set_country_flag = EGY_farouk_is_now_sultan
@@ -1274,6 +1274,7 @@ country_event = { # New Officers
 		create_corps_commander = { # Gamel Abdel Nasser
 			name = "Gamel Abdel Nasser"
 			portrait_path = "gfx/leaders/EGY/Portrait_EGY_Gamel_Abdel_Nasser.png"
+			id = 693481
 			traits = {
 				career_officer
 				media_personality
@@ -4812,7 +4813,7 @@ country_event = { # Tripolitania Counters Our Influence
 }
 
 
-country_event = { # Tripolitania Counters Our Influence
+country_event = { # Egypt Demands the Suez!
 	id = egy.198
 	immediate = { log = "[GetDateText]: [Root.GetName]: event egy.198" }
 	title = egy.198.t
@@ -4845,7 +4846,7 @@ country_event = { # Tripolitania Counters Our Influence
 	}
 }
 
-country_event = { # Tripolitania Counters Our Influence
+country_event = { # Germany Refuses!
 	id = egy.199
 	immediate = { log = "[GetDateText]: [Root.GetName]: event egy.199" }
 	title = egy.199.t
@@ -4882,7 +4883,7 @@ country_event = { # Tripolitania Counters Our Influence
 		add_war_support = -0.10
 	}
 }
-country_event = { # Tripolitania Counters Our Influence
+country_event = { # Peace With Egypt?
 	id = egy.200
 	immediate = { log = "[GetDateText]: [Root.GetName]: event egy.200" }
 	title = egy.200.t
@@ -4904,7 +4905,7 @@ country_event = { # Tripolitania Counters Our Influence
 	option = {
 		name = egy.200.a
 		ai_chance = {
-			base = 85
+			base = 100
 			modifier = {
 				factor = 2
 				surrender_progress > 0.2
@@ -4924,7 +4925,7 @@ country_event = { # Tripolitania Counters Our Influence
 	option = {
 		name = egy.200.b
 		ai_chance = {
-			base = 15
+			base = 0
 		}
 		add_stability = -0.10
 		add_war_support = -0.10

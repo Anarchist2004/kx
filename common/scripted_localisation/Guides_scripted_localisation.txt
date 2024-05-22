@@ -171,7 +171,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			tag = UKR
+			original_tag = UKR
 		}
 		localization_key = "UKR_guidesnum"
 	}
@@ -577,6 +577,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = NYC
+		}
+		localization_key = "NYC_guidesnum"
+	}
+	text = {
+		trigger = {
 			tag = BRM
 		}
 		localization_key = "BRM_guidesnum"
@@ -706,6 +712,24 @@ defined_text = {
 			tag = AFG
 		}
 		localization_key = "AFG_guidesnum"
+	}
+	text = {
+		trigger = {
+			tag = BRY
+		}
+		localization_key = "BRY_guidesnum"
+	}
+	text = {
+		trigger = {
+			tag = FOP
+		}
+		localization_key = "FOP_guidesnum"
+	}
+	text = {
+		trigger = {
+			tag = KIK
+		}
+		localization_key = "KIK_guidesnum"
 	}
 }
 

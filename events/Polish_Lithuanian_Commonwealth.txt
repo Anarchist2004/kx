@@ -292,7 +292,7 @@ country_event = { # Dmowski is dead!
 			create_country_leader = {
 				name = "Bolesław Piasecki"
 				picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_radicalism_subtype
 			}
 		}
@@ -1282,12 +1282,7 @@ country_event = { # Support the Commonwealth? - German
 			target = AUS
 			modifier = KR_hates_govt
 		}
-		AUS = {
-			country_event = {
-				days = 1
-				id = plcommon.30
-			}
-		}
+		AUS = { country_event = plcommon.30 }
 	}
 
 	option = {
@@ -1305,6 +1300,7 @@ country_event = { # Support the Commonwealth? - German
 			target = AUS
 			modifier = KR_pleased
 		}
+		POL = { country_event = poland.415 }
 	}
 }
 
@@ -2764,27 +2760,27 @@ country_event = { #Beck Launches a Coup
 			name = "Jozef Beck"
 			desc = "POLITICS_JOZEF_BECK_DESC"
 			picture = "gfx/leaders/POL/Portrait_POL_Jozef_Beck.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authdem_junta_subtype
 		}
 		create_country_leader = {
 			name = "Jozef Beck"
 			desc = "POLITICS_JOZEF_BECK_DESC"
 			picture = "gfx/leaders/POL/Portrait_POL_Jozef_Beck.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = junta_subtype
 		}
 		create_country_leader = {
 			name = "Jozef Beck"
 			desc = "POLITICS_JOZEF_BECK_DESC"
 			picture = "gfx/leaders/POL/Portrait_POL_Jozef_Beck.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = moderate_authoritarianism_subtype
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
 			name = PLC_authoritarian_democrat_beck_party
-			long_name = POL_authoritarian_democrat_beck_party_long
+			long_name = PLC_authoritarian_democrat_beck_party_long
 		}
 		set_politics = {
 			ruling_party = authoritarian_democrat
@@ -2797,6 +2793,12 @@ country_event = { #Beck Launches a Coup
 				POL_Ignacy_Moscicki_for_ade
 				POL_Ignacy_Matuszewski_eco_ade
 				POL_Felicjan_Slawoj_Skladkowski_sec_ade
+			}
+			remove_ideas = {
+				PLC_cultural_tensions_idea
+				PLC_cultural_tensions_idea1
+				PLC_scattered_bureaucracy_idea
+				PLC_scattered_bureaucracy_idea1
 			}
 		}
 	}

@@ -24,7 +24,7 @@ OR = {
 		tag = ALA
 		tag = GRE
 		tag = RUS
-		tag = UKR
+		original_tag = UKR
 		tag = TRM
 		tag = SCT
 		tag = WAL
@@ -39,6 +39,7 @@ OR = {
 		tag = MON
 		tag = POL
 		tag = GEO
+		tag = ABK
 		tag = NOR
 		tag = LIB
 		tag = CHL
@@ -103,5 +104,8 @@ OR = {
 		tag = MLT
 		tag = CRE
 		tag = AFG
+		tag = BRY
+		tag = FOP
+		tag = KIK
 	}
 }

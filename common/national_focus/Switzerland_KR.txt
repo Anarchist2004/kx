@@ -1747,11 +1747,9 @@ focus_tree = {
 			add_stability = 0.15
 			increase_ruling_party_popularity_by_20 = yes
 			add_ideas = command_economy
-			every_country = {
-				reverse_add_opinion_modifier = {
-					target = SWI
-					modifier = embargo
-				}
+			every_possible_country = {
+				limit = { is_dynamic_country = no }
+				embargo_ROOT = yes
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -2155,7 +2153,7 @@ focus_tree = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
-				category = cat_mobile_warfare
+				category = land_doctrine
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2291,7 +2289,7 @@ focus_tree = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 			
 			add_tech_bonus = {
@@ -2646,8 +2644,7 @@ focus_tree = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
-				category = cat_grand_battle_plan
-				category = cat_superior_firepower
+				category = land_doctrine
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2801,7 +2798,7 @@ focus_tree = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_mass_assault
+	category = land_doctrine
 			}
 			add_ideas = SWI_syndie_army
 		}
@@ -3221,7 +3218,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_air_academy"
-			add_ideas = swissair
+			if = {
+				limit = { has_dlc_aat = no }
+				add_ideas = swissair
+			}
+			else = {
+				if = {
+					limit = {
+						has_military_industrial_organization = SWI_swissair_organisation
+						mio:SWI_swissair_organisation = { is_mio_available = yes }
+					}
+					mio:SWI_swissair_organisation = {
+						add_mio_size = 1
+						add_mio_funds = 500
+					}
+				}
+			}
 		}
 	}
 
@@ -3399,7 +3411,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_military_factories"
-			add_ideas = oerlikon
+				if = {
+				limit = { has_dlc_aat = no }
+				add_ideas = oerlikon
+			}
+			else = {
+				if = {
+					limit = {
+						has_military_industrial_organization = SWI_oerlikon_organisation
+						mio:SWI_oerlikon_organisation = { is_mio_available = yes }
+					}
+					mio:SWI_oerlikon_organisation = {
+						add_mio_size = 1
+						add_mio_funds = 500
+					}
+				}
+			}
 			random_owned_controlled_state = {
 				prioritize = {
 					3
@@ -3461,7 +3488,22 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SWI_air_factories"
-			add_ideas = eidgenossisches_flugzeugwerk
+			if = {
+				limit = { has_dlc_aat = no }
+				add_ideas = eidgenossisches_flugzeugwerk
+			}
+			else = {
+				if = {
+					limit = {
+						has_military_industrial_organization = SWI_eidgenossisches_flugzeugwerk_organisation
+						mio:SWI_eidgenossisches_flugzeugwerk_organisation = { is_mio_available = yes }
+					}
+					mio:SWI_eidgenossisches_flugzeugwerk_organisation = {
+						add_mio_size = 1
+						add_mio_funds = 500
+					}
+				}
+			}
 			random_owned_controlled_state = {
 				prioritize = {
 					3

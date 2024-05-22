@@ -931,7 +931,7 @@ country_event = { #TXS Guides Event
 	is_triggered_only = yes
 
 	option = { #
-		name = guides.34.a
+		name = guides.35.a
 		ai_chance = {
 			factor = 100
 		}
@@ -2994,6 +2994,60 @@ country_event = { #AFG Guide Event
 
 	option = { #
 		name = guides.134.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #BRY Guide Event
+	id = guides.135
+	immediate = { log = "[GetDateText]: [Root.GetName]: event guides.135" }
+	title = guides.135.t
+	desc = guides.135.d
+
+	picture = GFX_introduction_main
+
+	is_triggered_only = yes
+
+	option = { #
+		name = guides.135.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #FOP Guide Event
+	id = guides.136
+	immediate = { log = "[GetDateText]: [Root.GetName]: event guides.136" }
+	title = guides.136.t
+	desc = guides.136.d
+
+	picture = GFX_introduction_main
+
+	is_triggered_only = yes
+
+	option = { #
+		name = guides.136.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #KIK Guide Event
+	id = guides.137
+	immediate = { log = "[GetDateText]: [Root.GetName]: event guides.137" }
+	title = guides.137.t
+	desc = guides.137.d
+
+	picture = GFX_introduction_main
+
+	is_triggered_only = yes
+
+	option = { #
+		name = guides.137.a
 		ai_chance = {
 			factor = 100
 		}

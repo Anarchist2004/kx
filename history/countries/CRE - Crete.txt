@@ -33,6 +33,7 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	marines = 1
 	gw_artillery = 1
@@ -184,7 +185,7 @@ create_country_leader = {
 	name = "George James Doundoulakis"
 	desc = "POLITICS_DOUNDULAKAIS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_George_James_Doundoulakis.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = authcom_subtype
 	traits = {}
 }
@@ -193,7 +194,7 @@ create_country_leader = {
 	name = "George James Doundoulakis"
 	desc = "POLITICS_DOUNDULAKAIS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_George_James_Doundoulakis.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = centralized_syndicalism_subtype
 	traits = {}
 }
@@ -202,7 +203,7 @@ create_country_leader = {
 	name = "George James Doundoulakis"
 	desc = "POLITICS_DOUNDULAKAIS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_George_James_Doundoulakis.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = radsoc_communism_subtype
 	traits = {}
 }
@@ -211,7 +212,7 @@ create_country_leader = {
 	name = "George James Doundoulakis"
 	desc = "POLITICS_DOUNDULAKAIS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_George_James_Doundoulakis.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = socdem_junta_subtype
 	traits = {}
 }
@@ -220,7 +221,7 @@ create_country_leader = {
 	name = "Emmanouil Tsouderos"
 	desc = "POLITICS_TSOUDEROS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_Emmanouil_Tsouderos.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = centrist_subtype
 	traits = {}
 }
@@ -229,7 +230,7 @@ create_country_leader = {
 	name = "George Tzikas"
 	desc = "POLITICS_TZIKAS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_George_Tzikas.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = liberal_conservative_subtype 
 	traits = {}
 }
@@ -238,7 +239,7 @@ create_country_leader = {
 	name = "Alexandros Zaimis"
 	desc = "POLITICS_ZAMNIS_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_Alexandros_Zaimis.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = national_conservative_subtype
 	traits = {}
 }
@@ -247,7 +248,7 @@ create_country_leader = {
 	name = "Georg Alexander von Müller"
 	desc = "POLITICS_GEORG_MULLER_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_Georg_Alexander_von_Muller.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = colonial_govt_subtype
 	traits = {}
 }
@@ -256,7 +257,7 @@ create_country_leader = {
 	name = "Georg Alexander von Müller"
 	desc = "POLITICS_GEORG_MULLER_DESC"
 	picture = "gfx/leaders/CRE/Portrait_Crete_Georg_Alexander_von_Muller.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = autocratic_colonial_govt_subtype
 	traits = {}
 }
@@ -264,7 +265,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Stylianos Pattakos"
 	picture = "gfx/leaders/CRE/Portrait_Crete_Stylianos_Pattakos.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = militarism_subtype 
 	traits = {}
 }

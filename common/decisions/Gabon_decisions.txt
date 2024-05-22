@@ -88,6 +88,9 @@ foreign_politics = {
 			owns_state = 558
 			owns_state = 877
 			owns_state = 274
+			owns_state = 1321
+			owns_state = 1322
+			owns_state = 1323
 			owns_state = 298
 			owns_state = 459
 			owns_state = 450
@@ -96,6 +99,10 @@ foreign_politics = {
 
 		visible = {
 			has_completed_focus = GAB_dream_becomes_reality
+			OR = {
+				has_government = social_liberal
+				has_government = social_conservative
+			}
 		}
 
 		cost = 200

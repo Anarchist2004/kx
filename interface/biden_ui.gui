@@ -530,7 +530,7 @@ guiTypes = {
 		iconType = { 
 			name = "Council_of_Europe"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_GER_Pan_Euro_Council"
+			spriteType = "GFX_Portrait_Germany_Pan_Euro_Council"
 		}
 		
 		### Aussies
@@ -723,6 +723,12 @@ guiTypes = {
 			spriteType = "GFX_Portrait_NZL_Jonah_Kuhio"
 		}
 
+		iconType = {
+			name = "Colin_Scrimgeour"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NZL_Colin_Scrimgeour"
+		}
+
 		### Liberia
 		iconType = {
 			name = "Harvey_Firestone"
@@ -874,7 +880,67 @@ guiTypes = {
 		iconType = { #
 			name = "Joseph_Kasa_Vubu"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_COG_Emile_Janssens"
+			spriteType = "GFX_Portrait_KIV_Joseph_Kasa_Vubu"
+		}
+		
+		iconType = { #
+			name = "Edgar_Sengier"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_UMN_Edgar_Sengier"
+		}
+		
+		iconType = { #
+			name = "Leonard_Mpoyi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_KIV_Leonard_Mpoyi"
+		}
+		
+		iconType = { #
+			name = "Pierre_Ryckmans"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_COG_Pierre_Ryckmans"
+		}
+		
+		iconType = { #
+			name = "Leo_Petillon"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Congo_Leo_Petillon"
+		}
+
+		iconType = { #
+			name = "Jules_Cousin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Mittelafrika_Jules_Cousin"
+		}
+
+		iconType = { #
+			name = "Edmond_Nzeza_Nlandu"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Congo_Edmond_Nzeza_Nlandu"
+		}
+
+		iconType = { #
+			name = "Moise_Tshombe"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_KIV_Moise_Tshombe"
+		}
+
+		iconType = { #
+			name = "Jean_Bolikango"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_KIV_Jean_Bolikango"
+		}
+
+		iconType = { #
+			name = "Paul_Panda_Farnana"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_COG_Paul_Farnana"
+		}
+
+		iconType = { #
+			name = "Charles_Kisolokele"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Congo_Charles_Daniel_Kisolokele"
 		}
 		
 		### Luxemburg Pms ###
@@ -1196,6 +1262,12 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_France_Jean_Mermoz"
 		}
+
+		iconType = { #
+			name = "Maurice_Janin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_France_Maurice_Janin"
+		}
 		
 		### American VPs ###
 		
@@ -1214,7 +1286,7 @@ guiTypes = {
 		iconType = { #
 			name = "Jack_Reed"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_Jack_Reed"
+			spriteType = "GFX_Portrait_USA_Jack_Reed"
 		}
 		
 		iconType = { #
@@ -1406,7 +1478,7 @@ guiTypes = {
 		iconType = { #
 			name = "Sam_Rayburn"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_sam_rayburn"
+			spriteType = "GFX_Portrait_USA_Sam_Rayburn"
 		}
 		
 		iconType = { #
@@ -1473,6 +1545,30 @@ guiTypes = {
 			name = "Samuel_Green"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_USA_Samuel_Green"
+		}
+		
+		iconType = { #
+			name = "Omar_Bradley"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_USA_Omar_Bradley"
+		}
+		
+		iconType = { #
+			name = "Dwight_Eisenhower"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_USA_General_Dwight_Eisenhower"
+		}
+		
+		iconType = { #
+			name = "Dwight_Eisenhower2"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_USA_General_Dwight_Eisenhower"
+		}
+		
+		iconType = { #
+			name = "Douglas_MacArthur"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_USA_General_Douglas_MacArthur"
 		}
 		
 		### Pacific PMs ###
@@ -1565,6 +1661,12 @@ guiTypes = {
 			name = "Clarence_D_Martin"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_CAL_clarence_martin"
+		}
+		
+		iconType = { #
+			name = "Warren_Magnuson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_CAL_Warren_Magnuson"
 		}
 		
 		iconType = { #
@@ -1722,6 +1824,12 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_CAL_Henry_J_kaiser"
 		}
+
+		iconType = { #
+			name = "Charles_Henry_Martin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_CAL_Charles_Henry_Martin"
+		}
 		
 		iconType = { #
 			name = "Walt_Disney"
@@ -1824,6 +1932,18 @@ guiTypes = {
 		}
 		
 		iconType = { #
+			name = "Michael_Donnellan"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_Michael_Donnellan"
+		}
+		
+		iconType = { #
+			name = "Michael_Collins"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_Michael_Collins"
+		}
+		
+		iconType = { #
 			name = "Richard_Mulcahy"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Ireland_Richard_Mulcahy_Civilian"
@@ -1851,6 +1971,12 @@ guiTypes = {
 			name = "Liam_Mellows"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Ireland_Liam_Mellows"
+		}
+		
+		iconType = { #
+			name = "Michael_O_Flanagan"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_Michael_O_Flanagan"
 		}
 		
 		iconType = { #
@@ -1896,6 +2022,12 @@ guiTypes = {
 		}
 		
 		iconType = { #
+			name = "John_J_O_Kelly"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_John_J_OKelly"
+		}
+		
+		iconType = { #
 			name = "William_Butler_Yeats"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Ireland_William_Butler_Yeats"
@@ -1914,9 +2046,27 @@ guiTypes = {
 		}
 
 		iconType = { #
+			name = "James_Larkin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_Jim_Larkin"
+		}
+
+		iconType = { #
 			name = "James_Joyce"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Ireland_James_Joyce"
+		}
+		
+		iconType = { #
+			name = "Owen_Sheehy_Skeffington"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ireland_Owen_Sheehy_Skeffington"
+		}
+		
+		iconType = { #
+			name = "Basil_Brooke"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Ulster_Basil_Brooke"
 		}
 		
 		### Danish PMs ###
@@ -1975,6 +2125,18 @@ guiTypes = {
 			name = "Stefan_Johann_Stefansson"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Iceland_Stefan_Johann_Stefansson"
+		}
+		
+		iconType = { #
+			name = "Hermann_Jonasson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Iceland_Hermann_Jonasson"
+		}
+		
+		iconType = { #
+			name = "Olafur_Thors"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Iceland_Olafur_Thors"
 		}
 		
 		iconType = { #
@@ -2238,7 +2400,25 @@ guiTypes = {
 		iconType = { #
 			name = "Juho_Kusti_Paasikivi"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_FIN_Juho_Kusti_Paasikivi"
+			spriteType = "GFX_Portrait_FIN_Juho_Kusti_Paasikivi_KX"
+		}
+		
+		iconType = { #
+			name = "Rudolf_Walden"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_FIN_Rudolf_Walden"
+		}
+		
+		iconType = { #
+			name = "Vihtori_Kosola"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_FIN_Vihtori_Kosola"
+		}
+		
+		iconType = { #
+			name = "Vilho_Annala"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_FIN_Vilho_Annala"
 		}
 		
 		iconType = { #
@@ -2248,9 +2428,19 @@ guiTypes = {
 		}
 		
 		iconType = { #
+			name = "Kaarlo_Juhlo_Stahlberg"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_FIN_Kaarlo_Juhlo_Stahlberg"
+		}
+		iconType = { #
 			name = "Kyosti_Kallio"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Fin_Kyosti_Kallio"
+		}
+		iconType = { #
+			name = "Vaino_Tanner"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_FIN_Vaino_Tanner"
 		}
 		
 		### Somali PMs ###
@@ -2419,6 +2609,12 @@ guiTypes = {
 			spriteType = "GFX_Portrait_POR_Francisco_Rolao_Preto"
 		}
 		
+		iconType = { #
+			name = "Henrique_Mitchell_de_Paiva_Cabral_Couceiro"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_POR_Henrique_Paiva_Couceiro"
+		}
+		
 		### Spain ###
 		
 		iconType = { #
@@ -2449,6 +2645,20 @@ guiTypes = {
 			name = "JM_Gil_Robles_Quinones"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SPR_J_M_Gil_Robles_Quinones"
+		}
+		
+		### Carlist Spain ###
+		
+		iconType = { #
+			name = "Manuel_Fal_Conde"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_CAR_Manuel_Fal_Conde"
+		}
+		
+		iconType = { #
+			name = "Jesus_Cora_y_Lira"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_CAR_Jesus_Cora_y_Lira"
 		}
 		
 		### Greek ###
@@ -2642,6 +2852,12 @@ guiTypes = {
 		### South Africa ###
 			
 		iconType = { #
+			name = "Doris_May_Tayler"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Doris_Lessing"
+		}
+		
+		iconType = { #
 			name = "James_Hertzog"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SAF_JBM_Hertzog"
@@ -2668,7 +2884,7 @@ guiTypes = {
 		iconType = { #
 			name = "Jan_C_Smuts"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_SAF_Jan_Smuts"
+			spriteType = "GFX_Portrait_SAF_Jan_Smuts_Civilian"
 		}
 		
 		iconType = { #
@@ -2681,6 +2897,56 @@ guiTypes = {
 			name = "J_G_N_Strauss"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SAF_Jacobus_Gideon_Nel_Strauss"
+		}
+		
+		### Rhodesia ###
+		
+		iconType = { #
+			name = "Harry_Davies"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Harry_Davies"
+		}
+		
+		iconType = { #
+			name = "Garfield_Todd"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Zimbabwe_Garfield_Todd"
+		}
+		
+		iconType = { #
+			name = "Godfrey_Huggins"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Zimbabwe_Godfrey_Martin_Huggins"
+		}
+		
+		iconType = { #
+			name = "Percy_Finn"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Percy_Fynn"
+		}
+		
+		iconType = { #
+			name = "Winston_Joseph_Field"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Winston_Field"
+		}
+		
+		iconType = { #
+			name = "Arthur_Harris"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Arthur_Harris"
+		}
+		
+		iconType = { #
+			name = "Desmond_Lardner_Burke"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_ZIM_Desmond_Burke"
+		}
+		
+		iconType = { #
+			name = "Ian_Smith"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Zimbabwe_Ian_Smith"
 		}
 		
 		### Japan ###
@@ -2713,6 +2979,12 @@ guiTypes = {
 			name = "Ugaki_Kazushige"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_JAP_Kazushige_Ugaki"
+		}
+		
+		iconType = { #
+			name = "Yoshida_Shigeru"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_JAP_Yoshida_Shigeru"
 		}
 		
 		iconType = { #
@@ -2756,6 +3028,12 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_JAP_Maeda_Yonezo"
 		}
+		
+		iconType = { #
+			name = "Higashikuni_Naruhiko"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_JAP_Naruhiko_Higashikuni"
+		}
 				
 		iconType = { #
 			name = "Hiranuma_Kiichiro"
@@ -2774,11 +3052,17 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_JAP_Hideki_Tojo"
 		}
-					
+		
 		iconType = { #
 			name = "Nagata_Tetsuzan"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_JAP_Nagata_Tetsuzan"
+		}
+
+		iconType = { #
+			name = "Kishi_Nobusuke"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_JAP_Nobusuke_Kishi"
 		}
 
 		iconType = { #
@@ -2797,6 +3081,12 @@ guiTypes = {
 			name = "Kuhara_Fusanosuke"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_JAP_Fusanosuke_Kuhara"
+		}
+		
+		iconType = { #
+			name = "JAP_Vacant_Office"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_JAP_Vacant_Office"
 		}
 		
 		### Qing ###
@@ -3274,6 +3564,12 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SRD_Pietro_Badoglio"
 		}
+
+		iconType = { #
+			name = "Raffaele_Cadorna"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRD_Raffaele_Cadorna"
+		}
 		
 		iconType = { #
 			name = "Luigi_Efisio_Marras"
@@ -3335,30 +3631,266 @@ guiTypes = {
 			spriteType = "GFX_Portrait_SRD_Adone_Zoli"
 		}
 		
-		### Varios Italian People ###
-	
+		### Italy ###
+		
 		iconType = { #
 			name = "Galeazzo_Ciano"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_ITA_Galeazzo_Ciano"
 		}
-		
+
 		iconType = { #
-			name = "Riccardo_Lombardi"
+			name = "Dino_Grandi"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_SRI_Riccardo_Lombardi"
+			spriteType = "GFX_Portrait_ITA_Dino_Grandi_KX"
 		}
 		
 		iconType = { #
-			name = "Arturo_Labriola"
+			name = "Luigi_Federzoni"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_SRI_Arturo_Labriola"
+			spriteType = "GFX_Portrait_ITA_Luigi_Federzoni"
+		}
+
+		### Socialist Italy ###
+
+		iconType = { #
+			name = "Argentina_Altobelli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Argentina_Altobelli"
+		}
+
+		iconType = { #
+			name = "Carlo_Rosselli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Carlo_Rosselli"
+		}
+		
+		iconType = { #
+			name = "Randolfo_Pacciardi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Randolfo_Pacciardi"
+		}
+		
+		iconType = { #
+			name = "Giuseppe_Garibaldi_II"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Giuseppe_Garibaldi_II"
+		}
+
+		iconType = { #
+			name = "Giovanni_Amendola"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Giovanni_Amendola"
+		}
+
+		iconType = { #
+			name = "Alessandro_Scotti"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Alessandro_Scotti"
+		}
+
+		iconType = { #
+			name = "Roberto_Bencivenga"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Roberto_Bencivenga"
+		}
+
+		iconType = { #
+			name = "Alfredo_Covelli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SRI_Alfredo_Covelli"
+		}
+
+		### Two Sicilies ###
+		
+		iconType = { #
+			name = "Julius_Evola"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Julius_Evola_Baron"
 		}
 		
 		iconType = { #
 			name = "Luigi_Sturzo"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_ITA_Luigi_Sturzo"
+			spriteType = "GFX_Portrait_SIC_Luigi_Sturzo"
+		}
+		
+		iconType = { #
+			name = "Benedetto_Croce"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Benedetto_Croce"
+		}
+		
+		iconType = { #
+			name = "Salvatore_Aldisio"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Salvatore_Aldisio"
+		}
+		
+		iconType = { #
+			name = "Giovanni_Preziosi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Giovanni_Preziosi"
+		}
+		
+		iconType = { #
+			name = "Virgilio_Nasi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Virgilio_Nasi"
+		}
+		
+		iconType = { #
+			name = "Enrico_De_Nicola"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Enrico_De_Nicola"
+		}
+		
+		iconType = { #
+			name = "Gaetano_Martino"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Gaetano_Martino"
+		}
+		
+		iconType = { #
+			name = "Mario_Scelba"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Mario_Scelba"
+		}
+		
+		iconType = { #
+			name = "Francesco_Saverio_Nitti"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Francesco_Saverio_Nitti"
+		}
+		
+		iconType = { #
+			name = "Guido_Dorso"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Guido_Dorso"
+		}
+		
+		iconType = { #
+			name = "Antonio_De_Viti_De_Marco"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Antonio_De_Viti_De_Marco"
+		}
+		
+		iconType = { #
+			name = "Pietro_Lanza_di_Scalea"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Pietro_Lanza_di_Scalea"
+		}
+		
+		iconType = { #
+			name = "Carlo_Alianello"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Carlo_Alianello"
+		}
+		
+		iconType = { #
+			name = "Gaetano_Salvemini"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Gaetano_Salvemini"
+		}
+		
+		iconType = { #
+			name = "Renato_Ziggiotti"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Renato_Ziggiotti"
+		}
+		
+		iconType = { #
+			name = "Riccardo_Lombardi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Riccardo_Lombardi"
+		}
+		
+		iconType = { #
+			name = "Arturo_Labriola"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Arturo_Labriola"
+		}
+		
+		### Papal State ###
+		
+		iconType = { #
+			name = "Luigi_Maglione"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Papal_State_Luigi_Maglione"
+		}
+		
+		iconType = { #
+			name = "Eugenio_Pacelli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Papal_State_Pius_XII_Cardinal"
+		}
+		
+		iconType = { #
+			name = "Gerardo_Bruni"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAP_Gerardo_Bruni"
+		}
+		
+		iconType = { #
+			name = "Romolo_Murri"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAP_Romolo_Murri"
+		}
+		
+		iconType = { #
+			name = "Guglielmo_Giannini"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAP_Guglielmo_Giannini"
+		}
+		
+		iconType = { #
+			name = "Giuseppe_Donati"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAP_Giuseppe_Donati"
+		}
+		
+		iconType = { #
+			name = "Ludovico_Spada_Veralli_Potenziani"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_PAP_Ludovico_Spada_Veralli_Potenziani"
+		}
+		
+		iconType = { #
+			name = "Reginaldo_Giuliani"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Papal_State_Reginaldo_Giuliani"
+		}
+		
+		### Lombardy ###
+		
+		iconType = { #
+			name = "Giuseppe_Saragat"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_LOM_Giuseppe_Saragat"
+		}
+		
+		iconType = { #
+			name = "Carlo_Sforza"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_LOM_Carlo_Sforza"
+		}
+		
+		iconType = { #
+			name = "Nicolo_Carandini"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_LOM_Nicolo_Carandini"
+		}
+
+		iconType = { #
+			name = "Achille_Grandi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_LOM_Achille_Grandi"
+		}
+		
+		iconType = { #
+			name = "Fulvio_Balisti"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_LOM_Fulvio_Balisti"
 		}
 		
 		### Princely Fed People ###
@@ -3562,7 +4094,7 @@ guiTypes = {
 		}
 		
 		iconType = { #
-			name = "Abdul_Hadi_Dawai"
+			name = "Abdul_Hadi_Dawi"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Afghan_Abdul_Hadi_Dawi"
 		}
@@ -3647,6 +4179,140 @@ guiTypes = {
 			spriteType = "GFX_Portrait_POL_Norbert_Barlicki"
 		}
 		
+		### Baltics ###
+		
+		iconType = { #
+			name = "Friedrich_von_Samson_Himmelstjerna"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Fridrihs_Samsons_fon_Himmelserna"
+		}
+		
+		iconType = { #
+			name = "Paul_Schiemann"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Paul_Schiemann"
+		}
+
+		iconType = { #
+			name = "Wilhelm_Munter"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Baltic_Wilhelm_Munter"
+		}
+
+		iconType = { #
+			name = "Axel_von_Freytagh_Loringhoven"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Axel_von_Freytagh_Loringhoven"
+		}
+
+		iconType = { #
+			name = "Otto_von_Kursell"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Otto_von_Kursell"
+		}
+
+		iconType = { #
+			name = "Rolf_von_Ungern_Sternberg"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Rolf_von_Ungern_Sternberg"
+		}
+
+		iconType = { #
+			name = "Hermann_von_Keyserling"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BAT_Hermann_von_Keyserling"
+		}
+
+		### Nepal ###
+		
+		iconType = { #
+			name = "Padma_Shumsher_Rana"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NEP_Padma_Shumsher_Rana"
+		}
+		
+		iconType = { #
+			name = "Juddha_Shumsher_Rana"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NEP_Juddha_Shumsher_Rana"
+		}
+
+		iconType = { #
+			name = "Mohan_Shumsher_Rana"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NEP_Mohan_Shumsher_Rana"
+		}
+		
+		### Georgian PMs ###
+		
+		iconType = { #
+			name = "Evgeni_Gegechkori"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Evgeni_Gegechkori"
+		}
+		
+		iconType = { #
+			name = "Iosif_Baratov"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Iosif_Baratov"
+		}
+		
+		iconType = { #
+			name = "Grigory_Veshapeli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Grigory_Veshapeli"
+		}
+		
+		iconType = { #
+			name = "Ekvtime_Takaishvili"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Ekvtime_Takaishvili"
+		}
+		
+		iconType = { #
+			name = "Shalva_Maglakelidze"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Shalva_Maglakelidze"
+		}
+		
+		iconType = { #
+			name = "Mikheil_Tsereteli"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEO_Mikheil_Tsereteli"
+		}
+		
+		### Hawaii ###
+		
+		iconType = { #
+			name = "John_Henry_Wilson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_HAW_John_Henry_Wilson"
+		}
+		
+		iconType = { #
+			name = "Samuel_Wilder_King"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_HAW_samuel_king"
+		}
+		
+		iconType = { #
+			name = "Lawrence_McCully_Judd"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_HAW_lawrence_judd"
+		}
+		
+		iconType = { #
+			name = "Henry_Alexander_Baldwin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_HAW_Alexander_Baldwin"
+		}
+		
+		iconType = { #
+			name = "James_Dole"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_HAW_james_dole"
+		}
+		
 		### Others
 			
 		iconType = { #
@@ -3668,15 +4334,33 @@ guiTypes = {
 		}
 		
 		iconType = { #
-			name = "Anastasiy_Vonsyatsky"
+			name = "Mikhail_Diterikhs"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Portrait_TRM_Anastasiy_Vonsyatsky"
+			spriteType = "GFX_Portrait_TRM_Mikhail_Diterikhs"
 		}
 		
 		iconType = { #
-			name = "Julius_Evola"
+			name = "Vladimir_Kappel"
 			position = { x = 8 y = 10 }
-			spriteType = "GFX_Julius_Evola_Baron"
+			spriteType = "GFX_Portrait_TRM_Vladimir_Kappel"
+		}
+		
+		iconType = { #
+			name = "Grigoriy_M_Semyenov"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_TRM_Grigory_Semyonov"
+		}
+		
+		iconType = { #
+			name = "Viktor_N_Pepelyayev"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_TRM_Victor_Pepelyaev"
+		}
+		
+		iconType = { #
+			name = "Anastasiy_Vonsyatsky"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_TRM_Anastasiy_Vonsyatsky"
 		}
 		
 		iconType = { #
@@ -3755,6 +4439,24 @@ guiTypes = {
 			name = "Francisco_May_Pech"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Yucatan_Francisco_May_Pech"
+		}
+
+		iconType = { #
+			name = "Artur_Edler_von_Schuschnigg"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_AUS_Artur_Edler_von_Schuschnigg"
+		}
+
+		iconType = { #
+			name = "Edna_Anne_Ballard"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_TEX_Edna_Ballard"
+		}
+
+		iconType = { #
+			name = "Mohandas_Karamchand_Gandhi"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_BHC_Mohandas_Karamchand_Gandhi"
 		}
 
 		# Add a new iconType (copy-paste) for every PM. Change its name and set the SpriteType to the PM, please give it an entry in the .gfx file

@@ -206,7 +206,7 @@ country_event = {
 				name = "Lionel de Rothschild"
 				desc = "POLITICS_LIONEL_ROTHSCHILD_DESC"
 				picture = "gfx/leaders/TZN/TZN_Lionel_de_Rothschild.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 				traits = {}
 			}
@@ -385,7 +385,7 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_democrat_subtype
 			}
 		}
@@ -397,8 +397,8 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
+				expire = "1.1.1"
+				ideology = classical_liberalism_subtype
 			}
 		}
 		else_if = {
@@ -409,8 +409,8 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
+				expire = "1.1.1"
+				ideology = liberal_conservative_subtype
 			}
 		}
 		else_if = {
@@ -421,7 +421,7 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 			}
 		}
@@ -433,7 +433,7 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_boer_nationalism_subtype
 			}
 		}
@@ -442,7 +442,7 @@ country_event = {
 				name = "John Ronald Reuel Tolkien"
 				desc = "POLITICS_TOLKIEN_DESC"
 				picture = "gfx/leaders/SAF/SAF_JRR_Tolkien.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_boer_nationalism_subtype
 			}
 		}
@@ -459,9 +459,8 @@ country_event = {
 			}
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_democrat_subtype
 			}
 		}
@@ -471,10 +470,9 @@ country_event = {
 			}
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
+				expire = "1.1.1"
+				ideology = classical_liberalism_subtype
 			}
 		}
 		else_if = {
@@ -483,10 +481,9 @@ country_event = {
 			}
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
+				expire = "1.1.1"
+				ideology = liberal_conservative_subtype
 			}
 		}
 		else_if = {
@@ -495,9 +492,8 @@ country_event = {
 			}
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 			}
 		}
@@ -507,18 +503,16 @@ country_event = {
 			}
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_boer_nationalism_subtype
 			}
 		}
 		else = {
 			create_country_leader = {
 				name = "Adolf Malan"
-				desc = "POLITICS_NICOLAAS_HAVENGA_DESC"
 				picture = "gfx/leaders/SAF/SAF_Adolf_Malan.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_boer_nationalism_subtype
 			}
 		}
@@ -537,7 +531,7 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_democrat_subtype
 			}
 		}
@@ -549,8 +543,8 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
+				expire = "1.1.1"
+				ideology = classical_liberalism_subtype
 			}
 		}
 		else_if = {
@@ -561,8 +555,8 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
-				ideology = market_liberal_subtype
+				expire = "1.1.1"
+				ideology = liberal_conservative_subtype
 			}
 		}
 		else_if = {
@@ -573,7 +567,7 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 			}
 		}
@@ -585,7 +579,7 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_boer_nationalism_subtype
 			}
 		}
@@ -594,7 +588,7 @@ country_event = {
 				name = "Jan Hendrik Hofmeyr"
 				desc = ""
 				picture = "gfx/leaders/SAF/Jan_Hendrik_Hofmeyr_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_boer_nationalism_subtype
 			}
 		}
@@ -695,7 +689,7 @@ country_event = {
 				name = "Andrew Cohen"
 				desc = "POLITICS_COHEN_DESC"
 				picture = "gfx/leaders/UGA/Portrait_Uganda_Cohen.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_conservative_subtype
 				traits = {}
 			}

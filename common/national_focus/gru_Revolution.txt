@@ -3402,7 +3402,7 @@ focus = {
 	}
 	focus = {
 		id = GRU_SMEPD_fourth_internationale
-		icon = GFX_goals_FRA_fourth
+		icon = GFX_goal_RUS_fourth
 		relative_position_id = GRU_SMEPD_DIPLO
 		available = {
 			has_government = totalist
@@ -3411,8 +3411,8 @@ focus = {
 			OR = {
 				FRA = { NOT = { has_completed_focus = FRA_lenin_legacy } }
 				AND = {
-					soviets_exist = yes
 					RUS = {
+						has_country_flag = soviet_russia_restored
 						is_faction_leader = yes
 						is_subject = no
 						has_socialist_government = yes
@@ -3472,8 +3472,8 @@ focus = {
 			}
 			if = {
 				limit = {
-					soviets_exist = yes
 					RUS = {
+						has_country_flag = soviet_russia_restored
 						is_faction_leader = yes
 						is_subject = no
 						has_socialist_government = yes
@@ -3634,17 +3634,10 @@ focus = {
 			hidden_effect = {
 				country_event = { id =  rotermorgen.700 }
 				create_country_leader = {
-							name = "Kurt Schuhmacher"
-							desc = "GRU_Schuhmacher_DESC"
-							picture = "gfx/leaders/GRU/Portrait_Germany_Kurt_Schuhmacher.png"
-							expire = "1965.1.1"
-							ideology = socdem_democratic_socialism_subtype
-				}
-				create_country_leader = {
 							name = "Erich Honecker"
 							desc = "GRU_Honecker_DESC"
 							picture = "gfx/leaders/GRU/Portrait_Germany_Erich_Honecker_young.png"
-							expire = "1965.1.1"
+							expire = "1.1.1"
 							ideology = moderate_socialist_subtype
 				}
 				set_party_name = {

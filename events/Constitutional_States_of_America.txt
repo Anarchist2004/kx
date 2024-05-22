@@ -492,8 +492,8 @@ country_event = { # Murray steps down!
 		create_country_leader = {
 			name = "Charles Lindbergh"
 			desc = "POLITICS_CHARLES_LINDBERGH"
-			picture = "gfx/leaders/COR/COR_lindberg.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Charles_Lindbergh.png"
+			expire = "1.1.1"
 			ideology = corporatocracy_subtype
 			traits = { the_lone_eagle COR_head_in_the_clouds }
 			}
@@ -546,8 +546,8 @@ country_event = { # Ford
 		create_country_leader = {
 			name = "Henry Ford"
 			desc = ""
-			picture = "gfx/leaders/CGL/Henry_Ford.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CGL/Portrait_CGL_Henry_Ford.png"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { eco_father_of_the_assembly_line }
 		}
@@ -558,8 +558,8 @@ country_event = { # Ford
 		create_country_leader = {
 			name = "Henry Ford"
 			desc = ""
-			picture = "gfx/leaders/CGL/Henry_Ford.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CGL/Portrait_CGL_Henry_Ford.png"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { eco_father_of_the_assembly_line }
 		}
@@ -605,16 +605,18 @@ country_event = { # Ford Dies
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event constate.4092"
 		hidden_effect = {
-			remove_ideas = COR_Henry_Ford_hog_pau
-			add_ideas = COR_Charles_Augustus_Lindbergh_hog_pau
+			if = {
+				limit = { has_idea = COR_Henry_Ford_hog_pau }
+				remove_ideas = COR_Henry_Ford_hog_pau
+			    add_ideas = COR_Charles_Augustus_Lindbergh_hog_pau
+				set_country_flag = COR_Henry_Ford_dead
+			}
 		}
-		set_country_flag = COR_Henry_Ford_dead
 	}
 	title = constate.4092.t
 	desc = constate.4092.d
 	picture = GFX_CAR_Ford_eventpic
 
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -628,8 +630,8 @@ country_event = { # Ford Dies
 		name = constate.4092.a
 		create_country_leader = {
 			name = "Edsel Ford"
-			picture = "gfx/leaders/CGL/Edsel_Ford.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CGL/Portrait_CGL_Edsel_Ford.png"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { eco_industrialiser }
 		}
@@ -637,10 +639,15 @@ country_event = { # Ford Dies
 	
 	option = { # Rockefeller
 		name = constate.4092.b
+		trigger = {
+			NOT = {
+				country_exists = NEE
+			}
+		}
 		create_country_leader = {
 			name = "Nelson Rockefeller"
 			picture = "gfx/leaders/NEE/Portrait_NEE_Nelson_Rockefeller.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { financial_expert }
 		}
@@ -656,7 +663,7 @@ country_event = { # Ford Dies
 		create_country_leader = {
 			name = "Howard Hughes"
 			picture = "gfx/leaders/CAL/Portrait_CAL_howard_hughes_dictator.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { captain_of_industry }
 		}
@@ -672,7 +679,7 @@ country_event = { # Ford Dies
 		create_country_leader = {
 			name = "Torklid Rieber"
 			picture = "gfx/leaders/TXS/Portrait_TXS_Rieber.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { oil_baron }
 		}
@@ -688,7 +695,7 @@ country_event = { # Ford Dies
 		create_country_leader = {
 			name = "Stephen Birch"
 			picture = "gfx/leaders/ALA/Portrait_Alaska_Stephen_Birch.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { economic_reformer }
 		}
@@ -703,43 +710,17 @@ country_event = { # Ford Dies
 		}
 		create_country_leader = {
 			name = "William Randolph Hearst"
-			picture = "gfx/leaders/CAL/CAL_Hearst.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CAL/Portrait_CAL_William_Randolph_Hearst.png"
+			expire = "1.1.1"
 			ideology = right_technocracy_subtype
 			traits = { sec_media_magnate }
 		}
 	}
-	
-	option = { # Edison
-		name = constate.4092.h
-		create_country_leader = {
-			name = "Charles Edison"
-			picture = "gfx/leaders/ENC/Portrait_ENC_Charles_Edison.png"
-			expire = "1965.1.1"
-			ideology = right_technocracy_subtype
-			traits = { hog_political_protege }
-		}
-	}
 
-	option = { # SCOOOOOOOOOTTTTTTTTTTTTT
-		name = constate.4092.i
-		trigger = {
-			NOT = {
-				country_exists = CSA
-			}
-		}
-		create_country_leader = {
-			name = "Howard Scott"
-			picture = "gfx/leaders/CSA/Portrait_CSA_Howard_Scott.png"
-			expire = "1965.1.1"
-			ideology = right_technocracy_subtype
-			traits = { head_of_techno_inc }
-		}
-		hidden_effect = {
-			country_event = {
-				id = csa.69696
-				days = 9
-			}
+	option = {
+		name = constate.4092.j
+		country_event = {
+			id = constate.4100
 		}
 	}
 }
@@ -755,13 +736,13 @@ country_event = { # become USA?
 	
 	trigger = {
 		NOT = {
-			has_cosmetic_tag = USA
+			has_cosmetic_tag = NEE_america
 		}
 	}
 	
 	option = { # yes
 		name = constate.4093.a
-		set_cosmetic_tag = USA
+		set_cosmetic_tag = NEE_america
 		add_political_power = 75
 	}
 	
@@ -999,8 +980,8 @@ country_event = { # Black Legion
 		decrease_ruling_party_popularity_by_3 = yes
 		hidden_effect = {
 		country_event = {
-				id = constate.1706
-				days = 22
+				id = constate.4099
+				days = 7
 		}
 		random_unit_leader = {
 				limit = { has_id = 136 }
@@ -1015,8 +996,8 @@ country_event = { # Black Legion
 		create_country_leader = {
 				name = "Virgil Effinger"
 				desc = "POLITICS_VIRGIL_EFFINGER"
-				picture = "gfx/leaders/COR/Portrait_Virgil_Effinger.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Virgil_Effinger.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { COR_effinger_traits }
 		}
@@ -1050,6 +1031,100 @@ country_event = { # Black Legion Picker
 	}
 }
 
+country_event = { # Girlboss
+	id = constate.4099
+	immediate = { log = "[GetDateText]: [Root.GetName]: event constate.4099" }
+	title = constate.4099.t
+	desc = constate.4099.d
+	picture = GFX_CAR_wkkk
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # yes
+		name = constate.4099.a
+		add_political_power = -30
+		add_command_power = 10
+		decrease_ruling_party_popularity_by_3 = yes
+		hidden_effect = {
+		country_event = {
+				id = constate.1706
+				days = 22
+		}
+     	}
+	}
+	option = { # no
+		name = constate.4099.b
+		add_manpower = -1
+		increase_ruling_party_popularity_by_3 = yes
+		create_country_leader = {
+				name = "Daisy Douglas Barr"
+				picture = "gfx/leaders/COR/Portrait_COR_Daisy_Douglas_Barr.png"
+				expire = "1.1.1"
+				ideology = klan_nationalism_subtype
+				traits = { COR_imperial_empress_traits }
+		}
+		remove_all_ministers = yes
+		add_ideas = COR_Daisy_Douglas_Barr_hog_npo 
+		add_ideas = COR_Myrta_Lockett_Avary_for_npo 
+		add_ideas = COR_Robbie_Gill_Comer_eco_npo 
+		add_ideas = COR_Minnie_C_T_Love_sec_npo 
+		set_party_name = {
+			ideology = national_populist
+			long_name = COR_national_populist_women_party_long
+			name = COR_national_populist_women_party 
+		}
+	}
+}
+
+country_event = { #
+	id = constate.4100
+	immediate = { log = "[GetDateText]: [Root.GetName]: event constate.4100" }
+	title = constate.4092.t
+	desc = constate.4092.d
+	picture = GFX_CAR_Ford_eventpic
+
+	is_triggered_only = yes
+	
+	option = { # Go Back
+		name = constate.4092.k
+		country_event = constate.4092
+	}
+	
+	option = { # Edison
+		name = constate.4092.h
+		create_country_leader = {
+			name = "Charles Edison"
+			picture = "gfx/leaders/ENC/Portrait_ENC_Charles_Edison.png"
+			expire = "1.1.1"
+			ideology = right_technocracy_subtype
+			traits = { hog_political_protege }
+		}
+	}
+
+	option = { # SCOOOOOOOOOTTTTTTTTTTTTT
+		name = constate.4092.i
+		trigger = {
+			NOT = {
+				country_exists = CSA
+			}
+		}
+		create_country_leader = {
+			name = "Howard Scott"
+			picture = "gfx/leaders/CSA/Portrait_CSA_Howard_Scott.png"
+			expire = "1.1.1"
+			ideology = right_technocracy_subtype
+			traits = { head_of_techno_inc }
+		}
+		hidden_effect = {
+			country_event = {
+				id = csa.69696
+				days = 9
+			}
+		}
+	}
+}
+
 country_event = { # Murray Retires?
 	id = constate.600
 	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.600"}
@@ -1075,8 +1150,8 @@ country_event = { # Murray Retires?
 			create_country_leader = {
 				name = "Eugene Talmadge"
 				desc = "POLITICS_EUGENE_TALMADGE_DESC"
-				picture = "gfx/leaders/COR/COR_Eugene_Talmadge.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Eugene_Talmadge.png"
+				expire = "1.1.1"
 				ideology = jacksonianism_subtype
 				traits = { COR_talmadge_traits }
 			}
@@ -1097,7 +1172,7 @@ country_event = { # Murray Retires?
 				name = "Strom Thurmond"
 				desc = "COR_STROM_THURMOND_DESC"
 				picture = "gfx/leaders/USA/Portrait_USA_Strom_Thurmond.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = jacksonianism_subtype
 				traits = { USA_jim_crows_champion }
 			}
@@ -1116,7 +1191,7 @@ country_event = { # Murray Retires?
 				name = "John E. Rankin"
 				desc = "POLITICS_JOHN_RANKIN_DESC"
 				picture = "gfx/leaders/COR/Portrait_COR_John_E_Rankin.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = jacksonianism_subtype
 				traits = { COR_rankin_traits }
 			}
@@ -1162,8 +1237,8 @@ country_event = { # Another Southern Populist?
 			create_country_leader = {
 				name = "Eugene Talmadge"
 				desc = "POLITICS_EUGENE_TALMADGE_DESC"
-				picture = "gfx/leaders/COR/COR_Eugene_Talmadge.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Eugene_Talmadge.png"
+				expire = "1.1.1"
 				ideology = jacksonianism_subtype
 				traits = { COR_talmadge_traits }
 			}
@@ -1459,8 +1534,8 @@ country_event = { # The Imperial Wizard Takes Charge
 			create_country_leader = {
 				name = "William Joseph Simmons"
 				desc = "POLITICS_WILLIAM_JOSEPH_SIMMONS"
-				picture = "gfx/leaders/COR/COR_William_Joseph_Simmons.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_William_Joseph_Simmons.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { american_emperor }
 			}
@@ -1531,10 +1606,13 @@ country_event = { # Patton
 				name = "George Patton"
 				desc = "POLITICS_GEORGE_PATTON_DESC"
 				picture = "gfx/leaders/COR/Portrait_COR_George_Patton.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_junta_subtype
 				traits = { blood_and_guts }
 			}
+			drop_cosmetic_tag = yes
+			remove_all_ministers = yes
+			add_ideas = COR_George_Smith_Patton_Jr_hog_ade
 			add_ideas = COR_William_Bell_Riley_for_pau
 			add_ideas = COR_John_Geraerdt_Crommelin_Jr_eco_npo
 			add_ideas = COR_Theophilus_Eugene_Connor_sec_pau
@@ -1552,6 +1630,7 @@ country_event = { # Patton
 			country_event = { id = constate.13 days = 9 }
 		}
 		drop_cosmetic_tag = yes
+		set_country_flag = COR_patton_is_temp_leader
 	}
 }
 
@@ -1746,7 +1825,7 @@ country_event = { # Reorganize the Democratic Party
 			name = "Harry F. Byrd"
 			desc = "POLITICS_HARRY_BYRD_DESC"
 			picture = "gfx/leaders/USA/Portrait_USA_Harry_F_Byrd.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = clientelism_subtype
 			traits = { USA_symbol_of_the_old_south }
 		}
@@ -1758,7 +1837,7 @@ country_event = { # Reorganize the Democratic Party
 			name = "James F. Byrnes"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_James_Byrnes.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_dixiecrat_subtype 
 			traits = { COR_hawkish_gamer_traits }
 		}
@@ -1789,7 +1868,7 @@ country_event = { # Reorganize the Republican Party
 			name = "Interim Government"
 			desc = ""
 			picture = "gfx/leaders/USA/Portrait_USA_Senate_Emergency.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authdem_junta_subtype
 			traits = { the_committee }
 		}
@@ -1797,7 +1876,7 @@ country_event = { # Reorganize the Republican Party
 			name = "Strom Thurmond"
 			desc = "COR_STROM_THURMOND_DESC"
 			picture = "gfx/leaders/USA/Portrait_USA_Strom_Thurmond.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = marlib_dixiecrat_subtype
 			traits = { USA_jim_crows_champion }
 		}
@@ -1808,8 +1887,8 @@ country_event = { # Reorganize the Republican Party
 		create_country_leader = {
 			name = "Joseph Raymond McCarthy"
 			desc = ""
-			picture = "gfx/leaders/CGL/Joe_McCarthy.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CGL/Portrait_CGL_Joe_McCarthy.png"
+			expire = "1.1.1"
 			ideology = mccarthyism_subtype
 			traits = { COR_tail_gunner_traits }
 		}
@@ -1818,11 +1897,13 @@ country_event = { # Reorganize the Republican Party
 			long_name = COR_social_liberal_patton_party_long
 			name = COR_social_liberal_patton_party 
 			}
-				country_event = {
+			country_event = { id = constate.11073 days = 7 }
+			country_event = { id = constate.11074 days = 21 }
+			country_event = {
 			id = constate.11071
-			days = 30
+			days = 35
 			}
-				}
+		}
 	}
 }
 country_event = { # Question of Democracy
@@ -1998,9 +2079,15 @@ country_event = { # Question of Retirement
 			name = "George Van Horn Moseley"
 			desc = "COR_GEORGE_MOSELEY_ARMY_DESC"
 			picture = "gfx/leaders/COR/Portrait_COR_George_Van_Horn_Moseley.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = pataut_washingtonism_subtype
 			traits = { COR_new_washington_traits }
+		}
+		hidden_effect = {
+			remove_ideas = COR_yellow_cowards_idea
+			remove_ideas = COR_yellow_cowards_idea_2
+			remove_ideas = COR_yellow_cowards_idea_3
+			remove_ideas = COR_yellow_cowards_idea_4
 		}
 	}
 	option = { # No
@@ -2059,7 +2146,14 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = social_conservative
-			popularity = 0.3
+			popularity = 0.2
+		}
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = COR_Harry_F_Byrd_hog_sco 
+			add_ideas = COR_Harry_F_Byrd_Jr_for_sco 
+			add_ideas = COR_Thomas_B_Stanley_eco_sco 
+			add_ideas = COR_Robert_Young_Button_sec_sco 
 		}
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
@@ -2098,7 +2192,14 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = market_liberal
-			popularity = 0.3
+			popularity = 0.2
+		}
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = COR_Strom_Thurmond_hog_mli 
+			add_ideas = COR_John_C_Stennis_for_mli 
+			add_ideas = COR_William_E_Jenner_eco_sli 
+			add_ideas = COR_James_Eastland_sec_mli 
 		}
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
@@ -2139,6 +2240,13 @@ country_event = {
 			ideology = social_liberal
 			popularity = 0.3
 		}
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = COR_Joseph_McCarthy_hog_sli 
+			add_ideas = COR_John_C_Stennis_for_mli 
+			add_ideas = COR_William_E_Jenner_eco_sli 
+			add_ideas = COR_James_Eastland_sec_mli 
+		}
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
 	option = {
@@ -2176,7 +2284,61 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = social_democrat
-			popularity = 0.3
+			popularity = 0.2
+		}
+		hidden_effect = {
+			remove_all_ministers = yes
+			add_ideas = COR_James_Francis_Byrnes_hog_sde 
+			add_ideas = COR_Lurleen_Wallace_for_sde 
+			add_ideas = COR_Burnet_R_Maybank_eco_sde  
+			add_ideas = COR_George_Wallace_sec_sde 
+		}
+		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
+	}
+	option = {
+	name = constate.11071.f
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = COR_post_civil_war
+						option = COR_POST_CIVIL_WAR_BYRNES
+					}
+					has_game_rule = {
+						rule = COR_post_civil_war
+						option = COR_POST_CIVIL_WAR_THURMOND
+					}
+					has_game_rule = {
+						rule = COR_post_civil_war
+						option = COR_POST_CIVIL_WAR_MCCARTHY
+					}
+				}
+			}
+		}
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		hidden_effect = {
+			complete_national_focus = COR_Vardaman_President
+			remove_all_ministers = yes
+			add_ideas = COR_James_K_Vardaman_hog_rso
+			add_ideas = COR_James_K_Vardaman_Jr_for_rso
+			add_ideas = COR_Jim_Money_Vardaman_eco_rso
+			add_ideas = COR_Henry_Vaughan_Watkins_sec_rso
 		}
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
@@ -2194,6 +2356,155 @@ country_event = { # Limbaugh
 	option = { # lol
 		name = constate.11072.a
 		add_political_power = -30
+	}
+}
+country_event = { # Vardaman Protests
+	id = constate.11073
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11073.t
+	desc = constate.11073.d
+	picture = GFX_CAR_vardaman
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11073.a
+		add_political_power = -50
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+	}
+}
+country_event = { # 48-ers Flop
+	id = constate.11074
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11074.t
+	desc = constate.11074.d
+	picture = GFX_CAR_48
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11074.a
+		add_political_power = -30
+		add_popularity = { ideology = radical_socialist popularity = 0.03 }
+	}
+}
+country_event = { # Vardaman and Sons
+	id = constate.11075
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11075.t
+	desc = constate.11075.d
+	picture = GFX_CAR_vardaman_sons
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11075.a
+		add_political_power = -25
+		add_command_power = 50
+	}
+}
+country_event = { # E.P.I.C
+	id = constate.11076
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11076.t
+	desc = constate.11076.d
+	picture = GFX_CAR_vardaman_epic
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11076.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		add_popularity = { ideology = social_democrat popularity = 0.02 }
+		add_popularity = { ideology = social_liberal popularity = 0.02 }
+	}
+}
+country_event = { # Lincoln Warriors
+	id = constate.11077
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11077.t
+	desc = constate.11077.d
+	picture = GFX_CAR_lincoln_warriors
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11077.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		random_owned_controlled_state = {
+				limit = {
+					is_core_of = COR
+					is_controlled_by = COR
+					industrial_complex > 0
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
+	}
+}
+country_event = { # Flag Picker
+	id = constate.11078
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11072"}
+	title = constate.11078.t
+	desc = constate.11078.d
+	picture = GFX_CAR_vardaman_flag
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11078.a
+		set_cosmetic_tag = COR_popular
+	}
+	option = { #
+		name = constate.11078.b
+		set_cosmetic_tag = USA
+	}
+	option = { #
+		name = constate.11078.c
+	}
+}
+country_event = { # Women
+	id = constate.11079
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11079"}
+	title = constate.11079.t
+	desc = constate.11079.d
+	picture = GFX_CAR_vardaman_women
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11079.a
+		add_political_power = 50
+		increase_ruling_party_popularity_by_5 = yes
+	}
+}
+country_event = { # Vardaman Death
+	id = constate.11080
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.11080"}
+	title = constate.11080.t
+	desc = constate.11080.d
+	picture = GFX_CAR_vardaman
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = constate.11080.a
 	}
 }
 country_event = { # The Initiative
@@ -2488,7 +2799,7 @@ country_event = { # Backroom Deals
 			name = "Walter F. Bossert"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_Walter_F_Bossert.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = jacksonianism_subtype
 			traits = { }
 			}
@@ -2605,6 +2916,7 @@ country_event = { # Fordists Revolt
 		hidden_effect = {
 			country_event = { id = constate.1122 days = 14 }
 		}
+		set_country_flag = COR_fordist_election_eliminated
 		}
 	option = { #Coup
 		name = constate.1120.c
@@ -2639,8 +2951,8 @@ country_event = { # Fordist Coup!
 		create_country_leader = {
 			name = "Charles Lindbergh"
 			desc = "POLITICS_CHARLES_LINDBERGH"
-			picture = "gfx/leaders/COR/COR_lindberg.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Charles_Lindbergh.png"
+			expire = "1.1.1"
 			ideology = corporatocracy_subtype
 			traits = { the_lone_eagle COR_head_in_the_clouds }
 			}
@@ -2665,6 +2977,7 @@ country_event = { # Fordist Coup!
 	option = { # Nuh uh
 		name = constate.1121.b
 		add_popularity = { ideology = paternal_autocrat popularity = -0.12 }
+		set_country_flag = COR_fordist_election_eliminated
 	}
 }
 
@@ -2882,8 +3195,8 @@ country_event = { # Evans Coup
 			create_country_leader = {
 				name = "Hiram Wesley Evans"
 				desc = "POLITICS_HIRAM_WESLEY_EVANS_DESC"
-				picture = "gfx/leaders/COR/Hiram_Evans_suit.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Hiram_Wesley_Evans.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { power_hungry }
 			}
@@ -2898,6 +3211,11 @@ country_event = { # Evans Coup
 			elections_allowed = no
 		}
 		add_ideas = COR_black_legion_resistance
+	}
+	option = { # Excellent
+		name = constate.1127.b
+		add_stability = 0.1
+		add_political_power = -50
 	}
 }
 
@@ -3180,8 +3498,8 @@ country_event = { # Talmadge Coups
 			create_country_leader = {
 				name = "Eugene Talmadge"
 				desc = "POLITICS_EUGENE_TALMADGE_DESC"
-				picture = "gfx/leaders/COR/COR_Eugene_Talmadge.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Eugene_Talmadge.png"
+				expire = "1.1.1"
 				ideology = jacksonianism_subtype
 				traits = { COR_talmadge_traits }
 			}
@@ -3209,8 +3527,8 @@ country_event = { # Simmons Death
 			create_country_leader = {
 				name = "William Bell Riley"
 				desc = "POLITICS_WILLIAM_BELL_RILEY_DESC"
-				picture = "gfx/leaders/COR/William_Bell_Riley.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_William_Bell_Riley.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { CAN_popular_figurehead }
 			}
@@ -3349,11 +3667,12 @@ country_event = { # Hiram Wesley Evans killed!
 			create_country_leader = {
 				name = "D.C. Stephenson"
 				desc = "POLITICS_DC_STEPHENSON_DESC"
-				picture = "gfx/leaders/COR/d_c_stephenson.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_DC_Stephenson.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { terror_of_the_midwest }
 			}
+			remove_all_ministers = yes
 			add_ideas = COR_Edward_L_Jackson_hog_npo
 			add_ideas = COR_Arthur_Raymond_Robinson_for_npo
 			add_ideas = COR_Robert_Rice_Reynolds_eco_npo
@@ -3898,6 +4217,10 @@ country_event = { # Death of Stephenson
 		add_political_power = 30
 		add_stability = 0.03
 		add_popularity = { ideology = national_populist popularity = -0.02 }
+		random_unit_leader = {
+			limit = { has_id = 136 }
+			retire = yes
+		}
 		hidden_effect = {
 			country_event = { id = constate.20 days = 1 }
 		}
@@ -3953,8 +4276,8 @@ country_event = { # Meeting Place bombed
 			create_country_leader = {
 				name = "D.C. Stephenson"
 				desc = "POLITICSDC_STEPHENSON_DESC"
-				picture = "gfx/leaders/COR/d_c_stephenson.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_DC_Stephenson.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { terror_of_the_midwest }
 			}
@@ -4008,12 +4331,13 @@ country_event = { # Patton
 				name = "George Patton"
 				desc = "POLITICS_GEORGE_PATTON_DESC"
 				picture = "gfx/leaders/COR/Portrait_COR_George_Patton.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_junta_subtype
 				traits = { blood_and_guts }
 			}
 			drop_cosmetic_tag = yes
 			remove_all_ministers = yes
+			add_ideas = COR_George_Smith_Patton_Jr_hog_ade
 			add_ideas = COR_William_Bell_Riley_for_pau
 			add_ideas = COR_John_Geraerdt_Crommelin_Jr_eco_npo
 			add_ideas = COR_Theophilus_Eugene_Connor_sec_pau
@@ -4065,6 +4389,10 @@ country_event = { # Stephenson Killed
 		add_political_power = 50
 		add_popularity = { ideology = national_populist popularity = -0.05 }
 		add_manpower = -5000
+		random_unit_leader = {
+			limit = { has_id = 136 }
+			retire = yes
+		}
 		hidden_effect = {
 			country_event = { id = constate.21 days = 9 }
 			add_war_support = 0.05
@@ -4205,7 +4533,7 @@ country_event = { # Winrod endorses Evans
 		add_political_power = 20
 		add_stability = 0.03
 		hidden_effect = {
-			country_event = { id = constate.23 days = 3 }
+			country_event = { id = constate.24 days = 3 }
 		}
 	}
 }
@@ -4229,13 +4557,132 @@ country_event = { # Evans Elected
 			create_country_leader = {
 				name = "Hiram Wesley Evans"
 				desc = "POLITICS_HIRAM_WESLEY_EVANS_DESC"
-				picture = "gfx/leaders/COR/Hiram_Evans_suit.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Hiram_Wesley_Evans.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { power_hungry }
 			}
 			remove_all_ministers = yes
 			add_ideas = COR_Hiram_Wesley_Evans_hog_npo
+			add_ideas = COR_William_Bell_Riley_for_pau
+			add_ideas = COR_Gerald_Burton_Winrod_eco_npo
+			add_ideas = COR_Samuel_Green_sec_npo
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_ideas = COR_black_legion_resistance
+	}
+}
+
+country_event = { # Accusations of Vile Corruption and Spineless Moderation
+	id = constate.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.24"}
+	title = constate.24.t
+	desc = constate.24.d
+	picture = GFX_CAR_evans_suit
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = { # Force Evans to withdraw
+		name = constate.24.a
+		add_popularity = { ideology = national_populist popularity = -0.03 }
+		add_political_power = 20
+		add_stability = 0.03
+		hidden_effect = {
+			country_event = { id = constate.2400 days = 3 }
+		}
+	}
+	option = { # Help him sweep this under the rug
+		name = constate.24.b
+		add_popularity = { ideology = national_populist popularity = 0.03 }
+		add_political_power = -20
+		add_stability = -0.03
+		hidden_effect = {
+			country_event = { id = constate.23 days = 3 }
+		}
+	}
+}
+
+country_event = { # The ODP Convenes
+	id = constate.2400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.23"}
+	title = constate.2400.t
+	desc = constate.2400.d
+	picture = GFX_CAR_klan_ballot_box
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = { # Colescott
+		name = constate.2400.a
+		add_stability = 0.05
+		add_political_power = 25
+		hidden_effect = {
+			create_country_leader = {
+				name = "James A. Colescott"
+				desc = ""
+				picture = "gfx/leaders/COR/Portrait_COR_James_A_Colescott.png"
+				expire = "1.1.1"
+				ideology = klan_nationalism_subtype
+				traits = { the_klan_accountant }
+			}
+			remove_all_ministers = yes
+			add_ideas = COR_James_A_Colescott_hog_npo
+			add_ideas = COR_William_Bell_Riley_for_pau
+			add_ideas = COR_Gerald_Burton_Winrod_eco_npo
+			add_ideas = COR_Samuel_Green_sec_npo
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_ideas = COR_black_legion_resistance
+	}
+	option = { # Bilbo
+		name = constate.2400.b
+		add_stability = 0.05
+		add_political_power = 25
+		hidden_effect = {
+			create_country_leader = {
+				name = "Theodore G. Bilbo"
+				desc = ""
+				picture = "gfx/leaders/FSA/Portrait_FSA_Theodore_G_Bilbo_SocCon.png"
+				expire = "1.1.1"
+				ideology = klan_nationalism_subtype
+				traits = { the_man }
+			}
+			remove_all_ministers = yes
+			add_ideas = COR_Theodore_Gilmore_Bilbo_hog_npo
+			add_ideas = COR_William_Bell_Riley_for_pau
+			add_ideas = COR_Gerald_Burton_Winrod_eco_npo
+			add_ideas = COR_Samuel_Green_sec_npo
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_ideas = COR_black_legion_resistance
+	}
+	option = { # Green
+		name = constate.2400.c
+		add_stability = 0.05
+		add_political_power = 25
+		hidden_effect = {
+			create_country_leader = {
+				name = "Samuel Green"
+				desc = ""
+				picture = "gfx/leaders/COR/Portrait_COR_Sam_Green.png"
+				expire = "1.1.1"
+				ideology = klan_nationalism_subtype
+				traits = { zealous_grand_dragon }
+			}
+			remove_all_ministers = yes
+			add_ideas = COR_Samuel_Green_hog_npo
 			add_ideas = COR_William_Bell_Riley_for_pau
 			add_ideas = COR_Gerald_Burton_Winrod_eco_npo
 			add_ideas = COR_Samuel_Green_sec_npo
@@ -4280,6 +4727,12 @@ country_event = { # Deportation Policy
 				add_state_core = 1170
 			}
 			release_puppet = BBR
+			COR = {
+			set_autonomy = {
+				target = BBR
+				autonomous_state = kx_colored_puppet
+				}
+			}
 			hidden_effect = {
 				country_event = {
 					id = constate.25001
@@ -4368,7 +4821,7 @@ country_event = { # BBR leader picker
 				name = "Elijah Muhammad"
 				desc = "BBR_ELIJAH_MUHAMMAD_POLITICS_DESC"
 				picture = "gfx/leaders/BBR/Portrait_BBR_Elijah_Muhammad.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = nation_of_islam_subtype
 				traits = { the_honourable }
 			}
@@ -4380,7 +4833,7 @@ country_event = { # BBR leader picker
 			create_country_leader = {
 				name = "Malcolm X"
 				picture = "gfx/leaders/BBR/Portrait_BBR_Malcolm_X.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = natpop_islamism_subtype
 				traits = { }
 			}
@@ -4392,7 +4845,7 @@ country_event = { # BBR leader picker
 			create_country_leader = {
 				name = "Sufi Abdul Hamid"
 				picture = "gfx/leaders/NYC/Portrait_NYC_Sufi_Abdul_Hamid.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = islamic_black_nationalism_subtype
 				traits = { }
 			}
@@ -4405,7 +4858,7 @@ country_event = { # BBR leader picker
 				name = "James R. Stewart"
 	            desc = "BBR_JAMES_R_STEWART_POLITICS_DESC"
 				picture = "gfx/leaders/BBR/Portrait_BBR_James_R_Stewart.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = natpop_right_panafricanism_subtype
 				traits = { }
 			}
@@ -4417,7 +4870,7 @@ country_event = { # BBR leader picker
 			create_country_leader = {
 				name = "James R. Lawson"
 				picture = "gfx/leaders/NYC/Portrait_NYC_James_R_Lawson.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = natpop_right_panafricanism_subtype
 				traits = { }
 			}
@@ -4430,7 +4883,7 @@ country_event = { # BBR leader picker
 				name = "Marcus Garvey"
 				desc = "BBR_MARCUS_GARVEY_POLITICS_DESC"
 				picture = "gfx/leaders/LIB/Portrait_LIB_Marcus_Garvey.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = natpop_right_panafricanism_subtype
 				traits = { }
 			}
@@ -4504,8 +4957,8 @@ country_event = { # Head of the ODP
 		create_country_leader = {
 			name = "Eugene Talmadge"
 			desc = "POLITICS_EUGENE_TALMADGE_DESC"
-			picture = "gfx/leaders/COR/COR_Eugene_Talmadge.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Eugene_Talmadge.png"
+			expire = "1.1.1"
 			ideology = jacksonianism_subtype
 			traits = { COR_talmadge_traits }
 			}
@@ -4519,7 +4972,7 @@ country_event = { # Head of the ODP
 			name = "Walter F. Bossert"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_Walter_F_Bossert.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = jacksonianism_subtype
 			traits = { }
 			}
@@ -5382,8 +5835,8 @@ country_event = { # Armstrong's Victory
 			create_country_leader = {
 				name = "Herbert W. Armstrong"
 				desc = "POLITICS_HERBERT_W_ARMSTRONG_DESC"
-				picture = "gfx/leaders/COR/Herbert_W_Armstrong.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_Herbert_W_Armstrong.png"
+				expire = "1.1.1"
 				ideology = british_israelism_subtype
 				traits = { the_prophet }
 			}
@@ -5508,11 +5961,10 @@ country_event = { # Armstrong Dead
 	immediate = {
 	hidden_effect = {
 	set_country_flag = Herbert_W_Armstrong_dead
-	set_country_flag = young_klan_victory
 	remove_all_ministers = yes
 	set_party_name = {
 		ideology = national_populist
-		long_name = COR_national_populist_ayoung_klan_party_long
+		long_name = COR_national_populist_young_klan_party_long
 		name = COR_national_populist_young_klan_party 
 	}
 	}
@@ -5539,15 +5991,17 @@ country_event = { # Armstrong Dead
 		}
 		remove_ideas = COR_national_tithe_idea
 		set_country_flag = COR_rockwell_victory
+		set_country_flag = young_klan_victory
 		create_country_leader = {
 			name = "George Lincoln Rockwell"
 			desc = "POLITICS_GEORGE_LINCOLN_ROCKWELL_DESC"
-			picture = "gfx/leaders/COR/COR_bump.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_George_Lincoln_Rockwell.png"
+			expire = "1.1.1"
 			ideology = klan_nationalism_subtype
-			traits = { young_leader command_and_charisma }
+			traits = { young_leader_hos command_and_charisma }
 		}
 		hidden_effect = {
+			remove_all_ministers = yes
 			add_ideas = COR_Wesley_A_Swift_hog_npo
 			add_ideas = COR_Douglas_Chandler_for_npo
 			add_ideas = COR_Harold_Arrowsmith_eco_npo
@@ -5579,12 +6033,13 @@ country_event = { # Armstrong Dead
 		create_country_leader = {
 			name = "Francis Parker Yockey"
 			desc = "POLITICS_FRANCIS_PARKER_YOCKEY_DESC"
-			picture = "gfx/leaders/COR/COR_Yockey.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Francis_Parker_Yockey.png"
+			expire = "1.1.1"
 			ideology = natpop_paneuropeanism_subtype
-			traits = { young_leader twentieth_century_philosopher }
+			traits = { young_leader_hos twentieth_century_philosopher }
 		}
 		hidden_effect = {
+			remove_all_ministers = yes
 			add_ideas = COR_Harold_Keith_Thompson_hog_npo
 			add_ideas = COR_Revilio_P_Oliver_for_npo
 			add_ideas = COR_Frederick_Charles_Weiss_eco_npo
@@ -5774,6 +6229,12 @@ country_event = { # Combatting Cultural Parasitism
 				add_state_core = 1170
 			}
 			release_puppet = BBR
+			COR = {
+			set_autonomy = {
+				target = BBR
+				autonomous_state = kx_colored_puppet
+				}
+			}
 			hidden_effect = {
 				country_event = {
 					id = constate.25001
@@ -6255,15 +6716,19 @@ country_event = { # America is reunited
 		name = constate.5799.a
 		set_country_flag = COR_reunited_america_flag
 		set_cosmetic_tag = COR_UFA
+		hidden_effect = {
 		every_state = {
 			remove_ACW_cores = yes
+			}
 		}
 	}
 	option = { # keep the same name
 		name = constate.5799.b
 		set_country_flag = COR_reunited_america_flag
+		hidden_effect = {
 		every_state = {
 			remove_ACW_cores = yes
+			}
 		}
 	}
 }
@@ -6754,11 +7219,12 @@ country_event = { #Simmons Elected
 			create_country_leader = {
 				name = "William Joseph Simmons"
 				desc = "POLITICS_WILLIAM_JOSEPH_SIMMONS"
-				picture = "gfx/leaders/COR/COR_William_Joseph_Simmons.png"
-				expire = "1965.1.1"
+				picture = "gfx/leaders/COR/Portrait_COR_William_Joseph_Simmons.png"
+				expire = "1.1.1"
 				ideology = klan_nationalism_subtype
 				traits = { american_emperor }
 			}
+			remove_all_ministers = yes
 			add_ideas = COR_Hiram_Wesley_Evans_hog_npo
 			add_ideas = COR_William_Bell_Riley_for_pau
 			add_ideas = COR_Robert_Rice_Reynolds_eco_npo
@@ -6973,7 +7439,12 @@ country_event = { #State of Sequoyah
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		tag = COR
+		owns_state = 374
+	    374 = { is_core_of = COR }
+		COR_odp_in_power = yes
+	}
 
 	option = { #Create the State of Sequoyah
 		name = constate.72.a
@@ -6984,13 +7455,6 @@ country_event = { #State of Sequoyah
 		add_war_support = 0.02
 		add_political_power = -30
 		custom_effect_tooltip = COR_release_sequoyah_tooltip
-		if = {
-		limit = {
-		OR = {
-		controls_state = 374
-		owns_state = 374
-			}
-		}
 		hidden_effect = {
 		create_dynamic_country = {
 				original_tag = UOT
@@ -7004,7 +7468,7 @@ country_event = { #State of Sequoyah
 					name = "Douglas H. Johnston"
 					desc = ""
 					picture = "gfx/leaders/AIF/Portrait_AIF_Douglas_Johnston.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = soccon_tribal_chiefdom_subtype
 					traits = {
 					}
@@ -7013,7 +7477,7 @@ country_event = { #State of Sequoyah
 					name = "Douglas H. Johnston"
 					desc = ""
 					picture = "gfx/leaders/AIF/Portrait_AIF_Douglas_Johnston.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = tribal_chiefdom_subtype
 					traits = {
 					}
@@ -7022,7 +7486,7 @@ country_event = { #State of Sequoyah
 					name = "Douglas H. Johnston"
 					desc = ""
 					picture = "gfx/leaders/AIF/Portrait_AIF_Douglas_Johnston.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = pataut_tribal_chiefdom_subtype
 					traits = {
 					}
@@ -7031,7 +7495,7 @@ country_event = { #State of Sequoyah
 					name = "Douglas H. Johnston"
 					desc = ""
 					picture = "gfx/leaders/AIF/Portrait_AIF_Douglas_Johnston.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = natpop_tribal_chiefdom_subtype
 					traits = {
 					}
@@ -7136,8 +7600,14 @@ country_event = { #State of Sequoyah
 				set_cosmetic_tag = COR_SEQUOYAH
 			}
 		puppet = 374.owner
+		COR = {
+			set_autonomy = {
+				target = 374.owner
+				autonomous_state = kx_colored_puppet
+					}
+				}
 			}
-		}
+		374 = { remove_core_of = COR }
 	}
 	option = { #Just grant more autonomy
 		name = constate.72.b
@@ -8012,6 +8482,18 @@ country_event = { #Young Klan Flag
 			}
 		has_country_leader = {
 			ruling_only = yes
+			name = "James A. Colescott"
+			}
+		has_country_leader = {
+			ruling_only = yes
+			name = "Theodore G. Bilbo"
+			}
+		has_country_leader = {
+			ruling_only = yes
+			name = "Samuel Green"
+			}
+		has_country_leader = {
+			ruling_only = yes
 			name = "Francis Parker Yockey"
 			}
 		has_country_leader = {
@@ -8157,7 +8639,7 @@ country_event = { #jackson gang
 		if = {	
 			limit = { has_country_leader = { name = "William H. Murray" ruling_only = yes } }
 			set_country_leader_portrait = {
-				portrait = "gfx/leaders/COR/Portrait_William_H_Murray_3.png"
+				portrait = "gfx/leaders/COR/Portrait_COR_William_H_Murray_3.png"
 			}
 			custom_effect_tooltip = COR_new_portrait_tt
 		}
@@ -8188,10 +8670,10 @@ country_event = { #wtf tot Yockey is real
 		create_country_leader = {
 			name = "Francis Parker Yockey"
 			desc = "POLITICS_FRANCIS_PARKER_YOCKEY_DESC"
-			picture = "gfx/leaders/COR/COR_Yockey.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Francis_Parker_Yockey.png"
+			expire = "1.1.1"
 			ideology = tot_paneuropeanism_subtype
-			traits = { young_leader twentieth_century_philosopher }
+			traits = { young_leader_hos twentieth_century_philosopher }
 		}
 		set_politics = {
 			ruling_party = totalist
@@ -8199,7 +8681,7 @@ country_event = { #wtf tot Yockey is real
 		}
 		set_party_name = {
 			ideology = totalist
-			long_name = COR_national_populist_ayoung_klan_party_long
+			long_name = COR_national_populist_young_klan_party_long
 			name = COR_national_populist_young_klan_party 
 		}
 	}
@@ -8229,7 +8711,7 @@ country_event = { # Crump
 			name = "E.H. Crump"
 			desc = "POLITICS_CRUMP_DESC"
 			picture = "gfx/leaders/COR/Portrait_COR_E_H_Crump.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = social_machine_subtype
 			traits = { }
 			}
@@ -8317,6 +8799,7 @@ country_event = { # Crump mobilizes (politically) against russell
 	option = {
 		name = constate.6769.b
 		add_political_power = -25
+		set_country_flag = COR_crump_election_eliminated
 	}
 }
 country_event = {
@@ -8498,10 +8981,16 @@ country_event = {#New Washington
 	fire_only_once = yes
 	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = constate.7676.a
 		add_political_power = 30
+		add_stability = 0.03
+		increase_ruling_party_popularity_by_2 = yes
+	}
+	option = {
+		name = constate.7676.a
+		add_political_power = -30
 		add_command_power = 25
 		increase_ruling_party_popularity_by_2 = yes
 		if = {	
@@ -8769,8 +9258,10 @@ country_event = {
 			country_event = { id = constate.6776 days = 1461 } # Repeat Presidential election every 4 years
 		}
 	}
+	trigger = { NOT = { has_government = national_populist } }
 
 	option = {
+		trigger = { NOT = { has_country_flag = COR_crump_election_eliminated } }
 		name = constate.6776.a
 			 if = {
 			   limit = {
@@ -8793,12 +9284,20 @@ country_event = {
 			name = "E.H. Crump"
 			desc = "POLITICS_CRUMP_DESC"
 			picture = "gfx/leaders/COR/Portrait_COR_E_H_Crump.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = social_machine_subtype
 			traits = { }
 			}
 		}
-				set_cosmetic_tag = COR_memphis
+		if = {
+			limit = {
+				has_global_flag = USA_civil_war_over_flag
+			}
+			set_cosmetic_tag = COR_UFA
+		}
+		else_if = {
+		set_cosmetic_tag = COR_memphis
+		}
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -8829,16 +9328,13 @@ country_event = {
 	}
 	option = {
 		name = constate.6776.b
-			custom_effect_tooltip = soclib_will_join_coalition_tt
-			custom_effect_tooltip = marlib_will_join_coalition_tt
-			custom_effect_tooltip = soccon_will_join_coalition_tt
 			hidden_effect = {
 			remove_all_ministers = yes
 			 add_ideas = {
-		COR_Al_Gore_Sr_hog_sco
-		COR_Herbert_Bigelow_for_sde
-			COR_Frederic_Howe_eco_sde
-		COR_Arthur_Hays_sec_sli
+				COR_Lyndon_B_Johnson_hog_sde
+				COR_Freda_Ameringer_for_rso
+				COR_Sam_Faubus_eco_rso
+				COR_Stetson_Kennedy_sec_rso
 					  }
 		 }
 				hidden_effect = {
@@ -8848,13 +9344,19 @@ country_event = {
                                           limit = {
                                                has_global_flag = USA_civil_war_over_flag
                                           }
-                                          set_cosmetic_tag = USA
+                                          set_cosmetic_tag = NEE_america
                                         }
 				}
+		add_popularity = { ideology = radical_socialist popularity = 0.1 }
 		add_popularity = { ideology = social_democrat popularity = 0.3 }
 		add_popularity = { ideology = social_liberal popularity = 0.1 }
 		add_popularity = { ideology = market_liberal popularity = 0.1 }
 		add_popularity = { ideology = social_conservative popularity = 0.1 }
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = "Socialist Party of America (Faubusian)"
+			name = "SPA" 
+				}
 		set_party_name = {
 			ideology = social_democrat
 			long_name = "Committee of Forty-Eight"
@@ -8879,10 +9381,17 @@ country_event = {
 			name = "Al Gore Sr."
 			desc = ""
 			picture = "gfx/leaders/FSA/Portrait_FSA_Albert_Gore_Sr.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = paternal_socialism_subtype
 			traits = { COR_gore_traits }
 			}
+			create_country_leader = {
+				name = "Walter Francis White"
+				picture = "gfx/leaders/BBR/Portrait_BBR_Walter_Francis_White.png"
+				expire = "1.1.1"
+				ideology = radical_progressivism_subtype
+				traits = { }
+			}	
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -8894,20 +9403,14 @@ country_event = {
 			}
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-		}
+		add_radsoc_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_soccon_to_coalition = yes
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
 	option = {
 		name = constate.6776.c
-				custom_effect_tooltip = socdem_will_join_coalition_tt
-				custom_effect_tooltip = marlib_will_join_coalition_tt
-				custom_effect_tooltip = soccon_will_join_coalition_tt
 			hidden_effect = {
 			remove_all_ministers = yes
 			add_ideas = {
@@ -8924,7 +9427,7 @@ country_event = {
                                           limit = {
                                                has_global_flag = USA_civil_war_over_flag
                                           }
-                                          set_cosmetic_tag = USA
+                                          set_cosmetic_tag = NEE_america
                                         }
 				}
 		add_popularity = { ideology = social_liberal popularity = 0.3 }
@@ -8955,7 +9458,7 @@ country_event = {
 			name = "Al Gore Sr."
 			desc = ""
 			picture = "gfx/leaders/FSA/Portrait_FSA_Albert_Gore_Sr.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = paternal_socialism_subtype
 			traits = { COR_gore_traits }
 			}
@@ -8970,14 +9473,9 @@ country_event = {
 			}
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
-		}
+		add_socdem_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_soccon_to_coalition = yes
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
 	option = {
@@ -9016,7 +9514,7 @@ country_event = {
                                           limit = {
                                                has_global_flag = USA_civil_war_over_flag
                                           }
-                                          set_cosmetic_tag = USA
+                                          set_cosmetic_tag = NEE_america
                                         }
 		}
 			}
@@ -9054,33 +9552,30 @@ country_event = {
 			long_name = "Committee of Forty-Eight"
 			name = "Forty-Eighters" 
 				}
-			custom_effect_tooltip = socdem_will_join_coalition_tt
-			custom_effect_tooltip = soclib_will_join_coalition_tt
-			custom_effect_tooltip = marlib_will_join_coalition_tt
 			hidden_effect = {
 			remove_all_ministers = yes
 			add_ideas = {
 		COR_Rush_Limbaugh_Sr_hog_sde
 		COR_Herbert_Bigelow_for_sde
-		COR_Lyndon_B_Johnson_eco_sco
+		COR_Frederic_Howe_eco_sde
 		COR_Arthur_Hays_sec_sli
 			}
 		}
 				hidden_effect = {
+				drop_cosmetic_tag = yes
                                         if = {
                                           limit = {
                                                has_global_flag = USA_civil_war_over_flag
                                           }
-                                          set_cosmetic_tag = USA
+                                          set_cosmetic_tag = NEE_america
                                         }
-					drop_cosmetic_tag = yes
 					country_event = { id = constate.4093 days = 6 }
 				}
 		create_country_leader = {
 			name = "Al Gore Sr."
 			desc = ""
 			picture = "gfx/leaders/FSA/Portrait_FSA_Albert_Gore_Sr.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = paternal_socialism_subtype
 			traits = { COR_gore_traits }
 		}
@@ -9095,26 +9590,18 @@ country_event = {
 			}
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes 
-		}
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
 	option = {
 		name = constate.6776.g
-				custom_effect_tooltip = socdem_will_join_coalition_tt
-				custom_effect_tooltip = soclib_will_join_coalition_tt
-				custom_effect_tooltip = soccon_will_join_coalition_tt
 			hidden_effect = {
 			remove_all_ministers = yes
 			add_ideas = {
 		COR_Walker_Percy_hog_mli
-		COR_Herbert_Bigelow_for_sde
+		COR_William_Faulkner_for_mli
 		COR_Frederic_Howe_eco_sde
 		COR_Arthur_Hays_sec_sli
 			}
@@ -9126,7 +9613,7 @@ country_event = {
                                           limit = {
                                                has_global_flag = USA_civil_war_over_flag
                                           }
-                                          set_cosmetic_tag = USA
+                                          set_cosmetic_tag = NEE_america
                                         }
 				}
 		add_popularity = { ideology = market_liberal popularity = 0.3 }
@@ -9157,7 +9644,7 @@ country_event = {
 			name = "William Alexander Percy"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_William_Alexander_Percy.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = marlib_christian_democracy_subtype
 			traits = { }
 			}
@@ -9172,29 +9659,26 @@ country_event = {
 			}
 			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
 		}
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes
-		}
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_soccon_to_coalition = yes
 		custom_effect_tooltip = "New Presidential Elections will take place every 4 years!"
 	}
 		option = {
+		trigger = { NOT = { has_country_flag = COR_fordist_election_eliminated } }
 		name = constate.6776.h
 		add_popularity = { ideology = paternal_autocrat popularity = 0.3 }
 			hidden_effect = {
 		create_country_leader = {
 			name = "Charles Lindbergh"
 			desc = "POLITICS_CHARLES_LINDBERGH"
-			picture = "gfx/leaders/COR/COR_lindberg.png"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/COR/Portrait_COR_Charles_Lindbergh.png"
+			expire = "1.1.1"
 			ideology = corporatocracy_subtype
 			traits = { the_lone_eagle COR_head_in_the_clouds }
 			}
 		}
+		set_country_flag = COR_fordist_victory
 		meta_effect = {
 			text = {
 				set_politics = {
@@ -9535,11 +10019,13 @@ country_event = {#George Wallace
 			name = "George C. Wallace"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_George_Wallace.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_dixiecrat_subtype 
 			traits = { COR_segregation_now_traits }
 		}
 	hidden_effect = {
+		remove_ideas_with_trait = head_of_government
+		add_ideas = COR_George_Wallace_hog_sde 
 		country_event = {
 			id = constate.6783
 			days = 150
@@ -9565,10 +10051,16 @@ country_event = {#George Wallace gets shot
 			desc = ""
 			female = yes
 			picture = "gfx/leaders/COR/Portrait_COR_Lurleen_Wallace.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_dixiecrat_subtype 
 			traits = { COR_segregation_now_traits }
-		}	
+		}
+		hidden_effect = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = COR_Lurleen_Wallace_hog_sde 
+			remove_ideas_with_trait = security_minister
+			add_ideas = COR_James_Eastland_sec_mli 
+		}		
 	}
 	option = {
 		name = constate.6783.b
@@ -9593,7 +10085,7 @@ country_event = {#Crump! gets shot
 			desc = ""
 			female = yes
 			picture = "gfx/leaders/COR/Portrait_COR_Georgia_Tann.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = social_machine_subtype
 			traits = { sec_health_and_safety }
 		}	
@@ -9604,7 +10096,7 @@ country_event = {#Crump! gets shot
 			name = "N.J. Ford"
 			desc = ""
 			picture = "gfx/leaders/COR/Portrait_COR_N_J_Ford.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = social_machine_subtype
 			traits = { sec_silent_lawyer }
 		}	
@@ -9737,12 +10229,12 @@ country_event = { #Big Anglo Israel
 		}					
 	}
 }
-country_event = { #old ass man
+country_event = { #old ass men part 1
 	id = constate.7000
-	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.6785"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.7000"}
 	title = constate.7000.t
 	desc = constate.7000.d
-	picture = GFX_report_event_generic_diplomacy1
+	picture = GFX_CAR_pleasant_crump
 	
 	is_triggered_only = yes
 
@@ -9759,24 +10251,70 @@ country_event = { #old ass man
 		add_political_power = 25
 		add_stability = 0.03
 	}
-	option = { #no
+	option = { #generals
 		name = constate.7000.c
 		add_political_power = -75
 		add_stability = -0.1
 		add_war_support = 0.2
-		create_corps_commander = { #Auto-Generated
+		create_corps_commander = {
 				name = "John Salling"
 				portrait_path = "gfx/leaders/COR/Portrait_COR_John_Salling.png"
 				traits = {
-					artillery_specialist
+					politically_connected
+					media_personality
+				}
+				skill = 1
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+				id = 70009
+		}
+		create_corps_commander = {
+				name = "Pleasant Riggs Crump"
+				portrait_path = "gfx/leaders/COR/Portrait_COR_Pleasant_Riggs_Crump.png"
+				traits = {
 					politically_connected
 					media_personality
 				}
 				skill = 2
 				attack_skill = 1
 				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-			}
+				planning_skill = 2
+				logistics_skill = 3
+		}
+		hidden_effect = {
+			country_event = {
+				id = constate.7001
+				days = 10
+				}
+		}
+	}
+}
+
+country_event = { #old ass men part 2
+	id = constate.7001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event constate.7001"}
+	title = constate.7001.t
+	desc = constate.7001.d
+	picture = GFX_CAR_salling
+	
+	is_triggered_only = yes
+
+  
+	option = { #yes
+		name = constate.7001.a
+		random_unit_leader = {
+			limit = { has_id = 70009 }
+			retire = yes
+		}
+		add_stability = 0.03
+		decrease_ruling_party_popularity_by_2 = yes
+	}
+	
+	option = { #no
+		name = constate.7001.b
+		add_stability = -0.03
+		increase_ruling_party_popularity_by_2 = yes
 	}
 }

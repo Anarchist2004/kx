@@ -510,7 +510,7 @@ country_event = {#
 		create_country_leader = {
 		name = "Cuong De"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Cuong_De.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = caodaism_subtype
 		}
 		set_cosmetic_tag = VIN_CUONG_DE
@@ -531,13 +531,13 @@ country_event = {#
 		create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = authdem_diemism_subtype
 		}
 		create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = pataut_diemism_subtype
 		}
 	}
@@ -576,10 +576,7 @@ country_event = {#
 					}
 					VIN = { 
 						add_state_core = PREV 
-				}
 			}
-        hidden_effect = {
-                add_state_core = 1218
 		}
 	}
 	option = {#
@@ -605,16 +602,16 @@ country_event = {#
 					}
 					VIN = { 
 						add_state_core = PREV 
-				}
 			}
-        hidden_effect = {
-                add_state_core = 1218
 		}
 	}
 	option = {#
 		name = vietnam.10.a
 		trigger = {
+		OR = {
 		has_country_leader = { ruling_only = yes name = "Huynh Phu So" }
+		has_country_leader = { ruling_only = yes name = "Ba Cut" }
+			}
 		}
 		set_cosmetic_tag = VIN_HOA_HAO_ASIA
 		every_state = {
@@ -631,14 +628,25 @@ country_event = {#
 					}
 					VIN = { 
 						add_state_core = PREV 
-				}
 			}
-        hidden_effect = {
-                add_state_core = 1218
 		}
 	}
 	option = {#
 		name = vietnam.10.b
+		every_state = {
+				limit = {
+					OR = {
+						is_core_of = CAM
+						is_core_of = LAO
+						is_core_of = SIA
+						is_core_of = BRM
+					}
+				}
+				add_core_of = VIN
+			}
+			hidden_effect = {
+			add_state_core = 756
+			}
 	}
 }
 
@@ -707,7 +715,7 @@ country_event = {# mine cousin retarded tbh
 		create_country_leader = {
 		name = "Ong Dao Dua"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = coconut_subtype
 		}
 		hidden_effect = {
@@ -742,7 +750,7 @@ country_event = {# mine cousin retarded tbh
 		name = "Huynh Phu So"
 		desc = "POLITICS_HUYNH_PHU_SO_DESC"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Huynh_Phu_So.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = hoahaoism_subtype
 		}
 		hidden_effect = {
@@ -802,7 +810,7 @@ country_event = {#Binh Xuyen coups Ngo Dinh Diem
 		create_country_leader = {
 		name = "Binh Xuyen Council"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Binh_Xuyen_Council.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = junta_subtype
 			}
 		hidden_effect = {
@@ -1018,7 +1026,7 @@ country_event = {#
 		name = "Huynh Phu So"
 		desc = "POLITICS_HUYNH_PHU_SO_DESC"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Huynh_Phu_So.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = radsoc_hoahaoism_subtype
 		}
 		set_politics = {
@@ -1054,7 +1062,7 @@ country_event = {#
 		create_country_leader = {
 		name = "Ong Dao Dua"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = coconut_subtype
 		}
 		set_politics = {
@@ -1466,7 +1474,7 @@ country_event = {#
 			name = "Sisavang Vong"
 			desc = ""
 			picture = "gfx/leaders/LAO/Portrait_Laos_Sisavang_Vong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = LAO_guard
@@ -1497,7 +1505,7 @@ country_event = {#
 			name = "Sisowath Monivong"
 			desc = ""
 			picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = CAM_guard
@@ -1541,7 +1549,7 @@ country_event = {#
 			name = "Sisavang Vong"
 			desc = ""
 			picture = "gfx/leaders/LAO/Portrait_Laos_Sisavang_Vong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = LAO_guard
@@ -1571,7 +1579,7 @@ country_event = {#
 			name = "Sisowath Monivong"
 			desc = ""
 			picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = CAM_guard
@@ -1612,7 +1620,7 @@ country_event = {#
 			name = "Sisavang Vong"
 			desc = ""
 			picture = "gfx/leaders/LAO/Portrait_Laos_Sisavang_Vong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = LAO_guard
@@ -1643,7 +1651,7 @@ country_event = {#
 			name = "Sisowath Monivong"
 			desc = ""
 			picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = absolute_monarchy_subtype
 		}
 		load_oob = CAM_guard
@@ -1708,7 +1716,7 @@ country_event = {#
 					name = "Sisavang Vong"
 					desc = ""
 					picture = "gfx/leaders/LAO/Portrait_Laos_Sisavang_Vong.png"
-					expire = "1997.7.30"
+					expire = "1.1.1"
 					ideology = absolute_monarchy_subtype
 				}
 			}
@@ -1768,7 +1776,7 @@ country_event = {#
 					name = "Sisowath Monivong"
 					desc = ""
 					picture = "gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Monivong.png"
-					expire = "1997.7.30"
+					expire = "1.1.1"
 					ideology = absolute_monarchy_subtype
 				}
 			}
@@ -1918,7 +1926,7 @@ country_event = {#Binh Xuyen leadership debate
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = crime_syndicate_subtype
 			}
 		complete_national_focus = VIN_Stand_With_Vien
@@ -1935,7 +1943,7 @@ country_event = {#Binh Xuyen leadership debate
 		create_country_leader = {
 		name = "Duong Van Duong"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Duong.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = pirate_republic_subtype
 		}
 		complete_national_focus = VIN_Run_With_Duong
@@ -2062,43 +2070,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_left_nationalism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2113,43 +2121,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_left_nationalism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Tam"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Tam.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = national_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2164,43 +2172,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_left_nationalism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2215,43 +2223,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_tridemism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2266,43 +2274,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_paternal_socialism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2317,43 +2325,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_paternal_socialism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Phan Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Phan_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = marlib_agrarianism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2368,43 +2376,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_paternal_socialism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Bui Quang Chieu"
 				picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = humanistic_capitalism_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2420,43 +2428,43 @@ option = {
 			create_country_leader = {
 				name = "Nguyen Thai Hoc"
 				picture = "gfx/leaders/INC/Portrait_INC_Nguyen_Tai_Hoc.png"
-				expire = "1990.10.13"
+				expire = "1.1.1"
 				ideology = socdem_paternal_socialism_subtype
 				}
 			create_country_leader = {
 				name = "Nguyen Tuong Long"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 				}
 			create_country_leader = {
 				name = "Henriette Bui Quang Chieu"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Henriette_Bui_Quang_Chieu.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = progressive_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Quynh"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = neo_confucianism_subtype
 				}
 			create_country_leader = {
 				name = "Ngo Dinh Diem"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Ngo_Din_Diem.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 				}
 			create_country_leader = {
 				name = "Bao Dai"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				expire = "1997.7.30"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 				}
 			create_country_leader = {
 				name = "Pham Cong Tac"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Cong_Tac.png"
-				expire = "1959.5.17"
+				expire = "1.1.1"
 				ideology = caodaism_subtype
 			}
 		}
@@ -2756,11 +2764,7 @@ country_event = {#
 
 	option = {#Yes
 		name = vietnam.49.a
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.05
@@ -3388,16 +3392,12 @@ country_event = {#Steinbeck Coconut
 		name = "Ong Dao Dua"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = radsoc_coconut_subtype
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = NYC_John_Steinbeck_hog_rso
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.64.c
@@ -3418,16 +3418,12 @@ country_event = {#Steinbeck Coconut
 		name = "Ong Dao Dua"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = socdem_coconut_subtype
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = NYC_John_Steinbeck_hog_rso
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 }
 
@@ -3516,16 +3512,12 @@ country_event = {#Coconut Prince
 		name = "Ong Dao Dua"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = authdem_coconut_subtype
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = VIN_Franz_Joseph_hog_pau
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.66.c
@@ -3546,16 +3538,12 @@ country_event = {#Coconut Prince
 		name = "Ong Dao Dua"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = soccon_coconut_subtype
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = VIN_Franz_Joseph_hog_pau
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.66.e
@@ -3581,16 +3569,12 @@ country_event = {#Coconut Prince
 		name = "Ong Dao Dua"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Thanh_Nam.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = pataut_coconut_subtype
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = VIN_Franz_Joseph_hog_pau
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 }
 
@@ -3775,15 +3759,11 @@ country_event = {# Ba Duong Ideology Picker
 		create_country_leader = {
 		name = "Duong Van Duong"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Duong.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = authdem_mercenary_democracy_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.72.c
@@ -3810,15 +3790,11 @@ country_event = {# Ba Duong Ideology Picker
 		create_country_leader = {
 		name = "Duong Van Duong"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Duong.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = authdem_junta_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.72.f
@@ -3840,15 +3816,11 @@ country_event = {# Ba Duong Ideology Picker
 		create_country_leader = {
 		name = "Duong Van Duong"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Duong.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = authdem_warlordism_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.72.g
@@ -3870,15 +3842,11 @@ country_event = {# Ba Duong Ideology Picker
 		create_country_leader = {
 		name = "Duong Van Duong"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Duong.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = tribal_chiefdom_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.72.h
@@ -3916,15 +3884,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = caponism_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.b
@@ -3946,15 +3910,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = autocratic_socialist_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.c
@@ -3976,15 +3936,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = red_junta_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.i
@@ -4006,15 +3962,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = comrades_coast_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.j
@@ -4054,15 +4006,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = natpop_warlordism_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.f
@@ -4084,15 +4032,11 @@ country_event = {# Bay Vien Ideology Picker
 		create_country_leader = {
 		name = "Le Van Vien"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Vien.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = militarism_subtype
 			}
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 	}
 	option = {#
 		name = vietnam.73.g
@@ -4258,7 +4202,7 @@ country_event = {# Ba Cut
 		name = "Ba Cut"
 		desc = ""
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Le_Quang_Vinh.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = hoahaoism_subtype
 		}
 		add_political_power = -75
@@ -4526,14 +4470,10 @@ country_event = {# Cuong De's Contacts
 		create_country_leader = {
 		name = "Cuong De"
 		picture = "gfx/leaders/VIN/Portrait_Vietnam_Cuong_De.png"
-		expire = "1959.5.17"
+		expire = "1.1.1"
 		ideology = radsoc_caodaism_subtype
 		}
-		hidden_effect = { 
-			set_temp_variable = { coalition_partner_var = token:national_populist }
-				add_to_coalition = yes 
-		}
-		custom_effect_tooltip = natpop_will_join_coalition_tt
+		add_natpop_to_coalition = yes
 	}
 }
 
@@ -4583,7 +4523,7 @@ country_event = {# Quynh Emperor
                 create_country_leader = {
                     name = "Cuong De"
 				    picture = "gfx/leaders/VIN/Portrait_Vietnam_Cuong_De.png"
-				    expire = "1963.11.2"
+				    expire = "1.1.1"
                     ideology = [CURRENT_IDEOLOGY]
                     traits = {}
                 }
@@ -4603,7 +4543,7 @@ country_event = {# Quynh Emperor
                 create_country_leader = {
                     name = "Duy Tan"
 				    picture = "gfx/leaders/VIN/Portrait_Vietnam_Duy_Tan.png"
-				    expire = "1963.11.2"
+				    expire = "1.1.1"
                     ideology = [CURRENT_IDEOLOGY]
                     traits = {}
                 }
@@ -4623,7 +4563,7 @@ country_event = {# Quynh Emperor
                 create_country_leader = {
                     name = "Thanh Thai"
 				    picture = "gfx/leaders/VIN/Portrait_Vietnam_Thanh_Thai.png"
-				    expire = "1963.11.2"
+				    expire = "1.1.1"
                     ideology = [CURRENT_IDEOLOGY]
                     traits = {}
                 }
@@ -4652,31 +4592,31 @@ country_event = {# Diem Killed
 		create_country_leader = {
 			name = "Nguyen Tuong Long"
 			picture = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Tuong_Long.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = radical_liberalism_subtype
 		}
 		create_country_leader = {
 			name = "Bui Quang Chieu"
 			picture = "gfx/leaders/INC/Portrait_INC_Bui_Quang_Chieu.png"
-			expire = "1997.7.30"
+			expire = "1.1.1"
 			ideology = humanistic_capitalism_subtype
 		}
 		create_country_leader = {
 			name = "Pham Quynh"
 			picture = "gfx/leaders/VIN/Portrait_Vietnam_Pham_Quynh.png"
-			expire = "1963.11.2"
+			expire = "1.1.1"
 			ideology = neo_confucianism_subtype
 		}
 		create_country_leader = {
 				name = "Nguyen Phuc Buu Loc"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Buu_Loc.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = oligarchy_subtype
 		}
 		create_country_leader = {
 				name = "Nguyen Phuc Buu Loc"
 				picture = "gfx/leaders/VIN/Portrait_Vietnam_Buu_Loc.png"
-				expire = "1963.11.2"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 			}
 		}
@@ -4735,7 +4675,7 @@ country_event = {# Binh Xuyen Emperor
                 create_country_leader = {
                     name = "Bao Dai"
 				    picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.png"
-				    expire = "1963.11.2"
+				    expire = "1.1.1"
                     ideology = [CURRENT_IDEOLOGY]
                     traits = {}
                 }
@@ -4750,7 +4690,7 @@ country_event = {# Binh Xuyen Emperor
                 create_country_leader = {
                     name = "Thanh Thai"
 				    picture = "gfx/leaders/VIN/Portrait_Vietnam_Thanh_Thai.png"
-				    expire = "1963.11.2"
+				    expire = "1.1.1"
                     ideology = [CURRENT_IDEOLOGY]
                     traits = {}
                 }

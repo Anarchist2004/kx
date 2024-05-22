@@ -290,6 +290,7 @@ focus_tree = {
 					random = 10
 				}
 			}
+			remove_ideas = AFR_post_collapse_instability
 		}
 	}
 	
@@ -696,7 +697,7 @@ focus_tree = {
 					name = "Louis de Gonzague Bobozo"
 					desc = "POLITICS_LOUIS_BOBOZO_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo_Nzere.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = national_populist_subtype
 					traits = {}
 				}
@@ -938,6 +939,7 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = { has_country_flag = KIV_simba_revolt_over }
+						is_subject = no
 					}
 					country_event = {
 					id = kivu.14
@@ -2200,6 +2202,18 @@ focus_tree = {
 					days = 220
 					random = 120
 				}
+				country_event = {
+					id = kivu.83
+					days = 320
+					random = 60
+				}
+				FRA = {
+				country_event = {
+					id = kivu.81
+					days = 110
+					random = 40
+				}
+			    }
 			}
 		}
 	}
@@ -2215,10 +2229,12 @@ focus_tree = {
 		}
 		available = { 
 			has_government = radical_socialist
+			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		bypass = { 
 			has_government = radical_socialist
+			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -2620,6 +2636,13 @@ focus_tree = {
 			add_ideas = KIV_civc_nationalism_idea
 			COG_increase_recovery = yes
 			KIV_decrease_inexperience = yes
+			hidden_effect = {
+				country_event = {
+					id = kivu.82
+					days = 84
+					random_days = 20
+				}
+			}
 		}
 	}
 	
@@ -2934,12 +2957,10 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		bypass = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -2963,7 +2984,6 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -3016,7 +3036,6 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -3068,7 +3087,6 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -3100,7 +3118,6 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5
@@ -3132,7 +3149,6 @@ focus_tree = {
 		}
 		available = { 
 			has_government = social_democrat
-			has_country_flag = KIV_socdems_elected
 			has_country_flag = KIV_SIMBA_REVOLT
 		}
 		cost = 5

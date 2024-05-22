@@ -1335,7 +1335,7 @@ focus_tree = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_superior_firepower
+	category = land_doctrine
 			}
 			army_experience = 25
 		}
@@ -1450,7 +1450,7 @@ focus_tree = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_superior_firepower
+	category = land_doctrine
 			}
 			add_ideas = {
 				GUA_military_quality_production
@@ -1486,7 +1486,7 @@ focus_tree = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_mass_assault
+	category = land_doctrine
 			}
 			army_experience = 25
 		}
@@ -1588,7 +1588,7 @@ focus_tree = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_mass_assault
+	category = land_doctrine
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1701,6 +1701,7 @@ focus_tree = {
 			add_ideas = {
 				GUA_university_investments
 			}
+			add_research_slot = 1
 		}
 	}
 
@@ -2001,6 +2002,7 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2868,17 +2870,26 @@ focus_tree = {
 		prerequisite = { focus = GUA_could_not_do }
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SPR
+			if = {
+				limit = { SPR = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything
+					target = SPR
+				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = CNT
+			if = {
+				limit = { CAR = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything
+					target = CAR
+				}
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = SPR
+			if = {
+				limit = { CNT = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything
+					target = CNT
+				}
 			}
 		}
 	}

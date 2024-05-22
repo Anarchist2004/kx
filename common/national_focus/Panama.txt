@@ -723,10 +723,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PAN_Americans_in_charge"
-			add_equipment_to_stockpile = {
-			type = small_plane_airframe 
-			amount = 250
-			}
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 100 producer = USA }
 		}
 	}
 
@@ -1205,6 +1202,21 @@ focus_tree = {
 					type = annex_everything
 					target = ELS
 				}
+			hidden_effect = {
+				if = {
+				limit = { CEN = { exists = yes } }
+				create_wargoal = {
+					type = annex_everything
+					target = CEN
+				}
+				every_state = {
+					limit = {
+						is_core_of = CEN
+					}
+					add_claim_by = PAN
+				}
+			    }
+			}	
 		}
 	}
 
@@ -1817,7 +1829,7 @@ shared_focus = {
 	name = naval_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_trade_interdiction
+	category = naval_doctrine
 		}
 	}
 	search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
@@ -2103,7 +2115,7 @@ shared_focus = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_mass_assault
+	category = land_doctrine
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2199,7 +2211,7 @@ shared_focus = {
 	name = land_doc_bonus
 	cost_reduction = 0.5
 	uses = 1
-	category = cat_grand_battle_plan
+	category = land_doctrine
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }

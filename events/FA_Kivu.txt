@@ -697,7 +697,7 @@ country_event = { #SIMBA TIME
 					name = "Isaac Kalonji"
 					desc = "POLITICS_KALONJI_SIMBA_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Isaac_Kalonji.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = developing_leftism_subtype
 					traits = {}
 				}
@@ -705,7 +705,7 @@ country_event = { #SIMBA TIME
 					name = "Joseph Iléo"
 					desc = "POLITICS_ILLEO_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Ileo.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = socdem_market_socialist_subtype
 					traits = {}
 				}
@@ -734,7 +734,15 @@ country_event = { #SIMBA TIME
 				}
 				set_cosmetic_tag = KIV_simba
 				set_capital = { state = 977 }
-
+				remove_ideas = {
+					KIV_aksari_dominance
+					KIV_officer_rule
+					KIV_no_corruption
+					KIV_officer_rule2
+					KIV_colonial_purge
+					KIV_young_officer_stratocracy
+					KIV_state_for_the_military
+				}
 			}
 		}
 
@@ -770,7 +778,7 @@ country_event = { #SIMBA TIME
 			name = "Isaac Kalonji"
 			desc = "POLITICS_KALONJI_SIMBA_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Isaac_Kalonji.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = developing_leftism_subtype
 			traits = {}
 		}
@@ -778,7 +786,7 @@ country_event = { #SIMBA TIME
 			name = "Joseph Iléo"
 			desc = "POLITICS_ILLEO_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Ileo.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_market_socialist_subtype
 			traits = {}
 		}
@@ -801,6 +809,17 @@ country_event = { #SIMBA TIME
 		}
 		set_cosmetic_tag = KIV_simba
 		set_country_flag = KIV_SIMBA_REVOLT_ACTIVE
+		hidden_effect = {
+			remove_ideas = {
+				KIV_aksari_dominance
+				KIV_officer_rule
+				KIV_no_corruption
+				KIV_officer_rule2
+				KIV_colonial_purge
+				KIV_young_officer_stratocracy
+				KIV_state_for_the_military
+			}
+		}
 		every_owned_state = {
 			limit = {
 				NOT = {
@@ -848,7 +867,7 @@ country_event = { #SIMBA TIME
 				name = "Louis de Gonzague Bobozo"
 				desc = "POLITICS_LOUIS_BOBOZO_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo_Congo.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_junta_subtype
 				traits = {}
 				}
@@ -906,7 +925,7 @@ country_event = { #SIMBA TIME
 				name = "Moïse Tshombe"
 				desc = "POLITICS_MOISE_TSHOMBE_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Moise_Tshombe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = free_market_capitalist_subtype
 				traits = {}
 				}
@@ -965,7 +984,7 @@ country_event = { #SIMBA TIME
 					name = "Joseph Kasa-Vubu"
 					desc = "POLITICS_KASU_VUBU_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Kasa_Vubu.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = regionalism_subtype
 					traits = {}
 				}
@@ -1098,7 +1117,7 @@ country_event = { #SIMBA TIME
 					name = "Isaac Kalonji"
 					desc = "POLITICS_KALONJI_SIMBA_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Isaac_Kalonji.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = developing_leftism_subtype
 					traits = {}
 				}
@@ -1106,7 +1125,7 @@ country_event = { #SIMBA TIME
 					name = "Joseph Iléo"
 					desc = "POLITICS_ILLEO_DESC"
 					picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Ileo.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = socdem_market_socialist_subtype
 					traits = {}
 				}
@@ -1152,7 +1171,7 @@ country_event = { #SIMBA TIME
 			name = "Isaac Kalonji"
 			desc = "POLITICS_KALONJI_SIMBA_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Isaac_Kalonji.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = developing_leftism_subtype
 			traits = {}
 		}
@@ -1160,7 +1179,7 @@ country_event = { #SIMBA TIME
 			name = "Joseph Iléo"
 			desc = "POLITICS_ILLEO_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Joseph_Ileo.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_market_socialist_subtype
 			traits = {}
 		}
@@ -1236,7 +1255,7 @@ country_event = { #SIMBA TIME
 				name = "Louis de Gonzague Bobozo"
 				desc = "POLITICS_LOUIS_BOBOZO_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo_Congo.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_junta_subtype
 				traits = {}
 				}
@@ -1337,7 +1356,6 @@ country_event = { #who to elect
 			ideology = social_democrat
 			popularity = 0.2
 		}
-		set_country_flag = KIV_socdems_elected
 		hidden_effect = {
 			country_event = {
 				id = kivu.79
@@ -1373,6 +1391,7 @@ country_event = { #who to elect
 			}
 		}
 		set_country_leader_ideology = moderate_socialist_subtype
+		set_country_flag = KIV_socdems_elected
 		remove_all_ministers = yes
 		add_ideas = {
 			KIV_Isaac_Kalonji_hog_sde
@@ -1524,6 +1543,10 @@ country_event = { #what do
 		ai_chance = {
 			factor = 50
 		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.06
+		}
 		set_country_flag = KIV_embraced_pan_africanism
 	}
 }
@@ -1544,7 +1567,7 @@ country_event = { #what do
 		ai_chance = {
 			factor = 50
 		}
-		
+		add_political_power = 25
 	}
 	
 	option = { #break up the congo
@@ -1614,7 +1637,8 @@ country_event = { #gonzauge hero
   
 	option = { #yes
 		name = kivu.21.a
-
+		add_command_power = 25
+		add_war_support = 0.05
 	}
 }
 
@@ -1631,7 +1655,8 @@ country_event = { #we almost won
   
 	option = { #yes
 		name = kivu.22.a
-
+		add_war_support = 0.10
+		add_manpower = 1500
 	}
 }
 
@@ -1655,7 +1680,13 @@ country_event = { #askari as the highest class
   
 	option = { #yes
 		name = kivu.23.a
-
+		add_command_power = 25
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
 	}
 }
 
@@ -1679,7 +1710,13 @@ country_event = { #askari as the highest class(other one)
   
 	option = { #yes
 		name = kivu.230.a
-
+		add_command_power = 25
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
 	}
 }
 
@@ -1703,7 +1740,8 @@ country_event = { #nationalism and militarism
   
 	option = { #yes
 		name = kivu.24.a
-
+	add_political_power = 100
+	increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -1727,7 +1765,8 @@ country_event = { #nationalism and militarism
   
 	option = { #yes
 		name = kivu.240.a
-
+		army_experience = 25
+		add_manpower = 5000
 	}
 }
 
@@ -1770,7 +1809,8 @@ country_event = { #africa in africa
   
 	option = { #yes
 		name = kivu.250.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -1791,7 +1831,7 @@ country_event = { #gonz title
 			name = "Bobozo Sese Seko"
 			desc = "POLITICS_BOBOZO_SESE_SEKO_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo_Nzere.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authentice_subtype
 			traits = { father_of_nzere }
 		}
@@ -1811,7 +1851,8 @@ country_event = { #kimbangu is the only church
   
 	option = { #yes
 		name = kivu.27.a
-
+		add_political_power = 50
+		add_stability = 0.05
 	}
 	
 }
@@ -1829,7 +1870,12 @@ country_event = { #african faction
   
 	option = { #yes
 		name = kivu.28.a
-
+		add_political_power = 100
+		LIB = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
+		ETH = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
+		SOM = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
+		KIK = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
+		HAI = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
 	}
 }
 
@@ -1846,7 +1892,10 @@ country_event = { #colonials btfo
   
 	option = { #yes
 		name = kivu.29.a
-
+		increase_ruling_party_popularity_by_5 = yes
+		add_war_support = 0.10
+		add_stability = -0.10
+		add_manpower = -1500
 	}
 }
 
@@ -1875,13 +1924,14 @@ country_event = { #all my homies hate ideology
 			name = "Bobozo Sese Seko"
 			desc = "POLITICS_BOBOZO_SESE_SEKO_DESC"
 			picture = "gfx/leaders/KIV/Portrait_KIV_Louis_de_Gonzague_Bobozo_Nzere.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = tot_authentice_subtype
 			traits = { father_of_nzere }
 			}
 		set_politics = {
 			ruling_party = totalist
 		}
+		add_natpop_to_coalition = yes
 		set_party_name = {
 			name = KIV_national_populist_party_2
 			long_name = KIV_national_populist_party_2_long
@@ -1907,6 +1957,8 @@ country_event = { #opulentism
   
 	option = { #yes
 		name = kivu.300.a
+		add_political_power = -50
+		increase_ruling_party_popularity_by_5 = yes
 	}
 }
 
@@ -1987,7 +2039,17 @@ country_event = { #kasavubu favouritism
   
 	option = { #yes
 		name = kivu.31.a
-
+		add_political_power = -30
+		increase_ruling_party_popularity_by_3 = yes
+		random_owned_state = { 
+		prioritize = { 881 538 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2008,7 +2070,8 @@ country_event = { #kongo kingdom larp
   
 	option = { #yes
 		name = kivu.32.a
-
+		add_political_power = 75
+		add_command_power = 25
 	}
 }
 
@@ -2029,7 +2092,17 @@ country_event = { #anti white laws
   
 	option = { #yes
 		name = kivu.33.a
-
+		add_political_power = -50
+		add_stability = -0.05
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2050,7 +2123,8 @@ country_event = { #westernization
   
 	option = { #yes
 		name = kivu.34.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -2071,7 +2145,27 @@ country_event = { #neocolony
   
 	option = { #yes
 		name = kivu.35.a
-
+		add_political_power = -75
+		add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+		}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2092,7 +2186,8 @@ country_event = { #regionalism
   
 	option = { #yes
 		name = kivu.36.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -2113,7 +2208,20 @@ country_event = { #kenyes congo
   
 	option = { #yes
 		name = kivu.37.a
-
+		add_political_power = -50
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = industry
+		}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2130,7 +2238,8 @@ country_event = { #elder statesmen
   
 	option = { #yes
 		name = kivu.38.a
-
+		add_political_power = 50
+		add_stability = 0.05
 	}
 }
 
@@ -2147,7 +2256,14 @@ country_event = { #war memorial
   
 	option = { #yes
 		name = kivu.39.a
-
+		add_stability = 0.05
+		increase_ruling_party_popularity_by_5 = yes
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2164,7 +2280,8 @@ country_event = { #modernizing, the congo is now a real democracy
   
 	option = { #yes
 		name = kivu.40.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -2182,7 +2299,10 @@ country_event = { #glue of the mnc
   
 	option = { #yes
 		name = kivu.41.a
-
+		add_political_power = 100
+		add_tot_to_coalition = yes
+		add_synd_to_coalition = yes
+		add_radsoc_to_coalition = yes
 	}
 }
 
@@ -2199,7 +2319,14 @@ country_event = { #christian market socialism
   
 	option = { #yes
 		name = kivu.42.a
-
+		add_political_power = 30
+		increase_ruling_party_popularity_by_3 = yes
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2216,7 +2343,14 @@ country_event = { #rebuilding
   
 	option = { #yes
 		name = kivu.43.a
-
+		add_stability = 0.05
+		increase_ruling_party_popularity_by_5 = yes
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+		add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2233,7 +2367,15 @@ country_event = { #''democracy''
   
 	option = { #yes
 		name = kivu.44.a
-
+		add_political_power = 50
+		add_popularity = {
+				ideology = social_liberal
+				popularity = -0.1
+		}
+		add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+		}
 	}
 }
 
@@ -2250,7 +2392,17 @@ country_event = { #Baluba stuff
   
 	option = { #yes
 		name = kivu.45.a
-
+		add_political_power = -30
+		increase_ruling_party_popularity_by_3 = yes
+		random_owned_state = { 
+		prioritize = { 976 1183 879 1182 1184 949 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2267,7 +2419,14 @@ country_event = { #''market socialism''
   
 	option = { #yes
 		name = kivu.46.a
-
+		add_political_power = 30
+		increase_ruling_party_popularity_by_3 = yes
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2284,7 +2443,8 @@ country_event = { #illeo and kimbangu
   
 	option = { #yes
 		name = kivu.47.a
-
+		add_political_power = 50
+		increase_ruling_party_popularity_by_5 = yes
 	}
 }
 
@@ -2301,7 +2461,24 @@ country_event = { #Socialist Nationalism Nationalist Socialism funni event
   
 	option = { #yes
 		name = kivu.48.a
-
+		add_political_power = 30
+		add_stability = 0.03
+		add_popularity = {
+				ideology = totalist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+		}
 	}
 }
 
@@ -2318,7 +2495,12 @@ country_event = { #freindship with Kalonji ended now Gonzauge is my best friend
   
 	option = { #yes
 		name = kivu.49.a
-
+		add_political_power = 50
+		increase_ruling_party_popularity_by_3 = yes
+		add_popularity = {
+				ideology = national_populist
+				popularity = 0.03
+		}
 	}
 }
 
@@ -2335,7 +2517,8 @@ country_event = { #conservative syndicalism
   
 	option = { #yes
 		name = kivu.50.a
-
+		add_political_power = 20
+		increase_ruling_party_popularity_by_2 = yes
 	}
 }
 
@@ -2352,7 +2535,9 @@ country_event = { #slowly push the nation towards syndicalism, tho you realize i
   
 	option = { #yes
 		name = kivu.51.a
-
+		add_political_power = 50
+		add_stability = 0.05
+		increase_ruling_party_popularity_by_5 = yes
 	}
 }
 
@@ -2369,7 +2554,24 @@ country_event = { #slowly push the nation towards syndicalism, tho you realize i
   
 	option = { #yes
 		name = kivu.510.a
-
+		add_political_power = 30
+		add_stability = 0.03
+		add_popularity = {
+				ideology = totalist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.03
+		}
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+		}
 	}
 }
 
@@ -2386,7 +2588,14 @@ country_event = { #start anew
   
 	option = { #yes
 		name = kivu.52.a
-
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 500
+			producer = COG
+		}
 	}
 }
 
@@ -2403,7 +2612,12 @@ country_event = { #establish full self sufficiency
   
 	option = { #yes
 		name = kivu.53.a
-
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
+		add_ideas = limited_exports
 	}
 }
 
@@ -2420,7 +2634,8 @@ country_event = { #pan-afrika dream shit, look to the future yadda yadda
   
 	option = { #yes
 		name = kivu.54.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
 }
 
@@ -2437,7 +2652,20 @@ country_event = { #suppress radical nationalism event (for Kalonji and Adoula)
   
 	option = { #yes
 		name = kivu.55.a
-
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.05
+		}
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.05
+		}
+		add_popularity = {
+				ideology = national_populist
+				popularity = -0.05
+		}
 	}
 }
 
@@ -2454,7 +2682,14 @@ country_event = { #anti-clericalism event (for Adoula and Kasongo)
   
 	option = { #yes
 		name = kivu.56.a
-
+		add_political_power = -50
+		add_stability = -0.05
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -2471,6 +2706,7 @@ country_event = { #ally with Gonzague and the Nzerians event (for Kasongo and Il
   
 	option = { #yes
 		name = kivu.57.a
+		add_political_power = 30
 		effect_tooltip = {
 			create_corps_commander = {
 				name = "Louis de Gonzague Bobozo"
@@ -2532,7 +2768,19 @@ country_event = { #aid from the internationale
 		trigger = {
 			has_cosmetic_tag = KIV_simba
 		}
-
+		add_political_power = -75
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = FRA
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 1
+			category = land_doctrine
+		}
+		INT = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
 	}
 	option = { #yes
 		name = kivu.58.b
@@ -2541,7 +2789,19 @@ country_event = { #aid from the internationale
 				has_cosmetic_tag = KIV_simba
 			}
 		}
-
+		add_political_power = -75
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = FRA
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 1
+			category = land_doctrine
+		}
+		INT = { add_opinion_modifier = { target = KIV modifier = medium_increase } }
 	}
 }
 
@@ -2561,7 +2821,9 @@ country_event = { #simba warriors
 		trigger = {
 			has_cosmetic_tag = KIV_simba
 		}
-
+		add_manpower = 5000
+		add_war_support = 0.1
+		army_experience = -25
 	}
 	option = { #yes
 		name = kivu.59.b
@@ -2570,7 +2832,9 @@ country_event = { #simba warriors
 				has_cosmetic_tag = KIV_simba
 			}
 		}
-
+		add_manpower = 5000
+		add_war_support = 0.1
+		army_experience = -25
 	}
 }
 
@@ -2588,8 +2852,7 @@ country_event = { #coup cuz you taking to long
 				}
 			}
 		}
-		
-		}
+	}
 	title = kivu.60.t
 	desc = kivu.60.d
 	picture = GFX_report_event_KIV_bobozo
@@ -2674,7 +2937,6 @@ country_event = { #quid pro quo
 				receiver = SRI
 			}
 		}
-	
 	}
 }
 
@@ -2707,7 +2969,7 @@ country_event = { #late game event for mobutu to take over
 				name = "Mobutu Sese Seko"
 				desc = "POLITICS_MOBUTU_SESE_SEKO_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Mobutu_Sese_Seko.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authentice_subtype
 				traits = {  }
 			}
@@ -2720,7 +2982,7 @@ country_event = { #late game event for mobutu to take over
 				name = "Mobutu Sese Seko"
 				desc = "POLITICS_MOBUTU_SESE_SEKO_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Mobutu_Sese_Seko.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = tot_authentice_subtype
 				traits = {  }
 			}
@@ -2817,7 +3079,6 @@ country_event = { #pan-afrocanism also funny nintendo number
 	option = { #yes
 		name = kivu.64.c
 		add_political_power = 75
-
 	}
 }
 
@@ -2846,7 +3107,8 @@ country_event = { #central africa
   
 	option = { #yes
 		name = kivu.65.a
-
+		add_political_power = 100
+		add_stability = 0.10
 	}
 	option = { #yes
 		name = kivu.65.b
@@ -2863,7 +3125,13 @@ country_event = { #central africa
 			 }
 			 add_core_of = KIV 
 		}
-		set_cosmetic_tag = KIV_central_africa
+		if = {
+			limit = { has_cosmetic_tag = KIV_zaire }
+			set_cosmetic_tag = KIV_central_africa_seko
+		}
+		else = {
+			set_cosmetic_tag = KIV_central_africa
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2896,10 +3164,12 @@ country_event = { #kasavubu kongo
   
 	option = { #do nothing
 		name = kivu.66.a
-
+		add_political_power = 100
+		increase_ruling_party_popularity_by_10 = yes
 	}
-	option = { #annexy
+	option = { #annex
 		name = kivu.66.b
+		add_political_power = 50
 		every_state = {
 			limit = { 
 				 is_core_of = KOG
@@ -2914,6 +3184,7 @@ country_event = { #kasavubu kongo
 	
 	option = { #native king man
 		name = kivu.66.c
+		add_political_power = 50
 		every_state = {
 			limit = { 
 				 is_core_of = KOG
@@ -2929,7 +3200,7 @@ country_event = { #kasavubu kongo
 			name = "Pedro VII"
 			picture = "gfx/leaders/KOG/Portrait_Kongo_Pedro_VII_Afonso.png"
 			desc = "POLITICS_PEDRO_VII_DESC"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = regionalism_subtype
 		}
 		set_country_flag = LEADER_GUI_VISIBLE
@@ -2977,13 +3248,16 @@ country_event = { #revenge on belgium?
 		ai_chance = {
 			factor = 90
 		}
-
+		add_political_power = 50
+		add_stability = 0.05
 	}
 	option = { #we call out for revenge!
 		name = kivu.67.a
 		ai_chance = {
 			factor = 10
 		}
+		add_political_power = -100
+		add_war_support = 0.10
 		create_wargoal = {
 			type = annex_everything
 			target = BEL
@@ -3021,11 +3295,12 @@ country_event = { #get fucked belgians
 	
 	option = { #we call out for revenge!
 		name = kivu.68.a
+		add_political_power = 100
 		BEL = {
 			create_country_leader = {
 				name = "Victor Lundula"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Victor_Lundula.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = autocratic_colonial_govt_subtype
 				traits = {}
 			}
@@ -3042,6 +3317,12 @@ country_event = { #get fucked belgians
 			add_popularity = {
 				ideology = paternal_autocrat
 				popularity = 0.3
+			}
+		}
+		KIV = {
+			set_autonomy = {
+				target = BEL
+				autonomous_state = kx_colored_puppet
 			}
 		}
 	}
@@ -3065,7 +3346,7 @@ country_event = { #okito something
 			name = "Joseph Okito"
 			desc = "POLITICS_OKITO_DESC"
 			picture = "gfx/leaders/KIV/Portrait_Kivu_Joseph_Okito.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_radical_progressivism_subtype
 			traits = {}
 		}
@@ -3075,7 +3356,7 @@ country_event = { #okito something
 		name = kivu.69.b
 		add_stability = 0.05
 		create_corps_commander = {
-			name = "Joseph Okito "
+			name = "Joseph Okito"
 			portrait_path = "gfx/leaders/KIV/Portrait_Kivu_Joseph_Okito.png"
 			traits = {
 				politically_connected
@@ -3111,7 +3392,7 @@ country_event = { #okito something but simba
 					name = "Joseph Okito"
 					desc = "POLITICS_OKITO_DESC"
 					picture = "gfx/leaders/KIV/Portrait_Kivu_Joseph_Okito.png"
-					expire = "1965.1.1"
+					expire = "1.1.1"
 					ideology = [CURRENT_IDEOLOGY]
 					traits = {}
 				}
@@ -3124,7 +3405,7 @@ country_event = { #okito something but simba
 		name = kivu.70.b
 		add_stability = 0.05
 		create_corps_commander = {
-			name = "Joseph Okito "
+			name = "Joseph Okito"
 			portrait_path = "gfx/leaders/KIV/Portrait_Kivu_Joseph_Okito.png"
 			traits = {
 				politically_connected
@@ -3229,7 +3510,7 @@ country_event = { #late game event for lumumba to take over
 				name = "Patrice Lumumba"
 				desc = "POLITICS_LUMUMBA_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Patrice_Lumumba.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = tot_left_panafricanism_subtype
 				traits = {  }
 			}
@@ -3243,7 +3524,7 @@ country_event = { #late game event for lumumba to take over
 				name = "Patrice Lumumba"
 				desc = "POLITICS_LUMUMBA_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Patrice_Lumumba.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = syn_left_panafricanism_subtype
 				traits = {  }
 			}
@@ -3257,7 +3538,7 @@ country_event = { #late game event for lumumba to take over
 				name = "Patrice Lumumba"
 				desc = "POLITICS_LUMUMBA_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Patrice_Lumumba.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_left_panafricanism_subtype
 				traits = {  }
 			}
@@ -3271,7 +3552,7 @@ country_event = { #late game event for lumumba to take over
 				name = "Patrice Lumumba"
 				desc = "POLITICS_LUMUMBA_DESC"
 				picture = "gfx/leaders/KIV/Portrait_KIV_Patrice_Lumumba.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_left_panafricanism_subtype
 				traits = {  }
 			}
@@ -3297,7 +3578,8 @@ country_event = { #HOW DO YOU LIKE IT?
   
 	option = { #yes
 		name = kivu.73.a
-		
+		add_political_power = 30
+		add_stability = 0.03
 	}
 }
 
@@ -3334,7 +3616,7 @@ country_event = { #abako ubu and nlandu split
 			create_country_leader = {
 				name = "Edmond Nzeza-Nlandu"
 				picture = "gfx/leaders/COG/Portrait_Congo_Edmond_Nzeza_Nlandu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soclib_progressive_democracy_subtype
 				traits = {  }
 			}
@@ -3342,8 +3624,8 @@ country_event = { #abako ubu and nlandu split
 				country_event = {
 					id = leopoldville.45
 					days = 120
-				}
 			}
+		}
 	}
 }
 
@@ -3579,5 +3861,90 @@ country_event = { #kalonji picker
 		name = kivu.80.g
 		add_political_power = 50
 		set_country_leader_ideology = left_nationalism_subtype
+	}
+}
+
+country_event = { #friendship uni
+	id = kivu.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kivu.81"}
+	title = kivu.81.t
+	desc = kivu.81.d
+	picture = GFX_report_event_COG_friendship_university
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+  
+	option = { #yes
+		name = kivu.81.a
+		add_opinion_modifier = {
+			target = KIV
+			modifier = KR_friendly
+		}
+		KIV = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = KR_friendly
+			}
+		}
+	}
+}
+
+country_event = { #Leonard Mpoyi
+	id = kivu.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kivu.82"}
+	title = kivu.82.t
+	desc = kivu.82.d
+	picture = GFX_report_event_KIV_mpoyi
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+  
+	option = { #HoS
+		name = kivu.82.a
+		create_country_leader = {
+			name = "Léonard Mpoyi"
+			desc = "POLITICS_ADOULA_DESC"
+			picture = "gfx/leaders/KIV/Portrait_KIV_Leonard_Mpoyi.png"
+			expire = "1.1.1"
+			ideology = african_syndicalism_subtype 
+			traits = {}
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = KIV_Cyrille_Adoula_hog_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = KIV_Sylvestre_Mudingayi_for_syn
+	}
+	
+	option = { #Minister
+		name = kivu.82.b
+		remove_ideas_with_trait = security_minister
+		add_ideas = KIV_Leonard_Mpoyi_sec_syn
+	}
+}
+
+country_event = { #Congoball
+	id = kivu.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kivu.83"}
+	title = kivu.83.t
+	desc = kivu.83.d
+	picture = GFX_report_event_KIV_football
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+  
+	option = { #
+		name = kivu.83.a
+		increase_ruling_party_popularity_by_5 = yes
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }

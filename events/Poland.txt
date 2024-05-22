@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Poland Events
 ###########################
 
@@ -109,7 +109,7 @@ country_event = { # The economy fails!
 			name = "Sejm"
 			desc = "POLITICS_POL_SEJM_DESC"
 			picture = "gfx/leaders/POL/Portrait_POL_Sejm.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = christian_democracy_subtype
 		}
 		set_politics = {
@@ -138,37 +138,37 @@ country_event = { # The economy fails!
 				name = "Władysław Studnicki"
 				desc = "POLITICS_WLADYSLAW_STUDNICKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Studnicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Bolesław Piasecki"
 				picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_radicalism_subtype
 			}
 			create_country_leader = {
 				name = "Julian Leszczyński"
 				picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authcom_subtype
 			}
 			create_country_leader = {
 				name = "Alfred Lampe"
 				picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			create_country_leader = {
 				name = "Adolf Warski"
 				picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_communism_subtype
 			}
 			unlock_national_focus = POL_the_great_debate
@@ -252,7 +252,7 @@ country_event = { # The economy fails!
 		create_country_leader = {
 			name = "Heck Gandersoński"
 			picture = "gfx/leaders/APF/Portrait_POL_Heck_Gunderson.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = kleptocracy_subtype 
 		}
 		set_politics = {
@@ -281,31 +281,31 @@ country_event = { # The economy fails!
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Bolesław Piasecki"
 				picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_radicalism_subtype
 			}
 			create_country_leader = {
 				name = "Julian Leszczyński"
 				picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authcom_subtype
 			}
 			create_country_leader = {
 				name = "Alfred Lampe"
 				picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			create_country_leader = {
 				name = "Adolf Warski"
 				picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_communism_subtype
 			}
 			unlock_national_focus = POL_the_great_debate
@@ -511,7 +511,7 @@ country_event = { # The Regency and Sejm in Danger"
 			name = "Marian Januszajtis-Żegota"
 			desc = "POLITICS_MARIAN_JANUSZAJTIS_DESC"
 			picture = "gfx/leaders/POL/Portrait_POL_Marian_Januszajtis_Zegota.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = junta_subtype
 		}
 		hidden_effect = {
@@ -529,37 +529,38 @@ country_event = { # The Regency and Sejm in Danger"
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Bolesław Piasecki"
 				picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_radicalism_subtype
 			}
 			create_country_leader = {
 				name = "Julian Leszczyński"
 				picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authcom_subtype
 			}
 			create_country_leader = {
 				name = "Alfred Lampe"
 				picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			create_country_leader = {
 				name = "Adolf Warski"
 				picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_communism_subtype
 			}
 			country_event = {
 				id = poland.195
 				days = 28
 			}
+			GER_remove_from_mitteleuropa = yes
 		}
 		remove_all_ministers = yes
 		add_ideas = {
@@ -613,19 +614,19 @@ country_event = { # Chaos in the Countryside
 				name = "Władysław Studnicki"
 				desc = "POLITICS_WLADYSLAW_STUDNICKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Studnicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Bolesław Piasecki"
 				picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_radicalism_subtype
 			}
 			add_popularity = {
@@ -702,25 +703,25 @@ country_event = { # Chaos in the Countryside
 				name = "Władysław Studnicki"
 				desc = "POLITICS_WLADYSLAW_STUDNICKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Studnicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Julian Leszczyński"
 				picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authcom_subtype
 			}
 			create_country_leader = {
 				name = "Alfred Lampe"
 				picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			create_country_leader = {
 				name = "Adolf Warski"
 				picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_communism_subtype
 			}
 			add_popularity = {
@@ -745,6 +746,7 @@ country_event = { # Chaos in the Countryside
 				id = poland.463
 				days = 37
 			}
+			GER_remove_from_mitteleuropa = yes
 		}
 		remove_all_ministers = yes
 		add_ideas = {
@@ -771,7 +773,7 @@ country_event = { # Chaos in the Countryside
 		create_country_leader = {
 			name = "Rada Odrodzenia Polski"
 			picture = "gfx/leaders/POL/Portrait_POL_Rada_Odrodzenia_Polski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = militarism_subtype
 		}
 		set_cosmetic_tag = POL_RESURRECTIONIST
@@ -786,31 +788,31 @@ country_event = { # Chaos in the Countryside
 				name = "Władysław Studnicki"
 				desc = "POLITICS_WLADYSLAW_STUDNICKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Studnicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = pataut_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 			create_country_leader = {
 				name = "Julian Leszczyński"
 				picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authcom_subtype
 			}
 			create_country_leader = {
 				name = "Alfred Lampe"
 				picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = centralized_syndicalism_subtype
 			}
 			create_country_leader = {
 				name = "Adolf Warski"
 				picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radsoc_communism_subtype
 			}
 			add_popularity = {
@@ -821,7 +823,9 @@ country_event = { # Chaos in the Countryside
 			set_country_flag = POL_christian_takeover
 			set_country_flag = POL_meme_options
 		}
-		POL_germs_gtfo = yes
+		hidden_effect = {
+			POL_germs_gtfo = yes
+		}
 		remove_all_ministers = yes
 		add_ideas = {
 			POL_Boleslaw_Piasecki_hog_npo
@@ -1383,42 +1387,42 @@ country_event = { # The decision of Mendog
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_democratic_socialism_subtype
 			}
 			create_country_leader = {
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 			}
 			create_country_leader = {
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = progressive_democracy_subtype
 			}
 			create_country_leader = {
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = christian_democracy_subtype
 			}
 			create_country_leader = {
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = prussian_constitutionalism_subtype
 			}
 			create_country_leader = {
 				name = "Władysław V"
 				desc = "POLITICS_MENDOG_III_PLC_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Wladyslaw_Urach.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 			}
 			news_event = {
@@ -1512,7 +1516,7 @@ country_event = { #Sejm Elections 1937
 				name = "Józef Chaciński"
 				desc = "POLITICS_JOZEF_CHACINSKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Jozef_Chacinski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = christian_democracy_subtype
 			}
 			}
@@ -1791,7 +1795,7 @@ country_event = { #Sejm Elections 1941+
 			create_country_leader = {
 				name = "Janusz Franciszek Radziwiłł"
 				picture = "gfx/leaders/POL/Portrait_POL_Janusz_Franciszek_Radziwill.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authdem_national_conservative_subtype
 			}
 		}
@@ -1832,7 +1836,7 @@ country_event = { #Sejm Elections 1941+
 				name = "Józef Chaciński"
 				desc = "POLITICS_JOZEF_CHACINSKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Jozef_Chacinski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = christian_democracy_subtype
 			}
 		}
@@ -1873,7 +1877,7 @@ country_event = { #Sejm Elections 1941+
 				name = "Stefan Przanowski"
 				desc = "POLITICS_MIECZYSLAW_MICHALOWICZ_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Stefan_Przanowski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = progressive_democracy_subtype
 			}
 		}
@@ -1913,7 +1917,7 @@ country_event = { #Sejm Elections 1941+
 			create_country_leader = {
 				name = "Tomasz Nocznicki"
 				picture = "gfx/leaders/POL/Portrait_POL_Tomasz_Nocznicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = radical_liberalism_subtype
 			}
 		}
@@ -1953,7 +1957,7 @@ country_event = { #Sejm Elections 1941+
 			create_country_leader = {
 				name = "Norbert Barlicki"
 				picture = "gfx/leaders/POL/Portrait_POL_Norbert_Barlicki.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_democratic_socialism_subtype
 			}
 		}
@@ -2003,19 +2007,19 @@ country_event = { # The Central Committe elects it's Chairman
 		create_country_leader = {
 			name = "Julian Leszczyński"
 			picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authcom_subtype
 		}
 		create_country_leader = {
 			name = "Alfred Lampe"
 			picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = centralized_syndicalism_subtype
 		}
 		create_country_leader = {
 			name = "Adolf Warski"
 			picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = radsoc_communism_subtype
 		}
 	}
@@ -2040,26 +2044,25 @@ country_event = { # The Central Committe elects it's Chairman
 		create_country_leader = {
 			name = "Julian Leszczyński"
 			picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authcom_subtype
 		}
 		create_country_leader = {
 			name = "Alfred Lampe"
 			picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = centralized_syndicalism_subtype
 		}
 				create_country_leader = {
 			name = "Adolf Warski"
 			picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = radsoc_communism_subtype
 		}
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
 		}
-		add_ideas = POL_Edward_Osobka_Morawski_hog_tot
 	}
 
 	option = {
@@ -2082,26 +2085,25 @@ country_event = { # The Central Committe elects it's Chairman
 		create_country_leader = {
 			name = "Julian Leszczyński"
 			picture = "gfx/leaders/POL/Portrait_POL_Julian_Leszczynski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = authcom_subtype
 		}
 		create_country_leader = {
 			name = "Alfred Lampe"
 			picture = "gfx/leaders/POL/Portrait_POL_Alfred_Lampe.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = centralized_syndicalism_subtype
 		}
 		create_country_leader = {
 			name = "Adolf Warski"
 			picture = "gfx/leaders/POL/Portrait_POL_Adolf_Warski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = radsoc_communism_subtype
 		}
 		set_politics = {
 			ruling_party = syndicalist
 			elections_allowed = no
 		}
-		add_ideas = POL_Stanislaw_Lancucki_hog_rso
 	}
 }
 
@@ -2138,7 +2140,10 @@ country_event = { # An alliance with Poland?
 				FROM = { owns_state = 91 }
 			}
 		}
-		create_faction = polukr_faction
+		if = {
+			limit = { is_faction_leader = no }
+			create_faction = "Eastern Europe Defensive Pact"
+		}
 		add_to_faction = FROM
 	}
 
@@ -2316,7 +2321,10 @@ country_event = { # Poland has agreed
 	option = {
 		name = poland.59.a
 		add_stability = 0.1
-		create_faction = polukr_faction
+		if = {
+			limit = { is_faction_leader = no }
+			create_faction = "Eastern Europe Defensive Pact"
+		}
 		add_to_faction = FROM
 		FROM = {
 			every_owned_state = {
@@ -2342,7 +2350,10 @@ country_event = { # Poland's answer
 		ai_chance = { factor = 80 }
 		add_political_power = -20
 		remove_state_core = 91
-		create_faction = polukr_faction
+		if = {
+			limit = { is_faction_leader = no }
+			create_faction = "Eastern Europe Defensive Pact"
+		}
 		add_to_faction = FROM
 		FROM = {
 			every_owned_state = {
@@ -2407,13 +2418,13 @@ country_event = { # Dwomski passes away
 		create_country_leader = {
 			name = "Roman Rybarski"
 			picture = "gfx/leaders/POL/Portrait_POL_Roman_Rybarski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = national_democracy_subtype
 		}
 		create_country_leader = {
 			name = "Bolesław Piasecki"
 			picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = national_radicalism_subtype
 		}
 				set_party_name = {
@@ -2445,13 +2456,13 @@ country_event = { # Dwomski passes away
 		create_country_leader = {
 			name = "Bolesław Piasecki"
 			picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = national_radicalism_subtype
 		}
 				create_country_leader = {
 			name = "Roman Rybarski"
 			picture = "gfx/leaders/POL/Portrait_POL_Roman_Rybarski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = national_democracy_subtype
 		}
 				set_party_name = {
@@ -2611,10 +2622,7 @@ country_event = { # Revising the Polish-Romanian Border
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			tag = ROM
-			tag = RRM
-		}
+		tag = ROM
 		POL = {
 			OR = {
 				owns_state = 80
@@ -3151,9 +3159,33 @@ country_event = { # Return Galicia - German POV
 
 	is_triggered_only = yes
 
-	option = { #Deny
+	option = { #Accept
 		name = poland.1370.a
-		GER = {
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				POL = { is_ai = no }
+			}
+		}
+		POL = {
+			country_event = {
+				id = poland.1372
+				days = 6
+			}
+		}
+	}
+
+	option = { #Deny
+		name = poland.1370.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				POL = { is_ai = no }
+			}
+		}
+		POL = {
 			country_event = {
 				id = poland.1371
 				days = 6
@@ -3161,15 +3193,6 @@ country_event = { # Return Galicia - German POV
 		}
 	}
 	
-	option = { #Accept
-		name = poland.1370.b
-		GER = {
-			country_event = {
-				id = poland.1372
-				days = 6
-			}
-		}
-	}
 }
 
 country_event = { # Return Galicia - Germany Denies
@@ -3191,7 +3214,7 @@ country_event = { # Return Galicia - Germany Denies
 	
 }
 
-country_event = { # Return Galicia - Germany Denies
+country_event = { # Return Galicia - Germany Accepts
 	id = poland.1372
 	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1372" }
 	title = poland.1372.t
@@ -3207,6 +3230,23 @@ country_event = { # Return Galicia - Germany Denies
 			every_unit_leader = {
 				set_nationality = POL
 			}
+		}
+		if = {
+			limit = {
+			GAL = { is_subject_of = AUS }
+			}
+			annex_country = {
+				target = GAL
+				transfer_troops = yes
+			}
+		}
+		else = {
+			AUS = {
+			every_owned_state = {
+				limit = { is_core_of = GAL }
+				POL = { transfer_state = PREV }
+			}
+		    }
 		}
 		annex_country = {
 			target = GAL
@@ -3356,7 +3396,7 @@ country_event = { # The Entente - Response
 
 	option = {
 		name = poland.146.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		FROM = {
 			country_event = {
 				id = poland.147
@@ -3367,7 +3407,7 @@ country_event = { # The Entente - Response
 
 	option = {
 		name = poland.146.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		FROM = {
 			country_event = {
 				id = poland.148
@@ -3523,10 +3563,11 @@ country_event = { # Join France - Sure
 		hidden_effect = {
 			if = {
 				limit = {
-					is_in_faction_with = UKR
-					UKR = { is_faction_leader = yes }
+					var:202.owner = { is_ukrainian_tag = yes }
+					is_in_faction_with = var:202.owner
+					var:202.owner = { is_faction_leader = yes }
 				}
-				UKR = {
+				var:202.owner = {
 					country_event = {
 						id = poland.173
 						days = 2
@@ -3572,7 +3613,7 @@ country_event = { # Emergency Elections
 				name = "Józef Chaciński"
 				desc = "POLITICS_JOZEF_CHACINSKI_DESC"
 				picture = "gfx/leaders/POL/Portrait_POL_Jozef_Chacinski.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = christian_democracy_subtype
 			}
 			country_event = {
@@ -3774,7 +3815,7 @@ country_event = { # Galician Demands - Response
 
 	option = {
 		name = poland.177.a
-		ai_chance = { factor = 15 }
+		ai_chance = { factor = 65 }
 		FROM = {
 			country_event = {
 				id = poland.178
@@ -3785,7 +3826,7 @@ country_event = { # Galician Demands - Response
 
 	option = {
 		name = poland.177.b
-		ai_chance = { factor = 85 }
+		ai_chance = { factor = 35 }
 		FROM = {
 			country_event = {
 				id = poland.179
@@ -3967,6 +4008,205 @@ country_event = { # Galician Demands - No
 	}
 }
 
+country_event = { # West Galician Demands - Response
+	id = poland.1771
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1771" }
+	title = poland.1771.t
+	desc = poland.1771.d
+	picture = GFX_POL_aggressive_militarism
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.1771.a
+		ai_chance = { factor = 65 }
+		FROM = {
+			country_event = {
+				id = poland.1781
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = poland.1771.b
+		ai_chance = { factor = 35 }
+		FROM = {
+			country_event = {
+				id = poland.1791
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { # West Galician Demands - Yes
+	id = poland.1781
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1781" }
+	title = poland.1781.t
+	desc = poland.1781.d
+	picture = GFX_POL_aggressive_militarism
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.1781.a
+		if = {
+			limit = {
+				88 = {
+					owner = { tag = GAL }
+				}
+			}
+			annex_country = {
+				target = GAL
+				transfer_troops = no
+			}
+		}
+		else = {
+			FROM = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 1124
+							state = 88
+							state = 1314
+							state = 1125
+							state = 1319
+						}
+					}
+					ROOT = {
+						add_state_core = PREV
+						transfer_state = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Galician Demands - No
+	id = poland.1791
+	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.1791" }
+	title = poland.1791.t
+	desc = poland.1791.d
+	picture = GFX_POL_aggressive_militarism
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.1791.a
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = {
+			target = FROM
+			modifier = KR_outraged
+		}
+		add_political_power = -25
+		add_stability = -0.05
+	}
+
+	option = {
+		name = poland.1791.b
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+				is_faction_leader = no
+				any_allied_country = {
+					is_faction_leader = yes
+					NOT = { has_war_with = GER }
+				}
+			}
+			modifier = {
+				factor = 0
+				91 = {
+					owner = {
+						NOT = {
+							is_subject_of = AUS
+							is_in_faction_with = AUS
+						}
+						surrender_progress < 0.10
+						strength_ratio = {
+							tag = POL
+							ratio > 1.0
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				91 = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							NOT = { tag = AUS }
+							surrender_progress < 0.10
+							strength_ratio = {
+								tag = POL
+								ratio > 1.0
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				91 = {
+					owner = {
+						is_in_faction = yes
+						is_faction_leader = no
+						any_allied_country = {
+							NOT = { tag = AUS }
+							is_faction_leader = yes
+							surrender_progress < 0.10
+							strength_ratio = {
+								tag = POL
+								ratio > 1.0
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				91 = {
+					owner = { is_subject_of = AUS }
+				}
+				AUS = {
+					is_faction_leader = yes
+					surrender_progress < 0.10
+					NOT = {
+						has_war_with = GER
+						has_war_with = RUS
+						has_war_with = HUN
+						has_war_with = SER
+						has_war_with = ROM
+						has_war_with = ITA
+					}
+				}
+				NOT = {
+					SER = {
+						has_country_flag = waiting_to_attack_austria
+					}
+					ROM = {
+						has_country_flag = waiting_to_attack_austria
+					}
+					ITA = {
+						has_country_flag = waiting_to_attack_austria
+					}
+				}
+			}
+		}
+		trigger = {
+			can_declare_war_on = 91.owner
+		}
+		declare_war_on = {
+			target = GAL
+			type = annex_everything
+		}
+	}
+}
+
 country_event = { # Lithuanian Demands - Response
 	id = poland.181
 	immediate = { log = "[GetDateText]: [Root.GetName]: event poland.181" }
@@ -3978,7 +4218,7 @@ country_event = { # Lithuanian Demands - Response
 
 	option = {
 		name = poland.181.a
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 25 }
 		FROM = {
 			country_event = {
 				id = poland.182
@@ -3989,7 +4229,7 @@ country_event = { # Lithuanian Demands - Response
 
 	option = {
 		name = poland.181.b
-		ai_chance = { factor = 95 }
+		ai_chance = { factor = 75 }
 		FROM = {
 			country_event = {
 				id = poland.183
@@ -4011,6 +4251,8 @@ country_event = { # Lithuanian Demands - Yes
 	option = {
 		name = poland.182.a
 		transfer_state = 96
+		transfer_state = 94
+		transfer_state = 1329
 	}
 }
 
@@ -4605,8 +4847,8 @@ country_event = { # Type-Polish Program
 		name = poland.208.f # Russian Designs
 		trigger = {
 			has_socialist_government = yes
-			soviets_exist = yes
-			NOT = { has_war_with = SOV }
+			RUS = { has_country_flag = soviet_russia_restored }
+			NOT = { has_war_with = RUS }
 		}
 		army_experience = 10
 		if = {
@@ -5735,9 +5977,26 @@ country_event = { #Galicia sold
 	option = {
 		name = poland.403.a
 		add_ideas = POL_austrian_purchase
-		annex_country = {
-			target = GAL
-			transfer_troops = yes
+		if = {
+			limit = { GAL = { exists = yes } }
+			annex_country = {
+				target = GAL
+				transfer_troops = yes
+			}
+		}
+		else = {
+			transfer_state = 88
+			transfer_state = 1314
+			transfer_state = 1319
+			transfer_state = 89
+			transfer_state = 91
+			transfer_state = 1124
+			transfer_state = 1125
+			transfer_state = 1127
+			transfer_state = 1126
+			transfer_state = 1140
+			transfer_state = 80
+			transfer_state = 713
 		}
 		add_opinion_modifier = {
 			target = AUS
@@ -5775,9 +6034,11 @@ country_event = { #West Galicia sold
 		transfer_state = 1125
 		transfer_state = 88
 		hidden_effect = {
-			add_state_core = 88
 			add_state_core = 1124
+			add_state_core = 1314
+			add_state_core = 1319
 			add_state_core = 1125
+			add_state_core = 88
 		}
 	}
 }
@@ -5823,13 +6084,18 @@ country_event = { #ask for east
 			}
 		}
 		effect_tooltip = {
-			POL = { transfer_state = 94 }
+			POL = { 
+				transfer_state = 94 
+                transfer_state = 1329 
+		    }
 		}
 		#POL = { country_event = poland.411 }
 		hidden_effect = {
 			POL = {
 				transfer_state = 94
 				add_state_core = 94 
+				transfer_state = 1329
+				add_state_core = 1329 
 				add_stability = 0.05
 			}
 		}
@@ -5847,6 +6113,7 @@ country_event = { #ask for east
 		effect_tooltip = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 			}
@@ -5855,9 +6122,11 @@ country_event = { #ask for east
 		hidden_effect = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 				add_state_core = 94
+				add_state_core = 1329
 				add_state_core = 93
 				add_state_core = 997
 				add_stability = 0.05
@@ -5881,6 +6150,7 @@ country_event = { #ask for east
 		effect_tooltip = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 				transfer_state = 1295
@@ -5891,11 +6161,13 @@ country_event = { #ask for east
 		hidden_effect = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 				transfer_state = 1295
 				transfer_state = 95
 				add_state_core = 94
+				add_state_core = 1329
 				add_state_core = 93
 				add_state_core = 997
 				add_state_core = 1295
@@ -5930,6 +6202,7 @@ country_event = { #ask for east
 		effect_tooltip = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 				transfer_state = 1295
@@ -5941,12 +6214,14 @@ country_event = { #ask for east
 		hidden_effect = {
 			POL = {
 				transfer_state = 94
+				transfer_state = 1329
 				transfer_state = 93
 				transfer_state = 997
 				transfer_state = 1295
 				transfer_state = 95
 				transfer_state = 792
 				add_state_core = 94
+				add_state_core = 1329
 				add_state_core = 93
 				add_state_core = 997
 				add_state_core = 1295
@@ -5992,6 +6267,8 @@ country_event = { #vawkavysk
 		add_stability = 0.05
 		transfer_state = 94
 		hidden_effect = { add_state_core = 94 }
+		transfer_state = 1329
+		hidden_effect = { add_state_core = 1329 }
 	}
 }
 
@@ -6006,10 +6283,12 @@ country_event = { #brest
 		add_stability = 0.05
 		add_political_power = 50
 		transfer_state = 94
+		transfer_state = 1329
 		transfer_state = 93
 		transfer_state = 997
 		hidden_effect = {
 			add_state_core = 94
+			add_state_core = 1329
 			add_state_core = 93
 			add_state_core = 997
 		}
@@ -6027,12 +6306,14 @@ country_event = { #pinsk
 		add_stability = 0.10
 		add_political_power = 50
 		transfer_state = 94
+		transfer_state = 1329
 		transfer_state = 93
 		transfer_state = 997
 		transfer_state = 204
 		transfer_state = 95
 		hidden_effect = {
 			add_state_core = 94
+			add_state_core = 1329
 			add_state_core = 93
 			add_state_core = 997
 			add_state_core = 204
@@ -6052,6 +6333,7 @@ country_event = { #volhynia
 		add_stability = 0.15
 		add_political_power = 100
 		transfer_state = 94
+		transfer_state = 1329
 		transfer_state = 93
 		transfer_state = 997
 		transfer_state = 204
@@ -6059,6 +6341,7 @@ country_event = { #volhynia
 		transfer_state = 792
 		hidden_effect = {
 			add_state_core = 94
+			add_state_core = 1329
 			add_state_core = 93
 			add_state_core = 997
 			add_state_core = 204
@@ -6093,10 +6376,13 @@ country_event = { #what to do?
 	option = { # join Ukraine
 		name = poland.450.b
 		trigger = {
-			UKR = { is_faction_leader = yes }
+			var:202.owner = {
+				is_faction_leader = yes 
+				is_ukrainian_tag = yes
+			}
 			OR = {
 				has_socialist_government = yes
-				UKR = { has_socialist_government = no }
+				var:202.owner = { has_socialist_government = no }
 			}
 		}
 		ai_chance = {
@@ -6123,7 +6409,7 @@ country_event = { #what to do?
 				}
 			}
 		}
-		UKR = { country_event = poland.451 }
+		var:202.owner = { country_event = poland.451 }
 	}
 	
 	option = { # join Serbia
@@ -6852,7 +7138,7 @@ country_event = {
 		create_country_leader = {
 			name = "Zgromadzenie Lechickie"
 			picture = "gfx/leaders/POL/Portrait_POL_Zgromadzenie_Lechickie.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = scythianism_subtype
 		}
 	}
@@ -6871,7 +7157,7 @@ country_event = {
 			name = "Adam Doboszyński"
 			desc = "PPOLITICS_ADAM_DOBOSZYNSKI_DESC"
 			picture = "gfx/leaders/GAL/Portrait_GAL_Adam_Doboszynski.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = natpop_neo_feudalism_subtype
 		}
 	}
@@ -6893,7 +7179,7 @@ country_event = {
 		create_country_leader = {
 			name = "Wewnętrzny Krąg"
 			picture = "gfx/leaders/POL/Portrait_POL_Wewnetrzny_Krag.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = christian_socialism_subtype
 		}
 		add_popularity = {
@@ -6981,7 +7267,7 @@ country_event = {
 		create_country_leader = {
 			name = "Jezus of Lechia"
 			picture = "gfx/leaders/POL/Portrait_POL_Jezus_Lechia.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = scythianism_subtype
 			traits = { great_wanderer }
 		}
@@ -7001,7 +7287,7 @@ country_event = {
 		create_country_leader = {
 			name = "Christ the King"
 			picture = "gfx/leaders/POL/Portrait_POL_Christ_King.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = fundementalism_subtype
 			traits = { most_sacrosanct_king }
 		}
@@ -7019,9 +7305,9 @@ country_event = {
 		name = poland.310.a
 		set_cosmetic_tag = POL_FORTY_FOUR
 		create_country_leader = {
-			name = "Fourty Four"
-			picture = "gfx/leaders/POL/Portrait_POL_Fourty_Four.png"
-			expire = "1965.1.1"
+			name = "Forty Four"
+			picture = "gfx/leaders/POL/Portrait_POL_Forty_Four.png"
+			expire = "1.1.1"
 			ideology = christian_socialism_subtype
 			traits = { promised_savior }
 		}
@@ -7061,7 +7347,7 @@ country_event = {
 		create_country_leader = {
 			name = "Pankracy"
 			picture = "gfx/leaders/POL/Portrait_POL_Pankracy.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = anarcho_bolshevism_subtype 
 		}
 		add_popularity = {

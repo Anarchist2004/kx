@@ -204,42 +204,42 @@ create_country_leader = {
 	name = "Dai Chunfeng"
 	desc = "POLITICS_CHI_DAI_CHUNFENG_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Dai_Chunfeng.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = socialist_security_state_subtype
 }
 create_country_leader = {
 	name = "Chen Gongbo"
 	desc = "POLITICS_CHI_CHEN_GONGBO_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Gongbo.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = totalist_subtype
 }
 create_country_leader = {
 	name = "Chen Gongbo"
 	desc = "POLITICS_CHI_CHEN_GONGBO_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Gongbo.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = radical_socialist_subtype
 }
 create_country_leader = {
 	name = "Hu Zongnan"
 	desc = "POLITICS_CHI_HU_ZONGNAN_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Hu_Zongnan_KR.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = red_junta_subtype
 }
 create_country_leader = {
 	name = "Chen Duxiu"
 	desc = "POLITICS_CHI_CHEN_DUXIU_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Duxiu.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = syn_internationalism_subtype
 }
 create_country_leader = {
 	name = "Zeng Zhongming"
 	desc = "POLITICS_CHI_ZENG_ZHONGMING_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_zeng_zhongming.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = radsoc_tridemism_subtype
 	traits = { CHI_depressed_alcoholic }
 }
@@ -247,47 +247,47 @@ create_country_leader = {
 	name = "Wang Jingwei"
 	desc = "POLITICS_CHI_WANG_JINGWEI_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei_KX.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = radsoc_tridemism_subtype
 	traits = { CHI_exiled_chairman }
 }
 create_country_leader = {
 	name = "Song Ziwen"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Song_Ziwen.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = socdem_tridemism_subtype
 }
 create_country_leader = {
 	name = "Song Qingling"
 	desc = "POLITICS_CHI_SONG_QINGLING_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Song_Qingling.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = socdem_tridemism_subtype
 }
 create_country_leader = {
 	name = "Sun Fo"
 	desc = "POLITICS_CHI_SUN_FO_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Sun_Fo.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = soclib_tridemism_subtype
 }
 create_country_leader = {
 	name = "Chen Lifu"
 	desc = "POLITICS_CHI_CHEN_LIFU_DESC"
 	picture = "gfx/leaders/CHI/Portrait_KMT_Chen_Lifu.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = market_liberal_subtype
 }
 create_country_leader = {
 	name = "Assorted Leaders"
 	picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = market_liberal_subtype
 }
 create_country_leader = {
 	name = "The Four Elders"
 	picture = "gfx/leaders/SCT/Portrait_No_Central_Authority.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = social_conservative_subtype
 }
 
@@ -295,14 +295,14 @@ create_country_leader = {
 	name = "Hu Zongnan"
 	desc = "POLITICS_CHI_HU_ZONGNAN_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Hu_Zongnan_KR.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = junta_subtype
 }
 create_country_leader = {
 	name = "Hu Zongnan"
 	desc = "POLITICS_CHI_HU_ZONGNAN_DESC"
 	picture = "gfx/leaders/CHI/Portrait_CHI_Hu_Zongnan_KR.png"
-	expire = "1965.1.1"
+	expire = "1.1.1"
 	ideology = militarism_subtype
 }
 ### Field Marshals ###
@@ -410,7 +410,7 @@ create_corps_commander = {
 	name = "Guan Xiangying"
 	desc = "POLITICS_FNG_GUAN_XIANGYING_ARMY_DESC"
 	portrait_path = "gfx/leaders/FNG/Portrait_FNG_Guan_Xiangying.png"
-	traits = { war_hero trickster guerilla_fighter }
+	traits = { war_hero trickster guerilla_officer }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -449,7 +449,7 @@ create_corps_commander = {
 	name = "Su Yu"
 	desc = "POLITICS_CHI_SU_YU_ARMY_DESC"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Su_Yu.png"
-	traits = { irregulars_officer trickster guerilla_fighter CHI_left_kmt_officer }
+	traits = { irregulars_officer trickster guerilla_officer CHI_left_kmt_officer }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -607,6 +607,17 @@ create_corps_commander = {
 	id = 3002
 }
 create_corps_commander = {
+	name = "Bai Wenwai"
+	desc = "POLITICS_CHI_BAI_WENWAI_ARMY_DESC"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Bai_Wenwai.png"
+	traits = { CHI_left_kmt_officer old_guard career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
 	name = "Chen Lifu"
 	desc = "POLITICS_CHI_CHEN_LIFU_ARMY_DESC"
 	portrait_path = "gfx/leaders/CHI/Portrait_KMT_Chen_Lifu.png"
@@ -678,6 +689,20 @@ create_corps_commander = {
 	logistics_skill = 1
 	id = 5071
 }
+
+create_corps_commander = {
+	name = "Nosaka Sanzō "
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Nosaka_Sanzo_LKMT.png"
+	desc = JAP_nosaka_sanzo_commander_desc
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 3277
+}
+
 ### Admirals ###
 create_navy_leader = {
 	name = "Li Zhilong"
@@ -715,7 +740,6 @@ create_navy_leader = {
 	coordination_skill = 1
 	id = 2277
 }
-
 
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -905,6 +929,10 @@ random_unit_leader = {
 }
 random_unit_leader = {
 	limit = { has_id = 5059 }
+	set_nationality = XXA
+}
+random_unit_leader = {
+	limit = { has_id = 3277 }
 	set_nationality = XXA
 }
 random_unit_leader = {

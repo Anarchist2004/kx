@@ -121,7 +121,7 @@ political_actions = {
 		fire_only_once = yes
 		
 		ai_will_do = {
-			factor = 60
+			factor = 0
 		}
 	} 
 	NYC_Attack_PRI = {
@@ -149,7 +149,7 @@ political_actions = {
 		fire_only_once = yes
 		
 		ai_will_do = {
-			factor = 60
+			factor = 0
 		}
 	}
 	NYC_Attack_West_Indies = {
@@ -184,13 +184,13 @@ political_actions = {
 		fire_only_once = yes
 		
 		ai_will_do = {
-			factor = 60
+			factor = 0
 		}
 	}
 }
 NYC_Non_Commie_Internationale_decisions = {
 	NYC_invite_to_faction_BRM = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -211,7 +211,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_BRM"
@@ -224,7 +224,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_CHI = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -249,7 +249,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_CHI"
@@ -262,7 +262,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_MEX = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -286,7 +286,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_MEX"
@@ -299,7 +299,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_PER = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -323,7 +323,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_PER"
@@ -336,7 +336,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	} 
 	NYC_invite_to_faction_PRU = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -360,7 +360,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_PRU"
@@ -373,7 +373,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_SKM = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -394,7 +394,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_SKM"
@@ -407,7 +407,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_LBR = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -428,7 +428,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_LBR"
@@ -441,7 +441,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_KVU = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -466,7 +466,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KVU"
@@ -479,7 +479,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	} 
 	NYC_invite_to_faction_GAB = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -500,7 +500,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_GAB"
@@ -513,7 +513,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_URG = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -537,7 +537,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_URG"
@@ -550,7 +550,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}  
 	NYC_invite_to_faction_PAR = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -574,7 +574,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_PAR"
@@ -587,7 +587,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	} 
 	NYC_invite_to_faction_KLY = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -608,7 +608,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KLY"
@@ -621,7 +621,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_BRY = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -642,7 +642,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_BRY"
@@ -655,7 +655,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_YAK = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -676,7 +676,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_HAW"
@@ -689,7 +689,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	} 
 	NYC_invite_to_faction_HAW = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -710,7 +710,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_HAW"
@@ -723,7 +723,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_MON = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -744,7 +744,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_MON"
@@ -757,7 +757,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}  
 	NYC_invite_to_faction_BHC = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -781,7 +781,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_BHC"
@@ -794,7 +794,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	} 
 	NYC_invite_to_faction_CEN = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -818,7 +818,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_CEN"
@@ -831,7 +831,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_INC = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -855,7 +855,7 @@ NYC_Non_Commie_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_INC"
@@ -871,7 +871,7 @@ NYC_Non_Commie_Internationale_decisions = {
 }
 NYC_New_Negro_Internationale_decisions = {
 	NYC_invite_to_faction_LIB = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -893,7 +893,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_LIB"
@@ -906,7 +906,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_GHA = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -928,7 +928,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_GHA"
@@ -941,7 +941,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_KIV = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -963,7 +963,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KIV"
@@ -976,7 +976,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_KIK = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -999,7 +999,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KIK"
@@ -1012,7 +1012,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_LPD = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1042,7 +1042,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_LPD"
@@ -1055,7 +1055,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_HAI = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1081,7 +1081,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_HAI"
@@ -1094,7 +1094,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_KTG = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1117,7 +1117,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KTG"
@@ -1130,7 +1130,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_TOG = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1155,7 +1155,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_KTG"
@@ -1168,7 +1168,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_CAF = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1190,7 +1190,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_HAI"
@@ -1203,7 +1203,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_GBN = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1224,7 +1224,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_GAB"
@@ -1237,7 +1237,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_NGR = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1259,7 +1259,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_NGR"
@@ -1272,7 +1272,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_ETH = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1294,7 +1294,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_ETH"
@@ -1307,7 +1307,7 @@ NYC_New_Negro_Internationale_decisions = {
 		}
 	}
 	NYC_invite_to_faction_BBR = {
-		icon = ger_military_buildup
+		icon = GFX_decision_generic_nationalism
 		
 		available = {
 			is_faction_leader = yes
@@ -1328,7 +1328,7 @@ NYC_New_Negro_Internationale_decisions = {
 		days_re_enable = 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 30
+			factor = 0
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision NYC_invite_to_faction_BBR"
@@ -1364,6 +1364,7 @@ NYC_foreign_policy = {
 		}
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60
@@ -1413,6 +1414,7 @@ NYC_foreign_policy = {
 		}
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 
 		ai_will_do = {
 			factor = 60
@@ -1444,7 +1446,7 @@ NYC_foreign_policy = {
 		icon = generic_prepare_civil_war
 		allowed = { tag = NYC }
    		visible = {
-			GER = { exists = yes }
+			INT = { exists = yes }
 			is_in_faction = no
 			is_subject = no
 			OR = {
@@ -1458,6 +1460,7 @@ NYC_foreign_policy = {
 		remove_effect = { INT = { add_to_faction = NYC } }
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 
 		ai_will_do = {
 			factor = 60
@@ -1504,6 +1507,7 @@ NYC_foreign_policy = {
 		}
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 
 		ai_will_do = {
 			factor = 60
@@ -1535,7 +1539,6 @@ NYC_foreign_policy = {
 		icon = generic_prepare_civil_war
 		allowed = { tag = NYC }
    		visible = {
-			AUS = { exists = yes }
 			is_in_faction = no
 			is_subject = no
 			has_country_flag = NYC_join_italy_flag
@@ -1550,6 +1553,7 @@ NYC_foreign_policy = {
 		}
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60
@@ -1595,6 +1599,7 @@ NYC_foreign_policy = {
 		remove_effect = { LPD = { add_to_faction = NYC } }
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60
@@ -1639,6 +1644,7 @@ NYC_foreign_policy = {
 		remove_effect = { KIV = { add_to_faction = NYC } }
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60
@@ -1683,6 +1689,7 @@ NYC_foreign_policy = {
 		remove_effect = { HAI = { add_to_faction = NYC } }
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60
@@ -1727,6 +1734,7 @@ NYC_foreign_policy = {
 		remove_effect = { KIK = { add_to_faction = NYC } }
 		days_remove = 30
 		fire_only_once = yes
+		cancel_if_not_visible = yes
 		
 		ai_will_do = {
 			factor = 60

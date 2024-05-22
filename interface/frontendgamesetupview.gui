@@ -721,7 +721,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Crete"
+			text = "Patagonia"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -757,7 +757,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Malta"
+			text = "Ireland"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -769,7 +769,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Fengtian Government"
+			text = "Congo-Vrijstaat"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -781,7 +781,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Albania"
+			text = "Transamur"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre

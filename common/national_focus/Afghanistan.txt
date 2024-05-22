@@ -1,7 +1,7 @@
 ###########################
 # Afghanistan Tree
 # By Dr. Phil
-# adjusted and completed by about10baboons
+# adjusted and completed by about10baboons and todd howard
 # (buy my supplements and watch Someguy2000)
 ###########################
 
@@ -565,6 +565,9 @@ focus_tree = {
 		}
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -588,6 +591,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_amanullah }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -634,6 +640,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_western_ways }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -664,6 +673,9 @@ focus_tree = {
 		relative_position_id = AFG_amanullah
 		prerequisite = { focus = AFG_continuing_habibullah_reforms }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -689,6 +701,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_western_ways }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -720,6 +735,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_womens_rights }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -748,6 +766,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_amanullah }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -769,6 +790,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_new_bureaucracy }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -787,6 +811,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_bank }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -808,6 +835,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_new_bureaucracy }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -826,6 +856,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_national_assembly }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -847,6 +880,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_amanullah }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -865,6 +901,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_meritocratic_governance }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -883,6 +922,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = AFG_reformed_subahs }
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -900,6 +942,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		prerequisite = { focus = AFG_emancipation }
 		prerequisite = { focus = AFG_question_of_religion }
 		prerequisite = { focus = AFG_free_press }
@@ -925,6 +970,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		prerequisite = { focus = AFG_pluralist_imperialism }
 		prerequisite = { focus = AFG_question_of_religion }
 		prerequisite = { focus = AFG_free_press }
@@ -955,6 +1003,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+			is_subject = no
+		}
 		prerequisite = { focus = AFG_question_of_religion }
 		prerequisite = { focus = AFG_pluralist_imperialism }
 		prerequisite = { focus = AFG_tax_code }
@@ -971,6 +1022,10 @@ focus_tree = {
 			add_popularity = {
 				ideology = market_liberal
 				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = AFG_hijrat
+				add_idea = AFG_calm_hijratis_idea
 			}
 		}
 	}
@@ -992,6 +1047,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
+		is_subject = no
 		has_country_flag = AFG_traditionalist_emir
 		}
 		cancel_if_invalid = yes
@@ -1027,6 +1083,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
+		is_subject = no
 		has_country_flag = AFG_moderate_emir
 		}
 		cancel_if_invalid = yes
@@ -1062,6 +1119,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
+		is_subject = no
 		has_country_flag = AFG_radical_emir
 		}
 		cancel_if_invalid = yes
@@ -1089,6 +1147,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		is_subject = no
 		has_war = no
 		owns_state = 267
 		owns_state = 440
@@ -1117,6 +1176,9 @@ focus_tree = {
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = {
 			focus = AFG_AMN_draft_constitution
 		}
@@ -1136,6 +1198,9 @@ focus_tree = {
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = {
 			focus = AFG_AMN_draft_constitution
 		}
@@ -1155,6 +1220,9 @@ focus_tree = {
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_2nd_islamic_golden_age 
 		}
@@ -1219,6 +1287,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_facilitate_trade
 		}
@@ -1239,6 +1310,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_facilitate_trade
 		}
@@ -1262,6 +1336,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_gradual_1
 		}
@@ -1282,6 +1359,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_aristocracy
 		}
@@ -1330,6 +1410,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_moderate_1
 		}
@@ -1366,6 +1449,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_moderate_1
 		}
@@ -1389,6 +1475,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_nationalism_and_modernity
 		}
@@ -1412,6 +1501,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_abandon_autocratic_ambitions
 		}
@@ -1456,6 +1548,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_cult_of_personality
 		}
@@ -1476,6 +1571,9 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_ultra_1
 		}
@@ -1499,6 +1597,9 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_cult_of_personality
 		}
@@ -1507,7 +1608,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = -0.10
-		random_core_state = { 
+		267 = { 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1515,7 +1616,7 @@ focus_tree = {
 					instant_build = yes
 			}
 		}
-		random_core_state = { 
+		415 = { 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1536,6 +1637,9 @@ focus_tree = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_economic_collectivization
 		}
@@ -1563,6 +1667,9 @@ focus_tree = {
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_AMN_prepare_elections
 			focus = AFG_AMN_prepare_future
@@ -1598,7 +1705,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-			date > 1938.01.01
+			date > 1937.01.01
 			is_subject = no
 			NOT = {
 			has_country_leader = { ruling_only = yes name = "Leo Amery" }
@@ -1623,6 +1730,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		date > 1938.01.01
 		is_subject = no
 		}
 		prerequisite = { focus = AFG_world_stage }
@@ -1662,8 +1770,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = unlocks_decision
-		custom_effect_tooltip = AFG_support_tibet
+			custom_effect_tooltip = unlocks_decision
+			custom_effect_tooltip = AFG_support_tibet
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tibet_plateau"
 		}
 	}
@@ -1691,10 +1799,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = unlocks_decision
-		custom_effect_tooltip = AFG_support_east_turkestan
-		custom_effect_tooltip = unlocks_decision
-		custom_effect_tooltip = AFG_support_kumul
+			custom_effect_tooltip = unlocks_decision
+			custom_effect_tooltip = AFG_support_east_turkestan
+			custom_effect_tooltip = unlocks_decision
+			custom_effect_tooltip = AFG_support_kumul
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tarim_basin"
 		}
 	}
@@ -1716,9 +1824,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_political_power = 100
-		add_command_power = 50
-		add_war_support = 0.05
+			add_political_power = 100
+			add_command_power = 50
+			add_war_support = 0.05
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tibet_plateau"
 		}
 	}
@@ -1744,8 +1852,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = unlocks_decision
-		custom_effect_tooltip = AFG_support_ma_clique
+			custom_effect_tooltip = unlocks_decision
+			custom_effect_tooltip = AFG_support_ma_clique
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tarim_basin"
 		}
 	}
@@ -1774,10 +1882,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		MON = {
-		country_event = afghanredux.90
-		}
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_tarim_basin"
+			MON = {
+				country_event = afghanredux.90
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_audience_in_urga"
 		}
 	}
 	
@@ -1799,7 +1907,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		custom_effect_tooltip = AFG_kowtow_to_china_tt
+			custom_effect_tooltip = AFG_kowtow_to_china_tt
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tarim_basin"
 		}
 	}
@@ -1816,6 +1924,9 @@ focus_tree = {
 		AFG = {
 		is_faction_leader = no
 		is_subject = no
+		NOT = {
+		has_completed_focus = AFG_bacha_khan
+				}
 			}
 		JAP = {
 		is_faction_leader = yes
@@ -1828,9 +1939,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		JAP = {
-		country_event = afghanredux.90
-		}
+			JAP = {
+				country_event = afghanredux.90
+			}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tarim_basin"
 		}
 	}
@@ -1848,6 +1959,20 @@ focus_tree = {
 		is_subject = no
 		}
 		prerequisite = { focus = AFG_world_stage }
+		bypass = {
+		NOT = {
+			country_exists = TRK
+			}
+		NOT = {
+			country_exists = KYR
+			}
+		NOT = {
+			country_exists = UZB
+			}	
+		NOT = {
+			country_exists = ALO
+			}	
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1952,6 +2077,10 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = AFG_forpol option = AFG_FORPOL_RUS }
+			}
 		}
 		completion_reward = {
 		if = {
@@ -2067,10 +2196,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = TRK
-			}
+			activate_targeted_decision = { target = TRK decision = AFG_attack_country }	
 			log = "[GetDateText]: [Root.GetName]: Focus id = AFG_bukhara_war"
 		}
 	}
@@ -2102,14 +2228,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = KYR
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = UZB
-			}
+			activate_targeted_decision = { target = KYR decision = AFG_attack_country }
+			activate_targeted_decision = { target = UZB decision = AFG_attack_country }
+	
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_northern_war"
 		}
 	}
@@ -2125,6 +2246,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 		is_subject = no
+		}
+		bypass = {
+		RUS = {
+		exists = no
+			}
 		}
 		prerequisite = { focus = AFG_northern_war }
 		ai_will_do = {
@@ -2148,6 +2274,11 @@ focus_tree = {
 		is_subject = no
 		has_country_flag = AFG_aral_success
 		}
+		bypass = {
+		RUS = {
+		exists = no
+			}
+		}
 		prerequisite = { focus = AFG_russia_agreement }
 		ai_will_do = {
 			factor = 1
@@ -2170,7 +2301,11 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		date > 1938.01.01
 		is_subject = no
+		NOT = {
+		has_completed_focus = AFG_bacha_khan
+			}
 		}
 		prerequisite = { focus = AFG_world_stage }
 		ai_will_do = {
@@ -2229,20 +2364,26 @@ focus_tree = {
 		has_completed_focus = AFG_ottoman_exile
 			}
 		}
+		bypass = {
+			has_country_flag = AFG_axis_war
+			TUR = { NOT = { has_war_with = EGY } }
+		}
 		ai_will_do = {
 			factor = 1
 		}
+		will_lead_to_war_with = PER
+		will_lead_to_war_with = EGY
 		completion_reward = {
-		add_war_support = 0.10
-		add_manpower = 3000
-		declare_war_on = {
-			target = PER
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = EGY
-			type = annex_everything
-		}
+			add_war_support = 0.10
+			add_manpower = 3000
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_axis_war_intervention"
 		}
 	}
@@ -2295,18 +2436,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = PER
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = EGY
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = TUR
-			}
+			activate_targeted_decision = { target = PER decision = AFG_attack_country }
+			activate_targeted_decision = { target = EGY decision = AFG_attack_country }
+			activate_targeted_decision = { target = TUR decision = AFG_attack_country }
+	
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_continuation_war"
 		}
 	}
@@ -2330,12 +2463,22 @@ focus_tree = {
 		is_subject_of = TUR
 			}
 		TUR = {
-		has_completed_focus = OTT_Ottoman_Renaissance
+		OR = {
+		owns_state = 446
+		EGY = {
+		is_subject_of = TUR
+					}
+				}
 			}
 		}
 		bypass = {
+		OR = {
+		TUR = {
+		exists = no
+		}
 		PER = {
 		is_subject_of = AFG
+				}
 			}
 		}
 		mutually_exclusive = { focus = AFG_kabul_accords }
@@ -2362,6 +2505,16 @@ focus_tree = {
 		is_subject = no
 		NOT = {
 		has_completed_focus = AFG_ottoman_exile
+			}
+		}
+		bypass = {
+		OR = {
+		TUR = {
+		exists = no
+		}
+		PER = {
+		is_subject_of = AFG
+				}
 			}
 		}
 		ai_will_do = {
@@ -2402,7 +2555,12 @@ focus_tree = {
 			}
 		OR = {
 		TUR = {
-		has_completed_focus = OTT_Ottoman_Renaissance
+		OR = {
+		owns_state = 446
+		EGY = {
+		is_subject_of = TUR
+					}
+				}
 			}
 		773 = {
 		is_owned_and_controlled_by_ROOT_or_subject = yes
@@ -2941,6 +3099,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		hidden_effect = {
+		country_event = {
+			id = afghanredux.131
+			days = 7
+			}
+		}
 		add_equipment_to_stockpile = {
 						type = infantry_equipment
 						amount = 2500
@@ -3071,6 +3235,9 @@ focus_tree = {
 		OR = {
 		has_country_leader = { ruling_only = yes name = "Habibullah Kalakani" }
 		has_country_leader = { ruling_only = yes name = "Nasrullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
 			}
 		}
 		prerequisite = { focus = AFG_rebuild_royal_army }
@@ -3089,7 +3256,7 @@ focus_tree = {
 			name = AFG_tribal_officers
 			cost_reduction = 0.25
 			uses = 3
-			category = cat_mass_assault
+			category = land_doctrine
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_military_westernization"
 		}
@@ -4142,19 +4309,12 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-		ENT = {
-		remove_from_faction = AFG
-		}
-		every_state = {
-            		limit = {
-                    		is_core_of = DEH
-            		}
-            		add_claim_by = AFG
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = DEH
-		}
+			ENT = { remove_from_faction = AFG }
+			every_state = {
+				limit = { is_core_of = DEH }
+				add_claim_by = AFG
+			}
+			activate_targeted_decision = { target = DEH decision = AFG_attack_country }
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_battle_of_delhi"
 		}
 	}
@@ -4762,6 +4922,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = { rule = AFG_path option = AFG_PATH_NADIR_KHAN }
+					has_game_rule = { rule = AFG_path option = AFG_PATH_DAOUD_KHAN }
+					has_game_rule = { rule = AFG_path option = AFG_PATH_ZAHIR_SHAH }
+					has_game_rule = { rule = AFG_elections option = AFG_PATH_DEMOCRACY_SOCDEM }
+					has_game_rule = { rule = AFG_elections option = AFG_PATH_DEMOCRACY_SOCLIB }
+					has_game_rule = { rule = AFG_elections option = AFG_PATH_DEMOCRACY_MARLIB }
+					has_game_rule = { rule = AFG_elections option = AFG_PATH_DEMOCRACY_SOCCON }
+				}
+			}
 		}
 		available = {
 			is_subject = no
@@ -4891,17 +5063,7 @@ focus_tree = {
 			focus = AFG_the_tajik_emir
 		}
 		completion_reward = {
-		add_political_power = -50
-		add_popularity = {
-				ideology = national_populist
-				popularity = -0.05
-		}
-		add_stability = 0.1
-		remove_ideas = AFG_jalalabad_emir_idea
-		hidden_effect = {
-		remove_ideas_with_trait = economy_minister
-		add_ideas = AFG_Sher_Khan_Nasher_eco_pau
-		}
+		country_event = afghanredux.135
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
 		}
 	}
@@ -5030,6 +5192,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = { rule = AFG_path option = AFG_PATH_RADSOC }
+					has_game_rule = { rule = AFG_path option = AFG_PATH_RADSOC }
+					has_game_rule = { rule = AFG_path option = AFG_PATH_SYNDICALIST }
+					has_game_rule = { rule = AFG_path option = AFG_PATH_TOTALIST }
+				}
+			}
 		}
 		available = {
 			is_subject = no
@@ -5194,7 +5365,7 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_punish_india
-		icon = GFX_goal_generic_india_fortify_against_raj
+		icon = GFX_goal_AFG_Ninth_Delhi_Campaign
 
 		cost = 5
 		available_if_capitulated = yes
@@ -5213,18 +5384,22 @@ focus_tree = {
 			focus = AFG_durrani_heirs
 		}
 		completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = DEH
-		}
-		add_state_claim = 441
-		add_state_claim = 891
-		add_state_claim = 443
-		add_state_claim = 890
-		add_state_claim = 440
-		add_state_claim = 439
-		add_state_claim = 815
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
+			activate_targeted_decision = { target = DEH decision = AFG_attack_country }
+			add_state_claim = 442
+			add_state_claim = 445
+			add_state_claim = 1219
+			add_state_claim = 441
+			add_state_claim = 891
+			add_state_claim = 443
+			add_state_claim = 890
+			add_state_claim = 440
+			add_state_claim = 439
+			add_state_claim = 815
+			hidden_effect = {
+				activate_targeted_decision = { target = THIS decision = AFG_kalakani_punish_delhi }
+				activate_targeted_decision = { target = THIS decision = AFG_kalakani_delhi_puppet }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_punish_india"
 		}
 	}
 	
@@ -5252,17 +5427,15 @@ focus_tree = {
 			focus = AFG_punish_india
 		}
 		completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = PER
-		}
-		every_state = {
-			limit = {
-			is_core_of = PER
+			activate_targeted_decision = { target = THIS decision = AFG_kalakani_unite_iran }
+			activate_targeted_decision = { target = PER decision = AFG_attack_country }
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}	
+				add_claim_by = AFG
 			}
-			add_claim_by = AFG
-			}
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_restart_raids"
 		}
 	}
 	
@@ -5290,8 +5463,8 @@ focus_tree = {
 			focus = AFG_turkestani_plight
 		}
 		completion_reward = {
-		country_event = afghanredux.66
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
+			country_event = afghanredux.66
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_question_caliph"
 		}
 	}
 	
@@ -5351,29 +5524,30 @@ focus_tree = {
 			focus = AFG_durrani_heirs
 		}
 		completion_reward = {
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = TRK
-					is_core_of = UZB
-					is_core_of = KYR
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = TRK
+						is_core_of = UZB
+						is_core_of = KYR
+					}
 				}
+				add_claim_by = AFG
 			}
-			add_claim_by = AFG
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = TRK
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = KYR
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = UZB
-		}
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
+			activate_targeted_decision = { target = THIS decision = AFG_kalakani_unite_central_asia }			
+			if = {
+				limit = { country_exists = TRK }
+				activate_targeted_decision = { target = TRK decision = AFG_attack_country }
+			}			
+			if = {
+				limit = { country_exists = KYR }
+				activate_targeted_decision = { target = KYR decision = AFG_attack_country }
+			}			
+			if = {
+				limit = { country_exists = UZB }
+				activate_targeted_decision = { target = UZB decision = AFG_attack_country }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_unite_central_asia"
 		}
 	}
 	
@@ -5398,35 +5572,58 @@ focus_tree = {
 			focus = AFG_durrani_heirs
 		}
 		completion_reward = {
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = ETS
-					is_core_of = TAN
-					is_core_of = SIK
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ETS
+						is_core_of = TAN
+						is_core_of = SIK
+					}
 				}
+				add_claim_by = AFG
 			}
-			add_claim_by = AFG
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = ETS
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = TAN
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = SIK
-		}
-			log = "[GetDateText]: [Root.GetName]: Focus AFG_support_clergy"
+			activate_targeted_decision = { target = THIS decision = AFG_kalakani_unite_turkestan }
+			if = {
+				limit = { country_exists = ETS }
+				activate_targeted_decision = { target = ETS decision = AFG_attack_country }
+			}			
+			if = {
+				limit = { country_exists = TAN }
+				activate_targeted_decision = { target = TAN decision = AFG_attack_country }
+			}			
+			if = {
+				limit = { country_exists = SIK }
+				activate_targeted_decision = { target = SIK decision = AFG_attack_country }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_turkestani_plight"
 		}
 	}
 	
 	#Nadir/Zahir/Daoud Tree
 	focus = {
 		id = AFG_nadir
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Wild_Card_Plays_His_Hand
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Jalalabad_Emir_Saves_Afghanistan
+		}
 		icon = GFX_goal_AFG_Wild_Card_Plays_His_Hand
 		x = 50
 		y = 0
@@ -5442,8 +5639,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 			has_completed_focus = AFG_game_of_thrones
 		}
 		completion_reward = {
@@ -5463,8 +5668,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -1
@@ -5495,8 +5708,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 1
@@ -5506,10 +5727,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_war_support = 0.075
-		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.05
-			}
+		increase_ruling_party_popularity_by_5 = yes
 		swap_ideas = {
 				remove_idea = AFG_tribal_disunity
 				add_idea = AFG_reward_loyal_tribes_idea
@@ -5520,6 +5738,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_purge_amanites
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Crumble_Amanite_Column
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Calm_Amanite_Column
+		}
 		icon = GFX_goal_AFG_Crumble_Amanite_Column
 
 		cost = 5
@@ -5529,8 +5769,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -5542,6 +5790,16 @@ focus_tree = {
 			focus = AFG_reward_loyal_tribes
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = -0.1
@@ -5550,6 +5808,31 @@ focus_tree = {
 		swap_ideas = {
 			remove_idea = AFG_growing_tensions
 			add_idea = AFG_purge_amanites_idea
+			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+			}
+		add_manpower = 500
+		swap_ideas = {
+			remove_idea = AFG_growing_tensions
+			add_idea = AFG_purge_amanites_idea
+			}
+		hidden_effect = {
+		country_event = {
+				id = afghanredux.134
+				days = 4
+				}
+			}
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
@@ -5566,8 +5849,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -2
@@ -5577,10 +5868,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.05
-		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.05
-		}
+		increase_ruling_party_popularity_by_5 = yes
 		add_popularity = {
 				ideology = national_populist
 				popularity = -0.15
@@ -5606,8 +5894,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 2
@@ -5617,10 +5913,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_political_power = 50
-		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.05
-		}
+		increase_ruling_party_popularity_by_5 = yes
 		add_stability = 0.065
 		add_war_support = -0.065
 		swap_ideas = {
@@ -5642,8 +5935,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -1
@@ -5671,8 +5972,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 1
@@ -5691,6 +6000,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_musahiban_primacy
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Rightful_Place_Musahiban
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Conservative_Concessions_Coalition
+		}
 		icon = GFX_goal_AFG_Rightful_Place_Musahiban
 
 		cost = 5
@@ -5700,8 +6031,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Khan" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -5716,6 +6055,16 @@ focus_tree = {
 			focus = AFG_purge_amanites
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = 60
 		add_command_power = 30
 		increase_ruling_party_popularity_by_5 = yes
@@ -5734,6 +6083,21 @@ focus_tree = {
 			limit = { has_id = 545455 }
 			set_leader_name = "Mohammad Zahir Shah"
 			}
+			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 60
+		add_command_power = 30
+		increase_ruling_party_popularity_by_5 = yes
+		add_manpower = 2500
+		remove_ideas = AFG_purge_amanites_idea
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
@@ -5741,6 +6105,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_convene_jirga
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_monarchy_2
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Implementing_Loy_Khans_Reforms
+		}
 		icon = GFX_goal_AFG_monarchy_2
 
 		cost = 5
@@ -5750,8 +6136,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -5760,14 +6154,78 @@ focus_tree = {
 			focus = AFG_musahiban_primacy
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		remove_ideas = AFG_purge_amanites_idea
 		country_event = afghanredux.49
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 100
+		add_stability = 0.1
+		1218 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		1217 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		1218 = {
+				increase_state_category_by_one_level = yes
+		}
+		1217 = {
+				increase_state_category_by_one_level = yes
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_faux_constitutionalism
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_NFA_improve_constitution
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_COR_tribal_law
+		}
 		icon = GFX_goal_NFA_improve_constitution
 
 		cost = 5
@@ -5777,8 +6235,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -5787,6 +6253,16 @@ focus_tree = {
 			focus = AFG_convene_jirga
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_popularity = {
 				ideology = paternal_autocrat
 				popularity = 0.05
@@ -5806,6 +6282,24 @@ focus_tree = {
 				remove_idea = AFG_reward_loyal_tribes_idea
 				add_idea = AFG_faux_constitutionalism_idea
 			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+		}
+		swap_ideas = {
+				remove_idea = AFG_reward_loyal_tribes_idea
+				add_idea = AFG_faux_constitutionalism_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
@@ -5821,8 +6315,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 2
@@ -5850,8 +6352,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 1
@@ -5865,10 +6375,7 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = 100
 		add_stability = 0.125
-		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.075
-		}
+		increase_ruling_party_popularity_by_10 = yes
 		add_popularity = {
 				ideology = social_liberal
 				popularity = -0.03
@@ -5896,8 +6403,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -1
@@ -5939,8 +6454,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -2
@@ -5969,8 +6492,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -3
@@ -6009,8 +6540,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 3
@@ -6038,8 +6577,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 1
@@ -6090,8 +6637,16 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -1
@@ -6110,17 +6665,47 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_future_of_youth
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_FRA_vitality_of_youth
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_islamic_government
+		}
 		icon = GFX_goal_FRA_vitality_of_youth
 
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+			OR = {
 			has_government = paternal_autocrat
+			has_government = authoritarian_democrat
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -6132,13 +6717,56 @@ focus_tree = {
 			focus = AFG_open_to_west
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		country_event = afghanredux.48
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		country_event = afghanredux.132
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_iron_emir
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Iron_Emir_Tightens_Grip
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Jalalabad_Emir_Rises_Once_More
+		}
 		icon = GFX_goal_AFG_Iron_Emir_Tightens_Grip
 
 		cost = 5
@@ -6163,6 +6791,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_renewed_persecution
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_crackdownonthem
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_RUS_Decentralize_Power
+		}
 		icon = GFX_crackdownonthem
 
 		cost = 5
@@ -6172,8 +6822,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -5
@@ -6182,18 +6836,63 @@ focus_tree = {
 			focus = AFG_iron_emir
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_command_power = 50
 		increase_ruling_party_popularity_by_5 = yes
 		add_war_support = 0.075
 		add_manpower = -2000
 		add_stability = -0.1
-		remove_ideas = AFG_reward_loyal_tribes_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 50
+		increase_ruling_party_popularity_by_10 = yes
+		add_manpower = 2000
+		add_stability = 0.1
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_stay_the_course
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_RUS_Reform_The_Judicial_System
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_SOM_Unfettered_Monarchism
+		}
 		icon = GFX_RUS_Reform_The_Judicial_System
 
 		cost = 5
@@ -6203,8 +6902,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -7
@@ -6213,16 +6916,63 @@ focus_tree = {
 			focus = AFG_renewed_persecution
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		swap_ideas = {
 				remove_idea = AFG_modernization_not_reform_idea
 				add_idea = AFG_stay_the_course_idea
 			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		increase_ruling_party_popularity_by_10 = yes
+		swap_ideas = {
+				remove_idea = AFG_hanafi_school_idea
+				add_idea = AFG_stay_the_course_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_soldier_king
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_steel_king
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Honoring_Jalalabad_Emir
+		}
 		icon = GFX_goal_AFG_steel_king
 
 		cost = 5
@@ -6232,8 +6982,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -5
@@ -6242,15 +6996,60 @@ focus_tree = {
 			focus = AFG_renewed_persecution
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_manpower = 2500
 		add_war_support = 0.1
 		add_ideas = AFG_soldier_king_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_manpower = 2500
+		add_war_support = 0.1
+		add_ideas = AFG_soldier_king_ahmad_idea
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_full_loyalty
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_TEX_Friends_High_Places_America
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Second_Islamic_Golden_Age
+		}
 		icon = GFX_goal_TEX_Friends_High_Places_America
 
 		cost = 5
@@ -6260,8 +7059,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -3
@@ -6270,15 +7073,60 @@ focus_tree = {
 			focus = AFG_renewed_persecution
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = 125
 		add_stability = 0.10
 		add_ideas = AFG_full_loyalty_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 125
+		add_stability = 0.10
+		add_ideas = AFG_full_loyalty_ahmad_idea
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_entente_relations
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_ZAM_anglo_collaboration
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_AFG_calm_tribes
+		}
 		icon = GFX_goal_ZAM_anglo_collaboration
 
 		cost = 5
@@ -6288,8 +7136,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -4
@@ -6301,6 +7153,16 @@ focus_tree = {
 			focus = AFG_soldier_king
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = -60
 		add_command_power = 30
 		add_offsite_building = { type = industrial_complex level = 1 }
@@ -6317,13 +7179,55 @@ focus_tree = {
 		}
 		DEH = { add_opinion_modifier = { target = AFG modifier = large_increase } }
 		ENT = { add_opinion_modifier = { target = AFG modifier = medium_increase } }
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		swap_ideas = {
+				remove_idea = AFG_modernization_not_reform_idea
+				add_idea = AFG_stay_the_course_idea
+			}
+		hidden_effect = {
+		country_event = {
+				id = afghanredux.152
+				days = 14
+				}
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_anglo_afghan_mission
-		icon = GFX_goal_AFG_british_protectorate
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Anglo_Afghan_Military_Mission
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Royal_Army
+		}
+		icon = GFX_goal_AFG_Anglo_Afghan_Military_Mission
 
 		cost = 5
 		available_if_capitulated = yes
@@ -6332,8 +7236,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -6
@@ -6345,16 +7253,66 @@ focus_tree = {
 			focus = AFG_soldier_king
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		army_experience = 50
 		add_ideas = AFG_anglo_afghan_mission_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		army_experience = 50
+		add_ideas = AFG_anglo_afghan_mission_ahmad_idea
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_durand_negotiations
+		icon = {
+			trigger = {
+			NOT = {
+			has_completed_focus = AFG_wrath_of_khan
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_focus_rus_afghanistan
+		}
+		icon = {
+			trigger = {
+			has_completed_focus = AFG_wrath_of_khan
+			}
+			value = GFX_focus_rus_india
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Confederation_Realized
+		}
 		icon = GFX_focus_rus_afghanistan
-
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -6362,8 +7320,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
-			has_government = paternal_autocrat
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Nadir Shah" }
+				has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -5
@@ -6375,27 +7337,102 @@ focus_tree = {
 			focus = AFG_entente_relations
 		}
 		completion_reward = {
-		if = {
-		limit = {
-		NOT = {
-		has_completed_focus = AFG_wrath_of_khan
+			if = {
+				limit = {
+					NOT = { has_completed_focus = AFG_wrath_of_khan }
+					NOT = {
+						has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+						has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+						has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+					}
+				}
+				if = {
+				limit = {
+				country_exists = DEH
+				}
+				country_event = afghanredux.54
+				}
+				if = {
+				limit = {
+				NOT = {
+				country_exists = DEH
+					}
+				}
+				ENT = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+				set_country_flag = AFG_nadir_khan_cucked
+				custom_effect_tooltip = unlocks_decision
+				custom_effect_tooltip = AFG_join_entente
+				add_state_core = 442 #Peshawar
+				add_state_core = 445 #Quetta
+				add_state_core = 1219 #Dalbandin
+				add_state_claim = 444 #Baluchistan
+				}
 			}
-		}
-		country_event = afghanredux.54
-		}
-		if = {
-		limit = {
-		has_completed_focus = AFG_wrath_of_khan
-		}
-		set_country_flag = AFG_nadir_victory
-		custom_effect_tooltip = AFG_conquer_india_tt
-		}
+			if = {
+				limit = {
+					NOT = { has_completed_focus = AFG_wrath_of_khan }
+					OR = {
+						has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+						has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+						has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+					}
+				}
+				add_political_power = 100
+				swap_ideas = {
+					remove_idea = AFG_full_loyalty_ahmad_idea
+					add_idea = AFG_durand_negotiations_ahmad_idea
+				}
+				set_cosmetic_tag = AFG_CONFEDERATION
+			}
+			if = {
+				limit = { has_completed_focus = AFG_wrath_of_khan }
+				if = {
+				limit = {
+				country_exists = DEH
+				}
+				country_event = afghanredux.153
+				}
+				if = {
+				limit = {
+				NOT = {
+				country_exists = DEH
+					}
+				}
+				set_country_flag = AFG_nadir_victory
+				set_country_flag = AFG_nadir_khan_cucked
+				custom_effect_tooltip = AFG_conquer_india_tt
+				custom_effect_tooltip = unlocks_decision
+				custom_effect_tooltip = AFG_join_entente
+				}
+			}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_zahir_shah
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Young_Emir_Rises
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Reluctant_Emir_Maintains_Balance
+		}
 		icon = GFX_goal_AFG_Young_Emir_Rises
 
 		cost = 5
@@ -6420,6 +7457,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_true_constitutionalism
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_MEX_new_constitution
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_CZE_faction_generic
+		}
 		icon = GFX_goal_MEX_new_constitution
 
 		cost = 5
@@ -6429,7 +7488,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -6442,15 +7506,36 @@ focus_tree = {
 		add_stability = 0.05
 		add_popularity = {
 				ideology = authoritarian_democrat
-				popularity = 0.075
+				popularity = 0.10
 		}
-		remove_ideas = AFG_reward_loyal_tribes_idea
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_road_to_progress
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Nonpartisan_Path_Progress
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_revolutionary_king
+		}
 		icon = GFX_goal_AFG_Nonpartisan_Path_Progress
 
 		cost = 5
@@ -6460,7 +7545,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -1
@@ -6469,16 +7559,62 @@ focus_tree = {
 			focus = AFG_true_constitutionalism
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		swap_ideas = {
 				remove_idea = AFG_modernization_not_reform_idea
 				add_idea = AFG_road_to_progress_idea
 			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		swap_ideas = {
+				remove_idea = AFG_modernization_not_reform_idea
+				add_idea = AFG_road_to_progress_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_reel_in_army
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_NFA_cdg_army_purge
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_traditionalist_king
+		}
 		icon = GFX_goal_NFA_cdg_army_purge
 
 		cost = 5
@@ -6488,7 +7624,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 1
@@ -6497,17 +7638,66 @@ focus_tree = {
 			focus = AFG_true_constitutionalism
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_command_power = 50
 		add_stability = 0.10
 		army_experience = -50
 		add_war_support = -0.1
 		add_ideas = AFG_reel_in_army_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 100
+		add_stability = 0.05
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.10
+		}
+		add_pataut_to_coalition = yes
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_liberization
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_UKR_Torch_Of_Democracy
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Unifying_Figurehead
+		}
 		icon = GFX_UKR_Torch_Of_Democracy
 
 		cost = 5
@@ -6517,7 +7707,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -6529,6 +7724,16 @@ focus_tree = {
 			focus = AFG_reel_in_army
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = 50
 		add_stability = -0.1
 		add_ideas = AFG_liberization_idea
@@ -6536,12 +7741,51 @@ focus_tree = {
 				id = afghanredux.108
 				days = 14
 		}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_ideas = AFG_liberization_ahmad_idea
+		hidden_effect = {
+		country_event = {
+				id = afghanredux.152
+				days = 14
+				}
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_join_international_community
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_BRY_International
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_TEX_keynesian_economics
+		}
 		icon = GFX_BRY_International
 
 		cost = 5
@@ -6551,7 +7795,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 2
@@ -6560,13 +7809,69 @@ focus_tree = {
 			focus = AFG_reel_in_army
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
+		if = {
+		limit = {
+		NOT = {
+		has_completed_focus = AFG_wrath_of_khan
+			}
+		}
+		hidden_effect = {
+		country_event = {
+				id = afghanredux.152
+				days = 14
+				}
+			}
+		}
 		add_ideas = AFG_join_international_community_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_ideas = AFG_join_international_community_ahmad_idea
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_fathers_shadow
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Sins_Father
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_merry_king
+		}
 		icon = GFX_goal_AFG_Sins_Father
 
 		cost = 5
@@ -6576,7 +7881,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = -2
@@ -6585,6 +7895,16 @@ focus_tree = {
 			focus = AFG_road_to_progress
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = 75
 		add_stability = 0.075
 		add_war_support = 0.075
@@ -6596,12 +7916,48 @@ focus_tree = {
 				ideology = paternal_autocrat
 				popularity = -0.25
 		}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 75
+		add_stability = 0.075
+		add_war_support = 0.075
+		increase_ruling_party_popularity_by_25 = yes
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_first_elections
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_generic_elections
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Tradition_Preserved_Under_Jirga
+		}
 		icon = GFX_goal_generic_elections
 
 		cost = 5
@@ -6611,7 +7967,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+			hidden_trigger = {
+				OR = { 
+				has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+				has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+				}
+			}
 		}
 		relative_position_id = AFG_nadir
 		x = 0
@@ -6637,6 +7998,13 @@ focus_tree = {
 		NOT = {
 		has_country_flag = AFG_zahir_nonpartisan
 			}
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
 		}
 		country_event = afghanredux.53
 		}
@@ -6647,12 +8015,50 @@ focus_tree = {
 		set_country_flag = AFG_zahir_victory
 		custom_effect_tooltip = AFG_conquer_india_tt
 		}
+		if = {
+		limit = {
+		NOT = {
+		has_country_leader = { ruling_only = yes name = "Mohammad Zahir Shah" }
+		}
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		swap_ideas = {
+				remove_idea = AFG_liberization_ahmad_idea
+				add_idea = AFG_first_elections_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_daoud_khan
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Daoud_Khan_Seizes_Mantle
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Grand_Khan_Emerges_Shadows
+		}
 		icon = GFX_goal_AFG_Daoud_Khan_Seizes_Mantle
 
 		cost = 5
@@ -6677,8 +8083,29 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_fate_of_the_emirate
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_BAN_royalist_question
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_MEX_Only_Removed_by_the_Monarch
+		}
 		icon = GFX_goal_BAN_royalist_question
-
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -6686,9 +8113,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6698,13 +8128,60 @@ focus_tree = {
 			focus = AFG_daoud_khan
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		country_event = afghanredux.51
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_command_power = 50
+		increase_ruling_party_popularity_by_10 = yes
+		add_war_support = 0.1
+		add_manpower = -3000
+		add_stability = -0.1
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_autocratic_progressivism
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_FRA_revolutionary_party
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Daoud_Khan_Seizes_Mantle
+		}
 		icon = GFX_goal_FRA_revolutionary_party
 
 		cost = 5
@@ -6714,9 +8191,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6726,6 +8206,16 @@ focus_tree = {
 			focus = AFG_fate_of_the_emirate
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_popularity = {
 				ideology = national_populist
 				popularity = 0.10
@@ -6734,12 +8224,70 @@ focus_tree = {
 				remove_idea = AFG_modernization_not_reform_idea
 				add_idea = AFG_autocratic_progressivism_idea
 		}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 75
+		add_command_power = 50
+		add_popularity = {
+				ideology = national_populist
+				popularity = 0.10
+		}
+		hidden_effect = {
+		set_party_name = { 
+			ideology = national_populist
+			long_name = "Hezb Enqilab Mile (National Revolutionary Party)" 
+			name = "HEM"
+		}
+		create_country_leader = {
+				name = "Mohammad Daoud Khan"
+				desc = ""
+				picture = "gfx/leaders/AFG/Portrait_AFG_Mohammed_Daoud_Khan.png"
+				expire = "1.1.1"
+				ideology = militarism_subtype
+				traits = {}
+			}
+		}
+		add_natpop_to_coalition = yes
+		swap_ideas = {
+				remove_idea = AFG_modernization_not_reform_idea
+				add_idea = AFG_autocratic_progressivism_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 		focus = {
 		id = AFG_sideline_clergy
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_NGR_at_islam
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_CEA_islamic_clergy
+		}
 		icon = GFX_goal_NGR_at_islam
 
 		cost = 5
@@ -6749,9 +8297,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6761,16 +8312,62 @@ focus_tree = {
 			focus = AFG_fate_of_the_emirate
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		swap_ideas = {
 				remove_idea = AFG_hanafi_school_idea
 				add_idea = AFG_sideline_clergy_idea
 			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		swap_ideas = {
+				remove_idea = AFG_hanafi_school_idea
+				add_idea = AFG_sideline_clergy_ahmad_idea
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_one_party_state
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_All_Under_National_Revolutionary_Party
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_EGY_cotton
+		}
 		icon = GFX_goal_AFG_All_Under_National_Revolutionary_Party
 
 		cost = 5
@@ -6780,9 +8377,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6792,13 +8392,22 @@ focus_tree = {
 			focus = AFG_fate_of_the_emirate
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_political_power = 75
 		add_command_power = 50
 		add_popularity = {
 				ideology = national_populist
 				popularity = 0.10
 		}
-		remove_ideas = AFG_reward_loyal_tribes_idea
 		custom_effect_tooltip = AFG_one_party_state_tt
 		hidden_effect = {
 		if = {
@@ -6837,26 +8446,47 @@ focus_tree = {
 			long_name = "Hezb Enqilab Mile (National Revolutionary Party)" 
 			name = "HEM"
 		}
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:social_democrat }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:social_liberal }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:market_liberal }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:social_conservative }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
-			add_to_coalition = yes 
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			add_to_coalition = yes 
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_marlib_to_coalition = yes
+		add_soccon_to_coalition = yes
+		add_authdem_to_coalition = yes
+		add_pataut_to_coalition = yes
 		}
-		custom_effect_tooltip = socdem_will_join_coalition_tt
-		custom_effect_tooltip = soclib_will_join_coalition_tt
-		custom_effect_tooltip = marlib_will_join_coalition_tt
-		custom_effect_tooltip = soccon_will_join_coalition_tt
-		custom_effect_tooltip = authdem_will_join_coalition_tt
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_political_power = 50
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		random_owned_state = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
@@ -6864,6 +8494,28 @@ focus_tree = {
 	
 	focus = {
 		id = AFG_towards_autarky
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_generic_autarky
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_USA_city_on_a_hill
+		}
 		icon = GFX_goal_generic_autarky
 
 		cost = 5
@@ -6873,9 +8525,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6888,7 +8543,28 @@ focus_tree = {
 			focus = AFG_sideline_clergy
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_ideas = AFG_towards_autarky_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_ideas = AFG_towards_autarky_ahmad_idea
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
@@ -6904,9 +8580,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6919,6 +8598,16 @@ focus_tree = {
 			focus = AFG_sideline_clergy
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		add_manpower = 4500
 		add_war_support = 0.1
 		add_popularity = {
@@ -6927,12 +8616,62 @@ focus_tree = {
 		}
 		add_stability = -0.075
 		add_ideas = AFG_pashtun_nationalism_idea
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		add_manpower = 4500
+		add_war_support = 0.1
+		add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+		}
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.05
+		}
+		add_stability = -0.075
+		add_ideas = AFG_pashtun_nationalism_ahmad_idea
+		hidden_effect = {
+		country_event = {
+				id = afghanredux.152
+				days = 14
+				}
+			}
+		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
 	}
 	
 	focus = {
 		id = AFG_rise_of_khorasan
+		icon = {
+			trigger = {
+			NOT = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+					}
+				}
+			}
+			value = GFX_goal_AFG_Land_Aryan
+		}
+		icon = {
+			trigger = {
+			OR = {
+			has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+			has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
+			}
+			value = GFX_goal_AFG_Honoring_Ghilzai_Forefathers
+		}
 		icon = GFX_goal_AFG_Land_Aryan
 
 		cost = 5
@@ -6942,9 +8681,12 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR = {
-			has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
-			has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+			hidden_trigger = {
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Mohammad Daoud Khan" }
+				has_country_leader = { ruling_only = yes name = "Mohammad Aziz Khan" }
+				has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+				}
 			}
 		}
 		relative_position_id = AFG_nadir
@@ -6957,6 +8699,16 @@ focus_tree = {
 			focus = AFG_towards_autarky
 		}
 		completion_reward = {
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+				}
+			}
+		}
 		country_event = afghanredux.52
 		if = {
 		limit = {
@@ -6964,6 +8716,17 @@ focus_tree = {
 		}
 		set_country_flag = AFG_daoud_victory
 		custom_effect_tooltip = AFG_conquer_india_tt
+			}
+		}
+		if = {
+		limit = {
+		OR = {
+		has_country_leader = { ruling_only = yes name = "Inayatullah Khan" }
+		has_country_leader = { ruling_only = yes name = "Sher Khan Nashir" }
+		has_country_leader = { ruling_only = yes name = "Ali Ahmad Khan" }
+			}
+		}
+		country_event = afghanredux.133
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_crush_saqqawists"
 		}
@@ -6988,6 +8751,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7007,6 +8773,9 @@ focus_tree = {
 
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7030,6 +8799,9 @@ focus = {
 		icon = GFX_goal_AFG_Ascension
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7065,6 +8837,9 @@ focus = {
 
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7088,6 +8863,9 @@ focus = {
 		icon = GFX_AFG_end_bandits
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7121,6 +8899,9 @@ focus = {
 		icon = GFX_AFG_watch_press
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7144,6 +8925,9 @@ focus = {
 		icon = GFX_AFG_die_amanullah
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7167,6 +8951,21 @@ focus = {
 				ideology = market_liberal
 				popularity = -0.05
 			}
+			hidden_effect = {
+			set_party_name = { 
+			ideology = social_liberal
+			long_name = "Wesh Dzalmian (The Awakened Youth)" 
+			name = "WD"
+			}
+			create_country_leader = {
+				name = "Abdul Rauf Benawa"
+				desc = ""
+				picture = "gfx/leaders/AFG/Portrait_AFG_Abdul_Rauf_Benawa.png"
+				expire = "1.1.1"
+				ideology = progressive_democracy_subtype
+				traits = {}
+				}
+		    }
 			country_event = {
 				id = afghanredux.30
 				days = 1
@@ -7179,6 +8978,9 @@ focus = {
 		icon = GFX_goal_AFG_Reverse_Secularization
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7200,6 +9002,7 @@ focus = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		is_subject = no
 		has_completed_focus = AFG_arrest_opposition
 		}
 		ai_will_do = {
@@ -7226,6 +9029,9 @@ focus = {
 		icon = GFX_AFG_traditional_roles
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7275,6 +9081,9 @@ focus = {
 		icon = GFX_AFG_all_for_chief
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7303,6 +9112,9 @@ focus = {
 		icon = GFX_AFG_thin_expedition
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7335,6 +9147,9 @@ focus = {
 
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7358,6 +9173,9 @@ focus = {
 		icon = GFX_AFG_soldier_emir
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7393,6 +9211,9 @@ focus = {
 		icon = GFX_AFG_second_iron_emir
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7420,6 +9241,9 @@ focus = {
 		icon = GFX_AFG_aurangzeb
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7443,6 +9267,9 @@ focus = {
 		icon = GFX_goal_AFG_Ornamnet_of_the_Throne
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7494,6 +9321,9 @@ focus = {
 		icon = GFX_goal_AFG_Rule_Piety_Temperance
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7523,6 +9353,9 @@ focus = {
 		icon = GFX_goal_AFG_Polish_the_Jewel
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7569,6 +9402,9 @@ focus = {
 		icon = GFX_goal_AFG_Realize_Mughal_Ambitions
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7593,6 +9429,9 @@ focus = {
 		icon = GFX_goal_AFG_Fatawa_Alamgiri
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7613,6 +9452,9 @@ focus = {
 		icon = GFX_AFG_The_Gold_Must_Flow
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7633,6 +9475,9 @@ focus = {
 		icon = GFX_goal_AFG_Reimpose_Sharia
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7657,6 +9502,9 @@ focus = {
 		icon = GFX_goal_AFG_Facilitate_Spread_Islamic_Culture
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7686,6 +9534,9 @@ focus = {
 		icon = GFX_goal_AFG_Usher_In_New_Golden_Age
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7714,6 +9565,9 @@ focus = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		available = { always = no }
 		ai_will_do = {
 			factor = 1
@@ -7733,6 +9587,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { focus = AFG_ottoman_exile }
 		ai_will_do = {
 			factor = 1
@@ -7764,6 +9621,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { focus = AFG_ottoman_exile }
 		ai_will_do = {
 			factor = 1
@@ -7802,6 +9662,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_industry_refuge
 		}
@@ -7825,6 +9688,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { focus = AFG_ottoman_ex_industry_refuge }
 		ai_will_do = {
 			factor = 1
@@ -7843,6 +9709,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { focus = AFG_ottoman_ex_army_refuge }
 		ai_will_do = {
 			factor = 1
@@ -7908,6 +9777,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_sultan_takes_over 
 			focus = AFG_ottoman_nasrullah_holds_on
@@ -7930,6 +9802,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_800_years
 		}
@@ -7938,10 +9813,8 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
-			create_wargoal = {
-				type = annex_everything
-				target = PER
-			}
+			activate_targeted_decision = { target = PER decision = AFG_attack_country }
+			
 			hidden_effect = {
 			add_state_core = 347
 			}
@@ -7962,6 +9835,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_iran_war
 		}
@@ -7975,17 +9851,12 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
-			create_wargoal = {
-				type = annex_everything
-				target = AZE
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = ARM
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = GEO
+			activate_targeted_decision = { target = AZE decision = AFG_attack_country }
+			activate_targeted_decision = { target = ARM decision = AFG_attack_country }
+			activate_targeted_decision = { target = GEO decision = AFG_attack_country }
+			if = {
+				limit = { country_exists = ABK }
+				activate_targeted_decision = { target = ABK decision = AFG_attack_country }
 			}
 			every_state = {
 			limit = {
@@ -8008,6 +9879,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_caucasus_war
 
@@ -8017,30 +9891,12 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
-			create_wargoal = {
-				type = annex_everything
-				target = RUS
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = DKB
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = MTR
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = KLY
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = KUB
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = UKR
-			}
+			activate_targeted_decision = { target = RUS decision = AFG_attack_country }
+			activate_targeted_decision = { target = DKB decision = AFG_attack_country }
+			activate_targeted_decision = { target = MTR decision = AFG_attack_country }
+			activate_targeted_decision = { target = KLY decision = AFG_attack_country }
+			activate_targeted_decision = { target = KUB decision = AFG_attack_country }
+			activate_targeted_decision = { target = UKR decision = AFG_attack_country }			
 			add_state_core = 1220
 			add_state_core = 137
 			add_state_core = 1221
@@ -8066,6 +9922,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_iran_war
 		}
@@ -8079,47 +9938,32 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
-			create_wargoal = {
-				type = annex_everything
-				target = IRQ
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SYR
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = KUR
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = JBS
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SAU
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = OMA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = YEM
-			}
+			activate_targeted_decision = { target = IRQ decision = AFG_attack_country }
+			activate_targeted_decision = { target = SYR decision = AFG_attack_country }
+			activate_targeted_decision = { target = LEB decision = AFG_attack_country }
+			activate_targeted_decision = { target = KYR decision = AFG_attack_country }
+			activate_targeted_decision = { target = JBS decision = AFG_attack_country }
+			activate_targeted_decision = { target = SAU decision = AFG_attack_country }
+			activate_targeted_decision = { target = OMA decision = AFG_attack_country }
+			activate_targeted_decision = { target = YEM decision = AFG_attack_country }	
 			hidden_effect = {
-			add_state_core = 656
+				add_state_core = 656
+				add_state_core = 679
+				add_state_core = 680
+				add_state_core = 553
 			}
 			every_state = {
-			limit = {
-			OR = {
-			is_core_of = IRQ
-			is_core_of = SYR
-			is_core_of = KUR
-			is_core_of = YEM
+				limit = {
+					OR = {
+						is_core_of = IRQ
+						is_core_of = SYR
+						is_core_of = LEB
+						is_core_of = KUR
+						is_core_of = YEM
+						is_core_of = HEJ
+					}
 				}
-			}
-			add_core_of = AFG
+				add_core_of = AFG
 			}
 		}
 	}
@@ -8132,6 +9976,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_iraq_war
 		}
@@ -8140,27 +9987,13 @@ focus = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
-			create_wargoal = {
-				type = annex_everything
-				target = EGY
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = ETH
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = DJI
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SOM
-			}
+			activate_targeted_decision = { target = EGY decision = AFG_attack_country }
+			activate_targeted_decision = { target = ETH decision = AFG_attack_country }
+			activate_targeted_decision = { target = DJI decision = AFG_attack_country }
+			activate_targeted_decision = { target = SOM decision = AFG_attack_country }
 			every_state = {
-			limit = {
-			is_core_of = EGY
-				}
-			add_core_of = AFG
+				limit = { is_core_of = EGY }
+				add_core_of = AFG
 			}
 		}
 	}
@@ -8177,6 +10010,7 @@ focus = {
 			focus = AFG_ottoman_ex_iran_war
 		}
 		available = {
+		is_subject = no
 		NOT = {
 			country_exists = PER
 			}
@@ -8185,19 +10019,19 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-						type = annex_everything
-						target = TUR
-		}
-		hidden_effect = {
-		create_wargoal = {
-						type = annex_everything
-						target = 49.owner
+			activate_targeted_decision = { target = TUR decision = AFG_attack_country }
+			hidden_effect = {
+				activate_targeted_decision = { target = var:49.owner decision = AFG_attack_country }
 			}
-		}
+			hidden_effect = {
+				add_state_core = 341
+			}
 		every_state = {
 			limit = {
+			OR = {
 			is_core_of = OTT
+			region = 129
+			}
 			}
 			add_core_of = AFG
 		}
@@ -8217,6 +10051,7 @@ focus = {
 			focus = AFG_ottoman_ex_retake_homeland
 		}
 		available = {
+		is_subject = no
 		owns_state = 773
 		}
 		ai_will_do = {
@@ -8241,6 +10076,7 @@ focus = {
 			focus = AFG_ottoman_ex_restoration
 		}
 		available = {
+		is_subject = no
 		has_country_leader = { ruling_only = yes name = "Osman IV" }
 		}
 		ai_will_do = {
@@ -8265,6 +10101,7 @@ focus = {
 			focus = AFG_ottoman_ex_restoration
 		}
 		available = {
+		is_subject = no
 		has_country_leader = { ruling_only = yes name = "Nasrullah Khan" }
 		}
 		ai_will_do = {
@@ -8284,6 +10121,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_what_now
 			focus = AFG_ottoman_ex_inseperable_bond
@@ -8293,34 +10133,14 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = TRP
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = LBA
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = NFA
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = CRE
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = MLT
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = SRD
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = MOR
-			}
+			activate_targeted_decision = { target = TRP decision = AFG_attack_country }
+			activate_targeted_decision = { target = NFA decision = AFG_attack_country }
+			activate_targeted_decision = { target = LBA decision = AFG_attack_country }
+			activate_targeted_decision = { target = CRE decision = AFG_attack_country }
+			activate_targeted_decision = { target = MLT decision = AFG_attack_country }
+			activate_targeted_decision = { target = SRD decision = AFG_attack_country }
+			activate_targeted_decision = { target = MOR decision = AFG_attack_country }	
+		
 		every_state = {
 			limit = {
 			OR = {
@@ -8328,6 +10148,7 @@ focus = {
 			is_core_of = LBA
 			is_core_of = ALG
 			is_core_of = TUN
+			region = 238
 				}
 			}
 			add_core_of = AFG
@@ -8344,6 +10165,9 @@ focus = {
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_subject = no
+		}
 		prerequisite = { 
 			focus = AFG_ottoman_ex_what_now
 			focus = AFG_ottoman_ex_inseperable_bond
@@ -8353,38 +10177,15 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = BUL
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = GRE
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = ALB
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = SER
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = CRO
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = HUN
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = ROM
-			}
-		create_wargoal = {
-				type = annex_everything
-				target = AUS
-			}
+			activate_targeted_decision = { target = BUL decision = AFG_attack_country }
+			activate_targeted_decision = { target = GRE decision = AFG_attack_country }
+			activate_targeted_decision = { target = ALB decision = AFG_attack_country }
+			activate_targeted_decision = { target = SER decision = AFG_attack_country }
+			activate_targeted_decision = { target = CRO decision = AFG_attack_country }
+			activate_targeted_decision = { target = HUN decision = AFG_attack_country }
+			activate_targeted_decision = { target = ROM decision = AFG_attack_country }
+			activate_targeted_decision = { target = AUS decision = AFG_attack_country }
+	
 		every_state = {
 			limit = {
 			OR = {
@@ -8393,11 +10194,13 @@ focus = {
 			is_core_of = ALB
 			is_core_of = SER
 			is_core_of = CRO
+			is_core_of = BOS
 			is_core_of = HUN
 			is_core_of = ROM
+			is_core_of = TRS
 				}
 			}
-			add_claim_by = AFG
+			add_core_of = AFG
 		}
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_ottoman_alliance"
 		}
@@ -8813,7 +10616,7 @@ focus = {
 				has_government = market_liberal
 				has_government = authoritarian_democrat
 			}
-			has_idea = AFG_Abdul_Hadi_Dawai_hog_mli
+			has_idea = AFG_Abdul_Hadi_Dawi_hog_mli
 		}
 				prerequisite = { 
 			focus = AFG_aj_victory
@@ -8845,7 +10648,7 @@ focus = {
 				has_government = market_liberal
 				has_government = authoritarian_democrat
 			}
-			has_idea = AFG_Abdul_Hadi_Dawai_hog_mli
+			has_idea = AFG_Abdul_Hadi_Dawi_hog_mli
 		}
 				prerequisite = { 
 			focus = AFG_footsteps_of_kemal
@@ -8871,7 +10674,7 @@ focus = {
 				has_government = market_liberal
 				has_government = authoritarian_democrat
 			}
-			has_idea = AFG_Abdul_Hadi_Dawai_hog_mli
+			has_idea = AFG_Abdul_Hadi_Dawi_hog_mli
 		}
 				prerequisite = { 
 			focus = AFG_aj_victory
@@ -8899,7 +10702,7 @@ focus = {
 				has_government = market_liberal
 				has_government = authoritarian_democrat
 			}
-			has_idea = AFG_Abdul_Hadi_Dawai_hog_mli
+			has_idea = AFG_Abdul_Hadi_Dawi_hog_mli
 		}
 				prerequisite = { 
 			focus = AFG_tarzis_mission
@@ -8910,10 +10713,7 @@ focus = {
 		completion_reward = {
 		add_command_power = 50
 		add_war_support = 0.05
-		add_popularity = {
-				ideology = market_liberal
-				popularity = 0.1
-		}
+		increase_ruling_party_popularity_by_10 = yes
 		random_core_state = { 
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -8946,7 +10746,7 @@ focus = {
 				has_government = market_liberal
 				has_government = authoritarian_democrat
 			}
-			has_idea = AFG_Abdul_Hadi_Dawai_hog_mli
+			has_idea = AFG_Abdul_Hadi_Dawi_hog_mli
 		}
 		prerequisite = { 
 			focus = AFG_germanic_liberalism
@@ -9088,11 +10888,7 @@ focus = {
 		completion_reward = {
 		add_political_power = 50
 		add_stability = 0.1
-		hidden_effect = {
-			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
-			add_to_coalition = yes 
-		}
-		custom_effect_tooltip = pataut_will_join_coalition_tt
+		add_pataut_to_coalition = yes
 		add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
 		hidden_effect = {
 		country_event = {
@@ -9134,6 +10930,1202 @@ focus = {
 		}
 		country_event = afghanredux.110
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_constitutionalist_victory"
+		}
+	}
+	
+	### Socialist Afghanistan ###
+	
+	focus = {
+		id = AFG_bacha_khan
+		icon = GFX_goal_AFG_Bacha_Khan_Saves_Nation
+		x = 59
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		available = { always = no }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_finish_saqqawists
+		icon = GFX_goal_AFG_Drive_Out_Saqqawists
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_bacha_khan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = AFG_islamist_insurgency
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = { ideology = national_populist popularity = -0.1 }
+		add_equipment_to_stockpile = {
+				type = jezail_equipment_0
+				amount = 1500
+				producer = AFG
+		}
+		hidden_effect = {
+		set_party_name = { 
+			ideology = national_populist
+			long_name = "Hezb Enqilab Mile (National Revolutionary Party)" 
+			name = "HEM"
+		}
+		create_country_leader = {
+				name = "Mohammad Daoud Khan"
+				desc = ""
+				picture = "gfx/leaders/AFG/Portrait_AFG_Mohammed_Daoud_Khan.png"
+				expire = "1.1.1"
+				ideology = militarism_subtype
+				traits = {}
+			}
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_mobilize_redshirts"
+		}
+	}
+	focus = {
+		id = AFG_secure_the_coalition
+		icon = GFX_goal_CSA_popular_front
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_bacha_khan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_command_power = 50
+		add_stability = 0.05
+		add_popularity = { ideology = totalist popularity = 0.05 }
+		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		add_tot_to_coalition = yes
+		add_synd_to_coalition = yes
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_islamic_pacifism
+		icon = GFX_goal_AFG_Pious_Pacifism_Frontier_Gandhi
+		x = 1
+		y = 2
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_finish_saqqawists
+		}
+		prerequisite = { 
+			focus = AFG_secure_the_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = -0.1
+		add_popularity = {
+				popularity = 0.1
+				ideology = radical_socialist
+		}
+		add_timed_idea = {
+				idea = AFG_islamic_pacifism_idea
+				days = 300
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_secure_agrarian_support
+		icon = GFX_goal_AFG_Aid_Afghan_Agriculture_Anjumane_Zamidaran
+		x = -3
+		y = 2
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_finish_saqqawists
+		}
+		prerequisite = { 
+			focus = AFG_secure_the_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+		}
+		every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_mobilize_redshirts
+		icon = GFX_goal_AFG_Mobilize_Surkh_Posh
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_finish_saqqawists
+		}
+		prerequisite = { 
+			focus = AFG_secure_the_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 5000
+		add_popularity = {
+				popularity = 0.05
+				ideology = radical_socialist
+		}
+		add_ideas = AFG_mobilize_redshirts_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_peoples_jirgas
+		icon = GFX_goal_AFG_Establish_Peoples_Jirgas
+		x = 3
+		y = 2
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_finish_saqqawists
+		}
+		prerequisite = { 
+			focus = AFG_secure_the_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_popularity = {
+				popularity = 0.05
+				ideology = radical_socialist
+		}
+		add_ideas = AFG_peoples_jirgas_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_red_pashtunwali
+		icon = GFX_goal_SKM_Bring_Red_Truth_Masses
+		x = 2
+		y = 3
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_peoples_jirgas
+		}
+		prerequisite = { 
+			focus = AFG_islamic_pacifism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_socialist_skepticism_idea 
+				add_idea = AFG_red_pashtunwali_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_secure_the_countryside
+		icon = GFX_goal_AFG_Liberate_Countryside
+		x = -2
+		y = 3
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_secure_agrarian_support
+		}
+		prerequisite = { 
+			focus = AFG_mobilize_redshirts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_saqqawist_aftermath_idea
+				add_idea = AFG_secure_the_countryside_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_hindu_muslim_unity
+		icon = GFX_goal_AFG_Foster_Hindu_Muslim_Unity
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_mobilize_redshirts
+		}
+		prerequisite = { 
+			focus = AFG_islamic_pacifism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = AFG_growing_tensions
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_aid_from_commune
+		icon = GFX_goal_SKM_INC_Exiles
+		x = -1
+		y = 4
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_secure_the_countryside
+		}
+		prerequisite = { 
+			focus = AFG_hindu_muslim_unity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = BHC
+			}
+			add_manpower = 2500
+			add_offsite_building = { type = arms_factory level = 2 }
+		BHC = { add_opinion_modifier = { target = AFG modifier = medium_increase } }
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_peace_with_clergy
+		icon = GFX_goal_AFG_Accord_Mullahs
+		x = 1
+		y = 4
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_hindu_muslim_unity
+		}
+		prerequisite = { 
+			focus = AFG_red_pashtunwali
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_traditionalist_resistance_idea
+				add_idea = AFG_peace_with_clergy_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_rebuild_the_nation
+		icon = GFX_goal_AFG_Healing_Wounds
+		x = 0
+		y = 5
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_aid_from_commune
+		}
+		prerequisite = { 
+			focus = AFG_peace_with_clergy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = AFG_secure_the_countryside_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_begin_land_reform
+		icon = GFX_goal_SKM_Socialized_Land_Redistribution
+		x = -1
+		y = 6
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_rebuild_the_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_popularity = { ideology = totalist popularity = 0.05 }
+		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		add_ideas = AFG_begin_land_reform_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_legacy_of_hijrat
+		icon = GFX_goal_AFG_Legacy_Hijrat
+		x = 1
+		y = 6
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_rebuild_the_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_hijrat
+				add_idea = AFG_legacy_of_hijrat_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_emancipate_the_forgotten
+		icon = GFX_goal_AFG_Emancipate_Forgotten_Half
+		x = 2
+		y = 7
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_legacy_of_hijrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = AFG_emancipate_the_forgotten_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_educate_the_masses
+		icon = GFX_goal_AUS_revolution_of_moderation
+		x = 0
+		y = 7
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_begin_land_reform
+		}
+		prerequisite = { 
+			focus = AFG_legacy_of_hijrat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot_until_five = yes
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_a_necessary_militia
+		icon = GFX_goal_AFG_Establish_New_Afghan_Army
+		x = -2
+		y = 7
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_begin_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_popularity = { ideology = totalist popularity = 0.05 }
+		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		army_experience = 25
+		add_manpower = 4000
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = AFG
+		}
+		add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = AFG
+		}
+		custom_effect_tooltip = AFG_army_reform_tt
+		set_country_flag = AFG_reform_army
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_awaken_the_pashtun
+		icon = GFX_goal_AFG_Saving_Pashtun_From_Ruin
+		x = 0
+		y = 8
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_educate_the_masses
+		}
+		prerequisite = { 
+			focus = AFG_a_necessary_militia
+		}
+		prerequisite = { 
+			focus = AFG_emancipate_the_forgotten
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_red_pashtunwali_idea
+				add_idea = AFG_awaken_the_pashtun_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id =  AFG_first_congress
+		icon = GFX_RUS_Power_To_Local_Councils
+		x = 0
+		y = 9
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_awaken_the_pashtun
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		country_event = afghanredux.139
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_kk_victory
+		icon = GFX_goal_AFG_Khudai_Khidmatgar
+		x = 0
+		y = 10
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		available = { always = no }
+		prerequisite = { 
+			focus = AFG_first_congress
+		}
+		mutually_exclusive = { focus = AFG_parcham_victory }
+		mutually_exclusive = { focus = AFG_khalq_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_expel_party_radicals
+		icon = GFX_oppose_radicals
+		x = 0
+		y = 11
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_kk_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_awaken_the_pashtun_idea
+				add_idea = AFG_expel_party_radicals_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_towards_india
+		icon = GFX_goal_AFG_Towards_Indian_Unification
+		x = -1
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_expel_party_radicals
+		}
+		mutually_exclusive = { focus = AFG_securing_pashtunistan }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = AFG_forpol option = AFG_FORPOL_SKM }
+			}
+		}
+		completion_reward = {
+		add_ideas = AFG_towards_india_idea
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_securing_pashtunistan
+		icon = GFX_goal_AFG_Securing_Independent_Pashtunistan
+		x = 1
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_expel_party_radicals
+		}
+		mutually_exclusive = { focus = AFG_towards_india }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = AFG_securing_pashtunistan_tt
+		add_ideas = AFG_securing_pashtunistan_idea
+		add_state_claim = 442
+		add_state_claim = 445
+		add_state_claim = 1219
+		add_state_claim = 444
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_courting_the_commune
+		icon = GFX_goal_AFG_Case_Commune
+		x = -2
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_towards_india
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = AFG_courting_the_commune_tt
+		add_political_power = 75
+		add_war_support = 0.10
+		add_manpower = 2500
+		BHC = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+		DEH = { add_opinion_modifier = { target = AFG modifier = large_decrease } }
+		PRF = { add_opinion_modifier = { target = AFG modifier = large_decrease } }
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_complete_land_reform
+		icon = GFX_BBR_land_redistribution
+		x = 0
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_towards_india
+			focus = AFG_securing_pashtunistan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_begin_land_reform_idea 
+				add_idea = AFG_complete_land_reform_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_rural_urban_divide
+		icon = GFX_goal_FRA_worker_peasant_collab
+		x = 2
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_securing_pashtunistan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.10
+		}
+		267 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		increase_state_category_by_one_level = yes
+		}
+		415 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		increase_state_category_by_one_level = yes
+		}
+		1218 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		increase_state_category_by_one_level = yes
+		}
+		1217 = {
+		add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		increase_state_category_by_one_level = yes
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_king_of_chiefs
+		icon = GFX_goal_AFG_Under_Guidance_King_Chiefs
+		x = 0
+		y = 14
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_courting_the_commune
+			focus = AFG_rural_urban_divide
+		}
+		prerequisite = { 
+			focus = AFG_complete_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_peace_with_clergy_idea 
+				add_idea = AFG_king_of_chiefs_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	### Parcham ###
+	focus = {
+		id = AFG_parcham_victory
+		icon = GFX_goal_AFG_islamic_socialism
+		x = -5
+		y = 10
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		available = { always = no }
+		prerequisite = { 
+			focus =  AFG_first_congress
+		}
+		mutually_exclusive = { focus = AFG_kk_victory }
+		mutually_exclusive = { focus = AFG_khalq_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = unlock_focuses
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_national_front
+		icon = GFX_BBR_socialist_civi_identity
+		x = -5
+		y = 11
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_parcham_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 75
+		add_stability = 0.1
+		add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+		}
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+		}
+		add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+		}
+		add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+		add_soclib_to_coalition = yes
+		add_popularity = {
+				ideology = totalist
+				popularity = -0.20
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_islamic_synthesis
+		icon = GFX_goal_AFG_Islamic_Socialist_Synthesis
+		x = -3
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_national_front
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_peace_with_clergy_idea 
+				add_idea = AFG_islamic_synthesis_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_urbanite_support
+		icon = GFX_goal_AFG_Ensuring_Urbanite_Support
+		x = -5
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_national_front
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.10
+		}
+		267 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				increase_state_category_by_two_levels = yes
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_uniting_all_afghans
+		icon = GFX_goal_AFG_socialist
+		x = -7
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_national_front
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_ideas = AFG_uniting_all_afghans_idea
+		add_state_claim = 442
+		add_state_claim = 445
+		add_state_claim = 1219
+		add_state_claim = 444
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_moderate_land_reform
+		icon = GFX_RUS_Land_Quotas_Bill
+		x = -6
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_uniting_all_afghans
+		}
+		prerequisite = { 
+			focus = AFG_urbanite_support
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_begin_land_reform_idea 
+				add_idea = AFG_moderate_land_reform_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_eastern_socialism
+		icon = GFX_goal_MON_KMT
+		x = -4
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_urbanite_support
+		}
+		prerequisite = { 
+			focus = AFG_islamic_synthesis
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = AFG_eastern_socialism_tt
+		add_war_support = 0.10
+		add_manpower = 5000
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = AFG
+		}
+		country_event = {
+				id = afghanredux.148
+				days = 14
+		}
+		BHC = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+		INC = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+		CHI = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_careful_course
+		icon = GFX_goal_AFG_Careful_Course_Towards_Revolution
+		x = -5
+		y = 14
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_moderate_land_reform
+		}
+		prerequisite = { 
+			focus = AFG_eastern_socialism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.10
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.10
+			}
+		add_popularity = {
+				ideology = totalist
+				popularity = -0.10
+			}
+		swap_ideas = {
+				remove_idea = AFG_awaken_the_pashtun_idea
+				add_idea = AFG_careful_course_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	### Khalq ###
+	focus = {
+		id = AFG_khalq_victory
+		icon = GFX_goal_AFG_khalq
+		x = 5
+		y = 10
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		available = { always = no }
+		prerequisite = { 
+			focus = AFG_first_congress
+		}
+		mutually_exclusive = { focus = AFG_kk_victory }
+		mutually_exclusive = { focus = AFG_parcham_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_focuses
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_radical_land_reform
+		icon = GFX_SOV_time_forward
+		x = 5
+		y = 11
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_khalq_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_begin_land_reform_idea 
+				add_idea = AFG_radical_land_reform_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_rural_support
+		icon = GFX_BBR_acricultural_revolution
+		x = 7
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_radical_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.10
+		add_manpower = 7500
+		add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+		}
+		415 = {
+				increase_state_category_by_one_level = yes
+		}
+		1218 = {
+				increase_state_category_by_one_level = yes
+		}
+		1217 = {
+				increase_state_category_by_one_level = yes
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_empowering_pashtuns
+		icon = GFX_goal_AFG_Maintain_Pashtun_Dominance
+		x = 5
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_radical_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = AFG_empowering_pashtuns_idea
+			add_state_claim = 441 #Kashmir
+			add_state_claim = 444 #Baluchistan
+			add_state_claim = 891 #Lahore
+			add_state_claim = 443 #Sindh
+			add_state_claim = 804 #Northern Khorasan
+			add_state_claim = 416 #Khorasan
+			add_state_claim = 410 #Sistan
+			add_state_claim = 1219 #Dalbandin
+			add_state_claim = 445 #Quetta
+			add_state_claim = 442 #Peshawar
+		log = "[GetDateText]: [Root.GetName]: Focus AFG_empowering_pashtuns"
+		}
+	}
+	focus = {
+		id = AFG_finish_the_clergy
+		icon = GFX_goal_AFG_Sever_Traditionalist_Cancer
+		x = 3
+		y = 12
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_radical_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_peace_with_clergy_idea 
+				add_idea = AFG_finish_the_clergy_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_orthodox_line
+		icon = GFX_goal_AFG_Following_Orthodox_Line
+		x = 4
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_finish_the_clergy
+		}
+		prerequisite = { 
+			focus = AFG_empowering_pashtuns
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = AFG_orthodox_line_tt
+		add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+		}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = -0.15
+		}
+		add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.15
+		}
+		FRA = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+		ENG = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+		SRI = { add_opinion_modifier = { target = AFG modifier = large_increase } }
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_mass_party
+		icon = GFX_goal_AFG_Towards_Vanguard_Party
+		x = 6
+		y = 13
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_empowering_pashtuns
+		}
+		prerequisite = { 
+			focus = AFG_rural_support
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = AFG_awaken_the_pashtun_idea
+				add_idea = AFG_mass_party_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
+		}
+	}
+	focus = {
+		id = AFG_great_leader
+		icon = GFX_goal_AFG_Revolution_Secured_Great_Leader
+		x = 5
+		y = 14
+		cost = 5
+		relative_position_id = AFG_bacha_khan
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AFG_orthodox_line
+		}
+		prerequisite = { 
+			focus = AFG_mass_party
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+		}
+		swap_ideas = {
+				remove_idea = AFG_mass_party_idea 
+				add_idea = AFG_great_leader_idea
+		}
+			log = "[GetDateText]: [Root.GetName]: Focus AFG_socialist_victory"
 		}
 	}
 #End of focuses 

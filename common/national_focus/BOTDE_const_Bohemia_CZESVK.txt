@@ -2746,6 +2746,7 @@ focus_tree = {
 			OR = {
 				has_government = social_liberal
 				has_government = social_democrat
+				has_socialist_government = yes
 			}
 		}
 		prerequisite = {
@@ -2833,7 +2834,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_superior_firepower
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -2944,7 +2945,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_superior_firepower
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3017,7 +3018,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_superior_firepower
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3089,7 +3090,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_mobile_warfare
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3117,7 +3118,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_mobile_warfare
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3263,7 +3264,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_mobile_warfare
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3329,7 +3330,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_grand_battle_plan
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3377,7 +3378,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_grand_battle_plan
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -3460,7 +3461,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = cat_grand_battle_plan
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 1
 			}
@@ -5615,43 +5616,33 @@ focus_tree = {
 		}
 		available = {
 			has_global_flag = BOH_czechoslovakism_yes
+			has_completed_focus = CZE_czechoslovak_identity
 			is_subject = no
 			is_in_faction = no
 			OR = {
-				CAN = {
-					is_faction_leader = yes
-				}
-				GBR = {
-					is_faction_leader = yes
-				}
+				CAN = { is_faction_leader = yes }
+				GBR = { is_faction_leader = yes }
 				NFA = {
 					is_faction_leader = yes
-					NOT = {
-						is_in_faction_with = CAN
-					}
+					NOT = { is_in_faction_with = CAN }
 				}
 			}
-			OR = {
-				has_government = social_liberal
-				has_government = radical_socialist
-				has_country_flag = CZE_hussites_lol
-				AND = {
-					has_government = social_democrat
-					has_country_flag = CZE_vojta
-					has_country_flag = CZE_election_2
-				}
-				AND = {
-					RUS = {
-						is_in_faction_with = CAN
+			NOT = {
+				has_government = syndicalist
+				has_government = totalist
+				if = {
+					limit = {
+						CAN = {
+							NOT = {
+								is_in_faction_with = TRM
+								is_in_faction_with = RUS
+							}
+						}
 					}
-					OR = {
-						has_government = market_liberal
-						has_government = authoritarian_democrat
-						has_government = national_populist
-					}
+					has_government = national_populist
 				}
+				has_war_with = ENT
 			}
-			
 		}
 		prerequisite = {
 			focus = CZE_an_alliance
@@ -5666,31 +5657,15 @@ focus_tree = {
 				limit = {
 					NFA = {
 						is_faction_leader = yes
-						NOT = {
-							is_in_faction_with = CAN
-						}
+						NOT = { is_in_faction_with = CAN }
 					} 
 				}
-				NFA = {
-					country_event = bdeczefor.7
+				NFA = { country_event = bdeczefor.7 }
+				else_if = {
+					limit = { GBR = { is_faction_leader = yes } }
+					GBR = { country_event = bdeczefor.7 }
 				}
-				else = {
-					if = {
-						limit = {
-							GBR = {
-								is_faction_leader = yes
-							}
-						}
-						GBR = {
-							country_event = bdeczefor.7
-						}
-						else = {
-							CAN = {
-								country_event = bdeczefor.7
-							}
-						}
-					}
-				}
+				else = { CAN = { country_event = bdeczefor.7 } }
 			}
 		}
 	}
@@ -5755,22 +5730,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		available = {
-			has_global_flag = BOH_czechoslovakism_yes
-			is_subject = no
-			has_completed_focus = CZE_czechoslovak_identity
-		}
+		available = { is_subject = no }
 		prerequisite = {
 			focus = CZE_the_little_entente
 			focus = CZE_old_west
 		}
 		bypass = {
-			OR = {
-				NOT = {
-					country_exists = HUN
-				}
-				HUN = {
-					is_puppet_of = CZE
+			HUN = {
+				OR = {
+					is_subject_of = CZE
+					exists = no
 				}
 			}
 		}
@@ -5794,14 +5763,8 @@ focus_tree = {
 		x = 48
 		y = 9
 		cost = 3.5
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_global_flag = BOH_czechoslovakism_yes
-			is_subject = no
-			has_completed_focus = CZE_czechoslovak_identity
-		}
+		ai_will_do = { factor = 100 }
+		available = { is_subject = no }
 		prerequisite = {
 			focus = CZE_anti_hungarian_stance
 			focus = CZE_defense_of_our_people
@@ -5829,33 +5792,22 @@ focus_tree = {
 		x = 52
 		y = 6
 		cost = 3.5
-		ai_will_do = {
-			factor = 100
-		}
+		ai_will_do = { factor = 100 }
 		available = {
-			has_global_flag = BOH_czechoslovakism_yes
 			is_subject = no
-			has_completed_focus = CZE_czechoslovak_identity
 			country_exists = HUN
-			NOT = {
-				is_in_faction_with = HUN
-				HUN = {
+			HUN = {
+				NOT = {
+					is_in_faction_with = CZE
 					is_subject_of = CZE
 				}
 			}
 		}
 		bypass = {
-			OR = {
-				HUN = {
+			HUN = {
+				OR = {
+					is_in_faction_with = CZE
 					is_subject_of = CZE
-				}
-				NOT = {
-					country_exists = HUN
-				}
-				any_allied_country = {
-					HUN = {
-						is_subject_of = PREV
-					}
 				}
 			}
 		}
@@ -5881,27 +5833,19 @@ focus_tree = {
 			factor = 100
 		}
 		bypass = {
-			OR = {
-				AUS = {
+			AUS = {
+				OR = {
 					is_subject_of = CZE
-				}
-				NOT = {
-					country_exists = AUS
-				}
-				any_allied_country = {
-					AUS = {
-						is_subject_of = PREV
-					}
+					exists = no
 				}
 			}
 		}
 		available = {
 			has_global_flag = BOH_czechoslovakism_yes
 			is_subject = no
-			has_completed_focus = CZE_czechoslovak_identity
-			NOT = {
-				is_in_faction_with = AUS
-				AUS = {
+			AUS = {
+				NOT = {
+					is_in_faction_with = CZE
 					is_subject_of = CZE
 				}
 			}
@@ -5940,8 +5884,6 @@ focus_tree = {
 			focus = CZE_depose_habsburgs
 		}
 		completion_reward = {
-			
-			
 			every_state = {
 				limit = {
 					is_core_of = POL
@@ -5972,16 +5914,38 @@ focus_tree = {
 				is_subject = no
 				is_faction_leader = yes
 				exists = yes
-				NOT = {
-					has_government = totalist
-					has_government = syndicalist
-					has_government = radical_socialist
-				}
 			}
-			OR = {
-				has_government = market_liberal
-				has_government = authoritarian_democrat
-				has_government = national_populist
+			if = {
+				limit = { has_government = radical_socialist }
+				RUS = {
+					OR = {
+						has_left_democratic_government = yes
+						has_socialist_government = yes
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_government = syndicalist
+							has_government = Totalist
+						}
+					}
+					RUS = { has_socialist_government = yes }
+				}
+				else_if = {
+					limit = { has_government = national_populist }
+					RUS = {
+						OR = {
+							has_left_democratic_government = no
+							has_completed_focus = RUS_Get_Along_With_NRPR
+						}
+						has_socialist_government = no
+					}
+				}
+				else = { RUS = { has_socialist_government = no } }
+			}
+			NOT = {
+			has_war_with = RUS
 			}
 		}
 		prerequisite = {
@@ -5993,9 +5957,7 @@ focus_tree = {
 			focus = CZE_old_west
 		}
 		completion_reward = {
-			RUS = {
-				country_event = bdeczefor.7
-			}
+			RUS = { country_event = bdeczefor.7 }
 			add_political_power = 30
 		}
 	}
@@ -6039,12 +6001,8 @@ focus_tree = {
 			is_subject = no
 			has_completed_focus = CZE_czechoslovak_identity
 			OR = {
-				TRM = {
-					owns_state = 219
-				}
-				RUS = {
-					owns_state = 408
-				}
+				TRM = { owns_state = 219 }
+				RUS = { owns_state = 408 }
 			}
 			is_in_faction_with = RUS
 		}
@@ -6061,8 +6019,8 @@ focus_tree = {
 					OR = {
 						tag = TRM
 						tag = RUS
-						}
 					}
+				}
 				random_unit_leader = {
 					limit = { has_id = 243913 }
 					set_nationality = CZE
@@ -6090,17 +6048,14 @@ focus_tree = {
 				is_subject = no
 				exists = yes
 				is_faction_leader = yes
-				NOT = {
-					has_government = totalist
-					has_government = syndicalist
-					has_government = radical_socialist
-				}
 			}
-			OR = {
-				has_government = social_conservative
-				has_government = social_democrat
-				has_government = market_liberal
-				has_country_flag = CZE_monarchy
+			NOT = {
+				has_government = syndicalist
+				has_government = totalist
+				has_government = national_populist
+				has_country_flag = CZE_hussites_lol
+				has_country_flag = CZE_hussites_lol_republic
+				has_war_with = GER
 			}
 		}
 		prerequisite = {
@@ -6441,6 +6396,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					country_exists = UKR
+					country_exists = USR
 					UKR = {
 						is_subject_of = CZE
 					}
@@ -10121,6 +10077,10 @@ focus_tree = {
 					random = 96
 				}
 			}
+			if = {
+				limit = { has_idea = CZE_slovak_uncertainty }
+				remove_ideas = CZE_slovak_uncertainty
+			}
 		}
 	}
 	
@@ -11000,6 +10960,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 			increase_ruling_party_popularity_by_5 = yes
+			CZE_reduce_new_state = yes
 		}
 	}
 	
@@ -11042,6 +11003,7 @@ focus_tree = {
 			add_war_support = 0.03
 			increase_ruling_party_popularity_by_5 = yes
 			add_research_slot_until_five = yes
+			CZE_reduce_new_state = yes
 		}
 	}
 	

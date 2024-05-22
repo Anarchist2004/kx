@@ -28,6 +28,10 @@ spriteTypes = {
 		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_nadir_shah.png"
 	}
 	spriteType  = {
+		name = "GFX_news_event_AFG_nadir_shah_death"
+		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_nadir_shah_death.png"
+	}
+	spriteType  = {
 		name = "GFX_news_event_AFG_nasrullah_khan"
 		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_nasrullah_khan.png"
 	}
@@ -38,6 +42,18 @@ spriteTypes = {
 	spriteType  = {
 		name = "GFX_news_event_AFG_sher_khan"
 		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_sher_khan.png"
+	}
+	spriteType  = {
+		name = "GFX_news_event_AFG_ali_khan"
+		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_ali_khan.png"
+	}
+	spriteType  = {
+		name = "GFX_news_event_AFG_ali_khan"
+		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_ali_khan.png"
+	}
+	spriteType  = {
+		name = "GFX_news_event_AFG_bacha_khan"
+		texturefile = "gfx/event_news_pictures/Afghanistan/news_event_AFG_bacha_khan.png"
 	}
 
 	### ANQ - Anqing Clique ###
@@ -560,6 +576,11 @@ spriteTypes = {
 		name = "GFX_news_event_IRE_larkin"
 		texturefile = "gfx/event_news_pictures/Europe/news_event_IRE_larkin.png"
 	}
+	### NIR - Northern Ireland ###
+	spriteType = {
+		name = "GFX_news_event_ULS_revolt"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_ULS_revolt.png"
+	}
 
 	### INS - Insulindia ###
 	spriteType = {
@@ -618,6 +639,10 @@ spriteTypes = {
 		name = "GFX_news_event_JAP_expansion"
 		texturefile = "gfx/event_news_pictures/Asia/news_event_JAP_expansion.png"
 	}
+	spriteType = {
+		name = "GFX_news_event_JAP_parade"
+		texturefile = "gfx/event_news_pictures/Asia/news_event_JAP_parade.png"
+	}
 
 	### LEC - Legation Cities ###
 	spriteType = {
@@ -647,6 +672,32 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_LIT_rebellion"
 		texturefile = "gfx/event_news_pictures/Europe/news_event_LIT_rebellion.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_LIT_russophile_coup"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_LIT_russophile_coup.png"
+	}
+
+	### WHR - White Ruthenia ###
+	spriteType = {
+		name = "GFX_news_event_WHR_sigismund_coup"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_WHR_sigismund_coup.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_WHR_astrouski_central_rada"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_WHR_astrouski_central_rada.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_WHR_kryvich_putsch"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_WHR_kryvich_putsch.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_WHR_litbel"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_WHR_litbel.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_WHR_revolution"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_WHR_revolution.png"
 	}
 
 	### MAF - Mittelafrika ###
@@ -734,7 +785,7 @@ spriteTypes = {
 	### NFA - National France ###
 	spriteType = {
 		name = "GFX_news_event_NFA_fall_algiers"
-		texturefile = "gfx/event_news_pictures/Africa/news_event_NFA_fall_algiers.png"
+		texturefile = "gfx/event_news_pictures/Africa/NationalFrance/news_event_NFA_fall_algiers.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_NFA_Petain_Holds"
@@ -794,11 +845,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_news_event_NFA_return_paris"
-		texturefile = "gfx/event_news_pictures/Africa/news_event_NFA_return_paris.png"
+		texturefile = "gfx/event_news_pictures/Africa/NationalFrance/news_event_NFA_return_paris.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_NFA_return_marseille"
-		texturefile = "gfx/event_news_pictures/Africa/news_event_NFA_return_marseille.png"
+		texturefile = "gfx/event_news_pictures/Africa/NationalFrance/news_event_NFA_return_marseille.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_NFA_de_gaulle"
@@ -1804,6 +1855,22 @@ spriteTypes = {
 		name = "GFX_event_NFA_west_indies"
 		texturefile = "gfx/event_pictures/Africa/National_France/GFX_event_NFA_west_indies.png"
 	}
+	spriteType = {
+		name = "GFX_event_NFA_second_republic_flag"
+		texturefile = "gfx/event_pictures/Africa/National_France/second_french_republic_flag.png"
+	}
+	spriteType = {
+		name = "GFX_event_NFA_nap_picker1"
+		texturefile = "gfx/event_pictures/Africa/National_France/GFX_event_NFA_nap_picker1.png"
+	}
+	spriteType = {
+		name = "GFX_event_NFA_nap_picker2"
+		texturefile = "gfx/event_pictures/Africa/National_France/GFX_event_NFA_nap_picker2.png"
+	}
+	spriteType = {
+		name = "GFX_event_NFA_nap_picker3"
+		texturefile = "gfx/event_pictures/Africa/National_France/GFX_event_NFA_nap_picker3.png"
+	}
 	
 	### NOR - Norway ###
 	spriteType = {
@@ -1868,6 +1935,10 @@ spriteTypes = {
 		name = "GFX_news_event_OTT_assyria"
 		texturefile = "gfx/event_news_pictures/Asia/news_event_OTT_assyria.png"
 	}
+	spriteType = {
+		name = "GFX_news_event_OTT_osman_fuad_coronation"
+		texturefile = "gfx/event_news_pictures/Asia/news_event_OTT_osman_fuad_coronation.png"
+	}
 
 	### PAP - Papal States ###
 	spriteType = {
@@ -1885,6 +1956,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_PAP_natpope"
 		texturefile = "gfx/event_news_pictures/Europe/news_event_PAP_natpope.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_PAP_auspope"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_PAP_auspope.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_PAP_ameripope"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_PAP_ameripope.png"
 	}
 	spriteType = {
 		name = "GFX_news_event_PAP_red_pope"
@@ -2033,6 +2112,10 @@ spriteTypes = {
 		texturefile = "gfx/event_news_pictures/Europe/news_event_RUS_tsar_wrangel.png"
 	}
 	spriteType = {
+		name = "GFX_news_event_RUS_tsar_wrangel_2"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_RUS_tsar_wrangel_2.png"
+	}
+	spriteType = {
 		name = "GFX_news_event_RUS_wrangel2"
 		texturefile = "gfx/event_news_pictures/Europe/news_event_RUS_wrangel2.png"
 	}
@@ -2076,6 +2159,18 @@ spriteTypes = {
 		name = "GFX_news_event_RUS_cossacks"
 		texturefile = "gfx/event_news_pictures/Europe/news_event_RUS_cossacks.png"
 	}
+	spriteType = {
+		name = "GFX_news_event_KAR_vidlitsa_provocation"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_KAR_vidlitsa_provocation.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_KAR_karelian_crisis"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_KAR_karelian_crisis.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_KAR_bombardment"
+		texturefile = "gfx/event_news_pictures/Europe/GFX_news_event_KAR_bombardment.png"
+	}
 
 	### SAF - South Africa ###
 	spriteType = {
@@ -2097,6 +2192,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_SAF_war"
 		texturefile = "gfx/event_news_pictures/Africa/news_event_SAF_war.png"
+	}
+
+	### SWE - Sweden ###
+	spriteType = {
+		name = "GFX_news_event_SWE_socialist"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SWE_socialist.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_SWE_military"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SWE_military.png"
 	}
 
 	### SCA - Scandinavia ###
@@ -2213,12 +2318,20 @@ spriteTypes = {
 		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_mussolini.png"
 	}
 	spriteType = {
-		name = "GFX_news_event_SRI_togliatti"
-		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_togliatti.png"
+		name = "GFX_news_event_SRI_di_vittorio"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_di_vittorio.png"
 	}
 	spriteType = {
-		name = "GFX_news_event_SRI_turati"
-		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_turati.png"
+		name = "GFX_news_event_SRI_gramsci"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_gramsci.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_SRI_matteotti"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_matteotti.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_SRI_garibaldi"
+		texturefile = "gfx/event_news_pictures/Europe/news_event_SRI_garibaldi.png"
 	}
 
 	### SWI - Switzerland ###

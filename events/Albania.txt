@@ -440,15 +440,15 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "Partia Republikane e Shqipërisë (Republican Party of Albania)"
-			name = "Partia Republikane"
+			long_name = ALB_social_conservative_zogu_party_long
+			name = ALB_social_conservative_zogu_party
 		}
 
 		hidden_effect = {
 			create_country_leader = {
 				name = "Ahmet Zogu"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Ahmet_Zogu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_oligarchy_subtype
 			}
 		}
@@ -1098,8 +1098,8 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "Partia Socialdemokrate e Shqipërisë (Social Democratic Party of Albania)"
-			name = "PSD"
+			long_name = ALB_social_democrat_noli_party_long
+			name = ALB_social_democrat_noli_party
 		}
 
 		hidden_effect = {
@@ -1107,7 +1107,7 @@ country_event = {
 				name = "Fan Noli"
 				desc = "POLITICS_FAN_NOLI_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_radical_progressivism_subtype
 			}
 		}
@@ -1710,8 +1710,8 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "Partia Republikane e Shqipërisë (Republican Party of Albania)"
-			name = "Partia Republikane"
+			long_name = ALB_social_conservative_zogu_party_long
+			name = ALB_social_conservative_zogu_party
 		}
 
 		set_politics = {
@@ -1732,7 +1732,7 @@ country_event = {
 			create_country_leader = {
 				name = "Ahmet Zogu"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Ahmet_Zogu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_oligarchy_subtype
 			}
 
@@ -1795,8 +1795,8 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "Partia Republikane e Shqipërisë (Republican Party of Albania)"
-			name = "Partia Republikane"
+			long_name = ALB_social_conservative_zogu_party_long
+			name = ALB_social_conservative_zogu_party
 		}
 
 		set_politics = {
@@ -1817,7 +1817,7 @@ country_event = {
 			create_country_leader = {
 				name = "Ahmet Zogu"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Ahmet_Zogu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_oligarchy_subtype
 			}
 		}
@@ -1852,15 +1852,15 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "Partia Socialdemokrate e Shqipërisë (Social Democratic Party of Albania)"
-			name = "PSD"
+			long_name = ALB_social_democrat_noli_party_long
+			name = ALB_social_democrat_noli_party
 		}
 
 		create_country_leader = {
 			name = "Fan Noli"
 			desc = "POLITICS_FAN_NOLI_DESC"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = socdem_radical_progressivism_subtype
 		}
 	}
@@ -1914,8 +1914,8 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_democrat
-			long_name = "Partia Socialdemokrate e Shqipërisë (Social Democratic Party of Albania)"
-			name = "PSD"
+			long_name = ALB_social_democrat_noli_party_long
+			name = ALB_social_democrat_noli_party
 		}
 
 		set_politics = {
@@ -1937,7 +1937,7 @@ country_event = {
 				name = "Fan Noli"
 				desc = "POLITICS_FAN_NOLI_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_radical_progressivism_subtype
 			}
 
@@ -2014,7 +2014,7 @@ country_event = {
 				name = "Wilhelm zu Wied"
 				desc = "POLITICS_WILLIAM_WIED_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Wilhelm_Wied.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = prussian_constitutionalism_subtype
 		}
 		
@@ -2036,8 +2036,8 @@ country_event = {
 
 		set_party_name = {
 				ideology = authoritarian_democrat
-				long_name = "Grafschaft Wied-Neuwied"
-				name = "Grafschaft Wied-Neuwied"
+				long_name = ALB_authoritarian_democrat_wied_party_long
+				name = ALB_authoritarian_democrat_wied_party
 		}
 		add_popularity = {
 				ideology = authoritarian_democrat
@@ -2061,7 +2061,7 @@ country_event = {
 				name = "Fan Noli"
 				desc = "POLITICS_FAN_NOLI_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_radical_progressivism_subtype
 			}
 
@@ -2140,14 +2140,14 @@ country_event = {
 
 		set_party_name = {
 			ideology = social_conservative
-			long_name = "Partia Republikane e Shqipërisë (Republican Party of Albania)"
-			name = "Partia Republikane"
+			long_name = ALB_social_conservative_zogu_party_long
+			name = ALB_social_conservative_zogu_party
 		}
 
 		create_country_leader = {
 			name = "Ahmet Zogu"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Ahmet_Zogu.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = soccon_oligarchy_subtype
 		}
 	}
@@ -2439,7 +2439,7 @@ country_event = {
 		tag = AUS
 		ALB = {
 			NOT = {
-				is_subject_of = AUS
+				is_in_faction_with = AUS
 			}
 		}
 		has_idea = ALB_gave_austria_oil
@@ -3139,9 +3139,9 @@ country_event = {
 		}
 
 		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = "Partia Republikane e Shqipërisë (Republican Party of Albania)"
-			name = "Partia Republikane"
+			ideology = social_conservative
+			long_name = ALB_social_conservative_zogu_party_long
+			name = ALB_social_conservative_zogu_party
 		}
 		remove_all_ministers = yes
 		add_ideas = {
@@ -3156,7 +3156,7 @@ country_event = {
 			create_country_leader = {
 				name = "Ahmet Zogu"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Ahmet_Zogu.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authoritarian_democrat_subtype
 			}
 		}
@@ -3205,50 +3205,50 @@ country_event = {
 
 			set_party_name = {
 				ideology = paternal_autocrat
-				long_name = "House of Zog"
-				name = "House of Zog"
+				long_name = ALB_paternal_autocrat_zogu_party_long
+				name = ALB_paternal_autocrat_zogu_party
 			}
 			
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_radical_progressivism_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = market_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_oligarchy_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = authoritarian_democrat_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = absolute_monarchy_subtype
 			}
 			create_country_leader = {
 				name = "Zog I"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Zog_I.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_populist_subtype
 			}
 			create_field_marshal = {
@@ -3496,38 +3496,38 @@ country_event = {
 			create_country_leader = {
 				name = "Avni Rustemi"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Avni_Rustemi.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = socdem_radical_progressivism_subtype
 			}
 			create_country_leader = {
 				name = "Xhafer Ypi"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Xhafer_Ypi.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = social_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Kemal Vrioni"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Kemal_Vrioni.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = market_liberal_subtype
 			}
 			create_country_leader = {
 				name = "Shefqet Vërlaci"
 				desc = "POLITICS_SHEFQET_VERLACI_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Shefqet_Verlaci.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = soccon_oligarchy_subtype
 			}
 			create_country_leader = {
 				name = "Luigj Bumçi"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Luigj_Bumci.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = autdem_christian_democracy_subtype
 			}
 			create_country_leader = {
 				name = "Mid'hat Frashëri"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Midhat_Frasheri.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = national_populist_subtype
 			}
 	}
@@ -3553,7 +3553,7 @@ country_event = {
         create_country_leader = {
 			name = "Workers' Congress of Albania"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Workers_Congress.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
         add_political_power = -100
@@ -3580,13 +3580,13 @@ country_event = {
 			name = "Enver Hoxha"
 			desc = "POLITICS_ENVER_HOXHA_DESC"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Enver_Hoxha.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
         set_party_name = {
             ideology = syndicalist
-            long_name = "Kongresi i Punëtorëve të Shqipërisë (Workers' Congress of Albania)"
-            name = "KPSh"
+            long_name = ALB_syndicalist_congress_party_long
+            name = ALB_syndicalist_congress_party
         }
 	}
 }
@@ -3663,7 +3663,7 @@ country_event = {
 		create_country_leader = {
 			name = "Nexhmije Hoxha" 
 			picture = "gfx/leaders/ALB/Portrait_ALB_Nexhmije_Hoxha.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			female = yes
 			ideology = ultra_hoxhaism_subtype
 		}
@@ -3714,7 +3714,7 @@ country_event = {
 		create_country_leader = {
 			name = "Workers' Congress of Albania"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Workers_Congress.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = syndicalist_subtype
 		}
 	}
@@ -4212,7 +4212,7 @@ country_event = {#Bye Bye Zai
 				name = "Fan Noli"
                 desc = "POLITICS_FAN_NOLI_DESC"
 				picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-				expire = "1965.1.1"
+				expire = "1.1.1"
 				ideology = christian_socialism_subtype 
 			}
 		}
@@ -4242,6 +4242,10 @@ country_event = {#The Arbëreshë Plight
 					is_claimed_by = ITA
 					is_core_of = SRD
 					is_claimed_by = SRD
+					is_core_of = SIC
+					is_claimed_by = SIC
+					is_core_of = PAP
+					is_claimed_by = PAP
 					is_core_of = GRE
 					is_claimed_by = GRE
 				}
@@ -4298,8 +4302,13 @@ country_event = {#The Second Noli Government?
 	create_country_leader = {
 			name = "Fan Noli"
 			picture = "gfx/leaders/ALB/Portrait_ALB_Fan_Noli.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = christian_socialism_subtype 
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = ALB_radical_socialist_noli_party_long
+			name = ALB_radical_socialist_noli_party
 		}
 	}
 	option = { #
@@ -4946,7 +4955,6 @@ country_event = {#Antonio Gramsci
 		owns_state = 115
 	    }
 		NOT = {
-		country_exists = ITA
 		country_exists = SRI
 		}
 	}
@@ -4956,13 +4964,13 @@ country_event = {#Antonio Gramsci
 		create_country_leader = {
 			name = "Antonio Gramshi"
 			picture = "gfx/leaders/SRI/Portrait_SRI_Antonio_Gramsci.png"
-			expire = "1965.1.1"
+			expire = "1.1.1"
 			ideology = radsoc_machiavellian_socialism_subtype 
 		}
 		set_party_name = {
 			ideology = radical_socialist
-			long_name = "Partia Komuniste e Rindertuar (Communist Reconstruction Party)"
-			name = "PKR"
+			long_name = ALB_radical_socialist_gramsci_party_long
+			name = ALB_radical_socialist_gramsci_party
 		}
 		set_politics = {
 			ruling_party = radical_socialist
@@ -4977,5 +4985,58 @@ country_event = {#Antonio Gramsci
 		name = albsoc.39.b
 		add_stability = 0.03
 		add_command_power = 10
+	}
+}
+
+### Hoxhmas
+
+country_event = {
+	id = albsoc.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event albsoc.40" }
+	title = albsoc.40.t
+	desc = albsoc.40.d
+	picture = GFX_report_event_ALB_Hoxha_New_Years
+
+    trigger = {
+	tag =  ALB
+	OR = {
+	AND = {
+	date > 1938.12.23
+	date < 1938.12.31
+	}
+	AND = {
+	date > 1939.12.23
+	date < 1939.12.31
+	}
+	AND = {
+	date > 1940.12.23
+	date < 1940.12.31
+	}
+	AND = {
+	date > 1941.12.23
+	date < 1941.12.31
+	}
+	AND = {
+	date > 1942.12.23
+	date < 1942.12.31
+	}
+	AND = {
+	date > 1943.12.23
+	date < 1943.12.31
+	}
+	AND = {
+	date > 1944.12.23
+	date < 1944.12.31
+	}
+	}
+	has_country_leader = { name = "Enver Hoxha" ruling_only = yes }
+	has_completed_focus = ALB_Worship_Albania_Venerate_Hoxha
+	}
+	fire_only_once = yes
+
+	option = { #ho ho ho
+		name = albsoc.40.a
+		add_stability = 0.04
+		increase_ruling_party_popularity_by_2 = yes
 	}
 }

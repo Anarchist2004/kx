@@ -18,6 +18,8 @@ GXC_warrior_identity_tooltip:0 "Modify §HGuangxi Ruled by Guangxi People§! by\
 GXC_guangxi_merge_ideas:0 "Merge §Hall Guangxi-related ideas§!\nEffective change:\nRecruitable Population Factor: §G2.5%§!\nWar Support: §G+10%§!"
 GXC_guangdong_merge_ideas:0 "Merge §Hall Guangdong-related ideas§!"
 GXC_military_effect_tooltip:0 "Replace §HOfficer Vanguards§! or §HProfessional Officers§! with §HLiangguang's NRA§!\nEffective change:\nDivision Attack: §G+5.0%§!\nDivision Organisation: §G+5.0%§!\n"
+GXC_if_seventh_army_chosen: "If §H$GXC_seventh_army$§! was chosen:"
+GXC_if_fourth_army_chosen: "If §H$GXC_fourth_army$§! was chosen:"
 guangxi_rebels_tt:0 "The Guangxi Clique revolts against our rule!\n"
 guangdong_loyalists_tt:0 "Loyalists in Guangdong will rally against us!\n"
 exploit_guangdong:0 "We are exploiting Guangdong Province"
@@ -65,6 +67,9 @@ GXC_KMT_northern_expedition_tt:0 "Unlocks £decision_icon_small §HDecisions§! 
 GXC_improved_integration_tt:0 "The decisions to integrate §HChinese provinces§! as core states of §H[GXC.GetNameDef]§! complete §G20§! Days faster.\nThe decisions to integrate §HChinese provinces§! as core states of §H[GXC.GetNameDef]§! costs §G10§! £pol_power Political Power less.\n"
 GXC_RKMT_elections_allowed:0 "Li Zongren allowed an elected Legislative Yuan"
 GXC_civil_war_over:0 "The Second Guangdong-Guangxi War is over.\n"
+
+GXC_work_with_chi_tt: "§LIf the Left Kuomintang has been defeated, we will be able to rally the remnants of the Provisional Action Committee in Guangzhou!§!"
+
 GXC_kmt_unify_tt: "§LBe warned! Upon the unification of our country under the KMT's banner, we will lose §Rmany of our provincial and NRA buffs,§! as we will have to rebuild the country from years of internal chaos.\nWe will receive new additional focuses once the Republic of China has been proclaimed!§!"
 
  GXC_arsenals_tt: "§LThis focus will give us one additional military factory if we own the following provinces/cities: §YWuhan§!, §YKaifeng§!, §YNanjing§!, §YShenyang§!, §YGuangzhou§!.§!"
@@ -139,6 +144,7 @@ GXC_UPC_ultimatums_desc:0 "[GXC_UPC_ultimatums_descs]"
 
 GXC_UPC_ultimatums_titles_YUN:0 "[FROM.GetFlag] Invite Tang Jiyao"
 GXC_UPC_ultimatums_titles_default:0 "[FROM.GetFlag] Contact [FROM.GetNameDef]"
+GXC_UPC_ultimatums_tooltip:0 "§H[ROOT.GetNonIdeologyNameDef]§! and §H[FROM.GetNonIdeologyNameDef]§! are not attending the §HUnification Conference§!"
 
 GXC_UPC_ultimatums_descs_HNN:0 "Many in Hunan support Federalism, but their control of the provincial government is not guaranteed. Regardless, its leadership should be given an opportunity to make amends and return power to the Hunanese people."
 GXC_UPC_ultimatums_descs_SZC:0 "The province of Sichuan has seen terrible blights after terrible blights. Famine, warlords, bandits, and so on. Perhaps the United Provinces can bring stability to the troubled province and restore the people's faith?"
@@ -419,12 +425,6 @@ GXC_federalist_support_2_desc:0 "The Federalist Government currently has signifi
 
 GXC_federalist_support_3:0 "Widespread Popular Support"
 GXC_federalist_support_3_desc:0 "The Federalist Government currently has widespread support throughout China. Its position as sole government of China is now uncontested and we can expect stability to return to the country."
-
-GXC_federalist_secured_china:0 "Federalist China"
-GXC_federalist_secured_china_desc:0 "The Federalists have reunited China. Many hope that their victory over the monarchists, warlords, and dictators will not only lead to a stable democratic republic, but finally peace in China."
-
-GXC_workers_strike:0 "Workers' Strike"
-GXC_workers_strike_desc:0 "The workers of Guangzhou, one of the few industrialized cities of China, have gone on strike due to a change in government policy. It will take some time before this labour dispute settles down."
 
  ### Kuomintang Ideas
 
@@ -1370,8 +1370,8 @@ lngcivilwar.17.a:0 "They will now serve a greater purpose."
 
 lngcivilwar.18.t:0 "Old Guangxi Clique Seeks Asylum"
 lngcivilwar.18.d:0 "Ma Ji and Lu Yuguang, leaders of the clique that formerly ruled Guangxi, have fled their homes after a power struggle. The two are old friends that once served under us during the war with the Kuomintang and they have asked to serve in our armed forces after being forced out of Guangxi, perhaps seeking a way to restore their rule someday."
-lngcivilwar.18.a:0 "Of course, these old friends are welcome."
-lngcivilwar.18.b:0 "They will have to find a new home elsewhere."
+lngcivilwar.18.a:0 "They will have to find a new home elsewhere."
+lngcivilwar.18.b:0 "Of course, these old friends are welcome."
 
 lngcivilwar.19.t:0 "Fate of Guangdong"
 lngcivilwar.19.d:0 "Now that Guangdong is under our control, we must choose who will replace the previous provincial government. The top brass of the Clique is arguing for total exploitation of the developed province in order to fuel Guangxi's own development and, more important, fund an increasingly large and modern army. Of course, this is arguably rather short-sighted, and more politically-knowledgeable members of the Clique argue that we should hand over the provincial governments to the local elites so that the province isn't sucked dry."

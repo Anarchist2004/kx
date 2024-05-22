@@ -459,6 +459,25 @@ GRU = {
 	}
 }
 
+EPR = {
+	male = {
+		names = {
+			Karl Wilhelm Hans Walter Heinrich Otto Hermann Paul Ernst Friedrich Willi Kurt Fritz Franz Erich Alfred Rudolf Herbert Johannes Max Gustav Werner Richard Johann Georg Adolf Albert Emil August Arthur Helmut Robert Bruno Heinz Josef Gerhard Bernhard Erwin Ludwig Hugo
+		}
+	}
+	female = {
+		names = {
+			Anna Martha Frieda Gertrud Erna Margarethe Elisabeth Marie Emma Hertha Helene Käthe Bertha Elsa Luise Johanna Hedwig Charlotte Ella Klara
+		}
+	}
+	surnames = {
+		Müller Schmidt Meyer Schneider Schulz Fischer Weber Hoffmann Becker Wagner Richter Koch Schröder Schäfer Bauer Krüger Schulze Neumann Lehmann Klein Lange Wolf Krause Zimmermann Schwarz Kortschädel Hartmann Meier Kantorek Schmitz Braun Köhler Weiß Möller Schubert Schmitt Scholz König Kaiser Fuchs
+	}
+	callsigns = {
+		Bubi Assi Gerd Dolfo "Fighter of Libau" Pritzl "Spook of Saint-Omer" Schorsch Quax Sohndel Macky Specker "Der Kleine" "Die Nase" Beißer Bu-Mann Pit "Der Graf" Bully Vati Tutti Pips Wumm Kuddel Fürst Bonifazius Fips "Lion of Kuban" Dackel Pipifax Birth Franzl Gulle Wimmersal Rammdahl Negus Caesar Fakker
+	}
+}
+
 DDR = {
 	male = {
 		names = {
@@ -1563,6 +1582,102 @@ RUS = {
 	}
 }
 
+RVA = {
+	male = {
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
+	}
+	female = {
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
+RRF = {
+	male = {
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
+	}
+	female = {
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
+WRA = {
+	male = {
+		names = {
+			Aleksandr Aleksey Anatoliy Andrey Anton Arkadiy Arseniy Artemiy Artyom Artur Afanasiy Bogdan Boris Vadim Valeriy Vasiliy Viktor Vladimir Vladislav Vyacheslav Vsevolod Gennadiy Giorgiy Grigoriy Gleb Gerasim Gavriil
+			Denis Dmitriy Yegor Yevgeniy Zinoviy Igor Ilya Ivan Kirill Konstantin Kuzma Lavrentiy Leonid Lev Makar Matvey Maksim Mitrofan Mikhail Nikita Nikolay Oleg Pavel Pyotr Rodion Roman Ruslan Svyatoslav Semyon Sergey
+			Stanislav Stepan Taras Timofey Fyodor Filipp Khariton Khristofor Eduard Yuriy Yakov
+		}
+		surnames = {
+			Ivanov Smirnov Kuznetsov Popov Vasilyev Petrov Sokolov Mikhaylov Novikov Fyodorov Morozov Volkov Alekseyev Lebedev Semyonov Yegorov Pavlov Kozlov Stepanov Nikolayev Orlov Andreyev Makarov Nikitin Zakharov Zaytsev
+			Solovyev Borisov Yakovlev Grigoryev Romanov Vorobyev Sergeyev Kuzmin Frolov Aleksandrov Dmitriyev Korolyov Gusev Kiselyov Ilyin Maksimov Polyakov Sorokin Vinogradov Kovalyov Belov Medvedev Antonov Tarasov Baranov
+			Filippov Komarov Davydov Belyayev Gerasimov Bogdanov Osipov Sidorov Matveyev Markov Mironov Krylov Kulikov Karpov Melnikov Denisov Gavrilov Kazakov Afanasyev Timofeyev Fomin Chernov
+		}
+	}
+	female = {
+		names = {
+			Aleksandra Anna Albina Aglaya Alla Angelina Albina Antonina Valentina Valeriya Vera Vasilisa Varvara Veronika Viktoriya Galina Darya Yevgeniya Evdokiya Yekaterina Yelena Yelizaveta Zhanna Zinaida Zoya Inga Inna
+			Irina Karina Klavdiya Kseniya Lidiya Ella Larisa Liliya Lyubov Lyudmila Margarita Marina Marfa Matryona Nadezhda Natalya Nina Oksana Olga Pelageya Polina Praskovya Raisa Svetlana Snezhana Sofiya Taisiya Tamara
+			Tatyana Faina Feodora Yuliya Yana
+		}
+		surnames = {
+			Ivanova Smirnova Kuznetsova Popova Vasilyeva Petrova Sokolova Mikhaylova Novikova Fyodorova Morozova Volkova Alekseyeva Lebedeva Semyonova Yegorova Pavlova Kozlova Stepanova Nikolayeva Orlova Andreyeva Makarova
+			Nikitina Zakharova Zaytseva Solovyeva Borisova Yakovleva Grigoryeva Romanova Vorobyeva Sergeyeva Kuzmina Frolova Aleksandrova Dmitriyeva Korolyova Guseva Kiselyova Ilyina Maksimova Polyakova Sorokina Vinogradova
+			Kovalyova Belova Medvedeva Antonova Tarasova Baranova Filippova Komarova Davydova Belyayeva Gerasimova Bogdanova Osipova Sidorova Matveyeva Markova Mironova Krylova Kulikova Karpova Melnikova Denisova Gavrilova
+			Kazakova Afanasyeva Timofeyeva Fomina Chernova
+		}
+	}
+	callsigns = {
+		13 33 Furious Arrow Vortex Warlock Colonist Eagle Falcon Baron Snowflake Scout Shcherba Lily Baida Fright Fakir Hedgehopper Hawk Colorad Howl Blizzard Dawn Steel Iron Gull Thunder Swallow Dragon Flyer
+		Beard Cherry Skomorokh Maestro Tiger Hot Kid Gypsy Navel Mordvin Varangian Swan Magpie Maple Pike Beagle "White Lily" "White Hundred"
+	}
+}
+
 SIB = {
 	male = {
 		names = {
@@ -1868,7 +1983,6 @@ TRM = {
 		"Brusilov"
 		"Budyonny"
 		"Chibisov"
-		"Denikin"
 		"Dragomirov"
 		"Frolov"
 		"Golivin"
@@ -1878,8 +1992,6 @@ TRM = {
 		"Ivannikov"
 		"Konev"
 		"Konstantinov"
-		"Kornilov"
-		"Kolchak"
 		"Kuropatkin"
 		"Lazarev"
 		"Makarov"
@@ -1991,7 +2103,6 @@ DKB = {
 		"Brusilov"
 		"Budyonny"
 		"Chibisov"
-		"Denikin"
 		"Dragomirov"
 		"Frolov"
 		"Golivin"
@@ -2001,8 +2112,6 @@ DKB = {
 		"Ivannikov"
 		"Konev"
 		"Konstantinov"
-		"Kornilov"
-		"Kolchak"
 		"Kuropatkin"
 		"Lazarev"
 		"Makarov"
@@ -4238,6 +4347,127 @@ VNC = {
 		"Lightning"
 		"Boring"
 		"Flyby"
+		"Two Shot"
+		"Rosso"
+	}
+}
+
+LOM = {
+	male = {
+		names = {
+			"Alessandro"
+			"Alfonso"
+			"Ambrogio"
+			"Amedeo"
+			"Andrea"
+			"Angelo"
+			"Antonio"
+			"Benito"
+			"Camillo"
+			"Carlo"
+			"Cesare"
+			"Costanzo"
+			"Davide"
+			"Enrico"
+			"Ettore"
+			"Fabrizio"
+			"Faustino"
+			"Federico"
+			"Felice"
+			"Ferdinando"
+			"Fiorenzo"
+			"Francesco"
+			"Gaetano"
+			"Gennaro"
+			"Girolamo"
+			"Giulio"
+			"Giuseppe"
+			"Guglielmo"
+			"Innocenzo"
+			"Leopoldo"
+			"Luigi"
+			"Marco"
+			"Massimo"
+			"Matteo"
+			"Nicola"
+			"Oreste"
+			"Paolo"
+			"Pasquale"
+			"Pietro"
+			"Prospero"
+			"Raffaele"
+			"Roberto"
+			"Ruggiero"
+			"Silvio"
+			"Simone"
+			"Tancredi"
+			"Ugo"
+			"Umberto"
+			"Vincenzo"
+			"Vittorio"
+		}
+	}
+	female = {
+		names = {
+			Ada Adelaide Adele Adriana Alessa Alessandra Alessia Antonia Arianna Barbara Beatrice Benedetta Berenice Bianca Carola Carolina Cassandra Caterina Cecilia Celeste Clara Elena Emilia Francesca Giorgia Giulia Jessica Linda Lisa Livia  Lucia Lucrezia Ludovica Luisa Martina Monica Nadia Nunzia Olivia Rebecca Rosina Serena Silvia Sofia Sophia Stella Teresa Veronica Virginia
+		}
+	}
+	surnames = {
+		"Acton"
+		"Albricci"
+		"Badoglio"
+		"Baldissera"
+		"Baratieri"
+		"Bava-Beccaris"
+		"Cadorna"
+		"Cagni"
+		"Canevaro"
+		"Capello"
+		"Caviglia"
+		"Ceccherini"
+		"Cialdini"
+		"Cusani"
+		"Dezza"
+		"di Robilant"
+		"Emo"
+		"Fanti"
+		"Fara"
+		"Filomarino"
+		"Garibaldi"
+		"Giardino"
+		"Govone"
+		"La Màrmora"
+		"Mambretti"
+		"Menabrea"
+		"Orengo"
+		"Pallavicino"
+		"Pecori-Giraldi"
+		"Pelloux"
+		"Perruchetti"
+		"Pianelli"
+		"Porro"
+		"Presbitero"
+		"Ramorino"
+		"Ricotti-Magnani"
+		"Sacchi"
+		"Saletta"
+		"Sanna"
+		"Solari"
+		"Vaccari"
+		"Zupelli"
+	}
+	callsigns = {
+		"Buzzard"
+		"Dusty"
+		"Falcon"
+		"Hawk"
+		"Hammer"
+		"Viper"
+		"Banshee"
+		"The Baron"
+		"Lightning"
+		"Duce"
+		"Raven"
 		"Two Shot"
 		"Rosso"
 	}
