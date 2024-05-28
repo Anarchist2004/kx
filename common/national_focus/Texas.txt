@@ -2113,7 +2113,13 @@ focus_tree = {
 	
 	focus = {
 		id = TXS_chose_brooks
-		icon = GFX_goal_ross
+		icon = {
+			value = GFX_goal_TXS_tenayuca
+			trigger = { has_country_flag = TXS_socialist_primary_tenayuca }
+		}
+		icon = {
+			value = GFX_goal_ross
+		}
 		cost = 4
 		available = {
 			has_war = no
@@ -2542,7 +2548,7 @@ focus_tree = {
 	
 	focus = {
 		id = TXS_oil_barons
-		icon = GFX_goal_texaco
+		icon = GFX_goal_TXS_texaco_rule
 		cost = 2
 		available = {
 			OR = {
@@ -2898,7 +2904,6 @@ focus_tree = {
 				has_government = national_populist
 				has_government = paternal_autocrat
 			}
-			has_completed_focus = TXS_slaves_to_the_dollar
 		}
 		prerequisite = {focus = TXS_new_ventures}
 		prerequisite = {focus = TXS_markets}
@@ -3677,7 +3682,7 @@ focus_tree = {
 			add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
 			swap_ideas = {
 				remove_idea = TXS_huac
-				add_ideas = TXS_huac2_garner
+				add_idea = TXS_huac2_garner
 			}
 		}
 	}		
@@ -4008,7 +4013,7 @@ focus_tree = {
 	
 	focus = {
 		id = TXS_president_houston
-		icon = GFX_goal_sam
+		icon = GFX_goal_TXS_andrew_jackson_houston
 		x = 3
 		y = 1
 		relative_position_id = TXS_break_the_sword
