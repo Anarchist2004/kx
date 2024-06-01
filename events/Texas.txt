@@ -1348,10 +1348,6 @@ country_event = { # Texas Leaves!
 			}
 			TXS = {
 				country_event = {
-					id = TXS.42
-					days = 125
-				}
-				country_event = {
 					id = TXS.93
 					days = 47
 				}
@@ -1361,7 +1357,7 @@ country_event = { # Texas Leaves!
 				}
 				country_event = {
 					id = TXS.118
-					days = 23
+					days = 233
 				}
 			}
 			MEX = {
@@ -1997,9 +1993,9 @@ country_event = { # Fate of Pecos
 		}
 		add_political_power = 100
 		TXS = {
-		country_event = {
-			id = TXS.13
-			days = 1
+			country_event = {
+				id = TXS.13
+				days = 1
 			}
 		}
 	}
@@ -2012,6 +2008,12 @@ country_event = { # Fate of Pecos
 		add_political_power = -100
 		TXS = {
 			transfer_state = 1166
+		}
+		TXS = {
+			country_event = {
+				id = TXS.213
+				days = 1
+			}
 		}
 	}
 }
@@ -2045,6 +2047,24 @@ country_event = { # Mexico Refuses
 		add_political_power = -100
 	}
 }
+
+country_event = { # Mexico Accepts
+	id = TXS.213
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.213"}
+	title = TXS.213.t
+	desc  = TXS.213.d
+	picture = GFX_USA_Riots
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Cool
+		name = TXS.213.a
+		add_political_power = 20
+	}
+}
+
+
 #####Elections######
 country_event = { #1937 Election
 	id = TXS.14
@@ -4028,7 +4048,7 @@ country_event = { # America is reunited
 		set_global_flag = USA_HAS_RETURNED
 	}
 }
-country_event = { # Austrian say yes!
+country_event = { #Other factions accept us existing
 	id = TXS.31
 	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.31"}
 	title = TXS.31.t
@@ -4044,6 +4064,12 @@ country_event = { # Austrian say yes!
 			factor = 95
 		}
 		set_global_flag= TXS_divided
+		hidden_effect = {
+			country_event = {
+				id = TXS.132
+				days = 45
+			}
+		}
 	}
 }
 country_event = { # Intro Event
@@ -4421,7 +4447,27 @@ country_event = { # Greenshirts
 		name = TXS.38.a
 		ai_chance = {
 			factor = 50
+		}
+		every_unit_leader = {
+			limit = { has_id = 78990 }
+			set_leader_portrait = GFX_Portrait_Texas_Claire_Lee_Chennault_Texaco
+		}
+		every_unit_leader = {
+			limit = { has_id = 78991 }
+			set_leader_portrait = GFX_Portrait_Texas_Ira_C_Eaker_Texaco
+		}
+		every_unit_leader = {
+			limit = { has_id = 78992 }
+			set_leader_portrait = GFX_Portrait_Texas_James_Earl_Rudder_Texaco
+		}
+		if = {
+			limit = { has_unit_leader = 90 }
+			every_unit_leader = {
+				limit = { has_id = 90 }
+				set_leader_portrait = GFX_Portrait_Texas_Dwight_Eisenhower_Texaco
 			}
+		}
+		set_country_flag = TXS_Texaco_Generals
 		hidden_effect = { load_oob = TXS_army_OOB }
 		set_country_flag = TXS_legion
 		country_event = {
@@ -4969,8 +5015,19 @@ country_event = { # 1941 Election
 				limit = { has_country_flag = TXS_1941_primary_moody }
 				create_country_leader = {
 					name = "Daniel James Moody"
-					desc = "POLITICS_COKE_R_STEVENSON_DESC"
+					desc = "POLITICS_DANIEL_JAMES_MOODY_DESC"
 					picture = "gfx/leaders/TXS/Portrait_Texas_Dan_Moody.png"
+					expire = "1.1.1"
+					ideology = centrist_subtype
+					traits = {  }
+				}
+			}
+			if = {	
+				limit = { has_country_flag = TXS_1941_primary_rogers }
+				create_country_leader = {
+					name = "Will Rogers"
+					desc = "POLITICS_WILL_ROGERS_DESC"
+					picture = "gfx/leaders/TXS/Portrait_Texas_Will_Rogers.png"
 					expire = "1.1.1"
 					ideology = centrist_subtype
 					traits = {  }
@@ -5171,8 +5228,19 @@ country_event = { # 1946 Election
 				limit = { has_country_flag = TXS_1946_primary_moody }
 				create_country_leader = {
 					name = "Daniel James Moody"
-					desc = "POLITICS_COKE_R_STEVENSON_DESC"
+					desc = "POLITICS_DANIEL_JAMES_MOODY_DESC"
 					picture = "gfx/leaders/TXS/Portrait_Texas_Dan_Moody.png"
+					expire = "1.1.1"
+					ideology = centrist_subtype
+					traits = {  }
+				}
+			}
+			if = {	
+				limit = { has_country_flag = TXS_1946_primary_rogers }
+				create_country_leader = {
+					name = "Will Rogers"
+					desc = "POLITICS_WILL_ROGERS_DESC"
+					picture = "gfx/leaders/TXS/Portrait_Texas_Will_Rogers.png"
 					expire = "1.1.1"
 					ideology = centrist_subtype
 					traits = {  }
@@ -5350,7 +5418,7 @@ country_event = { #
 				limit = { has_country_flag = TXS_1951_primary_moody }
 					create_country_leader = {
 					name = "Daniel James Moody"
-					desc = "POLITICS_COKE_R_STEVENSON_DESC"
+					desc = "POLITICS_DANIEL_JAMES_MOODY_DESC"
 					picture = "gfx/leaders/TXS/Portrait_Texas_Dan_Moody.png"
 					expire = "1.1.1"
 					ideology = centrist_subtype
@@ -5366,6 +5434,17 @@ country_event = { #
 					expire = "1.1.1"
 					ideology = centrist_subtype
 					traits = {}
+				}
+			}
+			if = {	
+				limit = { has_country_flag = TXS_1951_primary_rogers }
+				create_country_leader = {
+					name = "Will Rogers"
+					desc = "POLITICS_WILL_ROGERS_DESC"
+					picture = "gfx/leaders/TXS/Portrait_Texas_Will_Rogers.png"
+					expire = "1.1.1"
+					ideology = centrist_subtype
+					traits = {  }
 				}
 			}
 		}
@@ -5533,7 +5612,7 @@ country_event = { # 1951 Election
 				limit = { has_country_flag = TXS_1957_primary_moody }
 				create_country_leader = {
 					name = "Daniel James Moody"
-					desc = "POLITICS_COKE_R_STEVENSON_DESC"
+					desc = "POLITICS_DANIEL_JAMES_MOODY_DESC"
 					picture = "gfx/leaders/TXS/Portrait_Texas_Dan_Moody.png"
 					expire = "1.1.1"
 					ideology = centrist_subtype
@@ -6075,7 +6154,7 @@ country_event = { # Puppet President
 	}
 	
 	option = {
-		trigger = { has_country_flag = TXS_Ike }
+		trigger = { has_country_flag = TXS_Eisenhower_Returned }
 		name = TXS.64.c
 		ai_chance = {
 			factor = 50
@@ -6490,7 +6569,7 @@ country_event = { # Post-Junta Elections
 			}
 			create_country_leader = {
 				name = "Daniel James Moody"
-				desc = "POLITICS_COKE_R_STEVENSON_DESC"
+				desc = "POLITICS_DANIEL_JAMES_MOODY_DESC"
 				picture = "gfx/leaders/TXS/Portrait_Texas_Dan_Moody.png"
 				expire = "1.1.1"
 				ideology = centrist_subtype
@@ -7044,7 +7123,7 @@ country_event = { # Military Removes Texaco
 	}
 	
 	option = {
-		trigger = { has_country_flag = TXS_Ike }
+		trigger = { has_country_flag = TXS_Eisenhower_Returned }
 		name = TXS.81.c
 		ai_chance = {
 			factor = 50
@@ -7202,26 +7281,33 @@ country_event = { #Ike Returns
 	 
 	option = {
 		name = TXS.90.a
-		create_field_marshal = {# 
-			name = "Dwight D. Eisenhower "
-			desc = "USA_DWIGHT_EISENHOWER_ARMY_DESC"
-			portrait_path = "gfx/leaders/TXS/Portrait_Texas_Dwight_Eisenhower.png"
-			traits = {
-				organizer
-				trait_cautious
-				armor_officer
+		set_country_flag = TXS_Eisenhower_Returned
+		set_global_flag = TXS_Ike_is_in_Texas
+		if = {
+			limit = { WCC = { has_unit_leader = 90 } }
+			WCC = {
+				random_unit_leader = {
+					limit = { has_id = 90 }			
+					set_nationality = TXS
+					set_leader_portrait = GFX_Portrait_Texas_Dwight_Eisenhower
+				}
 			}
-			skill = 4
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
 		}
-		set_country_flag = TXS_Ike
-		WCC = {
-			random_unit_leader = {
-				limit = { has_id = 9500 }			
-				remove_unit_leader = yes
+		else = {
+			USA = {
+				random_unit_leader = {
+					limit = { has_id = 90 }			
+					set_nationality = TXS
+					set_leader_portrait = GFX_Portrait_Texas_Dwight_Eisenhower
+				}
+			}
+		}
+		clr_country_flag = Dwight_D_Eisenhower_dead
+		if = {
+			limit = { has_country_flag = TXS_Texaco_Generals }
+			every_unit_leader = {
+				limit = { has_id = 90 }
+				set_leader_portrait = GFX_Portrait_Texas_Dwight_Eisenhower_Texaco
 			}
 		}
 	}
@@ -7280,7 +7366,7 @@ country_event = { #King of the Hill
 	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.94"}
 	title = TXS.94.t
 	desc = TXS.94.d
-	picture = GFX_report_event_BEL_Radio
+	picture = GFX_report_event_TXS_king_of_the_hill
 
 	is_triggered_only = yes
 	
@@ -7360,6 +7446,10 @@ country_event = { #Independence Primary
 		name = TXS.97.b
 		set_country_flag = TXS_1941_primary_allred
 	}
+	option = { #Will Rogers
+		name = TXS.97.c
+		set_country_flag = TXS_1941_primary_rogers
+	}
 }
 
 country_event = { #Progressive Primary
@@ -7403,6 +7493,16 @@ country_event = { #Independence Primary - 1946
 			}
 		}
 		set_country_flag = TXS_1946_primary_moody
+	}
+	
+	option = { #Will Rogers
+		name = TXS.99.c
+		trigger = {
+			NOT = {
+				has_government = social_liberal
+			}
+		}
+		set_country_flag = TXS_1946_primary_rogers
 	}
 	
 	option = { #Current Guy in charge
@@ -7505,9 +7605,15 @@ country_event = { #Independence Primary - 1951
 	} 
 	
 	option = { #Dwight Eisenhower
-		trigger = { has_country_flag = TXS_Ike }
+		trigger = { has_country_flag = TXS_Eisenhower_Returned }
 		name = TXS.102.b
 		set_country_flag = TXS_1951_primary_eisenhower
+	}
+	
+	
+	option = { #Will Rogers
+		name = TXS.97.c
+		set_country_flag = TXS_1951_primary_rogers
 	}
 	
 	option = { #Current Guy in charge
@@ -7677,7 +7783,6 @@ country_event = { #Independence Primary - 1957
 	option = { #Dan Moody
 		name = TXS.106.a
 		trigger = {
-			has_country_flag = TXS_Ike 
 			NOT = {
 				has_government = social_liberal
 			}
@@ -7687,7 +7792,7 @@ country_event = { #Independence Primary - 1957
 	
 	option = { #Dwight Eisenhower
 		trigger = {
-			has_country_flag = TXS_Ike 
+			has_country_flag = TXS_Eisenhower_Returned 
 			NOT = {
 				has_government = social_liberal
 			}
@@ -8617,6 +8722,14 @@ country_event = {#
 		name = TXS.129.g
 		set_capital = { state = 480 }
 	}
+	option = {#
+		name = TXS.129.h
+		set_capital = { state = 375 }
+		add_victory_points = {
+			province = 12341
+			value = 30
+		}
+	}
 }
 
 country_event = {#
@@ -8647,20 +8760,6 @@ country_event = {#
 	}
 }
 
-country_event = { #Red Cowboi
-	id = TXS.132
-	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.32"}
-	title = TXS.132.t
-	desc = TXS.132.d
-	picture = GFX_arz_redboy
-	is_triggered_only = yes
-
-	option = {
-		name = TXS.132.a
-		increase_ruling_party_popularity_by_2 = yes
-	}
-}
-
 news_event = { #Texas breaks free
 	id = TXS.131
 	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.131"}
@@ -8677,6 +8776,186 @@ news_event = { #Texas breaks free
 
 	option = {
 		name = TXS.131.a
+	}
+}
+
+country_event = { #Do World Politics?
+	id = TXS.132
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.132"}
+	title = TXS.132.t
+	desc = TXS.132.d
+	picture = GFX_arz_redboy
+	is_triggered_only = yes
+
+	option = { #Join faction
+		name = TXS.132.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_LEFT_ALONE_FOREVER
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = TXS_faction_options
+		set_country_flag = TXS_took_a_side
+	}
+	
+	option = { #Alone
+		name = TXS.132.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_REICHSPAKT
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_REICHSPAKT_LITE
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_INTERNATIONALE
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_INTERNATIONALE_LITE
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_ENTENTE
+					}
+					has_game_rule = {
+						rule = TXS_foreign_policy
+						option = TXS_FOREGN_POLICY_ENTENTE_LITE
+					}
+				}
+			}
+		}	
+		add_ideas = TXS_Big_Neutrality
+	}
+}
+
+country_event = { #Red Cowboi
+	id = TXS.133
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.133"}
+	title = TXS.133.t
+	desc = TXS.133.d
+	picture = GFX_arz_redboy
+	is_triggered_only = yes
+
+	option = {
+		name = TXS.133.a
+		increase_ruling_party_popularity_by_2 = yes
+	}
+}
+
+country_event = { #Mexican Cession Taken
+	id = TXS.134
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.134"}
+	title = TXS.134.t
+	desc = TXS.134.d
+	picture = GFX_report_event_TXS_lamar_borders
+	is_triggered_only = yes
+
+	option = {
+		name = TXS.134.a
+		add_political_power = 50
+	}
+	
+	option = {
+		name = TXS.134.b
+		if = {
+			limit = { 
+				has_country_flag = TXS_kingdom_founded
+				NOT = {
+					OR = {
+						has_country_leader = {
+							ruling_only = yes
+							name = "Wilhelm II"
+						}
+						has_country_leader = {
+							ruling_only = yes
+							name = "Wilhelm III"
+						}
+						has_country_leader = {
+							ruling_only = yes
+							name = "Stanley I"
+						}
+						has_country_leader = {
+							ruling_only = yes
+							name = "Maximilian I"
+						}
+						has_country_leader = {
+							ruling_only = yes
+							name = "Adolph I"
+						}
+					}
+				}
+			}
+			set_cosmetic_tag = TXS_WEST_KING
+		}
+		if = {
+			limit = {
+				has_country_flag = TXS_kingdom_founded
+				OR = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "Wilhelm II"
+					}
+					has_country_leader = {
+						ruling_only = yes
+						name = "Wilhelm III"
+					}
+				}
+			}
+			set_cosmetic_tag = TXS_WEST_KTX	
+		}
+		if = {
+			limit = {
+				has_country_flag = TXS_kingdom_founded
+				has_country_leader = {
+					ruling_only = yes
+					name = "Stanley I"
+				}
+			}
+			set_cosmetic_tag = TXS_WEST_BRIT
+		}
+		if = {
+			limit = {
+				has_country_flag = TXS_kingdom_founded
+				has_country_leader = {
+					ruling_only = yes
+					name = "Maximilian I"
+				}
+			}
+			set_cosmetic_tag = TXS_WEST_CZE_LOB
+		}
+		if = {
+			limit = {
+				has_country_flag = TXS_kingdom_founded
+				has_country_leader = {
+					ruling_only = yes
+					name = "Adolph I"
+				}
+			}
+			set_cosmetic_tag = TXS_WEST_CZE_SCH
+		}
+		if = { 
+			limit = { NOT = { has_country_flag = TXS_kingdom_founded } }
+			set_cosmetic_tag = TXS_WEST 
+		}
 	}
 }
 
